@@ -33,7 +33,9 @@
                {:name "Jack" :age 31 :gender "M" :title "Mr"}) 
 (assert-equals (dissoc jack :age)
                {:name "Jack"})
-
+(assert-equals (select-keys {:a 1 :b 2 :c 3} [:a :c]) {:a 1 :c 3})
+(assert-equals (merge {:a 1 :b 2} {:c 3} {:a 4 :d 5})
+               {:a 4 :b 2 :c 3 :d 5})
 ;;sets
 (assert-equals #{:a :b :c} #{:b :c :a} )
 
