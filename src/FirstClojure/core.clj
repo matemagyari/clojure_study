@@ -20,7 +20,15 @@
   )
 (assert-equals (compose-fn [1 2 3 4]) [5 9])
 
-;;maps
+
+;;partial
+(defn calculate-net [tax gross-amount] (* (- 100 tax) 0.01 gross-amount))
+(def calculate-net-ny (partial calculate-net 10)) 
+(def calculate-net-sf (partial calculate-net 15)) 
+
+;;(defn tax-ny [amount] (partial #()) )
+
+;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17}) 
 (def jack {:name "Jack" :age 31})
 
@@ -36,7 +44,10 @@
 (assert-equals (select-keys {:a 1 :b 2 :c 3} [:a :c]) {:a 1 :c 3})
 (assert-equals (merge {:a 1 :b 2} {:c 3} {:a 4 :d 5})
                {:a 4 :b 2 :c 3 :d 5})
-;;sets
+;;(assert-equals (merge-with #(+ 10 %) {:a 1 :b 2} {:c 3} {:a 4 :d 5})
+;;               {:a 4 :b 2 :c 3 :d 5})
+
+;;------------------------------------------------------------------------------- SETS -------------------------------------------
 (assert-equals #{:a :b :c} #{:b :c :a} )
 
 
@@ -44,7 +55,7 @@
 (def myset #{:a :b :c})
 (assert-equals (:a myset) :a)
 
-;;vectors
+;;------------------------------------------------------------------------------- VECTORS -------------------------------------------
 (assert-equals (assoc [1 2] 0 333)
                [333 2]) 
 (assert-equals (assoc [1 2] 2 333)
