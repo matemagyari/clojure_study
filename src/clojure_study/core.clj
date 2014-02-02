@@ -57,6 +57,101 @@
 
 ;;(defn tax-ny [amount] (partial #()) )
 
+;;------------------------------------------------------------------------------- RECUR -------------------------------------------
+
+(defn my-nth [sequ n] 
+  (if (= n 0) 
+    (first sequ) 
+    (recur (rest sequ) (dec n))))
+
+(assert-equals 5 (my-nth [1 5 3] 1))
+
+;;------------------------------------------------------------------------------- KOANS -------------------------------------------
+
+(defn my-count 
+  ([sequ] (my-count sequ 0))
+  ([sequ len] (if (empty? sequ) len (recur (rest sequ) (inc len)))))
+
+(assert-equals 3 (my-count [1 5 3]))
+
+;;redefined using loop recur
+(defn my-count [sequ] 
+  (loop [sequ sequ 
+         len 0]
+    (if (empty? sequ) 
+      len 
+      (recur (rest sequ) (inc len)))))
+
+(assert-equals 4 (my-count [1 5 3 4]))
+
+(defn my-reverse [sequ]
+  (loop [original sequ
+         reversed '()]
+    (if (empty? original)
+      reversed
+      (recur (rest original) (conj reversed (first original)))
+    )))
+
+(assert-equals [1 2 3] (my-reverse [3 2 1]))
+
+;;fibonacci
+
+(defn my-fib-num [n]
+  (cond 
+    (< n 2) 0
+    (= n 2) 1
+    :else (+ (my-fib-num (- n 1))
+             (my-fib-num (- n 2)))
+    ))
+
+(assert-equals (my-fib-num 0) 0)
+(assert-equals (my-fib-num 1) 0)
+(assert-equals (my-fib-num 2) 1)
+(assert-equals (my-fib-num 3) 1)
+(assert-equals (my-fib-num 4) 2)
+(assert-equals (my-fib-num 5) 3)
+(assert-equals (my-fib-num 6) 5)
+  
+(defn my-fib [n] 
+  (loop [result [1 1]
+         len n]
+    (if (> 3 len)
+      result
+      (let [last (last result)
+            lastbut (first (rest (reverse result)))
+            next (+ last lastbut)]
+        (recur (conj result next) 
+               (dec len)))))) 
+
+(assert-equals (my-fib 7) [1 1 2 3 5 8 13])
+
+;;palindrome
+
+(defn is-palindrome [a-seq]
+  (loop [x a-seq]
+    (cond
+      (> 2 (count x)) true
+      (not= (first x) (last x)) false
+      :else (let [middle (reverse (rest (reverse (rest x))))]
+              (recur middle)
+    ))))
+
+(assert-false (is-palindrome '(1 2 3)))
+(assert (is-palindrome '(1 1)))
+(assert (is-palindrome '(1 2 3 2 1)))
+(assert (is-palindrome '(:a :b :a)))
+(assert (is-palindrome "racecar"))
+
+;;flatten a sequence
+(defn my-flatten [a-seq]
+  (if (sequential? a-seq)
+    (mapcat my-flatten a-seq)
+    (list a-seq)))
+
+(assert-equals (my-flatten '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6))
+(assert-equals (my-flatten [[ 1 2]]) '(1 2))
+
+
 ;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17}) 
 (def jack {:name "Jack" :age 31})
@@ -137,12 +232,15 @@
 (assert-equals @x 12)
 
 (def guest-count (promise))
-(defn manager-duties [cnt] (println (str " hi " cnt " arrived")))
+(defn manager-duties [cnt] 
+  (println "manager waiting...")
+  (println (str " hi " @cnt " arrived")))
 (future (manager-duties guest-count))
+(println "..count almost delivered")
 (deliver guest-count 50)
-(if (realized? guest-count) (deref guest-count))
+(assert (realized? guest-count))
    
-;;------------------------------------------------------------------------------- DOSYNC -------------------------------------------
+;;------------------------------------------------------------------------------- REFS -------------------------------------------
 (def location (ref "London"))
 (def salary (ref 100))
 (dosync 
@@ -166,6 +264,52 @@
 
 (assert-equals @location "London")
 
+;;------------------------------------------------------------------------------- ATOMS -------------------------------------------
+(def counter (atom 0))
+
+(swap! counter #(+ 2 %))
+(assert-equals 2 @counter)
+
+(defn my-add [& args] (apply + args))
+(assert-equals 5 (my-add 2 2 1)) 
+
+(swap! counter my-add 3 4)
+(assert-equals 9 @counter)
+(reset! counter 14)
+(assert-equals 14 @counter)
+
+;;------------------------------------------------------------------------------- VALIDATORS -----------------------------------------
+
+(def binary (atom 0 :validator (fn [new-val] (or (== 0 new-val) (== 1 new-val)))))
+(try (reset! binary 2) (catch IllegalStateException ex))
+(assert-equals 0 @binary)
+
+(def a-name (atom "Bela" :validator string?))
+(try (reset! a-name 2) (catch IllegalStateException ex (println "Not a string")))
+(assert-equals "Bela" @a-name)
+
+(def a-positive (atom 1 :validator #(> % 0)))
+(try (reset! a-positive -1) (catch IllegalStateException ex (println "Not positive")))
+(assert-equals 1 @a-positive)
+
+
+(defn my-error-handler [agent, exc] 
+  (println (str "Whoops " agent " " exc)))
+
+(def a-negative (agent -1))
+(set-validator! a-negative neg?)
+(set-error-handler! a-negative my-error-handler)
+
+(try (send a-negative (partial + 1)) (catch IllegalStateException ex))
+(assert-equals -1 @a-negative)
+
+
+;;------------------------------------------------------------------------------- WATCHERS -----------------------------------------
+
+(def watched-val (atom 0))
+(add-watch watched-val :watch-change (fn [key a old-val new-val] (println (str key " " a " " old-val " " new-val))))
+(reset! watched-val 5)
+(remove-watch watched-val :watch-change)
 ;;------------------------------------------------------------------------------- LAZY-SEQ -------------------------------------------
 (def integers (range 100000))
 (assert-equals (take 3 integers) [0 1 2])
@@ -175,3 +319,13 @@
     ([n] (cons n (lazy-seq (positive-numbers (inc n))))))
 
 (assert-equals (take 3 (positive-numbers)) [1 2 3])
+
+;;------------------------------------------------------------------------------- PRE POST -------------------------------------------
+(defn constrained-fn [f x]
+  {:pre [(pos? x) (even? x)]
+   :post [(> 10 %)]}
+  (f x))
+
+(try (constrained-fn #(+ 5 %) 1) (catch AssertionError err (println "Not even")))
+(try (constrained-fn #(+ 5 %) -1) (catch AssertionError err (println "Not positive")) )
+(try (constrained-fn #(* 2 %) 6) (catch AssertionError err (println "Greater than 10")) )
