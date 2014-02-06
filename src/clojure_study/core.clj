@@ -118,7 +118,8 @@
     (if (> 3 len)
       result
       (let [last (last result)
-            lastbut (first (rest (reverse result)))
+            ;lastbut (first (rest (reverse result)))
+            lastbut (->> result reverse rest first)
             next (+ last lastbut)]
         (recur (conj result next) 
                (dec len)))))) 
@@ -132,9 +133,8 @@
     (cond
       (> 2 (count x)) true
       (not= (first x) (last x)) false
-      :else (let [middle (reverse (rest (reverse (rest x))))]
-              (recur middle)
-    ))))
+      :else (recur (->> x rest reverse rest reverse))
+    )))
 
 (assert-false (is-palindrome '(1 2 3)))
 (assert (is-palindrome '(1 1)))
