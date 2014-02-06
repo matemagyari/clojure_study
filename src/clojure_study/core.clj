@@ -1,4 +1,7 @@
-(ns FirstClojure.core)
+(ns FirstClojure.core 
+  (:require clojure.contrib.core))
+
+(println "ddd")
 
 ;;=========================
 (defn assert-equals [actual expected]
@@ -66,6 +69,31 @@
 
 (assert-equals 5 (my-nth [1 5 3] 1))
 
+;;------------------------------------------------------------------------------- USEFUL MACROS -------------------------------------------
+
+
+;;->
+(assert-equals 5/2
+               (-> 5
+                 (/ 2)))
+(assert-equals 2/5
+               (->> 5
+                 (/ 2)))
+(assert-equals 15
+               (->> [1 2 3 4 5 6]
+                 (filter even?)
+                 (map inc)
+                 (apply +)))
+
+
+(use '[clojure.contrib.core :only (-?>>)])
+;(require 'clojure.contrib.core)
+
+(assert-equals nil
+               (-?>> [1 3 5]
+                 (filter even?)
+                 (map inc)
+                 (apply +)))
 ;;------------------------------------------------------------------------------- KOANS -------------------------------------------
 
 (defn my-count 
@@ -151,6 +179,71 @@
 (assert-equals (my-flatten '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6))
 (assert-equals (my-flatten [[ 1 2]]) '(1 2))
 
+;;max
+(defn my-max [& args]
+  (loop [maxx (first args)
+         rest-args (rest args)]
+    (if (empty? rest-args)
+      maxx
+      (let [second (first rest-args)
+            local-max (if (> second maxx) second maxx)
+            other (rest rest-args)]
+          (recur local-max other)))))
+
+ (assert-equals 8 (my-max 1 8 3 4))
+ 
+;;interleave
+(defn my-interleave [a-seq b-seq]
+  (loop [result []
+         a-rem a-seq
+         b-rem b-seq]
+    (cond 
+      (empty? a-rem) result
+      (empty? b-rem) result
+      :else (recur 
+              (conj result (first a-rem) (first b-rem))
+              (rest a-rem)
+              (rest b-rem)))))
+
+(assert-equals (my-interleave [1 2] [3 4 5 6]) '(1 3 2 4))
+(assert-equals (my-interleave [1 2 3] [:a :b :c]) '(1 :a 2 :b 3 :c))
+
+;;range
+
+(defn my-range [start end]
+  (loop [acc []
+         index start]
+    (if (= index end)
+      acc
+      (recur (conj acc index) (inc index)))))
+
+(assert-equals (my-range -2 2) '(-2 -1 0 1))
+
+;;replicate sequence
+
+(defn my-replicate [a-seq n]
+  (loop [acc []
+         rest-seq a-seq]
+    (if (empty? rest-seq)
+      acc
+      (let [rep (repeat n (first rest-seq))] 
+        (recur (concat acc rep) 
+             (rest rest-seq))))))
+
+(assert-equals (my-replicate [44 33] 2) [44 44 33 33])
+
+;; interpose
+
+(defn my-interpose [delimiter a-seq]
+  (loop [acc [(first a-seq)]
+         rest-seq (rest a-seq)]
+    (if (empty? rest-seq)
+      acc
+      (recur (conj acc delimiter (first rest-seq))
+             (rest rest-seq))
+      )))
+
+(assert-equals (my-interpose 0 [1 2 3]) [1 0 2 0 3])
 
 ;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17}) 
