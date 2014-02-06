@@ -1,8 +1,6 @@
 (ns FirstClojure.core 
   (:require clojure.contrib.core))
 
-(println "ddd")
-
 ;;=========================
 (defn assert-equals [actual expected]
   (when-not (= actual expected)
@@ -89,11 +87,12 @@
 (use '[clojure.contrib.core :only (-?>>)])
 ;(require 'clojure.contrib.core)
 
-(assert-equals nil
-               (-?>> [1 3 5]
-                 (filter even?)
-                 (map inc)
-                 (apply +)))
+;(assert-equals nil
+;               (-?>> [1 3 5]
+;                 (filter even?)
+;                 (map inc)
+;                 (apply +)))
+
 ;;------------------------------------------------------------------------------- KOANS -------------------------------------------
 
 (defn my-count 
@@ -139,7 +138,7 @@
 (assert-equals (my-fib-num 4) 2)
 (assert-equals (my-fib-num 5) 3)
 (assert-equals (my-fib-num 6) 5)
-  
+
 (defn my-fib [n] 
   (loop [result [1 1]
          len n]
@@ -244,6 +243,62 @@
       )))
 
 (assert-equals (my-interpose 0 [1 2 3]) [1 0 2 0 3])
+
+;;last
+(defn my-last [a-seq]
+  (loop [acc a-seq]
+    (if (= 1 (count acc))
+      (first acc)
+      (recur (rest acc)))))
+
+(assert-equals (my-last [1 2 3]) 3)
+
+;;get the caps
+(defn get-caps [text]
+  (->> text 
+    (filter #(java.lang.Character/isUpperCase %)) 
+    (apply str)))
+
+(assert-equals (get-caps "HeLlO, WoRlD!") "HLOWRD")
+
+;;compress a seq
+(defn my-comp [a-seq]
+  (loop [acc [(first a-seq)]
+         the-rest (rest a-seq)]
+    (if (empty? the-rest) 
+      acc
+      (let [next-char (first the-rest)
+            new-acc (if (= (last acc) next-char) 
+                    acc
+                    (conj acc (first the-rest))) ]
+        (recur new-acc (rest the-rest) )
+    ))))
+    
+
+(assert-equals (apply str (my-comp "Leeeeeerrroyyy")) "Leroy")
+
+;;pack a seq
+
+(defn pack [a-seq]
+  (loop [act-acc [(first a-seq)]
+         acc []
+         the-rest (rest a-seq)]
+    (if (empty? the-rest)
+      (conj acc act-acc)
+      (let [next-char (first the-rest)
+            same-char-coming (= (last act-acc) next-char)
+            new-act-acc (if same-char-coming
+                          (conj act-acc next-char)
+                          [next-char])
+            new-acc (if same-char-coming 
+                      acc
+                      (conj acc act-acc))]
+        (recur new-act-acc 
+               new-acc 
+               (rest the-rest))))))
+
+(assert-equals (pack [:a :a :b :b :c]) '((:a :a) (:b :b) (:c)))
+
 
 ;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17}) 
