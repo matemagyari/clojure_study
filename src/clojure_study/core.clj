@@ -67,6 +67,17 @@
 
 (assert-equals ((comp2 dup add) 5 8) 26)
 
+(defn comp-n [& fns]
+  (loop [acc (partial identity)
+          rest-fns fns]
+    (if (empty rest-fns)
+      acc
+      (recur ( (fn [& args] 
+                 (apply (first rest-fns) acc)))
+             (rest rest-fns)))))
+
+(assert-equals ((comp-n dup add) 5 8) 26)
+
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
 
 (defn my-nth [sequ n] 
