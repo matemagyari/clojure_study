@@ -53,6 +53,7 @@
 (def calculate-net-sf (partial calculate-net 15)) 
 
 (defn add [a b] (+ a b))
+(defn dup [a] (* a 2))
 (def add2 (partial add 2))
 (assert-equals (add2 3) 5)
 
@@ -67,6 +68,25 @@
 
 
 ;;(defn tax-ny [amount] (partial #()) )
+
+;;compose
+
+(defn comp2 [f g]
+  (fn [& args]
+    (f (apply g args))))
+
+(assert-equals ((comp2 dup add) 5 8) 26)
+
+(defn comp-n [& fns]
+  (loop [acc (partial identity)
+          rest-fns fns]
+    (if (empty rest-fns)
+      acc
+      (recur ( (fn [& args] 
+                 (apply (first rest-fns) acc)))
+             (rest rest-fns)))))
+
+(assert-equals ((comp-n dup add) 5 8) 26)
 
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
 
