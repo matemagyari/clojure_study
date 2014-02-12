@@ -56,6 +56,16 @@
 (def add2 (partial add 2))
 (assert-equals (add2 3) 5)
 
+(def my-add (partial +))
+(assert-equals (my-add 3 2) 5)
+
+(def my-dup (partial * 2))
+(assert-equals (my-dup 5) 10)
+
+(def add-and-dup (partial my-dup my-add))
+(assert-equals (add-and-dup 5 3) 16)
+
+
 ;;(defn tax-ny [amount] (partial #()) )
 
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
@@ -299,6 +309,20 @@
 
 (assert-equals (pack [:a :a :b :b :c]) '((:a :a) (:b :b) (:c)))
 
+(comment
+)
+;;my-comp
+(defn my-comp [ & fns]
+  (loop [acc [(last fns)]
+         rest-fns (drop-last fns)]
+    (println (apply str acc))
+    (if (empty? rest-fns)
+      #(acc %)
+      (recur #(partial ((last rest-fns) acc) %);;((last rest-fns) acc);;(partial apply (last fns) acc)
+             (drop-last rest-fns))))
+  )
+
+(assert-equals [3 2 1] ((my-comp rest reverse) [1 2 3 4 5]))
 
 ;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17}) 
