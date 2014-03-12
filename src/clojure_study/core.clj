@@ -1,5 +1,6 @@
-(ns FirstClojure.core 
-  (:require clojure.contrib.core))
+(ns clojure_study.core 
+ (:require clojure.contrib.core))
+  
 
 ;;=========================
 (defn assert-equals [actual expected]
@@ -65,19 +66,19 @@
   (fn [& args]
     (f (apply g args))))
 
+
 (assert-equals ((comp2 dup add) 5 8) 26)
 
 (defn comp-n [& fns]
-  (loop [acc (partial identity)
-          rest-fns fns]
+  (loop [acc (fn [& args] (apply (first fns) args))
+          rest-fns (rest fns)]
     (if (empty rest-fns)
       acc
       (recur ( (fn [& args] 
-                 (apply (first rest-fns) acc)))
+                 ((first rest-fns) acc)))
              (rest rest-fns)))))
 
-(assert-equals ((comp-n dup add) 5 8) 26)
-
+;(assert-equals ((comp-n dup add) 5 8) 26)
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
 
 (defn my-nth [sequ n] 
@@ -105,13 +106,12 @@
 
 
 (use '[clojure.contrib.core :only (-?>>)])
-;(require 'clojure.contrib.core)
 
-;(assert-equals nil
-;               (-?>> [1 3 5]
-;                 (filter even?)
-;                 (map inc)
-;                 (apply +)))
+(assert-equals 0
+               (-?>> [1 3 5]
+                 (filter even?)
+                 (map inc)
+                 (apply +)))
 
 ;;------------------------------------------------------------------------------- KOANS -------------------------------------------
 
@@ -497,3 +497,5 @@
 (try (constrained-fn #(+ 5 %) 1) (catch AssertionError err (println "Not even")))
 (try (constrained-fn #(+ 5 %) -1) (catch AssertionError err (println "Not positive")) )
 (try (constrained-fn #(* 2 %) 6) (catch AssertionError err (println "Greater than 10")) )
+
+(println "Finished")
