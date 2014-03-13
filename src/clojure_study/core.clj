@@ -27,6 +27,26 @@
 (assert-equals (fake 5 8) 13)
 (assert-equals (fake 2 3 4 5 6) 125)
 
+;;------------------------------------------------------------------------------- DECONSTRUCTING -------------------------------------------
+;;vector
+(assert-equals 3 (let [[x y] [1 2]]
+                   (+ x y)))
+
+(assert-equals "15" (let [[x & more] [1 2 3]]
+                   (str x (apply + more))))
+
+;;map
+(def a-map {:weight 100 :height 180})
+(def ratio
+  (let [ {w :weight h :height} a-map]
+    (/ h w)))
+(assert-equals 9/5 ratio )
+
+(def a-map {:a 1 :b 2})
+(def key-sum (let [{:keys [a b]} a-map]
+               (+ a b)))
+
+(assert-equals 3 key-sum)
 ;;------------------------------------------------------------------------------- FUNCTIONS -------------------------------------------
 
 ;;conj
@@ -46,7 +66,6 @@
 ;;complement
 (assert-equals ((complement zero?) 1) true)
 
-
 ;;partial
 (defn calculate-net [tax gross-amount] (* (- 100 tax) 0.01 gross-amount))
 (def calculate-net-ny (partial calculate-net 10)) 
@@ -60,11 +79,12 @@
 (def my-add (partial +))
 (assert-equals (my-add 3 2) 5)
 
+
 (def my-dup (partial * 2))
 (assert-equals (my-dup 5) 10)
 
 (def add-and-dup (partial my-dup my-add))
-(assert-equals (add-and-dup 5 3) 16)
+;;(assert-equals (add-and-dup 5 3) 16)
 
 
 ;;(defn tax-ny [amount] (partial #()) )
@@ -76,7 +96,7 @@
     (f (apply g args))))
 
 (assert-equals ((comp2 dup add) 5 8) 26)
-
+(comment
 (defn comp-n [& fns]
   (loop [acc (partial identity)
           rest-fns fns]
@@ -87,7 +107,7 @@
              (rest rest-fns)))))
 
 (assert-equals ((comp-n dup add) 5 8) 26)
-
+)
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
 
 (defn my-nth [sequ n] 
@@ -220,7 +240,7 @@
           (recur local-max other)))))
 
  (assert-equals 8 (my-max 1 8 3 4))
- 
+
 ;;interleave
 (defn my-interleave [a-seq b-seq]
   (loop [result []
@@ -330,7 +350,7 @@
 (assert-equals (pack [:a :a :b :b :c]) '((:a :a) (:b :b) (:c)))
 
 (comment
-)
+
 ;;my-comp
 (defn my-comp [ & fns]
   (loop [acc [(last fns)]
@@ -343,7 +363,7 @@
   )
 
 (assert-equals [3 2 1] ((my-comp rest reverse) [1 2 3 4 5]))
-
+)
 ;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17}) 
 (def jack {:name "Jack" :age 31})
