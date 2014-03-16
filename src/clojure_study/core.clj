@@ -109,6 +109,7 @@
              (rest rest-fns)))))
 
 (assert-equals ((comp-n dup add) 5 8) 26)
+)
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
 
 (defn my-nth [sequ n] 
@@ -542,4 +543,21 @@
 (try (constrained-fn #(+ 5 %) -1) (catch AssertionError err (println "Not positive")) )
 (try (constrained-fn #(* 2 %) 6) (catch AssertionError err (println "Greater than 10")) )
 
-(println "Finished")
+
+;;------------------------------------------------------------------------------- FOR COMPREHENSIONS  -------------------------------------------
+(assert-equals [[:a :c] [:a :d] [:b :c] [:b :d]] 
+               (for [x [:a :b]
+                     y [:c :d]]
+                 [x y]))
+
+(assert-equals [0 6 12]
+               (for [x '(0 1 2 3 4 5)
+                 :let [y (* x 3)]
+                 :when (even? y)]
+                 y))
+
+(assert-equals [3 4 5]
+               (for [x '(1 2 3)
+                     :let [y (inc x)
+                           z (inc y)]]
+                 z))

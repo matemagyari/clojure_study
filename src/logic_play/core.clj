@@ -1,6 +1,7 @@
 (ns logic_play.core 
  (:refer-clojure :exclude [==])
-  (:use [clojure.core.logic]))
+  (:use [clojure.core.logic])
+  (:use [clojure.core.logic.pldb]))
 
 ;;=========================
 (defn assert-equals [actual expected]
@@ -46,4 +47,3 @@
 
 (assert-equals x [[:papa :brainy] [:brainy :papa] [:papa :lazy] [:lazy :papa] [:brainy :lazy] [:lazy :brainy]])
 
-(println "logic play ended")

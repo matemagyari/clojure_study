@@ -7,6 +7,7 @@
 
 (let [c (chan 10)]
   (>!! c "hello")
-  (assert (= "1hello" (<!! c)))
+  (assert (= "hello" (<!! c)))
   (close! c))
+
 
