@@ -10,7 +10,6 @@
         (str "Expected " expected " but was " actual)))))
 
 (defn assert-false [expr] (assert (not expr)))    
-
 ;;------------------------------------------------------------------------------- BASICS -------------------------------------------
 (defn do-sth []
   (println "hello")
@@ -28,6 +27,14 @@
 (assert-equals (fake 5 8) 13)
 (assert-equals (fake 2 3 4 5 6) 125)
 
+;;------------------------------------------------------------------------------- FUNCTIONS -------------------------------------------
+
+;;repeatedly
+(def x (repeatedly #(rand-int 10)))
+(println (take 3 x))
+
+;;iterate
+(assert-equals [1 2 3] (take 3 (iterate inc 1)))
 ;;------------------------------------------------------------------------------- DECONSTRUCTING -------------------------------------------
 ;;vector
 (assert-equals 3 (let [[x y] [1 2]]
