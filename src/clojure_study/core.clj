@@ -1,15 +1,7 @@
 (ns clojure_study.core 
- (:require clojure.contrib.core))
+ (:require clojure.contrib.core)
+ (:use clojure-study.assertion))
   
-
-;;=========================
-(defn assert-equals [actual expected]
-  (when-not (= actual expected)
-    (throw 
-      (AssertionError. 
-        (str "Expected " expected " but was " actual)))))
-
-(defn assert-false [expr] (assert (not expr)))    
 ;;------------------------------------------------------------------------------- BASICS -------------------------------------------
 (defn do-sth []
   (println "hello")
