@@ -2,7 +2,20 @@
   (:use clojure-study.assertion))
 
 (def suites [:club :heart :spade :diamond])
-(def ranks [:2 :3 :4 :5 :6 :7 :8 :9 :10 :J :Q :K :A])
+(def rank-value [[:2 2]
+                 [:3 3]
+                 [:4 4]
+                 [:5 5]
+                 [:6 6]
+                 [:7 7]
+                 [:8 8]
+                 [:9 9]
+                 [:10 10]
+                 [:J 10]
+                 [:Q 10]
+                 [:K 10]
+                 [:A 11]])
+(def ranks (map first rank-value))
 
 (defn new-deck []
   (shuffle 
@@ -19,13 +32,18 @@
    :deck (take 5 (new-deck))})
 
 (defn hit [game player]
-  (let [[card deck] (draw (game :deck))
-        g1 (update-in game [player :cards] #(cons card %))
-        g2 (assoc g1 :deck deck)]
-    g2))
+  (let [[card deck] (draw (game :deck))]
+    (-> game
+        (update-in [player :cards] #(cons card %))
+        (assoc :deck deck)
+        (assoc :last-to-act player))))
+
 
 (defn stand [game player]
   (assoc-in game [player :state] :stand))
+
+(defn out-of-turn [game player]
+  (= player (:last-to-act game)))
 
 ;;(defprotocol GameBehaviour
 ;;  (hit [this player])
