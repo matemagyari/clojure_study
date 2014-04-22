@@ -20,4 +20,11 @@
 (assert-equals "I'm a keyword: :a" (whoami :a))
 (assert-equals "I'm a null" (whoami nil))
 
+;;defprotocol
+(defprotocol Dog
+  (eat [this])
+  (bark [this]))
+
+(defrecord Terrier)
+
 
