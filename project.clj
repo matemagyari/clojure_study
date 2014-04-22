@@ -9,6 +9,7 @@
                  [org.clojure/core.logic "0.8.5"]
                  [org.clojure/core.match "0.2.1"]
                  [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
+                 [org.clojure/tools.trace "0.7.8"]
                  ]
   :main clojure_study.core
   ;:main logic_play.core
