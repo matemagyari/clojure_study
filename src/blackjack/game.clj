@@ -4,6 +4,7 @@
   ;(:use clojure.tools.trace)
   )
 
+(def event-buffer (ref []))
 (def target 21)
 (def suites [:club :heart :spade :diamond])
 (def rank-values (array-map 
@@ -52,7 +53,7 @@
 
 (defn- score-hand [cards]
   "Calculates the score for the hand"
-  (let [value-fn #((last %) rank-values)
+  (let [value-fn (fn [card] ((last card) rank-values))
         sum (reduce + (map value-fn cards))
         ace? #(= :A (last %))
         ace-count (count (filter ace? cards))]
@@ -60,8 +61,14 @@
       (- sum 10)
       sum)))
 
+(defn- check-game-state [game state]
+  (when-not (= state (get game :state)) 
+    (throw (RuntimeException. (str "Game " (:id game) " is not in state " state)))))
+
 (defn deal-initial-cards [game]
   "Deals initial cards"
+  (check-game-state game :initialized)
+  (publish-event {:game-id (:id game) :type :game-started-event})
   (let [dealer (get game :dealer)
         player (get game :player)]
     (-> game
@@ -81,7 +88,7 @@
   "Player hits"
   (check-player-can-act game player)
   (let [[card deck] (draw (game :deck))]
-    (publish-event (str "player " player " drew card " card))
+    (publish-event {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
     (-> game
         (update-in [:players player :cards] #(cons card %))
         (assoc :deck deck)
@@ -89,10 +96,25 @@
         (hit-after player))))
 
 (defn- publish-event [event]
-  (println event))
+  (println event)
+  (dosync
+    (alter event-buffer conj event)))
+
+(defmulti handle-event :type)
+(defmethod handle-event :player-card-dealt-event [event]
+  (println (str "CardDealt! " event)))
+(defmethod handle-event :game-finished-event [event]
+  (println (str "Finished! " event)))
+(defmethod handle-event :default [event]
+  (println (str "Unknown " event)))
+
+(defn flush-events []
+  (for [event @event-buffer]
+    (handle-event event)))
+
 
 (defn- finish-game [game winner]
-  (publish-event (str "Game finished " (:id game) " winner " winner))
+  (publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
   (assoc game :state :finished))
 
 
@@ -104,6 +126,7 @@
 (defn stand [game player]
   "Player stands"
   (check-player-can-act game player)
+  (publish-event {:game-id (:id game) :player player :type :player-stands-event})
   (-> game
     (assoc-in [:players player :state] :stand)
     (assoc :last-to-act player)))
@@ -119,14 +142,11 @@
   (when (= :stand (get-in game [:players player :state])) 
     (throw (RuntimeException. (str "Player " player " stands in game " (:id game))))))
 
-(defn- check-game-started [game]
-  (when-not (= :started (get game :state)) 
-    (throw (RuntimeException. (str "Game hasn't started yet " (:id game))))))
 
 (defn- check-player-can-act [game player]
   (check-not-out-of-turn game player)
   (check-player-not-stand game player)
-  (check-game-started game))
+  (check-game-state game :started))
 
 ;;===================== TESTS ==========================
 (def g (new-game 1 2))
