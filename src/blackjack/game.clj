@@ -1,10 +1,10 @@
 (ns blackjack.game
   (:use clojure-study.assertion)
   (:use clojure.test)
+  (:use blackjack.events)
   ;(:use clojure.tools.trace)
   )
 
-(def event-buffer (ref []))
 (def target 21)
 (def suites [:club :heart :spade :diamond])
 (def rank-values (array-map 
@@ -48,9 +48,6 @@
     :id (new-id)
     :deck (new-deck)})
 
-(defn- score [game player]
-  (score-hand (get-in game [:players player :cards])))
-
 (defn- score-hand [cards]
   "Calculates the score for the hand"
   (let [value-fn (fn [card] ((last card) rank-values))
@@ -61,9 +58,51 @@
       (- sum 10)
       sum)))
 
+(defn- score [game player]
+  (score-hand (get-in game [:players player :cards])))
+
+(defn- finish-game [game winner]
+  (publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
+  (assoc game :state :finished))
+
+(defn- other-player [game player]
+  (if (= (get game :player) player)
+    (get game :dealer)
+    (get game :player)))
+
+(defn- hit-after [game player]
+  "Do things after player hits"
+  (if (> (score game player) target)
+    (finish-game game (other-player game player))
+    game))
+
+(defn- check-not-out-of-turn [game player]
+  (when (= player (:last-to-act game)) 
+    (throw (RuntimeException. (str "Player " player " acts out of turn in game " (:id game))))))
+
+(defn- check-player-not-stand [game player]
+  (when (= :stand (get-in game [:players player :state])) 
+    (throw (RuntimeException. (str "Player " player " stands in game " (:id game))))))
+
 (defn- check-game-state [game state]
   (when-not (= state (get game :state)) 
     (throw (RuntimeException. (str "Game " (:id game) " is not in state " state)))))
+
+(defn- check-player-can-act [game player]
+  (check-not-out-of-turn game player)
+  (check-player-not-stand game player)
+  (check-game-state game :started))
+
+(defn hit [game player]
+  "Player hits"
+  (check-player-can-act game player)
+  (let [[card deck] (draw (game :deck))]
+    (publish-event {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
+    (-> game
+        (update-in [:players player :cards] #(cons card %))
+        (assoc :deck deck)
+        (assoc :last-to-act player)
+        (hit-after player))))
 
 (defn deal-initial-cards [game]
   "Deals initial cards"
@@ -78,50 +117,6 @@
       (hit player)
       (hit dealer))))
 
-(defn- hit-after [game player]
-  "Do things after player hits"
-  (if (> (score game player) target)
-    (finish-game game (other-player game player))
-    game))
-
-(defn hit [game player]
-  "Player hits"
-  (check-player-can-act game player)
-  (let [[card deck] (draw (game :deck))]
-    (publish-event {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
-    (-> game
-        (update-in [:players player :cards] #(cons card %))
-        (assoc :deck deck)
-        (assoc :last-to-act player)
-        (hit-after player))))
-
-(defn- publish-event [event]
-  (println event)
-  (dosync
-    (alter event-buffer conj event)))
-
-(defmulti handle-event :type)
-(defmethod handle-event :player-card-dealt-event [event]
-  (println (str "CardDealt! " event)))
-(defmethod handle-event :game-finished-event [event]
-  (println (str "Finished! " event)))
-(defmethod handle-event :default [event]
-  (println (str "Unknown " event)))
-
-(defn flush-events []
-  (for [event @event-buffer]
-    (handle-event event)))
-
-
-(defn- finish-game [game winner]
-  (publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
-  (assoc game :state :finished))
-
-
-(defn- other-player [game player]
-  (if (= (get game :player) player)
-    (get game :dealer)
-    (get game :player)))
 
 (defn stand [game player]
   "Player stands"
@@ -131,22 +126,10 @@
     (assoc-in [:players player :state] :stand)
     (assoc :last-to-act player)))
 
-(defn- out-of-turn [game player]
-  (= player (:last-to-act game)))
-
-(defn- check-not-out-of-turn [game player]
-  (when (= player (:last-to-act game)) 
-    (throw (RuntimeException. (str "Player " player " acts out of turn in game " (:id game))))))
-
-(defn- check-player-not-stand [game player]
-  (when (= :stand (get-in game [:players player :state])) 
-    (throw (RuntimeException. (str "Player " player " stands in game " (:id game))))))
-
-
-(defn- check-player-can-act [game player]
-  (check-not-out-of-turn game player)
-  (check-player-not-stand game player)
-  (check-game-state game :started))
+(defn get-winner [game]
+  (let [player-score (score (game :player))
+        dealer-score (score (game :dealer))]
+    (if (> player-score (score (game :dealer))))))
 
 ;;===================== TESTS ==========================
 (def g (new-game 1 2))
