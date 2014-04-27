@@ -3,21 +3,20 @@
 (def event-buffer (ref []))
 
 (defn publish-event [event]
+  "Publishes an event to the event bus"
   (println event)
   (dosync
     (alter event-buffer conj event)))
 
-(defmulti handle-event :type)
-(defmethod handle-event :player-card-dealt-event [event]
-  (println (str "CardDealt! " event)))
-(defmethod handle-event :game-finished-event [event]
-  (println (str "Finished! " event)))
-(defmethod handle-event :default [event]
-  (println (str "Unknown " event)))
+(defn flush-events-with [event-handlers]
+  (dosync
+    (while (not-empty @event-buffer)
+      (let [event (first @event-buffer)
+            match-with? (fn [handler] ((handler :match-fn) event))
+            handle-event-with (fn [handler] ((handler :do-fn) event))]
+        (doseq [event-handler event-handlers
+             :when (match-with? event-handler)]
+          (handle-event-with event-handler))
+        (alter event-buffer rest)))))
 
-(defn flush-events []
-  (while (not-empty @event-buffer)
-    (let [event (first @event-buffer)]
-      (dosync
-        (alter event-buffer rest))
-      (handle-event event))))
+;;(blackjack.events/flush-events-with (blackjack.eventhandlers/event-handlers))

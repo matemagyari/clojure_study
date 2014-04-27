@@ -1,9 +1,12 @@
 (ns blackjack.game
-  (:use clojure-study.assertion)
-  (:use clojure.test)
-  (:use blackjack.events)
-  ;(:use clojure.tools.trace)
-  )
+  (:require [blackjack.events :as events]
+            [blackjack.shared :as shared]
+            [clojure.test :as t]
+            [clojure.tools.trace :as tr]))
+
+;;(use 'clojure.tools.trace)
+;;(clojure.tools.trace/trace-ns blackjack.game)
+;;(trace-ns blackjack.game)
 
 (def target 21)
 (def suites [:club :heart :spade :diamond])
@@ -34,9 +37,6 @@
   "Draws the top card, returning the card and the remaining deck"
   [(first deck) (rest deck)])
 
-(defn- new-id []
-  (rand-int 1000))
-
 (defn new-game [dealer player]
   "Creates a new Game structure"
   { :players { player { :cards #{} }
@@ -45,7 +45,7 @@
     :player player
     :dealer dealer
     :state :initialized
-    :id (new-id)
+    :id (shared/generate-id)
     :deck (new-deck)})
 
 (defn- score-hand [cards]
@@ -62,7 +62,7 @@
   (score-hand (get-in game [:players player :cards])))
 
 (defn- finish-game [game winner]
-  (publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
+  (events/publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
   (assoc game :state :finished))
 
 (defn- other-player [game player]
@@ -78,15 +78,15 @@
 
 (defn- check-not-out-of-turn [game player]
   (when (= player (:last-to-act game)) 
-    (throw (RuntimeException. (str "Player " player " acts out of turn in game " (:id game))))))
+    (shared/raise-domain-exception (str "Player " player " acts out of turn in game " (:id game)))))
 
 (defn- check-player-not-stand [game player]
   (when (= :stand (get-in game [:players player :state])) 
-    (throw (RuntimeException. (str "Player " player " stands in game " (:id game))))))
+    (shared/raise-domain-exception (str "Player " player " stands in game " (:id game)))))
 
 (defn- check-game-state [game state]
   (when-not (= state (get game :state)) 
-    (throw (RuntimeException. (str "Game " (:id game) " is not in state " state)))))
+    (shared/raise-domain-exception (str "Game " (:id game) " is not in state " state))))
 
 (defn- check-player-can-act [game player]
   (check-not-out-of-turn game player)
@@ -97,7 +97,7 @@
   "Player hits"
   (check-player-can-act game player)
   (let [[card deck] (draw (game :deck))]
-    (publish-event {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
+    (events/publish-event {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
     (-> game
         (update-in [:players player :cards] #(cons card %))
         (assoc :deck deck)
@@ -107,7 +107,7 @@
 (defn deal-initial-cards [game]
   "Deals initial cards"
   (check-game-state game :initialized)
-  (publish-event {:game-id (:id game) :type :game-started-event})
+  (events/publish-event {:game-id (:id game) :type :game-started-event})
   (let [dealer (get game :dealer)
         player (get game :player)]
     (-> game
@@ -121,25 +121,40 @@
 (defn stand [game player]
   "Player stands"
   (check-player-can-act game player)
-  (publish-event {:game-id (:id game) :player player :type :player-stands-event})
-  (-> game
-    (assoc-in [:players player :state] :stand)
-    (assoc :last-to-act player)))
+  (events/publish-event {:game-id (:id game) :player player :type :player-stands-event})
+  (let [updated-game (-> game
+                       (assoc-in [:players player :state] :stand)
+                       (assoc :last-to-act player))
+        both-stands (= :stand ((other-player game player) :state))]
+    (if-not both-stands
+      updated-game
+      (finish-game game (winner-of game)))))
 
-(defn get-winner [game]
-  (let [player-score (score (game :player))
-        dealer-score (score (game :dealer))]
-    (if (> player-score (score (game :dealer))))))
+(defn winner-of [game]
+  (let [player (game :player)
+        dealer (game :dealer)
+        get-score (fn [p] (score game p)) ;;a closure
+        get-diff-from-target (fn [p] (- (get-score p) target))
+        player-diff-from-target (get-diff-from-target player)]
+    (if (or (pos? player-diff-from-target)
+             (> player-diff-from-target (get-diff-from-target dealer)))
+             dealer
+             player)))
 
 ;;===================== TESTS ==========================
-(def g (new-game 1 2))
+(def g (new-game :john :jane))
+(defn run-test-game []
+  (-> g
+          (deal-initial-cards)
+          (stand :jane)
+          (stand :john)))
+
 (def g2 (-> g
           (deal-initial-cards)
-          (hit 2)
-          (hit 1)
-          (hit 2)
-          (hit 1)))
-
+          (hit :jane)
+          (hit :john)
+          (hit :jane)
+          (hit :john)))
 
 (deftest hit-test)
 
