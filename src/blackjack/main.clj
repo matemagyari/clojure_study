@@ -16,3 +16,5 @@
 
 (e/flush-events-with (eh/event-handlers))  
 
+(def game-repo (gr/get-game-repository))
+(def the-game (gr/get-game game-repo))

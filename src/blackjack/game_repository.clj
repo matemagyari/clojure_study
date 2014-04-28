@@ -12,7 +12,7 @@
   "Finds game by id"
   (game-id @game-repository))
 
-(defn get-repository []
+(defn old-get-repository []
   "Game Repository functions"
   {:save save-game
    :get get-game})
@@ -23,7 +23,7 @@
 
 (defrecord InMemoryGameRepository []
   GameRepository
-  (get-game [this game-id] (game-id @game-repository))
+  (get-game [this game-id] (get @game-repository game-id))
   (save-game [this game] (dosync 
                            (alter game-repository into {(game :id) game}))))
 

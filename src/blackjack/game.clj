@@ -144,20 +144,20 @@
 
 
 ;;===================== TESTS ==========================
-(def g (new-game 1 :john :jane))
-(defn run-test-game []
-  (-> g
-          (deal-initial-cards)
-          (stand :jane)
-          (stand :john)))
+;(def g (new-game 1 :john :jane))
+;(defn run-test-game []
+;  (-> g
+;          (deal-initial-cards)
+;          (stand :jane)
+;          (stand :john)))
 
-(def g2 (-> g
-          (deal-initial-cards)
-          (hit :jane)
-          (hit :john)
-          (hit :jane)
-          (hit :john)))
+;(def g2 (-> g
+;          (deal-initial-cards)
+;          (hit :jane)
+;          (hit :john)
+;          (hit :jane)
+;          (hit :john)))
 
-(deftest hit-test)
+;(deftest hit-test)
 
-(run-tests 'blackjack.game)
+;(run-tests 'blackjack.game)
