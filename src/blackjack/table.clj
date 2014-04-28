@@ -24,6 +24,7 @@
 
 (defn- table-is-full-event [table]
   { :table-id (table :id)
+    :players (table :players)
     :type :table-is-full-event})
 
 (defn sit [table player]
@@ -32,8 +33,8 @@
   (check-player-not-seated-yet table player)
   (let [updated-table (update-in table [:players] conj player)]
     (events/publish-event (table-seating-changed-event updated-table))
-    (when (is-full table)
-      (events/publish-event (table-is-full-event table)))
+    (when (is-full updated-table)
+      (events/publish-event (table-is-full-event updated-table)))
     updated-table))
 
 (defn clear-table [table]

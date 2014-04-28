@@ -3,29 +3,33 @@
 
 (def game-repository (ref {}))
 
-(defn- save [game]
+(defn- save-game [game]
   "Saves the game"
   (dosync 
     (into game-repository {(game :id) game})))
 
-(defn- get [game-id]
+(defn- get-game [game-id]
   "Finds game by id"
   (game-id @game-repository))
 
 (defn get-repository []
   "Game Repository functions"
-  {:save save
-   :get get})
+  {:save save-game
+   :get get-game})
 
 (defprotocol GameRepository
-  (get [this game-id])
-  (save [this game]))
+  (get-game [this game-id])
+  (save-game [this game]))
 
-(defrecord InMemoryGameRepository
+(defrecord InMemoryGameRepository []
   GameRepository
-  (get [this game-id] (game-id @game-repository))
-  (save [this game] (dosync 
-                      (alter game-repository into {(game :id) game}))))
+  (get-game [this game-id] (game-id @game-repository))
+  (save-game [this game] (dosync 
+                           (alter game-repository into {(game :id) game}))))
+
+(defn get-game-repository []
+  "Returns the Game Repository"
+  (InMemoryGameRepository.))
 
 
 

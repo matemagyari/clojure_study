@@ -37,9 +37,11 @@
   "Draws the top card, returning the card and the remaining deck"
   [(first deck) (rest deck)])
 
-(defn new-game [dealer player]
+(defn new-game [table-id dealer player]
   "Creates a new Game structure"
-  { :players { player { :cards #{} }
+  (println (str "TID: " table-id "  dealer " dealer " player " player))
+  { :table-id table-id
+    :players { player { :cards #{} }
                dealer { :cards #{} 
                         :role :dealer}}
     :player player
@@ -117,6 +119,16 @@
       (hit player)
       (hit dealer))))
 
+(defn winner-of [game]
+  (let [player (game :player)
+        dealer (game :dealer)
+        get-score (fn [p] (score game p)) ;;a closure
+        get-diff-from-target (fn [p] (- (get-score p) target))
+        player-diff-from-target (get-diff-from-target player)]
+    (if (or (pos? player-diff-from-target)
+             (> player-diff-from-target (get-diff-from-target dealer)))
+             dealer
+             player)))
 
 (defn stand [game player]
   "Player stands"
@@ -130,19 +142,9 @@
       updated-game
       (finish-game game (winner-of game)))))
 
-(defn winner-of [game]
-  (let [player (game :player)
-        dealer (game :dealer)
-        get-score (fn [p] (score game p)) ;;a closure
-        get-diff-from-target (fn [p] (- (get-score p) target))
-        player-diff-from-target (get-diff-from-target player)]
-    (if (or (pos? player-diff-from-target)
-             (> player-diff-from-target (get-diff-from-target dealer)))
-             dealer
-             player)))
 
 ;;===================== TESTS ==========================
-(def g (new-game :john :jane))
+(def g (new-game 1 :john :jane))
 (defn run-test-game []
   (-> g
           (deal-initial-cards)
