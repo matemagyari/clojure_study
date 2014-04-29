@@ -12,5 +12,8 @@
   "Collection contains target?"
   (some #(= target %) coll))
 
+(defn println-a-str [& args]
+  (println (apply str args)))
+
 
 

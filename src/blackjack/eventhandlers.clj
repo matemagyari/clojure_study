@@ -14,23 +14,23 @@
 
 (defn- player-card-dealt-handler []
   (create-handler [:player-card-dealt-event]
-                  (fn [event] (println (str "CardsDealt! " event)))))
+                  (fn [event] (println "CardsDealt! " event))))
 
 (defn- table-is-full-handler []
   (create-handler [:table-is-full-event] 
-                  (fn [event] (let [repo (gr/get-game-repository)
-                                    players (event :players)
+                  (fn [event] (let [players (event :players)
                                     dealer (first players)
                                     player (last players)
                                     game (g/new-game (event :table-id) dealer player)
                                     started-game (g/deal-initial-cards game)]
-                                (gr/save-game repo started-game)))))
+                                (println "Started the game")
+                                (gr/save-game gr/game-repository started-game)))))
 
 (defn- game-finished-event-table-clear-handler [] 
   (create-handler [:game-finished-event]
                   (fn [event] (let [repo (tr/get-table-repository)
                                     table (tr/get-table repo (event :table-id))
-                                    updated-table (t/clear table)]
+                                    updated-table (t/clear-table table)]
                                 (tr/save-table repo updated-table)))))
 
 (defn- game-finished-event-player-update-handler [] 
@@ -42,11 +42,11 @@
 
 (defn- game-started-event-handler [] 
   (create-handler [:game-started-event]
-                  (fn [event] (println (str "Game started event! " event)))))
+                  (fn [event] (println "Game started event! " event))))
 
 (defn- game-event-handler [] 
   (create-handler [:game-started-event :game-finished-event]
-                  (fn [event] (println (str "Game event! " event)))))
+                  (fn [event] (println "Game event! " event))))
 
 (defn event-handlers []
   "Returns a list of event handlers"

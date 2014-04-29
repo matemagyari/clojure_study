@@ -39,7 +39,6 @@
 
 (defn new-game [table-id dealer player]
   "Creates a new Game structure"
-  (println (str "TID: " table-id "  dealer " dealer " player " player))
   { :table-id table-id
     :players { player { :cards #{} }
                dealer { :cards #{} 

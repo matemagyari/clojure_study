@@ -1,21 +1,7 @@
 (ns blackjack.game-repository
     (:require [blackjack.shared :as shared]))
 
-(def game-repository (ref {}))
-
-(defn- save-game [game]
-  "Saves the game"
-  (dosync 
-    (into game-repository {(game :id) game})))
-
-(defn- get-game [game-id]
-  "Finds game by id"
-  (game-id @game-repository))
-
-(defn old-get-repository []
-  "Game Repository functions"
-  {:save save-game
-   :get get-game})
+(def game-map (ref {}))
 
 (defprotocol GameRepository
   (get-game [this game-id])
@@ -23,13 +9,11 @@
 
 (defrecord InMemoryGameRepository []
   GameRepository
-  (get-game [this game-id] (get @game-repository game-id))
+  (get-game [this game-id] (get @game-map game-id))
   (save-game [this game] (dosync 
-                           (alter game-repository into {(game :id) game}))))
+                           (alter game-map into {(game :id) game}))))
 
-(defn get-game-repository []
-  "Returns the Game Repository"
-  (InMemoryGameRepository.))
+(def game-repository (InMemoryGameRepository.))
 
 
 
