@@ -15,17 +15,14 @@
 
 (defn flush-events-with! [event-handlers]
   "Flushes event bus"
-  (println "FLUSHING----------------------------------------------------")
-  (dosync
-    (while (not-empty @event-buffer)
-      (println "COUNT" (count "@event-buffer"))
-      (let [event (first @event-buffer)
-            match-with? (fn [handler] ((handler :match-fn) event))
-            handle-event-with (fn [handler] ((handler :do-fn) event))]
-        (doseq [event-handler event-handlers
-             :when (match-with? event-handler)]
-          (handle-event-with event-handler))
-        (alter event-buffer rest)))))
-
+  (println "FLUSHING---------" @event-buffer)
+  (let [events @event-buffer]
+    (reset-event-bus!)
+    (doseq [event events
+            handler event-handlers]
+      (when ((handler :match-fn) event)
+        (reset-event-bus!)
+        ((handler :do-fn) event)
+        (flush-events-with! event-handlers)))))
 
 ;;(blackjack.events/flush-events-with (blackjack.eventhandlers/event-handlers))

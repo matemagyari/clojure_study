@@ -23,8 +23,7 @@
                                     player (last players)
                                     game (g/new-game (event :table-id) dealer player)
                                     started-game (g/deal-initial-cards game)]
-                                (println "Started the game")
-                                (gr/save-game gr/game-repository started-game)))))
+                                (gr/save-game! gr/game-repository started-game)))))
 
 (defn- game-finished-event-table-clear-handler [] 
   (create-handler [:game-finished-event]

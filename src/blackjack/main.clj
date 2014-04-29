@@ -8,6 +8,7 @@
             [blackjack.player :as p]))
 
 (e/reset-event-bus!)
+(gr/clear! gr/game-repository)
 
 (def p1 :Joe)
 (def p2 :Jane)
@@ -16,6 +17,8 @@
           (t/sit p1)
           (t/sit p2)))
 
-(e/flush-events-with! (eh/event-handlers))  
+(e/flush-events-with! (eh/event-handlers)) 
+
+;;(println gr/game-repository)
 
 ;;(def the-game (gr/get-game game-repo))
