@@ -1,30 +1,25 @@
 (ns blackjack.table-repository
     (:require [blackjack.shared :as shared]))
 
-(def table-repository (ref {}))
-
-(defn- save-table [table]
-  "Saves the table"
-  (dosync 
-    (into table-repository {(table :id) table})))
-
-(defn- get-table [table-id]
-  "Finds table by id"
-  (table-id @table-repository))
+(def table-map (ref {}))
 
 (defprotocol TableRepository
+  (clear! [this])
   (get-table [this table-id])
-  (save-table [this table]))
+  (get-tables [this])
+  (save-table! [this table]))
 
 (defrecord InMemoryTableRepository []
   TableRepository
-  (get-table [this table-id] (get @table-repository table-id))
-  (save-table [this table] (dosync 
-                           (alter table-repository into {(table :id) table}))))
+  (clear! [this] (dosync 
+                   (ref-set table-map {})))
+  (get-table [this table-id] (get @table-map table-id))
+  (get-tables [this] (vals @table-map))
+  (save-table! [this table] 
+    (dosync
+      (alter table-map into {(table :id) table}))))
 
-(defn get-table-repository []
-  "Returns the Table Repository"
-  (InMemoryTableRepository.))
+(def table-repository (InMemoryTableRepository.))
 
 
 

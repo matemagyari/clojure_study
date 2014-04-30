@@ -27,17 +27,18 @@
 
 (defn- game-finished-event-table-clear-handler [] 
   (create-handler [:game-finished-event]
-                  (fn [event] (let [repo (tr/get-table-repository)
+                  (fn [event] (let [repo tr/table-repository
                                     table (tr/get-table repo (event :table-id))
                                     updated-table (t/clear-table table)]
-                                (tr/save-table repo updated-table)))))
+                                (tr/save-table! repo updated-table)))))
 
 (defn- game-finished-event-player-update-handler [] 
   (create-handler [:game-finished-event]
                   (fn [event] (let [repo (pr/get-player-repository)
                                     player (pr/get-player repo (event :player-id))
                                     updated-player (p/record-win player)]
-                                (pr/save-player repo updated-player)))))
+                                (println "++++++++++++++++++++++++++++++++++")
+                                (pr/save-player! repo updated-player)))))
 
 (defn- game-started-event-handler [] 
   (create-handler [:game-started-event]

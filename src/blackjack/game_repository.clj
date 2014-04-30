@@ -6,6 +6,7 @@
 (defprotocol GameRepository
   (clear! [this])
   (get-game [this game-id])
+  (get-games [this])
   (save-game! [this game]))
 
 (defrecord InMemoryGameRepository []
@@ -13,6 +14,7 @@
   (clear! [this] (dosync 
                    (ref-set game-map {})))
   (get-game [this game-id] (get @game-map game-id))
+  (get-games [this] (vals @game-map))
   (save-game! [this game] 
     (dosync
       (alter game-map into {(game :id) game}))))

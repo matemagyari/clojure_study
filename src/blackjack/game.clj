@@ -8,6 +8,13 @@
 ;;(clojure.tools.trace/trace-ns blackjack.game)
 ;;(trace-ns blackjack.game)
 
+(defn player-with-role [game role]
+  (let [filter-fn (fn [entry]
+                    (= (get-in (second entry) [:role]) role))
+        entry (filter filter-fn (game :players))]
+    (first entry)))
+
+
 (def target 21)
 (def suites [:club :heart :spade :diamond])
 (def rank-values (array-map 
@@ -37,14 +44,13 @@
   "Draws the top card, returning the card and the remaining deck"
   [(first deck) (rest deck)])
 
-(defn new-game [table-id dealer player]
+(defn new-game [table-id dealer-id player-id]
   "Creates a new Game structure"
   { :table-id table-id
-    :players { player { :cards #{} }
-               dealer { :cards #{} 
-                        :role :dealer}}
-    :player player
-    :dealer dealer
+    :players { player-id { :cards #{} 
+                           :role :player}
+               dealer-id { :cards #{}
+                           :role :dealer}}
     :state :initialized
     :id (shared/generate-id)
     :deck (new-deck)})
@@ -67,9 +73,9 @@
   (assoc game :state :finished))
 
 (defn- other-player [game player]
-  (if (= (get game :player) player)
-    (get game :dealer)
-    (get game :player)))
+  (if (= (player-with-role game :player) player)
+    (player-with-role game :dealer)
+    player))
 
 (defn- hit-after [game player]
   "Do things after player hits"
@@ -78,7 +84,7 @@
     game))
 
 (defn- check-not-out-of-turn [game player]
-  (when (= player (:last-to-act game)) 
+  (when (= (player :id) (:last-to-act game)) 
     (shared/raise-domain-exception (str "Player " player " acts out of turn in game " (:id game)))))
 
 (defn- check-player-not-stand [game player]
@@ -102,7 +108,7 @@
     (-> game
         (update-in [:players player :cards] #(cons card %))
         (assoc :deck deck)
-        (assoc :last-to-act player)
+        (assoc :last-to-act (player :id))
         (hit-after player))))
 
 (defn deal-initial-cards [game]
@@ -135,8 +141,9 @@
   (events/publish-event {:game-id (:id game) :player player :type :player-stands-event})
   (let [updated-game (-> game
                        (assoc-in [:players player :state] :stand)
-                       (assoc :last-to-act player))
+                       (assoc :last-to-act (player :id)))
         both-stands (= :stand ((other-player game player) :state))]
+    (println "BOOOOTH" both-stands player (other-player game player))
     (if-not both-stands
       updated-game
       (finish-game game (winner-of game)))))
