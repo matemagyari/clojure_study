@@ -34,7 +34,7 @@
 
 (defn- game-finished-event-player-update-handler [] 
   (create-handler [:game-finished-event]
-                  (fn [event] (let [repo (pr/get-player-repository)
+                  (fn [event] (let [repo (pr/player-repository)
                                     player (pr/get-player repo (event :player-id))
                                     updated-player (p/record-win player)]
                                 (println "++++++++++++++++++++++++++++++++++")

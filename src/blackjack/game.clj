@@ -12,6 +12,9 @@
   (let [filter-fn (fn [entry]
                     (= (get-in (second entry) [:role]) role))
         entry (filter filter-fn (game :players))]
+    (println "player-with-role0" (game :players))
+    (println "player-with-role1" entry)
+    (println "player-with-role2" (first entry))
     (first entry)))
 
 
@@ -46,6 +49,9 @@
 
 (defn new-game [table-id dealer-id player-id]
   "Creates a new Game structure"
+  {:pre [ (integer? dealer-id) (string? player-id) ]
+   :post [#(integer? %)]}
+  (println "xxx player" player-id)
   { :table-id table-id
     :players { player-id { :cards #{} 
                            :role :player}
@@ -84,7 +90,7 @@
     game))
 
 (defn- check-not-out-of-turn [game player]
-  (when (= (player :id) (:last-to-act game)) 
+  (when (= player (:last-to-act game)) 
     (shared/raise-domain-exception (str "Player " player " acts out of turn in game " (:id game)))))
 
 (defn- check-player-not-stand [game player]
@@ -108,15 +114,15 @@
     (-> game
         (update-in [:players player :cards] #(cons card %))
         (assoc :deck deck)
-        (assoc :last-to-act (player :id))
+        (assoc :last-to-act player)
         (hit-after player))))
 
 (defn deal-initial-cards [game]
   "Deals initial cards"
   (check-game-state game :initialized)
   (events/publish-event {:game-id (:id game) :type :game-started-event})
-  (let [dealer (get game :dealer)
-        player (get game :player)]
+  (let [dealer (player-with-role game :dealer)
+        player (player-with-role game :player)]
     (-> game
       (assoc :state :started)
       (hit player)
@@ -125,8 +131,8 @@
       (hit dealer))))
 
 (defn winner-of [game]
-  (let [player (game :player)
-        dealer (game :dealer)
+  (let [player (player-with-role game :player)
+        dealer (player-with-role game :dealer)
         get-score (fn [p] (score game p)) ;;a closure
         get-diff-from-target (fn [p] (- (get-score p) target))
         player-diff-from-target (get-diff-from-target player)]
@@ -141,7 +147,7 @@
   (events/publish-event {:game-id (:id game) :player player :type :player-stands-event})
   (let [updated-game (-> game
                        (assoc-in [:players player :state] :stand)
-                       (assoc :last-to-act (player :id)))
+                       (assoc :last-to-act player))
         both-stands (= :stand ((other-player game player) :state))]
     (println "BOOOOTH" both-stands player (other-player game player))
     (if-not both-stands
