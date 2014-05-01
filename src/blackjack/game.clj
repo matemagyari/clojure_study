@@ -9,13 +9,12 @@
 ;;(trace-ns blackjack.game)
 
 (defn player-with-role [game role]
-  (let [filter-fn (fn [entry]
-                    (= (get-in (second entry) [:role]) role))
-        entry (filter filter-fn (game :players))]
-    (println "player-with-role0" (game :players))
-    (println "player-with-role1" entry)
-    (println "player-with-role2" (first entry))
-    (first entry)))
+  {:pre [ (string? (first (keys (game :players)))) ]
+   :post [#(integer? %)]}
+  (let [filter-fn (fn [[key val]]
+                    (= (get-in val [:role]) role))
+        [[key val]] (filter filter-fn (game :players))]
+    key))
 
 
 (def target 21)
@@ -48,9 +47,8 @@
   [(first deck) (rest deck)])
 
 (defn new-game [table-id dealer-id player-id]
+  {:pre [ (string? dealer-id) (string? player-id) ]}
   "Creates a new Game structure"
-  {:pre [ (integer? dealer-id) (string? player-id) ]
-   :post [#(integer? %)]}
   (println "xxx player" player-id)
   { :table-id table-id
     :players { player-id { :cards #{} 
@@ -107,6 +105,7 @@
   (check-game-state game :started))
 
 (defn hit [game player]
+  {:pre [ (string? player) ]}
   "Player hits"
   (check-player-can-act game player)
   (let [[card deck] (draw (game :deck))]
@@ -142,14 +141,18 @@
              player)))
 
 (defn stand [game player]
+  {:pre [ (string? player) ]}
   "Player stands"
   (check-player-can-act game player)
   (events/publish-event {:game-id (:id game) :player player :type :player-stands-event})
   (let [updated-game (-> game
                        (assoc-in [:players player :state] :stand)
                        (assoc :last-to-act player))
-        both-stands (= :stand ((other-player game player) :state))]
-    (println "BOOOOTH" both-stands player (other-player game player))
+        other (other-player game player)
+        both-stands (= :stand (get-in game [:players other :state]))]
+    (println "other" other)
+    (println "stands" (get-in game [:players other :state]))
+    (println "game" (get-in game [:players]))
     (if-not both-stands
       updated-game
       (finish-game game (winner-of game)))))

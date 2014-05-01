@@ -37,7 +37,7 @@
              (g/stand p1)
              (g/stand p2)))
 
-;(e/flush-events-with! (eh/event-handlers)) 
+(e/flush-events-with! (eh/event-handlers)) 
 
 ;;(g/player-with-role game :dealer)
 
