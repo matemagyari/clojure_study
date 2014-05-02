@@ -76,7 +76,9 @@
   (events/publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
   (assoc game :state :finished))
 
-(defn- other-player [game player]
+(defn other-player [game player]
+  {:pre [ (string? player) ]
+   :post [ #(not (nil? %)) #(not= player %)] }
   (if (= (player-with-role game :player) player)
     (player-with-role game :dealer)
     player))
@@ -150,6 +152,7 @@
                        (assoc :last-to-act player))
         other (other-player game player)
         both-stands (= :stand (get-in game [:players other :state]))]
+    (println "player" player)
     (println "other" other)
     (println "stands" (get-in game [:players other :state]))
     (println "game" (get-in game [:players]))
