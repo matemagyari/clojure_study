@@ -1,20 +1,24 @@
-(ns blackjack.eventhandlers
-  (:require [blackjack.events :as events]
-            [blackjack.shared :as shared]
-            [blackjack.game-repository :as gr]
-            [blackjack.table-repository :as tr]
-            [blackjack.player-repository :as pr]
-            [blackjack.player :as p]
-            [blackjack.table :as t]
-            [blackjack.game :as g]))
+(ns blackjack.app.eventhandlers
+  (:require [blackjack.app.eventbus :as events]
+            [blackjack.util.shared :as shared]
+            [blackjack.config.registry :as r]
+            [blackjack.domain.player.player-repository :as pr]
+            [blackjack.domain.player.player :as p]
+            [blackjack.domain.table.table-repository :as tr]
+            [blackjack.domain.table.table :as t]
+            [blackjack.domain.game.game-repository :as gr]
+            [blackjack.domain.game.game :as g]))
 
 (defn- create-handler [[& types-to-match] do-fn]
     { :match-fn (fn [event] (shared/seq-contains? types-to-match (event :type)))
       :do-fn do-fn })
 
+(def external-bus-sender
+  (fn [event] (events/publish! r/external-event-bus event)))
+
 (defn- player-card-dealt-handler []
   (create-handler [:player-card-dealt-event]
-                  (fn [event] (println "CardsDealt! " event))))
+                  external-bus-sender))
 
 (defn- table-is-full-handler []
   (create-handler [:table-is-full-event] 
@@ -23,30 +27,29 @@
                                     player (last players)
                                     game (g/new-game (event :table-id) dealer player)
                                     started-game (g/deal-initial-cards game)]
-                                (gr/save-game! gr/game-repository started-game)))))
+                                (gr/save-game! r/game-repository started-game)))))
 
 (defn- game-finished-event-table-clear-handler [] 
   (create-handler [:game-finished-event]
-                  (fn [event] (let [repo tr/table-repository
+                  (fn [event] (let [repo r/table-repository
                                     table (tr/get-table repo (event :table-id))
                                     updated-table (t/clear-table table)]
                                 (tr/save-table! repo updated-table)))))
 
 (defn- game-finished-event-player-update-handler [] 
   (create-handler [:game-finished-event]
-                  (fn [event] (let [repo (pr/player-repository)
-                                    player (pr/get-player repo (event :player-id))
+                  (fn [event] (let [repo r/player-repository
+                                    player (pr/get-player repo (event :winner))
                                     updated-player (p/record-win player)]
-                                (println "++++++++++++++++++++++++++++++++++")
                                 (pr/save-player! repo updated-player)))))
 
 (defn- game-started-event-handler [] 
   (create-handler [:game-started-event]
-                  (fn [event] (println "Game started event! " event))))
+                  external-bus-sender))
 
 (defn- game-event-handler [] 
   (create-handler [:game-started-event :game-finished-event]
-                  (fn [event] (println "Game event! " event))))
+                  external-bus-sender))
 
 (defn event-handlers []
   "Returns a list of event handlers"

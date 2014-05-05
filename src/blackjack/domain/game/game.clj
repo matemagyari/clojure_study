@@ -1,16 +1,16 @@
-(ns blackjack.game
-  (:require [blackjack.events :as events]
-            [blackjack.shared :as shared]
+(ns blackjack.domain.game.game
+  (:require [blackjack.app.eventbus :as events]
+            [blackjack.util.shared :as shared]
             [clojure.test :as t]
             [clojure.tools.trace :as tr]))
 
 ;;(use 'clojure.tools.trace)
-;;(clojure.tools.trace/trace-ns blackjack.game)
-;;(trace-ns blackjack.game)
+;;(clojure.tools.trace/trace-ns blackjack.domain.game)
+;;(trace-ns blackjack.domain.game)
 
 (defn player-with-role [game role]
   {:pre [ (string? (first (keys (game :players)))) ]
-   :post [#(integer? %)]}
+   :post [(string? %)]}
   (let [filter-fn (fn [[key val]]
                     (= (get-in val [:role]) role))
         [[key val]] (filter filter-fn (game :players))]
@@ -49,7 +49,6 @@
 (defn new-game [table-id dealer-id player-id]
   {:pre [ (string? dealer-id) (string? player-id) ]}
   "Creates a new Game structure"
-  (println "xxx player" player-id)
   { :table-id table-id
     :players { player-id { :cards #{} 
                            :role :player}
@@ -73,15 +72,15 @@
   (score-hand (get-in game [:players player :cards])))
 
 (defn- finish-game [game winner]
-  (events/publish-event {:game-id (:id game) :winner winner :type :game-finished-event})
+  (events/publish-event {:game-id (:id game) :table-id (:table-id game) :winner winner :type :game-finished-event})
   (assoc game :state :finished))
 
 (defn other-player [game player]
   {:pre [ (string? player) ]
-   :post [ #(not (nil? %)) #(not= player %)] }
-  (if (= (player-with-role game :player) player)
-    (player-with-role game :dealer)
-    player))
+   :post [ (string? %) (not= player %)] }
+  (let [the-player (player-with-role game :player)
+        the-dealer (player-with-role game :dealer)]
+    (if (= the-player player) the-dealer the-player )))
 
 (defn- hit-after [game player]
   "Do things after player hits"
@@ -152,30 +151,7 @@
                        (assoc :last-to-act player))
         other (other-player game player)
         both-stands (= :stand (get-in game [:players other :state]))]
-    (println "player" player)
-    (println "other" other)
-    (println "stands" (get-in game [:players other :state]))
-    (println "game" (get-in game [:players]))
     (if-not both-stands
       updated-game
       (finish-game game (winner-of game)))))
 
-
-;;===================== TESTS ==========================
-;(def g (new-game 1 :john :jane))
-;(defn run-test-game []
-;  (-> g
-;          (deal-initial-cards)
-;          (stand :jane)
-;          (stand :john)))
-
-;(def g2 (-> g
-;          (deal-initial-cards)
-;          (hit :jane)
-;          (hit :john)
-;          (hit :jane)
-;          (hit :john)))
-
-;(deftest hit-test)
-
-;(run-tests 'blackjack.game)

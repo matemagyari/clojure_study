@@ -1,4 +1,4 @@
-(ns blackjack.events)
+(ns blackjack.app.eventbus)
 
 (def event-buffer (ref []))
 
@@ -25,4 +25,5 @@
         ((handler :do-fn) event)
         (flush-events-with! event-handlers)))))
 
-;;(blackjack.events/flush-events-with (blackjack.eventhandlers/event-handlers))
+(defprotocol ExternalEventBus
+  (publish! [this event]))

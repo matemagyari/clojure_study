@@ -1,19 +1,20 @@
 (ns blackjack.main
-  (:require [blackjack.events :as e]
-            [blackjack.eventhandlers :as eh]
-            [blackjack.shared :as shared]
-            [blackjack.game-repository :as gr]
-            [blackjack.table-repository :as tr]
-            [blackjack.player-repository :as pr]
-            [blackjack.game :as g]
-            [blackjack.table :as t]
-            [blackjack.player :as p]
+  (:require [blackjack.app.eventbus :as e]
+            [blackjack.app.eventhandlers :as eh]
+            [blackjack.util.shared :as shared]
+            [blackjack.config.registry :as r]
+            [blackjack.domain.player.player-repository :as pr]
+            [blackjack.domain.player.player :as p]
+            [blackjack.domain.game.game :as g]
+            [blackjack.domain.game.game-repository :as gr]
+            [blackjack.domain.table.table :as t]
+            [blackjack.domain.table.table-repository :as tr]
             [clojure.tools.trace :as trace]))
 
 (e/reset-event-bus!)
-(gr/clear! gr/game-repository)
-(pr/clear! pr/player-repository)
-(tr/clear! tr/table-repository)
+(gr/clear! r/game-repository)
+(pr/clear! r/player-repository)
+(tr/clear! r/table-repository)
 
 (def player1 (p/create-player "Joe"))
 (def player2 (p/create-player "Jane"))
@@ -21,17 +22,21 @@
 (def p1 (player1 :id))
 (def p2 (player2 :id))
 
-(pr/save-player! pr/player-repository player1)
-(pr/save-player! pr/player-repository player2)
+(pr/save-player! r/player-repository player1)
+(pr/save-player! r/player-repository player2)
 
 (def t (t/create-new-table))
+(tr/save-table! r/table-repository t)
+
 (def t1 (-> t
           (t/sit p1)
           (t/sit p2)))
 
+(tr/save-table! r/table-repository t)
+
 (e/flush-events-with! (eh/event-handlers)) 
 
-(def game (first (gr/get-games gr/game-repository)))
+(def game (first (gr/get-games r/game-repository)))
 
 (def game1 (-> game
              (g/stand p1)

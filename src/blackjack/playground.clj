@@ -1,4 +1,4 @@
-(ns blackjack.playerground)
+(ns blackjack.domain.playerground)
 
 (def ^:dynamic buffer (rand 12))
 (dotimes [n 5]

@@ -1,6 +1,6 @@
-(ns blackjack.table
-  (:require [blackjack.events :as events]
-            [blackjack.shared :as shared]))
+(ns blackjack.domain.table.table
+  (:require [blackjack.app.eventbus :as events]
+            [blackjack.util.shared :as shared]))
 
 (defn- is-full [table]
   (= 2 (count (table :players))))

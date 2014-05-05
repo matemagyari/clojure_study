@@ -1,5 +1,5 @@
-(ns blackjack.player
-    (:require [blackjack.shared :as shared]))
+(ns blackjack.domain.player.player
+    (:require [blackjack.util.shared :as shared]))
 
 (defn create-player [name]
   "Creates a new player"
@@ -8,5 +8,5 @@
    :win-number 0})
 
 (defn record-win [player]
-  "Recors one more win"
+  "Records one more win"
   (update-in player [:win-number] inc))

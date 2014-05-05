@@ -1,4 +1,4 @@
-(ns blackjack.shared)
+(ns blackjack.util.shared)
 
 (defn generate-id []
   "Generate a new uuid"
@@ -11,9 +11,6 @@
 (defn seq-contains? [coll target] 
   "Collection contains target?"
   (some #(= target %) coll))
-
-(defn println-a-str [& args]
-  (println (apply str args)))
 
 
 
