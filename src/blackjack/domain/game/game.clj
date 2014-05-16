@@ -8,9 +8,12 @@
 ;;(clojure.tools.trace/trace-ns blackjack.domain.game)
 ;;(trace-ns blackjack.domain.game)
 
+(defn- is-player-id? [player-id]
+  (string? player-id))
+
 (defn player-with-role [game role]
-  {:pre [ (string? (first (keys (game :players)))) ]
-   :post [(string? %)]}
+  {:pre [ (is-player-id? (first (keys (game :players)))) ]
+   :post [(is-player-id? %)]}
   (let [filter-fn (fn [[key val]]
                     (= (get-in val [:role]) role))
         [[key val]] (filter filter-fn (game :players))]
@@ -35,7 +38,8 @@
                   :A 11))
 (def ranks (keys rank-values))
 
-(defn- new-deck []
+(defn new-deck []
+  ;;{:post [= (count %) 52]}
   "Creates a new shuffled deck"
   (shuffle 
     (for [suite suites
@@ -43,11 +47,12 @@
       [suite rank])))
 
 (defn- draw [deck]
+  {:pre [(not-empty deck)]}
   "Draws the top card, returning the card and the remaining deck"
   [(first deck) (rest deck)])
 
 (defn new-game [table-id dealer-id player-id]
-  {:pre [ (string? dealer-id) (string? player-id) ]}
+  {:pre [ (is-player-id? dealer-id) (is-player-id? player-id) ]}
   "Creates a new Game structure"
   { :table-id table-id
     :players { player-id { :cards #{} 
@@ -76,8 +81,8 @@
   (assoc game :state :finished))
 
 (defn other-player [game player]
-  {:pre [ (string? player) ]
-   :post [ (string? %) (not= player %)] }
+  {:pre [ (is-player-id? player) ]
+   :post [ (is-player-id? %) (not= player %)] }
   (let [the-player (player-with-role game :player)
         the-dealer (player-with-role game :dealer)]
     (if (= the-player player) the-dealer the-player )))
@@ -106,7 +111,7 @@
   (check-game-state game :started))
 
 (defn hit [game player]
-  {:pre [ (string? player) ]}
+  {:pre [ (is-player-id? player) ]}
   "Player hits"
   (check-player-can-act game player)
   (let [[card deck] (draw (game :deck))]
@@ -142,7 +147,7 @@
              player)))
 
 (defn stand [game player]
-  {:pre [ (string? player) ]}
+  {:pre [ (is-player-id? player) ]}
   "Player stands"
   (check-player-can-act game player)
   (events/publish-event {:game-id (:id game) :player player :type :player-stands-event})
