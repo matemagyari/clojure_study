@@ -4,7 +4,7 @@
 
 (defn publish-event [event]
   "Publishes an event to the event bus"
-  (println event)
+  ;(println event)
   (dosync
     (alter event-buffer conj event)))
 
@@ -15,7 +15,7 @@
 
 (defn flush-events-with! [event-handlers]
   "Flushes event bus"
-  (println "FLUSHING---------" @event-buffer)
+  ;(println "FLUSHING---------" @event-buffer)
   (let [events @event-buffer]
     (reset-event-bus!)
     (doseq [event events

@@ -1,6 +1,6 @@
 (ns blackjack.domain.game.game
   (:require [blackjack.app.eventbus :as events]
-            [blackjack.util.shared :as shared]
+            [blackjack.util.shared :as s]
             [clojure.test :as t]
             [clojure.tools.trace :as tr]))
 
@@ -39,7 +39,7 @@
 (def ranks (keys rank-values))
 
 (defn new-deck []
-  ;;{:post [= (count %) 52]}
+  {:post [(= (count %) 52)]}
   "Creates a new shuffled deck"
   (shuffle 
     (for [suite suites
@@ -60,20 +60,26 @@
                dealer-id { :cards #{}
                            :role :dealer}}
     :state :initialized
-    :id (shared/generate-id)
+    :id (s/generate-id)
     :deck (new-deck)})
 
+(defn- card-value [card]
+  {:post [(number? %)]}
+  "Value of a card"
+  ((last card) rank-values))
+
 (defn- score-hand [cards]
+  {:pre [(< 0 (count cards))]
+   :post [(number? %)]}
   "Calculates the score for the hand"
-  (let [value-fn (fn [card] ((last card) rank-values))
-        sum (reduce + (map value-fn cards))
+  (let [sum (reduce + (map card-value cards))
         ace? #(= :A (last %))
         ace-count (count (filter ace? cards))]
     (if (> ace-count 1) 
       (- sum 10)
       sum)))
 
-(defn- score [game player]
+(defn score [game player]
   (score-hand (get-in game [:players player :cards])))
 
 (defn- finish-game [game winner]
@@ -95,15 +101,15 @@
 
 (defn- check-not-out-of-turn [game player]
   (when (= player (:last-to-act game)) 
-    (shared/raise-domain-exception (str "Player " player " acts out of turn in game " (:id game)))))
+    (s/raise-domain-exception (str "Player " player " acts out of turn in game " (:id game)))))
 
 (defn- check-player-not-stand [game player]
   (when (= :stand (get-in game [:players player :state])) 
-    (shared/raise-domain-exception (str "Player " player " stands in game " (:id game)))))
+    (s/raise-domain-exception (str "Player " player " stands in game " (:id game)))))
 
 (defn- check-game-state [game state]
   (when-not (= state (get game :state)) 
-    (shared/raise-domain-exception (str "Game " (:id game) " is not in state " state))))
+    (s/raise-domain-exception (str "Game " (:id game) " is not in state " state))))
 
 (defn- check-player-can-act [game player]
   (check-not-out-of-turn game player)
@@ -123,6 +129,8 @@
         (hit-after player))))
 
 (defn deal-initial-cards [game]
+  {:pre [(= :initialized (:state game))]
+   :post [(= :started (:state %))]}
   "Deals initial cards"
   (check-game-state game :initialized)
   (events/publish-event {:game-id (:id game) :type :game-started-event})
@@ -136,15 +144,16 @@
       (hit dealer))))
 
 (defn winner-of [game]
+  {:post [(is-player-id? %)]}
   (let [player (player-with-role game :player)
         dealer (player-with-role game :dealer)
-        get-score (fn [p] (score game p)) ;;a closure
-        get-diff-from-target (fn [p] (- (get-score p) target))
-        player-diff-from-target (get-diff-from-target player)]
-    (if (or (pos? player-diff-from-target)
-             (> player-diff-from-target (get-diff-from-target dealer)))
-             dealer
-             player)))
+        player-score (score game player)
+        dealer-score (score game dealer)]
+    (cond 
+      (> player-score target) dealer
+      (> dealer-score target ) player
+      (> (s/abs player-score) (s/abs dealer-score)) player
+      :else dealer)))
 
 (defn stand [game player]
   {:pre [ (is-player-id? player) ]}

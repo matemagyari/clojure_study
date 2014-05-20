@@ -12,5 +12,11 @@
   "Collection contains target?"
   (some #(= target %) coll))
 
+(defn abs [x]
+  {:pre [(number? x)]}
+  (if (pos? x)
+    x
+    (- 0 x)))
+
 
 

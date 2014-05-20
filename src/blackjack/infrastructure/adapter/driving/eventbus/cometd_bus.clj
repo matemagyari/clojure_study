@@ -4,4 +4,6 @@
 (defrecord CometDEventBus []
   ExternalEventBus
   (publish! [this event]
-    (println "External bus" event)))
+    ;(println "External bus" event)
+    nil
+    ))
