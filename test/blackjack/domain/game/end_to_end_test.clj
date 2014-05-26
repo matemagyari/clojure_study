@@ -14,13 +14,13 @@
 (def table (t/create-new-table))
 (tr/save-table! r/table-repository table)
 
-(deftest a-full-game-test
+(deftest a-game-test
   (with-redefs [g/new-deck gt/prepared-deck-for-long-game]
     (let [table-id (:table-id table)
           player-name "Paul"
           dealer-name "Dean"
-          player-id (rs/register player-name)
-          dealer-id (rs/register dealer-name)]
+          player-id (rs/register! player-name)
+          dealer-id (rs/register! dealer-name)]
       (ss/seat-player! {:player-id dealer-id :table-id table-id})
       (ss/seat-player! {:player-id player-id :table-id table-id})
       
