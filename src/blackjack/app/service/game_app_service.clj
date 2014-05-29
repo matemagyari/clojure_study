@@ -11,6 +11,6 @@
 
 (defn handle-action! [action]
   "Handles player action"
-  (--> (gr/get-game r/game-repository (:game-id action))
-       (action-on-game (:type action) (:player action))
+  (->> (gr/get-game r/game-repository (:game-id action))
+       (action-on-game (:type action) (:player-id action))
        (gr/save-game! r/game-repository)))

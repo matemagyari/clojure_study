@@ -1,11 +1,10 @@
 (ns blackjack.config.registry
-  (:require [blackjack.util.shared :as shared])
-  (:use [blackjack.infrastructure.adapter.driving.gamerepository.in-memory])
-  (:use [blackjack.infrastructure.adapter.driving.playerrepository.in-memory])
-  (:use [blackjack.infrastructure.adapter.driving.tablerepository.in-memory])
-  (:use [blackjack.infrastructure.adapter.driving.eventbus.cometd-bus])
-  (:use [blackjack.infrastructure.adapter.driving.wallet.in-memory])
-  )
+  (:use [blackjack.util.shared :as shared]
+            [blackjack.infrastructure.adapter.driving.gamerepository.in-memory :as g]
+            [blackjack.infrastructure.adapter.driving.playerrepository.in-memory :as p]
+            [blackjack.infrastructure.adapter.driving.tablerepository.in-memory :as t]
+            [blackjack.infrastructure.adapter.driving.eventbus.cometd-bus :as e]
+            [blackjack.infrastructure.adapter.driving.wallet.in-memory :as w]))
 
 (def player-repository (->InMemoryPlayerRepository))
 (def table-repository (->InMemoryTableRepository))

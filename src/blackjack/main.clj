@@ -9,12 +9,19 @@
             [blackjack.domain.game.game-repository :as gr]
             [blackjack.domain.table.table :as t]
             [blackjack.domain.table.table-repository :as tr]
-            [clojure.tools.trace :as trace]))
+            ;;[clojure.tools.trace :as trace]
+            ))
+
+;(:import blackjack.domain.player.player_repository.PlayerRepository)
 
 (e/reset-event-bus!)
-(gr/clear! r/game-repository)
+(pr/get-players r/player-repository)
 (pr/clear! r/player-repository)
 (tr/clear! r/table-repository)
+(gr/clear! r/game-repository)
+;(w/clear! r/wallet-service)
+
+(println "here I am")
 
 (def player1 (p/create-player "Joe"))
 (def player2 (p/create-player "Jane"))
@@ -27,6 +34,8 @@
 
 (def t (t/create-new-table))
 (tr/save-table! r/table-repository t)
+
+(println "table saved" (tr/get-tables r/table-repository))
 
 (def t1 (-> t
           (t/sit p1)

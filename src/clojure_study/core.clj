@@ -181,6 +181,8 @@
 
 ;;filter
 (defn filter-minors [persons] (filter #(> 18 (:age %)) persons))
+(def john {:name "John" :age 17})
+(def jack {:name "Jack" :age 27})
 
 (assert-equals (filter-minors [john jack]) [john])
 

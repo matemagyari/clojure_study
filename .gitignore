@@ -5,4 +5,6 @@
 target/
 classes/
 .settings/
+.idea/
+FirstClojure.iml
 .git/

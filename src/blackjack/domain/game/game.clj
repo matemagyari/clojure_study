@@ -1,8 +1,7 @@
 (ns blackjack.domain.game.game
   (:require [blackjack.app.eventbus :as events]
             [blackjack.util.shared :as s]
-            [clojure.test :as t]
-            [clojure.tools.trace :as tr]))
+            [clojure.test :as t]))
 
 ;;(use 'clojure.tools.trace)
 ;;(clojure.tools.trace/trace-ns blackjack.domain.game)

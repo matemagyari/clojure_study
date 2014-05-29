@@ -4,7 +4,7 @@
             [blackjack.domain.table.table :as t]
             [blackjack.domain.table.table-repository :as tr]))
 
-(defn seat-player! [{player-id :player-id table-id :table-id}]
+(defn seat-player! [player-id table-id]
   (let [table (-> (tr/get-table r/table-repository table-id)
                 (t/sit player-id))]
     (when (s/seq-contains? (:players table) player-id)

@@ -31,7 +31,7 @@
   "Seats player to table"
   (check-table-not-full table)
   (check-player-not-seated-yet table player)
-  (let [updated-table (update-in table [:players] conj player)]
+  (let [updated-table (update-in table [:players] cons player)]
     (events/publish-event (table-seating-changed-event updated-table))
     (when (is-full updated-table)
       (events/publish-event (table-is-full-event updated-table)))

@@ -1,17 +1,18 @@
-(ns blackjack.infrastructure.adapter.driving.wallet.in-memory  
+(ns blackjack.infrastructure.adapter.driving.wallet.in-memory
   (:use [blackjack.domain.cashier.wallet-service]))
 
-(def wallet-map {})
+(def wallet-map (ref {}))
 
 (defn- execute [op player-id amount]
-  (let [wallet (player-id wallet-map)]
-      (dosync
-        (ref-set wallet op amount))))
+  (dosync
+    (alter wallet-map update-in [player-id] op amount)))
 
 (defrecord InMemoryWallet []
   WalletService
+  (clear! [this] (dosync
+                   (ref-set wallet-map {})))
   (credit! [this player-id amount] (execute + player-id amount))
   (debit! [this player-id amount] (execute - player-id amount))
   (create-account! [this player-id start-balance]
-    (assoc wallet-map
-           player-id 0)))
+    (dosync
+      (alter wallet-map assoc player-id 0))))

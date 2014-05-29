@@ -1,7 +1,7 @@
 (ns blackjack.domain.game.game-test
   (:use clojure.test
         blackjack.domain.game.game))
- 
+
 (defn prepared-deck-for-long-game []
   [[:club :2]
    [:diamond :2]
