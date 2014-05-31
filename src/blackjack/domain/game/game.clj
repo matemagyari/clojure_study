@@ -82,7 +82,7 @@
   (score-hand (get-in game [:players player :cards])))
 
 (defn- finish-game [game winner]
-  (events/publish-event {:game-id (:id game) :table-id (:table-id game) :winner winner :type :game-finished-event})
+  (events/publish-event! {:game-id (:id game) :table-id (:table-id game) :winner winner :type :game-finished-event})
   (assoc game :state :finished))
 
 (defn other-player [game player]
@@ -116,11 +116,11 @@
   (check-game-state game :started))
 
 (defn hit [game player]
-  {:pre [ (is-player-id? player) ]}
+  {:pre [ (is-player-id? player) (s/not-nil? game) ]}
   "Player hits"
   (check-player-can-act game player)
   (let [[card deck] (draw (game :deck))]
-    (events/publish-event {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
+    (events/publish-event! {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
     (-> game
         (update-in [:players player :cards] #(cons card %))
         (assoc :deck deck)
@@ -132,7 +132,7 @@
    :post [(= :started (:state %))]}
   "Deals initial cards"
   (check-game-state game :initialized)
-  (events/publish-event {:game-id (:id game) :type :game-started-event})
+  (events/publish-event! {:game-id (:id game) :type :game-started-event})
   (let [dealer (player-with-role game :dealer)
         player (player-with-role game :player)]
     (-> game
@@ -158,7 +158,7 @@
   {:pre [ (is-player-id? player) ]}
   "Player stands"
   (check-player-can-act game player)
-  (events/publish-event {:game-id (:id game) :player player :type :player-stands-event})
+  (events/publish-event! {:game-id (:id game) :player player :type :player-stands-event})
   (let [updated-game (-> game
                        (assoc-in [:players player :state] :stand)
                        (assoc :last-to-act player))

@@ -22,10 +22,39 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="blackjack" />
+        <module name="blackjack-messaging-client" />
+        <module name="blackjack-utils" />
+        <module name="blackjack-wallet" />
         <module name="FirstClojure" />
+        <module name="gamification-service" />
+        <module name="gamification-system" />
+        <module name="gamification-test" />
+        <module name="poker-buddies-system" />
+        <module name="poker-fulfilment-system" />
+        <module name="poker-notification-system" />
+        <module name="poker-player-profile-system" />
+        <module name="poker-stats-system" />
+        <module name="streaming-poker-integrity-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.6" />
+    <bytecodeTargetLevel target="1.6">
+      <module name="blackjack" target="1.6" />
+      <module name="blackjack-messaging-client" target="1.6" />
+      <module name="blackjack-parent" target="1.6" />
+      <module name="blackjack-utils" target="1.6" />
+      <module name="blackjack-wallet" target="1.5" />
+      <module name="gamification-service" target="1.6" />
+      <module name="gamification-system" target="1.6" />
+      <module name="gamification-system-parent" target="1.6" />
+      <module name="gamification-test" target="1.6" />
+      <module name="poker-buddies-system" target="1.6" />
+      <module name="poker-fulfilment-system" target="1.6" />
+      <module name="poker-notification-system" target="1.6" />
+      <module name="poker-player-profile-system" target="1.6" />
+      <module name="poker-stats-system" target="1.6" />
+      <module name="streaming-poker-integrity-service" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

@@ -12,6 +12,12 @@
   "Collection contains target?"
   (some #(= target %) coll))
 
+(defn remove-events [entity]
+  "Returns a tupple of entity :events field set to [] and the :events"
+  [(:events entity) (assoc entity :events [])])
+
+(defn not-nil? [x] ((complement nil?) x))
+
 (defn abs [x]
   {:pre [(number? x)]}
   (if (pos? x)

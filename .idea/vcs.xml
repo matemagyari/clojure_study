@@ -2,6 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gamesys/Gamesplatform/gamification-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-buddies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-etc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-fulfilment-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-notification-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-player-profile-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../reference-ddd-blackjack" vcs="Git" />
   </component>
 </project>
 

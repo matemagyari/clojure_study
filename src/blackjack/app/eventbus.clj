@@ -2,11 +2,16 @@
 
 (def event-buffer (ref []))
 
-(defn publish-event [event]
+(defn publish-event! [event]
   "Publishes an event to the event bus"
   ;(println event)
   (dosync
     (alter event-buffer conj event)))
+
+(defn publish-events! [events]
+  "Publishes events to the event bus"
+  (doseq [event events]
+    (publish-event! event)))
 
 (defn reset-event-bus! []
   "Resets the bus"
