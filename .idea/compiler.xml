@@ -26,15 +26,21 @@
         <module name="blackjack-messaging-client" />
         <module name="blackjack-utils" />
         <module name="blackjack-wallet" />
+        <module name="examples" />
         <module name="FirstClojure" />
         <module name="gamification-service" />
         <module name="gamification-system" />
         <module name="gamification-test" />
+        <module name="notification-loader-service" />
+        <module name="poker-academy" />
         <module name="poker-buddies-system" />
         <module name="poker-fulfilment-system" />
         <module name="poker-notification-system" />
+        <module name="poker-player-profile-messaging-client" />
         <module name="poker-player-profile-system" />
         <module name="poker-stats-system" />
+        <module name="project-api" />
+        <module name="project-client" />
         <module name="streaming-poker-integrity-service" />
       </profile>
     </annotationProcessing>
@@ -44,15 +50,22 @@
       <module name="blackjack-parent" target="1.6" />
       <module name="blackjack-utils" target="1.6" />
       <module name="blackjack-wallet" target="1.5" />
+      <module name="examples" target="1.6" />
       <module name="gamification-service" target="1.6" />
       <module name="gamification-system" target="1.6" />
       <module name="gamification-system-parent" target="1.6" />
       <module name="gamification-test" target="1.6" />
+      <module name="notification-loader" target="1.6" />
+      <module name="notification-loader-service" target="1.6" />
+      <module name="poker-academy" target="1.6" />
       <module name="poker-buddies-system" target="1.6" />
       <module name="poker-fulfilment-system" target="1.6" />
       <module name="poker-notification-system" target="1.6" />
+      <module name="poker-player-profile-messaging-client" target="1.6" />
       <module name="poker-player-profile-system" target="1.6" />
       <module name="poker-stats-system" target="1.6" />
+      <module name="project-api" target="1.6" />
+      <module name="project-client" target="1.6" />
       <module name="streaming-poker-integrity-service" target="1.6" />
     </bytecodeTargetLevel>
   </component>

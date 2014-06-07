@@ -27,7 +27,7 @@
 (def dealer "Dean")
 
 (defn- create-new-game []
-  (new-game table-id dealer player))
+  (new-game table-id dealer player (new-deck)))
 
 (defn- is-player-won [player a-game]
   (is (= :finished (:state a-game)))

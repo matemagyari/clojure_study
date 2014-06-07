@@ -16,6 +16,9 @@
   "Returns a tupple of entity :events field set to [] and the :events"
   [(:events entity) (assoc entity :events [])])
 
+(defn add-event [entity event]
+  (update-in entity [:events] conj event))
+
 (defn not-nil? [x] ((complement nil?) x))
 
 (defn abs [x]

@@ -15,12 +15,11 @@
 
 (defn reset-event-bus! []
   "Resets the bus"
-  (dosync 
+  (dosync
     (ref-set event-buffer [])))
 
 (defn flush-events-with! [event-handlers]
   "Flushes event bus"
-  ;(println "FLUSHING---------" @event-buffer)
   (let [events @event-buffer]
     (reset-event-bus!)
     (doseq [event events
@@ -29,6 +28,3 @@
         (reset-event-bus!)
         ((handler :do-fn) event)
         (flush-events-with! event-handlers)))))
-
-(defprotocol ExternalEventBus
-  (publish! [this event]))

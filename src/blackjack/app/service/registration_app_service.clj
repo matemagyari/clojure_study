@@ -9,7 +9,7 @@
 
 (defn register! [player-name]
   (let [id (s/generate-id)
-        player {:id id :name player-name}]
+        player {:id id :name player-name :win-number 0}]
     (c/create-account! id)
     (pr/save-player! r/player-repository player)
     id))

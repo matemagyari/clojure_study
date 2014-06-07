@@ -1,7 +1,5 @@
 (ns blackjack.domain.game.game
-  (:require [blackjack.app.eventbus :as events]
-            [blackjack.util.shared :as s]
-            [clojure.test :as t]))
+  (:require [blackjack.util.shared :as s]))
 
 ;;(use 'clojure.tools.trace)
 ;;(clojure.tools.trace/trace-ns blackjack.domain.game)
@@ -50,7 +48,7 @@
   "Draws the top card, returning the card and the remaining deck"
   [(first deck) (rest deck)])
 
-(defn new-game [table-id dealer-id player-id]
+(defn new-game [table-id dealer-id player-id deck]
   {:pre [ (is-player-id? dealer-id) (is-player-id? player-id) ]}
   "Creates a new Game structure"
   { :table-id table-id
@@ -60,7 +58,7 @@
                            :role :dealer}}
     :state :initialized
     :id (s/generate-id)
-    :deck (new-deck)})
+    :deck deck})
 
 (defn- card-value [card]
   {:post [(number? %)]}
@@ -82,8 +80,9 @@
   (score-hand (get-in game [:players player :cards])))
 
 (defn- finish-game [game winner]
-  (events/publish-event! {:game-id (:id game) :table-id (:table-id game) :winner winner :type :game-finished-event})
-  (assoc game :state :finished))
+  (-> game
+    (s/add-event {:game-id (:id game) :table-id (:table-id game) :winner winner :type :game-finished-event})
+    (assoc :state :finished)))
 
 (defn other-player [game player]
   {:pre [ (is-player-id? player) ]
@@ -120,8 +119,9 @@
   "Player hits"
   (check-player-can-act game player)
   (let [[card deck] (draw (game :deck))]
-    (events/publish-event! {:game-id (:id game) :player player :card card :type :player-card-dealt-event})
     (-> game
+        (s/add-event {:game-id (:id game) :table-id (:table-id game)
+                      :player-id player :card card :type :player-card-dealt-event})
         (update-in [:players player :cards] #(cons card %))
         (assoc :deck deck)
         (assoc :last-to-act player)
@@ -132,10 +132,10 @@
    :post [(= :started (:state %))]}
   "Deals initial cards"
   (check-game-state game :initialized)
-  (events/publish-event! {:game-id (:id game) :type :game-started-event})
   (let [dealer (player-with-role game :dealer)
         player (player-with-role game :player)]
     (-> game
+      (s/add-event {:game-id (:id game) :table-id (:table-id game) :type :game-started-event})
       (assoc :state :started)
       (hit player)
       (hit dealer)
@@ -158,8 +158,8 @@
   {:pre [ (is-player-id? player) ]}
   "Player stands"
   (check-player-can-act game player)
-  (events/publish-event! {:game-id (:id game) :player player :type :player-stands-event})
   (let [updated-game (-> game
+                       (s/add-event {:game-id (:id game) :player-id player :table-id (:table-id game) :type :player-stands-event})
                        (assoc-in [:players player :state] :stand)
                        (assoc :last-to-act player))
         other (other-player game player)

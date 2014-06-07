@@ -30,18 +30,15 @@
 (defn- add-player [table player]
   (update-in table [:players] conj player))
 
-(defn- add-event [table event]
-  (update-in table [:events] conj event))
-
 (defn sit [table player]
   "Seats player to table"
   (check-table-not-full table)
   (check-player-not-seated-yet table player)
   (let [t1 (add-player table player)
-        t2 (add-event t1
+        t2 (s/add-event t1
              (table-seating-changed-event t1))]
     (if (is-full t2)
-      (add-event t2
+      (s/add-event t2
         (table-is-full-event t2))
       t2)))
 
@@ -50,7 +47,7 @@
   "Unseat players"
   (let [updated-table (assoc table :players [])
         event (table-seating-changed-event updated-table)]
-    (add-event updated-table event)))
+    (s/add-event updated-table event)))
   
   
 

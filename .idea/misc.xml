@@ -14,11 +14,29 @@
         <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-notification-system/pom.xml" />
         <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-fulfilment-system/pom.xml" />
         <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/gamification-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-academy-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../Gamesys/gitosis/poker-campaign-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../Gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../examples/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
   </component>
 </project>
 

@@ -20,7 +20,6 @@
 (assert-equals "I'm a keyword: :a" (whoami :a))
 (assert-equals "I'm a null" (whoami nil))
 
-<<<<<<< HEAD
 ;;defprotocol
 (defprotocol Dog
   (eat [this])
@@ -28,7 +27,6 @@
 
 (defrecord Terrier)
 
-=======
 ;;defrecord
 (defrecord Car [year color])
 (def kit (Car. 1987 :black))
@@ -72,5 +70,4 @@
                (me Jack))
 
 ;;
->>>>>>> 8f89a3d6a495ee6d32b19c53f78da8a5b04e9ab8
 
