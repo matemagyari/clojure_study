@@ -1,15 +1,9 @@
-(ns pldb_play.core 
+(ns logic_play.pldb-play
  (:refer-clojure :exclude [==])
-  (:use [clojure.core.logic])
-  (:use [clojure.core.logic.pldb]))
-
-;;=========================
-(defn assert-equals [actual expected]
-  (when-not (= actual expected)
-    (throw 
-      (AssertionError. 
-        (str "Expected " expected " but was " actual)))))
-
+  (:use [clojure.core.logic]
+        [clojure.core.logic.pldb]
+        [clojure-study.assertion]
+        ))
 
 ;;======================================  facts
 (db-rel parent Father Child)
@@ -34,7 +28,7 @@
   (with-db family
     (run* [x y] (grandfather x y))))
 
-(assert-equals gfather-gsons [[:Cecil :Emil] [:Ben :Dan] [:Abe :Cecil]])
+;(assert-equals gfather-gsons [[:Cecil :Emil] [:Ben :Dan] [:Abe :Cecil]])
 
 (defn child [x y]
     (parent y x))
@@ -44,6 +38,8 @@
     (run 1 [q] (child q :Cecil))))
 
 (assert-equals x '(:Dan))
+
+(println "x1")
 
 
 ;; extend facts - db-facts
@@ -61,6 +57,7 @@
                 (parent dad q )
                 (!= q :Lucy)))))
 
+(println "x2")
 (assert-equals x '(:Mary))
 
 (defn who-is-it? [me] 
@@ -71,5 +68,7 @@
                 (parent dad q )
                 (!= q me)))))
 
+(println "x3")
 (assert-equals (who-is-it? :Lucy) '(:Mary))
 (assert-equals (who-is-it? :Mary) '(:Lucy))
+(println "x4")

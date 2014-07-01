@@ -16,5 +16,4 @@
     [present :Cecil :library 0]))
 
 (defn move [person oldroom newroom])
-  
- (defn turn )
+

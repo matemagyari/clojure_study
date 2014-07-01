@@ -1,6 +1,7 @@
 (ns clojure-study.polimorph-protocol
   (:use clojure-study.assertion))
 
+
 ;;extend existing types with protocol
 (defprotocol Whoami
   (whoami [this]))
@@ -25,7 +26,7 @@
   (eat [this])
   (bark [this]))
 
-(defrecord Terrier)
+(defrecord Terrier [])
 
 ;;defrecord
 (defrecord Car [year color])
