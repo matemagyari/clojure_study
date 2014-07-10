@@ -4,7 +4,7 @@
                                         thread]]))
 
 
-(def event-channel (chan 10))
+(def event-channel (chan 100))
 
 (defn- append-subscriber! [publication topic handler-fn]
   (let [sub-chan (chan)]
@@ -25,7 +25,8 @@
 
 (defn publish-event! [event]
   "Publishes an event to the event bus"
-  (>!! event-channel event))
+  (go (>! event-channel event)))
+
 
 (defn publish-events! [events]
   "Publishes events to the event bus"

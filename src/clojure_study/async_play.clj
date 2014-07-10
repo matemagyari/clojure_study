@@ -1,7 +1,7 @@
 (ns clojure-study.async-play
   (:require [clojure.core.async :refer [go go-loop chan close! <! <!! >! >!!
                                         timeout filter< put! take! pub sub unsub unsub-all
-                                        thread]]
+                                        thread alts! alts!!]]
             [clojure-study.assertion :refer [assert-equals]]))
 
 
@@ -41,25 +41,36 @@
   (<!! (timeout 10))
   (close! c))
 
+;============ GO - a bit more complex example ======
+(let [store (atom [])
+      c (chan 10)]
+  (go
+    (while true (when-let [msg (<! c)]
+                  (swap! store conj msg))))
+  (go (doseq [x (range 4)]
+        (>! c x)))
+  (<!! (timeout 10))
+  (assert-equals [0 1 2 3] @store))
+
 ;============== FILTER< ======
 (let [xstore (atom 0)
       store (atom 0)
-      c (chan)
-      cx (filter< #(> 5 %) c)]
+      num-chan (chan)
+      lt-5-chan (filter< #(> 5 %) num-chan)]
   (go
     (while true
-      (if-let [msg (<! cx)]
+      (if-let [msg (<! lt-5-chan)]
         (reset! xstore msg))))
   (go
     (while true
-      (if-let [msg (<! c)]
+      (if-let [msg (<! num-chan)]
         (reset! store msg))))
-  (>!! c 4)
-  (>!! c 6)
+  (>!! num-chan 4)
+  (>!! num-chan 6)
   (<!! (timeout 100))
   (assert-equals 4 @xstore)
   (assert-equals 6 @store)
-  (close! c))
+  (close! num-chan))
 
 ;==================== PUT and TAKE =====
 (let [c (chan)
@@ -123,13 +134,27 @@
   (assert-equals [1 3 5 7 9] @store-odd-2))
 
 ;==================== THREAD =====
-(let [c (thread (+ 21 21))
-      temp (atom nil)]
-  (go-loop []
-    (if-let [msg (<! c)]
-      (reset! temp msg))
-    (recur))
-  (assert-equals 42 (<!! c)))
-
+(let [ct (thread (+ 21 21))
+      cg (go (+ 21 21))]
+  (assert-equals 42 (<!! ct))
+  (assert-equals 42 (<!! cg)))
+;==================== ALT! =====
+(let [fast-chan (chan)
+      slow-chan (chan)]
+  (go (Thread/sleep 10)
+    (>! slow-chan 0))
+  (go (>! fast-chan 1))
+  (let [ [v c] (alts!! [fast-chan slow-chan])]
+    (assert-equals 1 v)
+    (assert-equals fast-chan c)))
+;==================== Lot of channels with ALT! =====
+(let [n 1000
+      channels (repeatedly n chan)
+      begin (System/currentTimeMillis)]
+  (doseq [c channels] (go (>! c "hi")))
+  (dotimes [i n]
+    (let [ [v c] (alts!! channels)]
+      (assert-equals "hi" v)))
+  (println "Read" n "messages in" (- (System/currentTimeMillis) begin) "ms"))
 
 
