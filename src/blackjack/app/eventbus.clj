@@ -1,12 +1,31 @@
-(ns blackjack.app.eventbus)
+(ns blackjack.app.eventbus
+  (:require [clojure.core.async :refer [go go-loop chan close! <! <!! >! >!!
+                                        timeout filter< put! take! pub sub unsub unsub-all
+                                        thread]]))
 
-(def event-buffer (ref []))
+
+(def event-channel (chan 10))
+
+(defn- append-subscriber! [publication topic handler-fn]
+  (let [sub-chan (chan)]
+    (sub publication topic sub-chan)
+    (go-loop []
+      (when-let [event (<! sub-chan)]
+        ;(println (str "event: " (:type event)))
+        (handler-fn event))
+      (recur))))
+
+(defn init-event-handlers! [event-handlers]
+  (let [publication (pub event-channel :type)]
+    (doseq [handler event-handlers
+            :let [handler-fn (:do-fn handler)]]
+      (doseq [type (:types handler)]
+        (append-subscriber! publication type handler-fn)))))
+
 
 (defn publish-event! [event]
   "Publishes an event to the event bus"
-  ;(println event)
-  (dosync
-    (alter event-buffer conj event)))
+  (>!! event-channel event))
 
 (defn publish-events! [events]
   "Publishes events to the event bus"
@@ -15,16 +34,7 @@
 
 (defn reset-event-bus! []
   "Resets the bus"
-  (dosync
-    (ref-set event-buffer [])))
+  (println "Do something here"))
 
-(defn flush-events-with! [event-handlers]
-  "Flushes event bus"
-  (let [events @event-buffer]
-    (reset-event-bus!)
-    (doseq [event events
-            handler event-handlers]
-      (when ((handler :match-fn) event)
-        (reset-event-bus!)
-        ((handler :do-fn) event)
-        (flush-events-with! event-handlers)))))
+
+
