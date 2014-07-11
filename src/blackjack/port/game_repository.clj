@@ -1,4 +1,4 @@
-(ns blackjack.domain.game.game-repository
+(ns blackjack.port.game-repository
     (:require [blackjack.util.shared :as shared]))
 
 (defprotocol GameRepository

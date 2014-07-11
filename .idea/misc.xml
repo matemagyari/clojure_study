@@ -6,7 +6,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-player-profile-system/pom.xml" />
         <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-buddies/pom.xml" />
         <option value="$PROJECT_DIR$/../reference-ddd-blackjack/pom.xml" />
@@ -18,15 +17,37 @@
         <option value="$PROJECT_DIR$/../Gamesys/gitosis/poker-campaign-manager/pom.xml" />
         <option value="$PROJECT_DIR$/../Gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
         <option value="$PROJECT_DIR$/../examples/pom.xml" />
+        <option value="$PROJECT_DIR$/../principle/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/classes" />
+    <output url="file://$PROJECT_DIR$/../gamesys/gamesplatform" />
   </component>
   <component name="SvnBranchConfigurationManager">
     <option name="myConfigurationMap">
       <map>
+        <entry key="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-game-messaging-client">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client">
           <value>
             <SvnBranchConfiguration>

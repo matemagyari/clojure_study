@@ -1,4 +1,4 @@
-(ns blackjack.domain.cashier.wallet-service)
+(ns blackjack.port.wallet-service)
 
 (defprotocol WalletService
   (get-balance [this player])

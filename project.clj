@@ -11,7 +11,9 @@
                  [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
                  [org.clojure/tools.trace "0.7.8"]
                  [org.clojure/data.csv "0.1.2"]
+                 [org.clojure/algo.monads "0.1.5"]
+                 [ring "1.3.0"]
                  ]
-  :main clojure_study.core
+  :main clojure_study.main
   ;:main logic_play.core
   )

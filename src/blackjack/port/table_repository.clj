@@ -1,4 +1,4 @@
-(ns blackjack.domain.table.table-repository
+(ns blackjack.port.table-repository
     (:require [blackjack.util.shared :as shared]))
 
 (defprotocol TableRepository

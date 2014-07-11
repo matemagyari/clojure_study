@@ -1,7 +1,10 @@
 (ns blackjack.infrastructure.adapter.driving.playerrepository.in-memory
-  (:use [blackjack.domain.player.player-repository]))
+  (:require [blackjack.port.player-repository :refer :all]
+            [blackjack.app.lockable :refer :all]
+            [blackjack.infrastructure.adapter.driving.shared.locking :as lo]))
 
 (def player-map (ref {}))
+(def locks (ref {}))
 
 (defrecord InMemoryPlayerRepository []
   PlayerRepository
@@ -11,4 +14,9 @@
   (get-players [this] (vals @player-map))
   (save-player! [this player] 
     (dosync
-      (alter player-map into {(player :id) player}))))
+      (alter player-map into {(player :id) player})))
+  Lockable
+  (acquire-lock! [this id]
+    (lo/acquire-lock! locks id))
+  (release-lock! [this id]
+    (lo/release-lock! locks id)))

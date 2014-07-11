@@ -17,7 +17,7 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile default="false" name="Maven default annotation processors profile" enabled="false">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -26,22 +26,51 @@
         <module name="blackjack-messaging-client" />
         <module name="blackjack-utils" />
         <module name="blackjack-wallet" />
+        <module name="connection-proxy" />
         <module name="examples" />
         <module name="FirstClojure" />
+        <module name="gamification-messaging-client" />
+        <module name="gamification-poker-messaging-client" />
         <module name="gamification-service" />
         <module name="gamification-system" />
         <module name="gamification-test" />
         <module name="notification-loader-service" />
         <module name="poker-academy" />
+        <module name="poker-academy-messaging-client" />
+        <module name="poker-buddies-messaging-client" />
         <module name="poker-buddies-system" />
+        <module name="poker-cashier-messaging-client" />
+        <module name="poker-cashier-system" />
+        <module name="poker-commons" />
+        <module name="poker-commons-messaging-client" />
+        <module name="poker-directory-messaging-client" />
+        <module name="poker-fast-fold-messaging-client" />
+        <module name="poker-fulfilment-messaging-client" />
         <module name="poker-fulfilment-system" />
+        <module name="poker-game-messaging-client" />
+        <module name="poker-giving-api" />
+        <module name="poker-messaging-dictionary" />
         <module name="poker-notification-system" />
-        <module name="poker-player-profile-messaging-client" />
+        <module name="poker-player-profile-messaging-client (1)" />
         <module name="poker-player-profile-system" />
+        <module name="poker-player-reputation-messaging-client" />
+        <module name="poker-player-reputation-system" />
+        <module name="poker-player-reputation-system (1)" />
+        <module name="poker-player-session-messaging-api" />
+        <module name="poker-stats-messaging-client" />
         <module name="poker-stats-system" />
+        <module name="poker-utils" />
+        <module name="pokerProject" />
+        <module name="principle" />
         <module name="project-api" />
         <module name="project-client" />
+        <module name="streaming-poker-integrity-messaging-client" />
         <module name="streaming-poker-integrity-service" />
+        <module name="tournament-messaging-client" />
+        <module name="tournament-ticketing-messaging-client" />
+        <module name="tracker-common-messaging-client" />
+        <module name="tracker-messaging-client" />
+        <module name="tracker-poker-messaging-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.6">
@@ -50,7 +79,10 @@
       <module name="blackjack-parent" target="1.6" />
       <module name="blackjack-utils" target="1.6" />
       <module name="blackjack-wallet" target="1.5" />
+      <module name="connection-proxy" target="1.6" />
       <module name="examples" target="1.6" />
+      <module name="gamification-messaging-client" target="1.6" />
+      <module name="gamification-poker-messaging-client" target="1.6" />
       <module name="gamification-service" target="1.6" />
       <module name="gamification-system" target="1.6" />
       <module name="gamification-system-parent" target="1.6" />
@@ -58,15 +90,40 @@
       <module name="notification-loader" target="1.6" />
       <module name="notification-loader-service" target="1.6" />
       <module name="poker-academy" target="1.6" />
+      <module name="poker-academy-messaging-client" target="1.6" />
+      <module name="poker-buddies-messaging-client" target="1.6" />
       <module name="poker-buddies-system" target="1.6" />
+      <module name="poker-cashier-messaging-client" target="1.6" />
+      <module name="poker-cashier-system" target="1.6" />
+      <module name="poker-commons" target="1.6" />
+      <module name="poker-commons-messaging-client" target="1.6" />
+      <module name="poker-directory-messaging-client" target="1.6" />
+      <module name="poker-fast-fold-messaging-client" target="1.6" />
+      <module name="poker-fulfilment-messaging-client" target="1.6" />
       <module name="poker-fulfilment-system" target="1.6" />
+      <module name="poker-game-messaging-client" target="1.6" />
+      <module name="poker-giving-api" target="1.6" />
+      <module name="poker-messaging-dictionary" target="1.6" />
       <module name="poker-notification-system" target="1.6" />
       <module name="poker-player-profile-messaging-client" target="1.6" />
+      <module name="poker-player-profile-messaging-client (1)" target="1.6" />
       <module name="poker-player-profile-system" target="1.6" />
+      <module name="poker-player-reputation-messaging-client" target="1.6" />
+      <module name="poker-player-reputation-system" target="1.6" />
+      <module name="poker-player-session-messaging-api" target="1.6" />
+      <module name="poker-stats-messaging-client" target="1.6" />
       <module name="poker-stats-system" target="1.6" />
+      <module name="poker-utils" target="1.6" />
+      <module name="pokerProject" target="1.6" />
       <module name="project-api" target="1.6" />
       <module name="project-client" target="1.6" />
+      <module name="streaming-poker-integrity-messaging-client" target="1.6" />
       <module name="streaming-poker-integrity-service" target="1.6" />
+      <module name="tournament-messaging-client" target="1.6" />
+      <module name="tournament-ticketing-messaging-client" target="1.6" />
+      <module name="tracker-common-messaging-client" target="1.6" />
+      <module name="tracker-messaging-client" target="1.6" />
+      <module name="tracker-poker-messaging-client" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,5 @@
-(ns blackjack.domain.cashier.cashier
-  (:require [blackjack.domain.cashier.wallet-service :as w]
+(ns blackjack.app.cashier
+  (:require [blackjack.port.wallet-service :as w]
             [blackjack.config.registry :as r]))
 
 (def entry-fee 500)

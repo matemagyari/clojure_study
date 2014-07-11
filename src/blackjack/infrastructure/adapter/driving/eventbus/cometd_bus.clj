@@ -1,5 +1,5 @@
 (ns blackjack.infrastructure.adapter.driving.eventbus.cometd-bus
-  (:use blackjack.app.external-event-publisher))
+  (:use blackjack.port.external-event-publisher))
 
 (defrecord CometDEventBus []
   ExternalEventBus

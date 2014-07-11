@@ -1,7 +1,10 @@
 (ns blackjack.infrastructure.adapter.driving.wallet.in-memory
-  (:use [blackjack.domain.cashier.wallet-service]))
+  (:require [blackjack.port.wallet-service :refer :all]
+        [blackjack.app.lockable :refer :all]
+        [blackjack.infrastructure.adapter.driving.shared.locking :as lo]))
 
 (def wallet-map (ref {}))
+(def locks (ref {}))
 
 (defn- execute [op player-id amount]
   (dosync
@@ -17,4 +20,9 @@
   (debit! [this player-id amount] (execute - player-id amount))
   (create-account! [this player-id start-balance]
     (dosync
-      (alter wallet-map assoc player-id start-balance))))
+      (alter wallet-map assoc player-id start-balance)))
+  Lockable
+  (acquire-lock! [this id]
+    (lo/acquire-lock! locks id))
+  (release-lock! [this id]
+    (lo/release-lock! locks id)))

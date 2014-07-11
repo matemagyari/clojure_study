@@ -1,9 +1,9 @@
 (ns blackjack.app.service.registration-app-service
   (:require [blackjack.util.shared :as s]
             [blackjack.config.registry :as r]
-            [blackjack.domain.game.game-repository :as gr]
-            [blackjack.domain.player.player-repository :as pr]
-            [blackjack.domain.cashier.cashier :as c]
+            [blackjack.port.game-repository :as gr]
+            [blackjack.port.player-repository :as pr]
+            [blackjack.app.cashier :as c]
             [blackjack.domain.game.game :as g]
             ))
 

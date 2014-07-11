@@ -1,7 +1,12 @@
 (ns blackjack.infrastructure.adapter.driving.gamerepository.in-memory
-  (:use [blackjack.domain.game.game-repository]))
+  (:import [java.util ArrayList]
+           [java.util.concurrent ConcurrentHashMap])
+  (:require [blackjack.port.game-repository :refer :all]
+            [blackjack.app.lockable :refer :all]
+            [blackjack.infrastructure.adapter.driving.shared.locking :as lo]))
 
 (def game-map (ref {}))
+(def locks (ref {}))
 
 (defrecord InMemoryGameRepository []
   GameRepository
@@ -11,4 +16,9 @@
   (get-games [this] (vals @game-map))
   (save-game! [this game] 
     (dosync
-      (alter game-map into {(game :id) game}))))
+      (alter game-map into {(game :id) game})))
+  Lockable
+  (acquire-lock! [this id]
+    (lo/acquire-lock! locks id))
+  (release-lock! [this id]
+    (lo/release-lock! locks id)))

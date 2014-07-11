@@ -1,5 +1,6 @@
 (ns clojure-study.garbage
-  (:require [clojure.core.match :as m]))
+  (:require [clojure.core.match :as m])
+  )
 
 
 
@@ -25,5 +26,10 @@
                                               (str i c))))] 
                        (reduce red-fn [""] number)))]
   (println (combinations "514")))
+
+(def x 5)
+
+
+
 
 
