@@ -27,12 +27,22 @@
            (str "Expected '" '~actual "' to be " ~expected
              " but was " actual-value#))))))
 
+(defmacro twice [e] `(do ~e ~e))
+(defmacro n-times [e n]
+  (loop [acc []
+         i n]
+    (if (zero? i) `(do ~@acc)
+      (recur (cons e acc) (dec i)))))
+
+(twice (println "foo"))
+(n-times (println "foo") 3)
+
 ;; =============== QUOTING =================
 (assert-equals `(+ 1 2) `(+ 1 ~(inc 1)))
 (assert-equals (list '+ 1 2) '(+ 1 2))
 
 
-;;========================================= unless =============
+;;================= unless =============
 (defmacro unless [test val-true val-false]
   `(if ~test ~val-false ~val-true))
 
@@ -42,6 +52,13 @@
 (assert-equals "T" (unless (> 0 1) "T" "F"))
 (assert-equals "T" (unless-2 (> 0 1) "T" "F"))
 (assert-equals "F" (if (> 0 1) "T" "F"))
+
+;;================= reverse-it =============
+(defmacro reverse-it [expr]
+  (let [f (-> expr first name clojure.string/reverse symbol)]
+    (cons f (rest expr))))
+
+(assert-equals 5 (reverse-it (cni 4)))
 
 ;;=================== INFIX ==============
 (defmacro infix [expression]
@@ -81,17 +98,17 @@
 ;;=================== FOREACH ==============
 (defmacro foreach [from to body]
   `(loop [i# ~from]
-    ~body
+     ~body
      (if (> i# ~to) nil
        (recur (inc i#)))))
 
 (comment
-(foreach 0 3 (println "a"))
-(defmacro foreach2 [index from to body]
-  `(loop [i# ~from]
-    ~body
-     (if (> i# ~to) nil
-       (recur (inc i#)))))
+  (foreach 0 3 (println "a"))
+  (defmacro foreach2 [index from to body]
+    `(loop [i# ~from]
+       ~body
+       (if (> i# ~to) nil
+         (recur (inc i#)))))
   )
 
 (foreach 0 3 (println "a"))

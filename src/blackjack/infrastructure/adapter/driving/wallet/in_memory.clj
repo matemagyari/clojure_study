@@ -3,8 +3,8 @@
         [blackjack.app.lockable :refer :all]
         [blackjack.infrastructure.adapter.driving.shared.locking :as lo]))
 
-(def wallet-map (ref {}))
-(def locks (ref {}))
+(def ^:private wallet-map (ref {}))
+(def ^:private locks (ref {}))
 
 (defn- execute [op player-id amount]
   (dosync

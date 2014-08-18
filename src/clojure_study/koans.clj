@@ -1,4 +1,4 @@
-(ns clojure_study.koans
+(ns clojure-study.koans
   (:require clojure.contrib.core)
   (:use clojure-study.assertion))
 
@@ -393,6 +393,32 @@
 (assert-equals (common-min [1 2 3 4 5 6 7] [0.5 3/2 4 19]) 4)
 (assert-equals (common-min [1 2 3]) 1)
 
+;;60. reductions
+(defn my-red
+  ([op a-seq]
+    (my-red op (first a-seq) (rest a-seq)))
+  ([op start a-seq]
+    (if (empty? a-seq)
+      [start]
+      (let [new-e (op start (first a-seq))
+            acc [start]]
+        (cons start (lazy-seq (my-red op new-e (rest a-seq))))))))
+
+(assert-equals [4 5 7 10] (take 4
+                            (my-red + 4 [1 2 3])))
+(assert-equals (take 5 (my-red + (range))) [0 1 3 6 10])
+
+;;65. black box testing
+(defn seq-type [a-seq]
+  (let [elem1 [:qw1 :u71]
+        elem2 [:qw2 :u72]
+        b-seq (conj a-seq elem1 elem2)]
+    (cond
+      (= (:qw1 b-seq) :u71) :map (= b-seq (conj b-seq elem1)) :set (= (last b-seq) elem2) :vector :else :list)))
+
+(assert-equals :map (seq-type {:a 1, :b 2}))
+(assert-equals [:map :set :vector :list] (map seq-type [{} #{} [] ()]))
+
 ;;67. prime numbers
 (defn first-n-primes [n]
   (let [find-dividers (fn [x]
@@ -409,4 +435,106 @@
 
 (assert-equals (first-n-primes 5) [2 3 5 7 11])
 (assert-equals (first-n-primes 1) [2])
+
+
+;;69. merge-with
+(defn my-merge-with [f & maps]
+  (let [all-keys (->> maps (map keys) flatten set)
+        vals-for-keys (for [a-key all-keys
+                            :let [the-vals (filter some? (map #(get % a-key) maps))
+                                  the-val (if (< 1 (count the-vals))
+                                            (apply f the-vals)
+                                            (first the-vals))]]
+                        [a-key the-val])]
+    (apply conj {} vals-for-keys)))
+
+(assert-equals (my-merge-with * {:a 2, :b 3, :c 4} {:a 2} {:b 2} {:c 5})
+  {:a 4, :b 6, :c 20})
+
+(assert-equals (my-merge-with - {1 10, 2 20} {1 3, 2 10, 3 15})
+  {1 7, 2 10, 3 15})
+
+;;74. find perfect squares
+(use '[clojure.string :only (join split)])
+
+(defn p-squares [nums-str]
+  (let [str-list (clojure.string/split nums-str #",")
+        num-list (map read-string str-list)
+        p-square? (fn [x] (and (> x 1)
+                            (let [root (Math/sqrt x)]
+                              (= root (Math/floor root)))))
+        squares (filter p-square? num-list)]
+    (clojure.string/join "," squares)))
+(assert-equals (p-squares "1,2,3,4,5,6,7,8,9,10") "4,9")
+(assert-equals (p-squares "4,5,6,7,8,9") "4,9")
+
+;;80. perfect numbers
+(defn perfect? [n]
+  (let [divisors (filter #(= 0 (rem n %)) (range 1 n))]
+    (= n (reduce + divisors))))
+
+(assert-equals true (perfect? 6))
+(assert-equals false (perfect? 7))
+(assert-equals true (perfect? 496))
+
+;;tic-tac-toe
+(defn tic-tac-toe2 [player board]
+  (let [n (count board)
+        nth-row #(nth board %)
+        nth-col (fn [i]
+                  (map #(nth % i) board))
+        val-of (fn [x y]
+                 (nth (nth-row x) y))
+        count-of (fn [x a-col]
+                   (count (filter #(= x %) a-col)))
+        good-3? (fn [col]
+                  (and
+                    (= 2 (count-of player col))
+                    (= 1 (count-of :e col))))
+        result-from-straight (fn [get-nth-col-fn]
+                               (for [i (set (range n))
+                                     :let [col (get-nth-col-fn i)]
+                                     :when (good-3? col)]
+                                 [i (.indexOf col :e)]))
+        diagonal-l-r (for [r (range n)]
+                       [(val-of r r) [r r]])
+        diagonal-r-l (for [r (range n)
+                           :let [x r
+                                 y (- (dec n) r)]]
+                       [(val-of x y) [x y]])
+        res #{}]
+
+
+    (set (concat
+           (map reverse (result-from-straight nth-col))
+           (result-from-straight nth-row)))))
+
+(comment
+  (assert-equals #{[2 2] [0 1] [0 2]} (tic-tac-toe :x [[:o :e :e]
+                                                       [:o :x :o]
+                                                       [:x :x :e]]))
+  )
+(tic-tac-toe :x [[:x :x :e]
+                 [:e :x :e]
+                 [:x :e :x]])
+
+;;116. prime sandwitch
+(defn balanced-prime? [n]
+  (let [prime?? (fn [n primes] (every? #(pos? (rem n %)) primes))
+         divisors (fn [x] (filter #(= 0 (rem x %)) (range 1 (inc x))))
+        prime? #(= 2 (count (divisors %)))]
+    (if-not (prime? n) false
+      (let [find-first (fn [start stop-fn? step-fn]
+                         (loop [i (step-fn start)]
+                           (if (stop-fn? i) i
+                             (recur (step-fn i)))))
+            prime-before (find-first n prime? dec)
+            prime-after (find-first n prime? inc)]
+        (println "before" prime-before "after" prime-after)
+        (= n (/ (+ prime-before prime-after)
+               2))))))
+
+(assert-equals false (balanced-prime? 4))
+(assert-equals true (balanced-prime? 563))
+(assert-equals 1103 (nth (filter balanced-prime? (range)) 15))
 

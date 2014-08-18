@@ -17,7 +17,6 @@
         <option value="$PROJECT_DIR$/../Gamesys/gitosis/poker-campaign-manager/pom.xml" />
         <option value="$PROJECT_DIR$/../Gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
         <option value="$PROJECT_DIR$/../examples/pom.xml" />
-        <option value="$PROJECT_DIR$/../principle/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -26,6 +25,13 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/timeout/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -35,7 +41,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/../gamesys/gamesplatform" />
   </component>
   <component name="SvnBranchConfigurationManager">

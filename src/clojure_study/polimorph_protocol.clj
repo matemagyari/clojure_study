@@ -21,6 +21,12 @@
 (assert-equals "I'm a keyword: :a" (whoami :a))
 (assert-equals "I'm a null" (whoami nil))
 
+;;reify
+(let [joe
+      (reify Whoami
+        (whoami [_] "Joe"))]
+  (assert-equals "Joe" (whoami joe)))
+
 ;;defprotocol
 (defprotocol Dog
   (eat [this])

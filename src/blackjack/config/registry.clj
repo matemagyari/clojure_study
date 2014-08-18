@@ -1,11 +1,11 @@
 (ns blackjack.config.registry
-  (:use [blackjack.util.shared :as shared]
-            [blackjack.infrastructure.adapter.driving.gamerepository.in-memory :as g]
-            [blackjack.infrastructure.adapter.driving.playerrepository.in-memory :as p]
-            [blackjack.infrastructure.adapter.driving.tablerepository.in-memory :as t]
-            [blackjack.infrastructure.adapter.driving.eventbus.cometd-bus :as e]
-            [blackjack.infrastructure.adapter.driving.wallet.in-memory :as w])
-  (:require [clojure.java.io :as io :only [resource reader]]
+  (:require [blackjack.util.shared :as shared]
+            [blackjack.infrastructure.adapter.driving.gamerepository.in-memory :refer (->InMemoryGameRepository)]
+            [blackjack.infrastructure.adapter.driving.playerrepository.in-memory :refer (->InMemoryPlayerRepository)]
+            [blackjack.infrastructure.adapter.driving.tablerepository.in-memory :refer (->InMemoryTableRepository)]
+            [blackjack.infrastructure.adapter.driving.wallet.in-memory :refer (->InMemoryWallet)]
+            [blackjack.infrastructure.adapter.driving.eventbus.cometd-bus :refer (->CometDEventBus)]
+            [clojure.java.io :as io :only [resource reader]]
             [clojure.edn :as edn :only [read-string]]))
 
 (def properties (->> "blackjack.edn" io/resource io/reader slurp edn/read-string))

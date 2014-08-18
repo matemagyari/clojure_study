@@ -5,8 +5,8 @@
             [blackjack.app.lockable :refer :all]
             [blackjack.infrastructure.adapter.driving.shared.locking :as lo]))
 
-(def game-map (ref {}))
-(def locks (ref {}))
+(def ^:private game-map (ref {}))
+(def ^:private locks (ref {}))
 
 (defrecord InMemoryGameRepository []
   GameRepository

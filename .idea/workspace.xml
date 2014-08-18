@@ -5,65 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2cc899-15ba-4157-9f45-33f4ef7da55a" name="Default" comment="clojure async for events">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/poker-buddies-system.iml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/poker-buddies-system.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/config/registry.clj" afterPath="$PROJECT_DIR$/src/blackjack/config/registry.clj" />
-    </list>
-    <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../principle/src/main/java/org/tindalos/principle/domain/expectations/ThirdParties.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../principle/src/main/java/org/tindalos/principle/domain/detector/thirdparty/ThirdPartyDetector.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_study/libraries/logic_play.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/metadata.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_study/libraries/pattern_matching.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_study/libraries/pldb_play.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sherlock/sherlock.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clojure_study/libraries/typecheck.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__clojure_complete_clojure_complete_0_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_clojure_1_5_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_clojure_contrib_1_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_core_logic_0_6_5.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_tools_nrepl_0_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FirstClojure.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/blackjack/playground.clj" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/blackjack/domain/cashier/cashier.clj" afterPath="$PROJECT_DIR$/src/blackjack/app/cashier.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/blackjack/domain/cashier/wallet_service.clj" afterPath="$PROJECT_DIR$/src/blackjack/port/wallet_service.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/blackjack/domain/game/game_repository.clj" afterPath="$PROJECT_DIR$/src/blackjack/port/game_repository.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/blackjack/domain/player/player_repository.clj" afterPath="$PROJECT_DIR$/src/blackjack/port/player_repository.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/blackjack/domain/table/table_repository.clj" afterPath="$PROJECT_DIR$/src/blackjack/port/table_repository.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../principle/src/main/java/org/tindalos/principle/domain/detector/adp/ADPResult.scala" afterPath="$PROJECT_DIR$/../principle/src/main/java/org/tindalos/principle/domain/detector/adp/ADPResult.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../principle/src/main/java/org/tindalos/principle/domain/expectations/Thresholder.scala" afterPath="$PROJECT_DIR$/../principle/src/main/java/org/tindalos/principle/domain/expectations/Thresholder.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/eventbus/cometd_bus.clj" afterPath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/eventbus/cometd_bus.clj" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/clojure_study/pattern_matching.clj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/clojure_study/sherlock.clj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/clojure_study/typecheck.clj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/logic_play/core.clj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/logic_play/pldb_play.clj" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/clojure_study/async_play.clj" afterPath="$PROJECT_DIR$/src/clojure_study/libraries/async_play.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/.gitignore" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstClojure.iml" afterPath="$PROJECT_DIR$/FirstClojure.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/src/main/java/gamesys/poker/buddies/infrastructure/integration/hydra/HttpBasedHydraIdResolver.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/src/main/java/gamesys/poker/buddies/infrastructure/integration/hydra/HttpBasedHydraIdResolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/java/gamesys/notification/loader/infrastructure/NotificationChannel.java" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/java/gamesys/notification/loader/infrastructure/NotificationChannel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" afterPath="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/java/gamesys/notification/loader/infrastructure/xml/VoucherParametersReader.java" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/java/gamesys/notification/loader/infrastructure/xml/VoucherParametersReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/assertion.clj" afterPath="$PROJECT_DIR$/src/clojure_study/assertion.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes.csv" afterPath="$PROJECT_DIR$/codes.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/core.clj" afterPath="$PROJECT_DIR$/src/clojure_study/core.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj" afterPath="$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/app/eventhandlers.clj" afterPath="$PROJECT_DIR$/src/blackjack/app/eventhandlers.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/app/service/game_app_service.clj" afterPath="$PROJECT_DIR$/src/blackjack/app/service/game_app_service.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/garbage.clj" afterPath="$PROJECT_DIR$/src/clojure_study/garbage.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/gamerepository/in_memory.clj" afterPath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/gamerepository/in_memory.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/playerrepository/in_memory.clj" afterPath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/playerrepository/in_memory.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/tablerepository/in_memory.clj" afterPath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/tablerepository/in_memory.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/wallet/in_memory.clj" afterPath="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/wallet/in_memory.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/koans.clj" afterPath="$PROJECT_DIR$/src/clojure_study/koans.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/main.clj" afterPath="$PROJECT_DIR$/src/blackjack/main.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/lazy_seqs.clj" afterPath="$PROJECT_DIR$/src/clojure_study/lazy_seqs.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/macros2.clj" afterPath="$PROJECT_DIR$/src/clojure_study/macros2.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/poker-buddies-system.iml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/poker-buddies-system.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clojure_study/polimorph_protocol.clj" afterPath="$PROJECT_DIR$/src/clojure_study/polimorph_protocol.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../principle/pom.xml" afterPath="$PROJECT_DIR$/../principle/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/blackjack/domain/game/protocoltest_test.clj" afterPath="$PROJECT_DIR$/test/blackjack/domain/game/protocoltest_test.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/app/service/registration_app_service.clj" afterPath="$PROJECT_DIR$/src/blackjack/app/service/registration_app_service.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/app/service/seating_app_service.clj" afterPath="$PROJECT_DIR$/src/blackjack/app/service/seating_app_service.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blackjack/config/registry.clj" afterPath="$PROJECT_DIR$/src/blackjack/config/registry.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
+    <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FirstClojure.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
-    <file path="$PROJECT_DIR$/project.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/main.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/encodings.xml" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/app/eventhandlers.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/clojure_study/koans.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/clojure_study/garbage.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj" ignored="true" />
-    <file path="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/gamerepository/in_memory.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/app/service/game_app_service.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/playerrepository/in_memory.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/tablerepository/in_memory.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/wallet/in_memory.clj" ignored="false" />
-    <file path="$PROJECT_DIR$/src/blackjack/app/service/seating_app_service.clj" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,91 +80,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="lock_test.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/lock_test.clj">
+      <file leaf-file-name="AcceptanceTests_IT.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/scan/AcceptanceTests_IT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="in_memory.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/gamerepository/in_memory.clj">
+      <file leaf-file-name="voucher_based_tourney_ticket.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/tournament_ticket/voucher_based_tourney_ticket.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="435">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="in_memory.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/tablerepository/in_memory.clj">
+      <file leaf-file-name="collecting_multiple_vouchers.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/vouchers/collecting_multiple_vouchers.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="405">
-              <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registry.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/config/registry.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_app_service.clj" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/app/service/game_app_service.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2088167" vertical-offset="0" max-vertical-offset="431">
-              <caret line="6" column="55" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration_app_service.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/app/service/registration_app_service.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seating_app_service.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/app/service/seating_app_service.clj">
+      <file leaf-file-name="pom2.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/pom2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="315">
-              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8835">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="end_to_end_test.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2310">
-              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+            <state vertical-scroll-proportion="-5.6153846" vertical-offset="6874" max-vertical-offset="7875">
+              <caret line="468" column="30" selection-start-line="468" selection-start-column="26" selection-end-line="468" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locking.clj" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/shared/locking.clj">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="285">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bonuses.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/db/bonuses.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rover.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/marsrovers/rover.clj">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <marker date="1408354609000" expanded="true" signature="417:490" placeholder="(defn rover ...)" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.clj" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="674">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="async_play.clj" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clojure_study/libraries/async_play.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2792" max-vertical-offset="3285">
+              <caret line="213" column="9" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -191,57 +195,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/TestFixture.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/testagent/TestAgent.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/domain/reputationscore/PlayerReputationScoreResponse.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/util/Validator.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/reputationscore/ReputationScoreApplicationService.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/infrastructure/reputationscore/messaging/messageassemblers/PlayerReputationScoreResponseMessageAssembler.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/base/ReputationSteps.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/testagent/AppLevelTestAgent.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/reputationscore/PlayerReputationScoreResponse.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/features/reputation_score_query.feature" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/AppLevelAcceptanceTests_IT.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/util/Util.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/testagent/MessagingTestAgent.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/MessagingAcceptanceTests_IT.java" />
-        <option value="$PROJECT_DIR$/src/clojure_study/garbage.clj" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/lib/gamesys/recipes/mongo.rb" />
-        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/mongoUsers" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/lib/gamesys/recipes/poker-player-profile-system.rb" />
+        <option value="$PROJECT_DIR$/../examples/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/ConnectionProxyRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/model/ChannelNameSourceTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/fedTest.rb" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/live.rb" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/ppc21.rb" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/testgpcloud.rb" />
-        <option value="$PROJECT_DIR$/src/clojure_study/pelda.clj" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system.xml" />
-        <option value="$MAVEN_REPOSITORY$/org/clojure/clojure/1.5.1/clojure-1.5.1.jar!/clojure/core.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/libraries/transducers_play.clj" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/HandHistory.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/HandHistoryRepository.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/handhistorydedup/HandHistoryId.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/handhistorydedup/HandHistoryRepository.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/handhistorydedup/HandHistory.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/infrastructure/persistence/mongo/documents/PersistentHandHistory.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/main/java/gamesys/progresstracker/infrastructure/persistence/mongo/MongoHandHistoryRepository.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core/src/main/java/gamesys/messaging/app/client/JsonMessage.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/cometd/testutils/AbstractCamelCometDTestBase.java" />
         <option value="$PROJECT_DIR$/src/clojure_study/core.clj" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/test/java/gamesys/progresstracker/infrastructure/persistence/mongo/MongoHandHistoryRepositoryITest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/test/java/gamesys/progresstracker/infrastructure/persistence/mongo/MongoHandHistoryRepositoryImplITest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/voucher/service/VoucherService.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-player-profile-messaging-client/src/main/java/gamesys/poker/member/messaging/app/client/voucher/RedeemVoucherCommandMessage.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/main/java/gamesys/progresstracker/app/DeduplicationService.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/main/java/gamesys/progresstracker/app/ProgressTrackerService.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/test/java/gamesys/progresstracker/infrastructure/camel/ProgressTrackerClientRouteBuilderUTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/test/java/gamesys/progresstracker/app/impl/ProgressTrackerServiceImplUTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-poker/src/test/java/gamesys/progresstracker/app/integration/ProgressTrackerServiceImplEnd2EndTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-service/src/main/java/gamesys/progresstracker/app/impl/ProgressTrackerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/cometd/TopicToChannelMappingIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/cometd/testutils/MessageConfirmingSubscribeCallback.java" />
+        <option value="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/serialization/PersistencePlayerIdInfoSerializer.java" />
+        <option value="$PROJECT_DIR$/src/clojure_study/ants.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/concurrency_primitives.clj" />
         <option value="$PROJECT_DIR$/src/clojure_study/core_functions.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/app/eventbus2.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/config/app-context.clj" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/test/blackjack/domain/game/test_fixture.py" />
-        <option value="$PROJECT_DIR$/test/blackjack/domain/game/hi_test.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/app/eventhandlers.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/main.clj" />
-        <option value="$PROJECT_DIR$/test/blackjack/domain/game/fakes.clj" />
-        <option value="$PROJECT_DIR$/test/blackjack/domain/game/test_fixture.clj" />
-        <option value="$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/app/eventbus.clj" />
-        <option value="$PROJECT_DIR$/src/clojure_study/macros2.clj" />
-        <option value="$PROJECT_DIR$/src/clojure_study/async_play.clj" />
-        <option value="$PROJECT_DIR$/src/clojure_study/koans.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/app/lockable.clj" />
-        <option value="$PROJECT_DIR$/test/blackjack/domain/game/lock_test.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/gamerepository/in_memory.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/shared/locking.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/playerrepository/in_memory.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/tablerepository/in_memory.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/wallet/in_memory.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/config/registry.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/app/service/game_app_service.clj" />
-        <option value="$PROJECT_DIR$/src/blackjack/app/service/seating_app_service.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/libraries/reducers_play.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/other/actors.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/other/core.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/other/invariants.clj" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-messaging-dictionary/src/main/java/gamesys/poker/commons/messaging/model/MessageTicketTagInfo.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListenerTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/GiveCommandMessageAssembler.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListener.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/messaging/acl/VoucherMessagingAssembler.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/MessageItemInfoAssembler.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/tournament_ticket/voucher_based_tourney_ticket.feature" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/MessageItemInfoAssemblerTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/scan/AcceptanceTests_IT.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/EnumsTest.java" />
+        <option value="$PROJECT_DIR$/src/marsrovers/rover.clj" />
+        <option value="$PROJECT_DIR$/src/clojure_study/libraries/async_play.clj" />
       </list>
     </option>
   </component>
@@ -294,7 +298,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="795" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -307,34 +311,16 @@
             <id>Abstraction issues</id>
           </State>
           <State>
-            <id>Android</id>
-          </State>
-          <State>
             <id>Android Lint</id>
           </State>
           <State>
-            <id>Annotations verifyingGroovy</id>
-          </State>
-          <State>
-            <id>Ant inspections</id>
-          </State>
-          <State>
             <id>Assignment issues</id>
-          </State>
-          <State>
-            <id>Assignment issuesGroovy</id>
-          </State>
-          <State>
-            <id>Bitwise operation issues</id>
           </State>
           <State>
             <id>Class metrics</id>
           </State>
           <State>
             <id>Class structure</id>
-          </State>
-          <State>
-            <id>Cloning issues</id>
           </State>
           <State>
             <id>Code maturity issues</id>
@@ -344,24 +330,6 @@
           </State>
           <State>
             <id>Compiler issues</id>
-          </State>
-          <State>
-            <id>Concurrency annotation issues</id>
-          </State>
-          <State>
-            <id>Control FlowGroovy</id>
-          </State>
-          <State>
-            <id>Control flow issues</id>
-          </State>
-          <State>
-            <id>Cucumber</id>
-          </State>
-          <State>
-            <id>Data flow issues</id>
-          </State>
-          <State>
-            <id>Data flow issuesGroovy</id>
           </State>
           <State>
             <id>Declaration redundancy</id>
@@ -376,25 +344,16 @@
             <id>Finalization issues</id>
           </State>
           <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>Gradle</id>
+            <id>GPath inspectionsGroovy</id>
           </State>
           <State>
             <id>Groovy</id>
-          </State>
-          <State>
-            <id>HTML</id>
           </State>
           <State>
             <id>Imports</id>
           </State>
           <State>
             <id>Inheritance issues</id>
-          </State>
-          <State>
-            <id>Initialization issues</id>
           </State>
           <State>
             <id>Internationalization issues</id>
@@ -412,6 +371,12 @@
             <id>Java language level migration aids</id>
           </State>
           <State>
+            <id>JavaBeans issues</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
             <id>Javadoc issues</id>
           </State>
           <State>
@@ -421,19 +386,10 @@
             <id>Logging issues</id>
           </State>
           <State>
-            <id>Manifest</id>
-          </State>
-          <State>
             <id>Memory issues</id>
           </State>
           <State>
-            <id>Method MetricsGroovy</id>
-          </State>
-          <State>
             <id>Method metrics</id>
-          </State>
-          <State>
-            <id>Modularization issues</id>
           </State>
           <State>
             <id>Naming ConventionsGroovy</id>
@@ -445,12 +401,6 @@
             <id>Numeric issues</id>
           </State>
           <State>
-            <id>Packaging issues</id>
-          </State>
-          <State>
-            <id>Pattern Validation</id>
-          </State>
-          <State>
             <id>Performance issues</id>
           </State>
           <State>
@@ -460,13 +410,7 @@
             <id>Portability issues</id>
           </State>
           <State>
-            <id>Potentially confusing code constructsGroovy</id>
-          </State>
-          <State>
             <id>Probable bugs</id>
-          </State>
-          <State>
-            <id>Probable bugsGradle</id>
           </State>
           <State>
             <id>Probable bugsGroovy</id>
@@ -476,9 +420,6 @@
           </State>
           <State>
             <id>Resource management issues</id>
-          </State>
-          <State>
-            <id>Scala: General</id>
           </State>
           <State>
             <id>Scala: Method signature</id>
@@ -505,19 +446,7 @@
             <id>UI Form Problems</id>
           </State>
           <State>
-            <id>Validity issuesGroovy</id>
-          </State>
-          <State>
-            <id>Verbose or redundant code constructs</id>
-          </State>
-          <State>
             <id>Visibility issues</id>
-          </State>
-          <State>
-            <id>XML</id>
-          </State>
-          <State>
-            <id>XSLT</id>
           </State>
         </expanded-state>
       </profile-state>
@@ -534,7 +463,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -549,7 +478,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -574,502 +502,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-profile-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-profile-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-profile-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-profile-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-profile-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic_play" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driving" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wallet" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driving" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tablerepository" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driving" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shared" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driving" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playerrepository" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driving" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamerepository" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="driving" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clojure_study" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blackjack" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1080,19 +519,19 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.intentionPowerPack" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Clojure" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3025701" />
     <property name="dynamic.classpath" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesClojure" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gamesys/qa-automation/poker/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/pom.xml" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="137" />
@@ -1114,7 +553,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/domain" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/app" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
   </component>
@@ -1124,90 +563,101 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="gamesys.poker.reputation.domain" />
-      <recent name="gamesys.poker.reputation.domain.normalization.core" />
-      <recent name="gamesys.poker.reputation.domain.normalization" />
-      <recent name="gamesys.poker.reputation.infrastructure.rating.persistence" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="gamesys.poker.reputation.app.communityscore" />
+      <recent name="gamesys.poker.reputation.infrastructure.communityscore.messaging.messageassemblers" />
+      <recent name="gamesys.poker.reputation.app.normalization" />
+      <recent name="gamesys.poker.reputation.infrastructure.normalization.messaging.assemblers" />
+      <recent name="gamesys.poker.reputation.domain.normalization.ondemandupdater" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="gamesys.poker.reputation.infrastructure.reputationscore.messaging.messageassemblers" />
-      <recent name="gamesys.poker.reputation.domain.reputationscore" />
-      <recent name="gamesys.poker.reputation.integration.test.dos" />
+      <recent name="gamesys.progresstracker.infrastructure.persistence.mongo" />
+      <recent name="gamesys.progresstracker.model" />
+      <recent name="gamesys.progresstracker.infrastructure.persistence.mongo.documents" />
+      <recent name="gamesys.poker.reputation.domain.normalization.ondemandupdater" />
       <recent name="gamesys.poker.reputation.messaging.app.client" />
-      <recent name="gamesys.poker.reputation.infrastructure.reputationscore.rating.persistence.store" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test/blackjack/domain/game" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/resources" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/tournament_ticket" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/features" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/infrastructure/reputationscore" />
-      <recent name="$PROJECT_DIR$/src/blackjack/app" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/login" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="gamesys.poker.reputation.infrastructure.meeting" />
+      <recent name="gamesys.poker.reputation.domain.normalization" />
       <recent name="gamesys.poker.reputation.infrastructure.normalization.persistence.store" />
       <recent name="gamesys.poker.reputation.util" />
       <recent name="gamesys.poker.reputation.domain.event" />
-      <recent name="gamesys.poker.buddies.messaging.app.client" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="gamesys.poker.reputation.domain.reputationscore" />
       <recent name="gamesys.poker.reputation.integration.test.dos" />
       <recent name="gamesys.poker.reputation.infrastructure.reputationscore.persistence" />
       <recent name="gamesys.poker.reputation.infrastructure.rating.persistence" />
       <recent name="gamesys.poker.reputation.domain.weighting" />
-      <recent name="gamesys.poker.reputation.infrastructure.persistence" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="gamesys.poker.reputation.domain.normalization" />
-      <recent name="gamesys.poker.reputation.infrastructure.normalization.persistence.store" />
-      <recent name="gamesys.poker.reputation.infrastructure.rating.persistence.store" />
-      <recent name="gamesys.poker.reputation.infrastructure.rating.persistence" />
-      <recent name="gamesys.poker.reputation.domain.rating" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/clojure_study/libraries" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/features" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/deprecated" />
+      <recent name="$PROJECT_DIR$/src/sherlock" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources" />
-      <recent name="$PROJECT_DIR$/src/blackjack/port" />
-      <recent name="$PROJECT_DIR$/src/blackjack/app" />
-      <recent name="$PROJECT_DIR$/src/blackjack/port/cashier" />
-      <recent name="$PROJECT_DIR$/src/blackjack/app/port/cashier" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gamesys.poker.reputation.domain.normalization.batchupdater" />
+      <recent name="gamesys.poker.reputation.app.shared" />
+      <recent name="gamesys.poker.reputation.app.normalization" />
+      <recent name="gamesys.poker.reputation.domain.reputationscore.core" />
+      <recent name="gamesys.poker.reputation.infrastructure.reputationscore" />
     </key>
   </component>
-  <component name="RunManager" selected="Clojure Script.end_to_end_test">
-    <configuration default="false" name="macros2" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="FirstClojure" />
-      <setting name="path" value="$PROJECT_DIR$/src/clojure_study/macros2.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/clojure_study" />
-      <setting name="repl" value="false" />
-      <setting name="main" value="false" />
+  <component name="RunManager" selected="JUnit.AcceptanceTests_IT">
+    <configuration default="false" name="All in poker-player-profile-system" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-player-profile-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <dir value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java" />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="async_play" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="FirstClojure" />
-      <setting name="path" value="$PROJECT_DIR$/src/clojure_study/async_play.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/clojure_study" />
-      <setting name="repl" value="false" />
-      <setting name="main" value="false" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="end_to_end_test" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="FirstClojure" />
-      <setting name="path" value="$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/test/blackjack/domain/game" />
-      <setting name="repl" value="false" />
-      <setting name="main" value="false" />
+    <configuration default="false" name="AcceptanceTests_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-player-profile-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.member.integration.test.scan" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.member.integration.test.scan.AcceptanceTests_IT" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
@@ -1218,26 +668,68 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="hi_test" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="FirstClojure" />
-      <setting name="path" value="$PROJECT_DIR$/test/blackjack/domain/game/hi_test.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/test/blackjack/domain/game" />
-      <setting name="repl" value="false" />
-      <setting name="main" value="false" />
+    <configuration default="false" name="HousingAppListenerTest.handleGiveCommandTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-player-profile-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.member.infrastructure.messaging.listener" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.member.infrastructure.messaging.listener.HousingAppListenerTest" />
+      <option name="METHOD_NAME" value="handleGiveCommandTicket" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="koans" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="FirstClojure" />
-      <setting name="path" value="$PROJECT_DIR$/src/clojure_study/koans.clj" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/clojure_study" />
-      <setting name="repl" value="false" />
-      <setting name="main" value="false" />
+    <configuration default="false" name="MessageItemInfoAssemblerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-player-profile-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.member.infrastructure.acl.tomessage.eventmessage" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.member.infrastructure.acl.tomessage.eventmessage.MessageItemInfoAssemblerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EnumsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-player-profile-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.member.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.member.infrastructure.EnumsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -1277,6 +769,13 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -1583,26 +1082,57 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Remote.PPPS" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Script.macros2" />
-      <item index="2" class="java.lang.String" itemvalue="Clojure Script.async_play" />
-      <item index="3" class="java.lang.String" itemvalue="Clojure Script.end_to_end_test" />
-      <item index="4" class="java.lang.String" itemvalue="Clojure Script.hi_test" />
-      <item index="5" class="java.lang.String" itemvalue="Clojure Script.koans" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in poker-player-profile-system" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AcceptanceTests_IT" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.PPPS" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HousingAppListenerTest.handleGiveCommandTicket" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MessageItemInfoAssemblerTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.EnumsTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Clojure Script.end_to_end_test" />
-        <item index="1" class="java.lang.String" itemvalue="Clojure Script.koans" />
-        <item index="2" class="java.lang.String" itemvalue="Clojure Script.async_play" />
-        <item index="3" class="java.lang.String" itemvalue="Clojure Script.hi_test" />
-        <item index="4" class="java.lang.String" itemvalue="Clojure Script.macros2" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AcceptanceTests_IT" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EnumsTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MessageItemInfoAssemblerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HousingAppListenerTest.handleGiveCommandTicket" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in poker-player-profile-system" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="tasksExpandState">
+      <map>
+        <entry key="" value="true" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="ScalaStudy" />
+              <option name="path" value="$PROJECT_DIR$/../ScalaStudy" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="scalastudy" />
+                <option name="path" value="$PROJECT_DIR$/../ScalaStudy" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="scalastudy-build" />
+                <option name="path" value="$PROJECT_DIR$/../ScalaStudy/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" cleanupOnStartRun="true">
@@ -1613,16 +1143,16 @@
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-game-messaging-client" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-game-messaging-client" />
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-game-messaging-client" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-game-messaging-client" />
+          <option name="myVcsRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -1694,33 +1224,42 @@
       <created>1404999678707</created>
       <updated>1404999678707</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="locking macro">
+      <created>1405081945075</created>
+      <updated>1405081945075</updated>
+    </task>
+    <task id="LOCAL-00017" summary="simplifying Mongo">
+      <created>1405690394995</created>
+      <updated>1405690394995</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="795" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="817" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25462306" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24827586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33570412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29793105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27410468" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.256447" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259362" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32454923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31862068" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25143266" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25071633" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24498567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2788051" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24498567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27034482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1736,20 +1275,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15472779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24498567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27596018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259362" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325419" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2552011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3370319" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25320056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33428165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.256447" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32454923" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32290184" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25143266" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25071633" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1785,7 +1324,9 @@
     <MESSAGE value="route back PlayerVotedEvent to PRS" />
     <MESSAGE value="various stuff" />
     <MESSAGE value="clojure async for events" />
-    <option name="LAST_COMMIT_MESSAGE" value="clojure async for events" />
+    <MESSAGE value="locking macro" />
+    <MESSAGE value="simplifying Mongo" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplifying Mongo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1832,22 +1373,10 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/java/gamesys/poker/commons/infrastructure/convert/MongoDoc2PojoConverter.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/testagent/LowLevelMessagingAgent.java</url>
           <line>82</line>
           <properties />
           <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/infrastructure/rating/persistence/store/MongoPlayerRatingStore.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/src/main/java/gamesys/poker/buddies/app/OnlineBuddiesQueryAsyncHandler.java</url>
@@ -1857,21 +1386,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/domain/normalization/VoteDistributionNormalizerTest.java</url>
-          <line>38</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/testagent/MessagingTestAgent.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/steps/testagent/AppLevelTestAgent.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/blackjack/app/eventbus.clj</url>
@@ -1927,11 +1444,179 @@
           <properties />
           <option name="timeStamp" value="174" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/acl/tomessage/HeaderAppenderTest.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/messaging/integration/JmsConfigurationTest.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListenerTest.java</url>
+          <line>378</line>
+          <properties />
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/infrastructure/rating/persistence/store/AbstractPlayerRatingStoreTestTemplate.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/infrastructure/rating/persistence/store/MongoPlayerRatingStore.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/MongoVoucherStore.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/step/TheSteps.java</url>
+          <line>934</line>
+          <properties />
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/infrastructure/normalization/persistence/StoreDelegatingPlayerWeightsRepositoryTest.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/infrastructure/rating/messaging/messageassemblers/PlayersRatingsResponseMessageAssemblerTest.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/infrastructure/rating/persistence/store/AbstractPlayerRatingStoreTestTemplate.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/infrastructure/rating/persistence/store/MongoPlayerRatingStore.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/BatchSchedulingTest.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/persistence/store/abstracttest/AbstractPlayerStoreTestTemplate.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/app/normalization/WorkSharerTest.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/normalization/batchmode/WorkSharer.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/app/shared/CronTest.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/app/shared/CronTest.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/app/shared/BatchCalculationSchedulingAssistantTest.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/app/shared/CronInterpreterTest.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/domain/normalization/ondemandupdater/PlayerWeightsUpdaterLoadTest.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/test/java/gamesys/poker/reputation/domain/normalization/ondemandupdater/PlayerWeightsUpdaterLoadTest.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/rating/VotingApplicationService.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/rating/VotingApplicationService.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-poker/src/main/java/gamesys/progresstracker/app/HandHistoryProgressUpdateMessageAdvice.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/voucher/service/VoucherService.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/util/FakeMessagingClientImpl.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/util/FakeMessagingClientImpl.java</url>
+          <line>293</line>
+          <properties />
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="175" />
+      <option name="time" value="314" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -2081,403 +1766,416 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/monad.clj">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/core/VoucherStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1057" max-vertical-offset="1515">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="645">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/lib/gamesys/recipes/poker-player-profile-system.rb">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/acl/toinfo/PlayerTokenInfoAssembler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3159" max-vertical-offset="3675">
-          <caret line="228" column="86" selection-start-line="228" selection-start-column="86" selection-end-line="228" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/resources/META-INF/applicationContext-pokerCommons.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/resources/META-INF/applicationContext-versionResolverMBean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/resources/META-INF/commons.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/java/gamesys/poker/commons/mbeans/DeepHealthCheckMBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="1289" max-vertical-offset="2220">
-          <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/META-INF/applicationContext-player-reputation-system-mongo-base.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1155">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/META-INF/applicationContext-player-reputation-system-mongo-rating.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="750">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system-mongo-base.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system.xml">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/MongoVoucherStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1830">
-          <caret line="39" column="106" selection-start-line="39" selection-start-column="106" selection-end-line="39" selection-end-column="106" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5024" max-vertical-offset="5670">
+          <caret line="393" column="31" selection-start-line="393" selection-start-column="19" selection-end-line="393" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/typecheck.clj">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/MongoPlayerRecurrentBonusStateStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1095">
+          <caret line="57" column="80" selection-start-line="57" selection-start-column="80" selection-end-line="57" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/VoucherCriteriaBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1844" max-vertical-offset="2325">
+          <caret line="175" column="38" selection-start-line="175" selection-start-column="38" selection-end-line="175" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/MongoPlayerStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1741" max-vertical-offset="2340">
+          <caret line="163" column="46" selection-start-line="163" selection-start-column="46" selection-end-line="163" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/serialization/PersistencePlayerIdInfoSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/libraries/transducers_play.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/garbage.clj">
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/ants.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="615">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4920">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/lazy_seqs.clj">
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/concurrency_primitives.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.5.1/clojure-1.5.1.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="275" max-vertical-offset="103950">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/assertion.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19650654" vertical-offset="0" max-vertical-offset="458">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="820" max-vertical-offset="2220">
-          <caret line="125" column="21" selection-start-line="125" selection-start-column="21" selection-end-line="125" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/domain/table/table.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/eventbus/cometd_bus.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="423">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/port/external_event_publisher.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="423">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/main.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="315">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/game_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/test_fixture.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/protocoltest_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/cashier.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="423">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/eventhandlers.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.2" vertical-offset="75" max-vertical-offset="1395">
-          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/fakes.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/inmemory/InMemoryAvatarStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="1575">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/inmemory/InMemoryPlayerStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/eventbus.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/config/app_context.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/domain/game/game.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2640">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/macros.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="458">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/async_play.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2067" max-vertical-offset="2490">
-          <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.6.0/clojure-1.6.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="40408" max-vertical-offset="105600">
-          <caret line="2715" column="21" selection-start-line="2715" selection-start-column="21" selection-end-line="2715" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clojure_study/core_functions.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4965">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/macros2.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clojure_study/koans.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.96" vertical-offset="5816" max-vertical-offset="6270">
-          <caret line="411" column="0" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/port/game_repository.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/lock_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blackjack/domain/game/end_to_end_test.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2310">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/tablerepository/in_memory.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="405">
-          <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/playerrepository/in_memory.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="431">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/gamerepository/in_memory.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/wallet/in_memory.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10440835" vertical-offset="0" max-vertical-offset="495">
-          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/config/registry.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/service/registration_app_service.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/lockable.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.065789476" vertical-offset="0" max-vertical-offset="456">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/infrastructure/adapter/driving/shared/locking.clj">
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/libraries/reducers_play.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/other/actors.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/other/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15666" max-vertical-offset="33045">
+          <caret line="1067" column="22" selection-start-line="1067" selection-start-column="22" selection-end-line="1067" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/dataobject/GiveCommandDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8828452" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-messaging-dictionary/src/main/java/gamesys/poker/commons/messaging/model/MessageTicketTagInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/domain/rating/VotingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1050">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/app/client/voucher/VoucherAppService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="555">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListenerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.423077" vertical-offset="5090" max-vertical-offset="7665">
+          <caret line="443" column="43" selection-start-line="443" selection-start-column="43" selection-end-line="443" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/playerprofile.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/GiveCommandMessageAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="855">
+          <caret line="37" column="71" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4015" max-vertical-offset="6135">
+          <caret line="347" column="0" selection-start-line="347" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/voucher/service/VoucherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="943" max-vertical-offset="1410">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/bonus/service/RecurrentBonusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.461538" vertical-offset="354" max-vertical-offset="795">
+          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/bonus/model/core/RecurrentBonusType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1410">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/bonus/model/command/BonusCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/voucher/model/core/Voucher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="2325">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/voucher/model/description/VoucherType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12738854" vertical-offset="0" max-vertical-offset="471">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/voucher/model/description/VoucherDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12738854" vertical-offset="0" max-vertical-offset="471">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/bonus/model/command/GiveTournamentTicketBonusCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/GiveTournamentTicketBonusCommandMessageAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="615">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3331" max-vertical-offset="4545">
+          <caret line="244" column="91" selection-start-line="244" selection-start-column="91" selection-end-line="244" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/messaging/acl/VoucherMessagingAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="1755">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/MessageItemInfoAssemblerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="925" max-vertical-offset="2220">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-player-profile-messaging-client/src/main/java/gamesys/poker/member/messaging/app/client/model/MessageVoucherTypeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/acl/tomessage/eventmessage/MessageItemInfoAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="711" max-vertical-offset="1230">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/step/VoucherSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1728" max-vertical-offset="7170">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/util/FakeMessagingClientImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2208" max-vertical-offset="4590">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/java/gamesys/poker/member/infrastructure/EnumsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/other/invariants.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/marsrovers/rover.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1408354609000" expanded="true" signature="417:490" placeholder="(defn rover ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clojure_study/libraries/async_play.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2792" max-vertical-offset="3285">
+          <caret line="213" column="9" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/service/seating_app_service.clj">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/scan/AcceptanceTests_IT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="315">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blackjack/app/service/game_app_service.clj">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/tournament_ticket/voucher_based_tourney_ticket.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2088167" vertical-offset="0" max-vertical-offset="431">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/features/vouchers/collecting_multiple_vouchers.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/pom2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8835">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6153846" vertical-offset="6874" max-vertical-offset="7875">
+          <caret line="468" column="30" selection-start-line="468" selection-start-column="26" selection-end-line="468" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="285">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/db/bonuses.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2491,7 +2189,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025701" />
               </list>
             </option>
           </splitter-proportions>
@@ -2499,11 +2197,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Scala</last-edited>
+          <last-edited>Clojure (FirstClojure)|Clojure</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025701" />
               </list>
             </option>
           </splitter-proportions>
@@ -2514,7 +2212,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025701" />
               </list>
             </option>
           </splitter-proportions>
@@ -2522,11 +2220,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025701" />
               </list>
             </option>
           </splitter-proportions>
@@ -2534,11 +2232,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>FirstClojure</last-edited>
+          <last-edited>Clojure|FirstClojure</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025701" />
               </list>
             </option>
           </splitter-proportions>
@@ -2546,11 +2244,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.1.4</last-edited>
+          <last-edited>Maven: clojurewerkz:support:0.15.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3025701" />
               </list>
             </option>
           </splitter-proportions>

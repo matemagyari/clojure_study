@@ -1,9 +1,13 @@
-(ns clojure-study.async-play
+(ns clojure-study.libraries.async-play
   (:require [clojure.core.async :refer [go go-loop chan close! <! <!! >! >!!
                                         timeout filter< put! take! pub sub unsub unsub-all
-                                        thread alts! alts!!]]
-            [clojure-study.assertion :refer [assert-equals]]))
+                                        thread alts! alts!!]
+             :as a]
+            [clojure-study.assertion :as ae]
+            [clojure.test :as test]))
 
+(defn -main []
+  (println "ok"))
 
 (let [c (chan 10)]
   (>!! c "hello")
@@ -16,6 +20,22 @@
   (assert (= "hello" (<!! (go (<! c)))))
   (close! c))
 
+;========== waiting for channels and combine their output ======
+(let [fast-chan (chan)
+      slow-chan (chan)
+      result (atom nil)]
+  (go
+    (let [n1 (<! fast-chan)
+          n2 (<! slow-chan)]
+      (reset! result (+ n1 n2))))
+  (>!! fast-chan 3)
+  (Thread/sleep 10)
+  (>!! slow-chan 4)
+  (Thread/sleep 10)
+  (close! fast-chan)
+  (close! slow-chan)
+  (ae/assert-equals 7 @result))
+
 ;======================
 (let [store (atom nil)
       c (chan)]
@@ -23,10 +43,10 @@
         (if-let [msg (<! c)]
           (reset! store msg))))
   (>!! c "hi")
-  (assert-equals "hi" @store)
+  (ae/assert-equals "hi" @store)
   (>!! c "ho")
   (<!! (timeout 10))
-  (assert-equals "ho" @store)
+  (ae/assert-equals "ho" @store)
   (close! c))
 
 ;================== GO-LOOP ====
@@ -37,7 +57,7 @@
       (reset! store msg))
     (recur))
   (>!! c "hi")
-  (assert-equals "hi" @store)
+  (ae/assert-equals "hi" @store)
   (<!! (timeout 10))
   (close! c))
 
@@ -50,27 +70,29 @@
   (go (doseq [x (range 4)]
         (>! c x)))
   (<!! (timeout 10))
-  (assert-equals [0 1 2 3] @store))
+  (ae/assert-equals [0 1 2 3] @store))
 
 ;============== FILTER< ======
-(let [xstore (atom 0)
-      store (atom 0)
-      num-chan (chan)
-      lt-5-chan (filter< #(> 5 %) num-chan)]
-  (go
-    (while true
-      (if-let [msg (<! lt-5-chan)]
-        (reset! xstore msg))))
-  (go
-    (while true
-      (if-let [msg (<! num-chan)]
-        (reset! store msg))))
-  (>!! num-chan 4)
-  (>!! num-chan 6)
-  (<!! (timeout 100))
-  (assert-equals 4 @xstore)
-  (assert-equals 6 @store)
-  (close! num-chan))
+(comment
+  (let [xstore (atom 0)
+        store (atom 0)
+        num-chan (chan)
+        lt-5-chan (filter< #(> 5 %) num-chan)]
+    (go
+      (while true
+        (if-let [msg (<! lt-5-chan)]
+          (reset! xstore msg))))
+    (go
+      (while true
+        (if-let [msg (<! num-chan)]
+          (reset! store msg))))
+    (>!! num-chan 4)
+    (>!! num-chan 6)
+    (<!! (timeout 100))
+    (ae/assert-equals 4 @xstore)
+    (ae/assert-equals 6 @store)
+    (close! num-chan))
+  )
 
 ;==================== PUT and TAKE =====
 (let [c (chan)
@@ -99,8 +121,8 @@
   (>!! in {:name :Mia :type :cat})
   (>!! in {:name :Vau :type :dog})
   (<!! (timeout 10))
-  (assert-equals :Mia (:name @store-cat))
-  (assert-equals :Vau (:name @store-dog))
+  (ae/assert-equals :Mia (:name @store-cat))
+  (ae/assert-equals :Vau (:name @store-dog))
   (unsub-all publication)
   (close! in))
 
@@ -129,32 +151,64 @@
   (<!! (timeout 10))
   (unsub-all publication)
   (close! num-chan)
-  (assert-equals [0 2 4 6 8] @store-even)
-  (assert-equals [1 3 5 7 9] @store-odd)
-  (assert-equals [1 3 5 7 9] @store-odd-2))
+  (ae/assert-equals [0 2 4 6 8] @store-even)
+  (ae/assert-equals [1 3 5 7 9] @store-odd)
+  (ae/assert-equals [1 3 5 7 9] @store-odd-2))
 
 ;==================== THREAD =====
 (let [ct (thread (+ 21 21))
       cg (go (+ 21 21))]
-  (assert-equals 42 (<!! ct))
-  (assert-equals 42 (<!! cg)))
+  (ae/assert-equals 42 (<!! ct))
+  (ae/assert-equals 42 (<!! cg)))
 ;==================== ALT! =====
 (let [fast-chan (chan)
       slow-chan (chan)]
   (go (Thread/sleep 10)
     (>! slow-chan 0))
   (go (>! fast-chan 1))
-  (let [ [v c] (alts!! [fast-chan slow-chan])]
-    (assert-equals 1 v)
-    (assert-equals fast-chan c)))
+  (let [[v c] (alts!! [fast-chan slow-chan])]
+    (ae/assert-equals 1 v)
+    (ae/assert-equals fast-chan c)))
 ;==================== Lot of channels with ALT! =====
 (let [n 1000
       channels (repeatedly n chan)
       begin (System/currentTimeMillis)]
   (doseq [c channels] (go (>! c "hi")))
   (dotimes [i n]
-    (let [ [v c] (alts!! channels)]
-      (assert-equals "hi" v)))
+    (let [[v c] (alts!! channels)]
+      (ae/assert-equals "hi" v)))
   (println "Read" n "messages in" (- (System/currentTimeMillis) begin) "ms"))
-
-
+;==================== to-chan =====
+(let [c (a/to-chan [1 2 3])
+      res [(<!! c) (<!! c) (<!! c)]]
+  (ae/assert-equals [1 2 3] res))
+;==================== map =====
+(let [c1 (a/to-chan [1 2 3])
+      c2 (a/to-chan [4 5 6])
+      mc (a/map + [c1 c2])
+      res [(<!! mc) (<!! mc) (<!! mc)]]
+  (ae/assert-equals [5 7 9] res))
+;==================== into =====
+(let [ch (a/to-chan [1 2])
+      ch2 (a/into [4 5] ch)]
+  (ae/assert-equals [[4 5 1 2] nil] [(<!! ch2) (<!! ch2)]))
+;==================== onto =====
+(comment
+  (let [ch (a/to-chan [1 2])]
+    (a/onto-chan ch [3 4])
+    (ae/assert-equals [[4 5 1 2] nil] [(<!! ch) (<!! ch) (<!! ch) (<!! ch) (<!! ch)]))
+  )
+(let [ch (chan 10)]
+  (a/onto-chan ch [3 4])
+  (ae/assert-equals [3 4] [(<!! ch) (<!! ch)]))
+;==================== transducers, simple =====
+(let [trducer (map inc)
+      c1 (chan 5 trducer)]
+  (>!! c1 3)
+  (ae/assert-equals 4 (<!! c1)))
+;==================== transducers, composed =====
+(let [trducer (comp (filter even?) (map inc))
+      ch (chan 5 trducer)]
+  (a/onto-chan ch [1 2 3 4])
+  (ae/assert-equals [3 5 nil] [(<!! ch) (<!! ch) (<!! ch)]))
+;========
