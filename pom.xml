@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>FirstClojure</groupId>
   <artifactId>FirstClojure</artifactId>
@@ -17,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com/matemagyari/clojure_study.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/matemagyari/clojure_study.git</developerConnection>
-    <tag>c7395ad1be4279e4b5967bc48748b616c71a4c93
+    <tag>af927d24f68832092c9ba9b04b667dd2e8c08dc9
 </tag>
     <url>https://github.com/matemagyari/clojure_study</url>
   </scm>
@@ -67,7 +66,7 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
-      <version>1.6.0</version>
+      <version>1.7.0-alpha1</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>

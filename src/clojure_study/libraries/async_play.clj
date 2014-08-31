@@ -211,4 +211,6 @@
       ch (chan 5 trducer)]
   (a/onto-chan ch [1 2 3 4])
   (ae/assert-equals [3 5 nil] [(<!! ch) (<!! ch) (<!! ch)]))
-;========
+;======== pipeline
+(let [main-ch (chan 5)
+      ])
