@@ -1,16 +1,16 @@
 (ns
   ^{:author mate.magyari}
   marsrovers.pure.plateau
-  (:require [marsrovers.api.rover-api :as ra]
-            [marsrovers.api.plateau-api :as pa]
-            [marsrovers.util :as u]))
+  (:require [marsrovers.pure.api.rover-api :as ra]
+            [marsrovers.pure.api.plateau-api :as pa]
+            [marsrovers.pure.util :as u]))
 
-(defn- is-rover-lost [rover-position plateau-config]
-  (let [x (:x rover-position)
-        y (:y rover-position)]
+(defn- is-rover-lost? [rover-position plateau-config]
+  (let [out-range? (fn [n r]
+                     (or (neg? n) (> n r)))]
     (or
-      (neg? x) (> x (:x plateau-config))
-      (neg? y) (> y (:y plateau-config)))))
+      (out-range? (:x rover-position) (:x plateau-config))
+      (out-range? (:y rover-position) (:y plateau-config)))))
 
 (defn- collisions-msgs [plateau rover-id rover-position]
   (for [rover (-> plateau :rover-positions vals)
@@ -33,7 +33,7 @@
                  :msgs (let [coll-msgs (collisions-msgs plateau rover-id rover-position)]
                          (cond
                            (not (empty? coll-msgs)) coll-msgs
-                           (is-rover-lost
+                           (is-rover-lost?
                              rover-position
                              (:config plateau)) [(u/msg rover-channel (pa/got-lost-msg))]
                            :else [(u/msg rover-channel (pa/ack-msg))])
@@ -42,7 +42,7 @@
     ;;default
     {:state plateau}))
 
-(defn plateau [config]
+(defn plateau [config in-channel]
   {:rover-positions {}
    :config config
-   :in-channel (u/chan)})
+   :in-channel in-channel})

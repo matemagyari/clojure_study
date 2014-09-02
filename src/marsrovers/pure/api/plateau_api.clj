@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  marsrovers.api.plateau-api
+  marsrovers.pure.api.plateau-api
   )
 
 (defn collision-msg [] {:type :collision})

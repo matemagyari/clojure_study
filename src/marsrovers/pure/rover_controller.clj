@@ -1,9 +1,9 @@
 (ns
   ^{:author mate.magyari}
   marsrovers.pure.rover-controller
-  (:require [marsrovers.api.rover-api :as r]
-            [marsrovers.api.rover-controller-api :as c]
-            [marsrovers.util :as u]))
+  (:require [marsrovers.pure.api.rover-api :as r]
+            [marsrovers.pure.api.rover-controller-api :as c]
+            [marsrovers.pure.util :as u]))
 
 (defn- rover-position [controller]
   {:post [(some? %)]}
@@ -12,9 +12,11 @@
 (defn- rover-channel [controller]
   (get-in controller [:rover :rover-channel]))
 
-(defn- rover-msg [controller body] (u/msg
-                                     (rover-channel controller)
-                                     body))
+(defn- rover-msg [controller body]
+  (u/msg
+    (rover-channel controller)
+    body))
+
 (defn- deploy-rover-msg [controller]
   (rover-msg
     controller

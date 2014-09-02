@@ -2,10 +2,10 @@
   ^{:author mate.magyari}
   marsrovers.pure.rover
   (:require [marsrovers.pure.rover-move :as move]
-            [marsrovers.util :as u]
-            [marsrovers.api.nasa-hq-api :as hq]
-            [marsrovers.api.rover-api :as r]
-            [marsrovers.api.rover-controller-api :as c]
+            [marsrovers.pure.util :as u]
+            [marsrovers.pure.api.nasa-hq-api :as hq]
+            [marsrovers.pure.api.rover-api :as r]
+            [marsrovers.pure.api.rover-controller-api :as c]
             ))
 
 (def movement-speed 2)
@@ -47,12 +47,11 @@
             {:state rover
              :msgs [(u/msg
                       mediator-channel
-                      (hq/register-rover-msg (:id rover) (:in-channel rover)))]
-             :schedule {:timeout 1
-                        :msg (u/msg
-                               (:in-channel rover)
-                               msg-tick)}})
-
+                      (hq/register-rover-msg (:id rover) (:in-channel rover)))
+                    (u/msg
+                      (:in-channel rover)
+                      msg-tick
+                      1)]})
     :rover-registered (do
                         (rover-log! rover "Mars rover is registered")
                         {:state (assoc rover :state :registered)})

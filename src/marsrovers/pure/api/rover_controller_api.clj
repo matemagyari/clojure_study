@@ -1,7 +1,7 @@
 (ns
   ^{:author mate.magyari}
-  marsrovers.api.rover-controller-api
-  (:require [marsrovers.util :as u])
+  marsrovers.pure.api.rover-controller-api
+  (:require [marsrovers.pure.util :as u])
   )
 
 (defn start-rover-msg [] {:type :start-rover})

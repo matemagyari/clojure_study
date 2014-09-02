@@ -1,7 +1,7 @@
 (ns
   ^{:author mate.magyari}
   marsrovers.pure.rover-move
-  (:require [marsrovers.util :as u]))
+  (:require [marsrovers.pure.util :as u]))
 
 ;facing can be :n :s :w :e
 

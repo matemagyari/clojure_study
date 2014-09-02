@@ -1,11 +1,11 @@
 (ns
   ^{:author mate.magyari}
   marsrovers.pure.nasa-hq
-  (:require [marsrovers.api.nasa-hq-api :as hq]
+  (:require [marsrovers.pure.api.nasa-hq-api :as hq]
             [marsrovers.pure.rover-controller :as c]
-            [marsrovers.app.rover-controller :as ac]
-            [marsrovers.api.rover-controller-api :as ca]
-            [marsrovers.util :as u]))
+            [marsrovers.pure.api.rover-controller-api :as ca]
+            [marsrovers.pure.util :as u]
+            [marsrovers.glue :as glue]))
 
 (defn- rover-configs [hq]
   (get-in hq [:expedition-config :rover-configs]))
@@ -17,7 +17,7 @@
 
 (defn- create-controller [rover-id rover-channel rover-config hq-channel]
   (atom
-    (c/controller rover-id rover-channel rover-config (u/chan) hq-channel)))
+    (c/controller rover-id rover-channel rover-config (glue/chan) hq-channel)))
 
 (defn- create-controllers [hq]
   (let [pairs (map vector
@@ -44,7 +44,7 @@
         :let [ch (:in-channel @c)]]
     (u/msg ch (ca/start-rover-msg))))
 
-(defn receive [hq in-msg]
+(defn receive [hq in-msg start-controller-fn!]
   ;(u/log! "NASA HQ received msg " in-msg)
   (condp = (:type in-msg)
 
@@ -57,16 +57,16 @@
                             msgs (conj (start-rover-msgs hq)
                                    (u/msg (:rover-channel in-msg) (hq/rover-registered-msg)))]
                         {:effects [#(doseq [co (:controllers hq)]
-                                      (ac/start-controller! co))]
+                                      (start-controller-fn! co))]
                          :msgs msgs
                          :state hq}))
     (do
       (u/log! "Unknown msg in Nasa HQ " in-msg)
       {:state hq})))
 
-(defn nasa-hq [expedition-config]
+(defn nasa-hq [expedition-config in-channel]
   {:disaster false
-   :in-channel (u/chan)
+   :in-channel in-channel
    :expedition-config expedition-config
    :plateau-config (:plateau-config expedition-config)
    :rovers []})

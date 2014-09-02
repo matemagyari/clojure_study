@@ -5,34 +5,46 @@
             [marsrovers.pure.plateau :as p]
             [marsrovers.pure.rover :as r]
             [marsrovers.pure.rover-controller :as c]
-            [marsrovers.util :as u]))
+            [marsrovers.pure.util :as u]
+            [marsrovers.glue :as glue]))
 
-(defn start-nasa-hq! [hq-atom]
-  (u/start-component!
-    hq-atom
-    (:in-channel @hq-atom)
-    (fn [in-msg]
-      (n/receive @hq-atom in-msg))))
-
-(defn start-plateau! [plateau-atom]
-  (u/start-component!
-    plateau-atom
-    (:in-channel @plateau-atom)
-    (fn [in-msg]
-      (p/receive @plateau-atom in-msg))))
-
-(defn start-controller! [controller-atom]
-  (u/start-component!
+(defn- start-controller! [controller-atom]
+  (glue/start-component!
     controller-atom
-    (:in-channel @controller-atom)
     (fn [in-msg]
       (c/receive @controller-atom in-msg))))
 
+(defn start-nasa-hq! [hq-atom]
+  (glue/start-component!
+    hq-atom
+    (fn [in-msg]
+      (n/receive @hq-atom in-msg start-controller!))))
+
+(defn start-plateau! [plateau-atom]
+  (glue/start-component!
+    plateau-atom
+    (fn [in-msg]
+      (p/receive @plateau-atom in-msg))))
+
+(defn start-world! [expedition-config plateau-channel nasa-hq-channel]
+  (let [plateau-atom (atom
+                       (p/plateau (:plateau-config expedition-config) plateau-channel))
+        nasa-hq-atom (atom
+                       (n/nasa-hq expedition-config nasa-hq-channel))]
+    (start-nasa-hq! nasa-hq-atom)
+    (start-plateau! plateau-atom)))
+
 (defn start-rover! [rover-atom plateau-channel mediator-channel]
   (let [in-channel (:in-channel @rover-atom)]
-    (u/start-component!
+    (glue/start-component!
       rover-atom
-      in-channel
       (fn [in-msg]
         (r/receive @rover-atom in-msg plateau-channel mediator-channel)))
-    (u/send-msg! (u/msg in-channel r/msg-tick))))
+    (glue/send-msg! (u/msg in-channel r/msg-tick))))
+
+(defn start-rovers! [n plateau-channel mediator-channel]
+  (let [rover-atoms (for [i (range n)]
+                      (atom
+                        (r/rover i (glue/chan))))]
+    (doseq [rover-atom rover-atoms]
+      (start-rover! rover-atom plateau-channel mediator-channel))))
