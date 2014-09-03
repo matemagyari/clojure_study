@@ -14,13 +14,13 @@
     (fn [in-msg]
       (c/receive @controller-atom in-msg))))
 
-(defn start-nasa-hq! [hq-atom]
+(defn- start-nasa-hq! [hq-atom]
   (glue/start-component!
     hq-atom
     (fn [in-msg]
       (n/receive @hq-atom in-msg start-controller!))))
 
-(defn start-plateau! [plateau-atom]
+(defn- start-plateau! [plateau-atom]
   (glue/start-component!
     plateau-atom
     (fn [in-msg]
@@ -35,12 +35,11 @@
     (start-plateau! plateau-atom)))
 
 (defn start-rover! [rover-atom plateau-channel mediator-channel]
-  (let [in-channel (:in-channel @rover-atom)]
-    (glue/start-component!
-      rover-atom
-      (fn [in-msg]
-        (r/receive @rover-atom in-msg plateau-channel mediator-channel)))
-    (glue/send-msg! (u/msg in-channel r/msg-tick))))
+  (glue/start-component!
+    rover-atom
+    (fn [in-msg]
+      (r/receive @rover-atom in-msg plateau-channel mediator-channel)))
+  (glue/send-msg! (u/msg (:in-channel @rover-atom) r/msg-tick)))
 
 (defn start-rovers! [n plateau-channel mediator-channel]
   (let [rover-atoms (for [i (range n)]
