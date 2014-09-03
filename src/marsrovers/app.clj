@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  marsrovers.app.app
+  marsrovers.app
   (:require [marsrovers.pure.nasa-hq :as n]
             [marsrovers.pure.plateau :as p]
             [marsrovers.pure.rover :as r]

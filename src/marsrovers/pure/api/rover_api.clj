@@ -1,7 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  marsrovers.pure.api.rover-api
-  )
+  marsrovers.pure.api.rover-api)
 
 (defn position-msg [rover-id rover-position rover-channel]
   {:pre [(some? rover-id) (some? rover-position) (some? rover-channel)]}

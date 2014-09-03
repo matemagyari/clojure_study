@@ -13,9 +13,7 @@
   (get-in controller [:rover :rover-channel]))
 
 (defn- rover-msg [controller body]
-  (u/msg
-    (rover-channel controller)
-    body))
+  (u/msg (rover-channel controller) body))
 
 (defn- deploy-rover-msg [controller]
   (rover-msg

@@ -25,17 +25,12 @@
 (def all (count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers" "clj"))
 (def pure (count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/pure" "clj"))
 (def glue (count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/glue.clj" "clj"))
-(def app (count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/app/app.clj" "clj"))
+(def app (count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/app.clj" "clj"))
 
 (println "All:" all)
 (println "Pure:" pure (double (/ pure all)))
 (println "glue:" glue (double (/ glue all)))
 (println "app:" app (double (/ app all)))
-
-(count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/pure/plateau.clj" "clj")
-(count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/app/app.clj" "clj")
-(count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/glue.clj" "clj")
-(count-lines "/Users/mate.magyari/IdeaProjects/clojure_study/src/marsrovers/api" "clj")
 
 (count-lines "/Users/mate.magyari/IdeaProjects/others/marsrover/marsrover/src/main/scala/org/kaloz/excercise/marsrover" "scala")
 (count-lines "/Users/mate.magyari/IdeaProjects/others/marsrover/marsrover/src/main/scala/org/kaloz/excercise/marsrover/Plateau.scala" "scala")

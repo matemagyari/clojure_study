@@ -1,7 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  marsrovers.pure.api.nasa-hq-api
-  )
+  marsrovers.pure.api.nasa-hq-api)
 
 (defn start-expedition-msg [configs]
   {:pre [(some? configs)]}

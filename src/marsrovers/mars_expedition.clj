@@ -2,7 +2,7 @@
   ^{:author mate.magyari}
   marsrovers.mars-expedition
   (:require [clojure.core.async :as a]
-            [marsrovers.app.app :as app]
+            [marsrovers.app :as app]
             [marsrovers.glue :as glue]
             [marsrovers.expedition-config-reader :as ecr]))
 
