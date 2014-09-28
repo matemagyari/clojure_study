@@ -8,8 +8,8 @@
             [marsrovers.pure.api.rover-controller-api :as c]
             ))
 
-(def movement-speed 2)
-(def turning-speed 3)
+(def movement-speed 20)
+(def turning-speed 30)
 
 (defn change-position [position action]
   {:pre [(u/valid-action? action) (some? position)]}
@@ -61,7 +61,7 @@
       {:state rover})))
 
 (defmethod receive :dead [rover in-msg plateau-channel mediator-channel]
-  (rover-log! rover "I'm quite dead yet I have received this message " in-msg)
+  ;(rover-log! rover "I'm quite dead yet I have received this message " in-msg)
   {:state rover})
 
 

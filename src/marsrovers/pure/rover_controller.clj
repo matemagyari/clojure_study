@@ -44,7 +44,7 @@
   (u/log! "Controller " (get-in controller [:rover :rover-id]) ": " text))
 
 (defn receive [controller in-msg]
-  (controller-log! controller " Message arrived: " (:rover-position in-msg))
+  ;;(controller-log! controller " Message arrived: " (:rover-position in-msg))
   (condp = (:type in-msg)
     :start-rover (result
                    controller

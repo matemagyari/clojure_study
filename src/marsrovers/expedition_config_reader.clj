@@ -16,7 +16,7 @@
     vec))
 
 (defn- lot-of-actions []
-  (actions 200))
+  (actions 99999))
 
 (defn- rand-config [plateau-config]
   (let [x (rand-nth (range (:x plateau-config)))
@@ -34,4 +34,4 @@
 
 (defn expedition-config []
   {:plateau-config plateau-config
-   :rover-configs (rand-rover-configs 10 plateau-config)})
+   :rover-configs (rand-rover-configs 20 plateau-config)})

@@ -33,3 +33,9 @@
         (process-result! entity-atom result)))
     (recur)))
 
+
+(defn start-simple-component! [in-channel msg-processing-fn!]
+  (a/go-loop []
+    (when-let [in-msg (a/<! in-channel)]
+      (msg-processing-fn! in-msg))
+    (recur)))

@@ -5,11 +5,20 @@
 
 (println "start")
 
-(defn app [request]
+(defn handler [request]
   {:status 200
    :headers {"Content-Type" "text/plain"}
-   :body "Hello World"})
+   :body "Hello World1"})
 
-;(defonce server (r/run-jetty #'app {:port 8080 :join? false}))
-;(.stop server)
+(defn logger [handler]
+  (fn [request]
+    (println "Request is" request)
+    (handler request)))
+
+(def app (-> handler
+           logger))
+
+(defonce server (r/run-jetty #'app {:port 8080 :join? false}))
+(.stop server)
+(.start server)
 

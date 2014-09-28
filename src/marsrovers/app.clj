@@ -6,7 +6,8 @@
             [marsrovers.pure.rover :as r]
             [marsrovers.pure.rover-controller :as c]
             [marsrovers.pure.util :as u]
-            [marsrovers.glue :as glue]))
+            [marsrovers.glue :as glue]
+            [marsrovers.display :as d]))
 
 (defn- start-controller! [controller-atom]
   (glue/start-component!
@@ -26,13 +27,19 @@
     (fn [in-msg]
       (p/receive @plateau-atom in-msg))))
 
-(defn start-world! [expedition-config plateau-channel nasa-hq-channel]
-  (let [plateau-atom (atom
-                       (p/plateau (:plateau-config expedition-config) plateau-channel))
+(defn- start-displayer! [displayer-channel plateau-config dim-screen]
+  (let [repaint! (d/repaint-fn [(:x plateau-config) (:y plateau-config)] dim-screen)]
+    (glue/start-simple-component! displayer-channel repaint!)))
+
+(defn start-world! [expedition-config plateau-channel nasa-hq-channel displayer-channel dim-screen]
+  (let [plateau-config (:plateau-config expedition-config)
+        plateau-atom (atom
+                       (p/plateau plateau-config plateau-channel displayer-channel))
         nasa-hq-atom (atom
                        (n/nasa-hq expedition-config nasa-hq-channel))]
     (start-nasa-hq! nasa-hq-atom)
-    (start-plateau! plateau-atom)))
+    (start-plateau! plateau-atom)
+    (start-displayer! displayer-channel plateau-config dim-screen)))
 
 (defn start-rover! [rover-atom plateau-channel mediator-channel]
   (glue/start-component!

@@ -6,11 +6,13 @@
             [marsrovers.glue :as glue]
             [marsrovers.expedition-config-reader :as ecr]))
 
+(def displayer-channel (glue/chan))
 (def plateau-channel (glue/chan))
 (def nasa-hq-channel (glue/chan))
 (def expedition-config (ecr/expedition-config))
+(def dim-screen [600 600])
 
-(app/start-world! expedition-config plateau-channel nasa-hq-channel)
+(app/start-world! expedition-config plateau-channel nasa-hq-channel displayer-channel dim-screen)
 
 (app/start-rovers!
   (count (:rover-configs expedition-config))
