@@ -28,7 +28,11 @@
       (p/receive @plateau-atom in-msg))))
 
 (defn- start-displayer! [displayer-channel plateau-config dim-screen]
-  (let [repaint! (d/repaint-fn [(:x plateau-config) (:y plateau-config)] dim-screen)]
+  (let [repaint! (d/repaint-fn [(:x plateau-config) (:y plateau-config)] dim-screen)
+        count (atom 0)
+        counter! (fn [msg]
+                   (do (swap! count inc)
+                     (println (str "Count" @count))))]
     (glue/start-simple-component! displayer-channel repaint!)))
 
 (defn start-world! [expedition-config plateau-channel nasa-hq-channel displayer-channel dim-screen]

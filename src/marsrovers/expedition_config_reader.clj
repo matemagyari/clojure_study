@@ -34,4 +34,4 @@
 
 (defn expedition-config []
   {:plateau-config plateau-config
-   :rover-configs (rand-rover-configs 20 plateau-config)})
+   :rover-configs (rand-rover-configs 57 plateau-config)})

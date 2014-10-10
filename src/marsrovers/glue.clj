@@ -3,12 +3,25 @@
   marsrovers.glue
   (:require [clojure.core.async :as a]))
 
-(defn send-msg! [msg]
+(defn send-msg!-old [msg]
   {:pre [(some? (:target msg)) (some? (:body msg))]}
   (a/go
     (if-let [delay (:delay msg)]
       (a/<! (a/timeout (* delay 10))))
-    (a/>! (:target msg) (:body msg))))
+    (try
+      (a/>! (:target msg) (:body msg))
+      (catch AssertionError err
+        (println (str "AssertionError on message" msg (.getMessage err)))))))
+
+
+(defn send-msg! [msg]
+  {:pre [(some? (:target msg)) (some? (:body msg))]}
+  (if-let [delay (:delay msg)]
+    (a/<!! (a/timeout (* delay 10))))
+  (try
+    (a/>!! (:target msg) (:body msg))
+    (catch AssertionError err
+      (println (str "AssertionError on message" msg (.getMessage err))))))
 
 (defn- send-msgs! [msgs]
   (doseq [msg msgs] (send-msg! msg)))
@@ -23,8 +36,9 @@
   (when msgs
     (send-msgs! msgs)))
 
-(defn chan []
-  (a/chan 100))
+(defn chan
+  ([] (a/chan 100))
+  ([buffer] (a/chan buffer)))
 
 (defn start-component! [entity-atom msg-processing-fn]
   (a/go-loop []

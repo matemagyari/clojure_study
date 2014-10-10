@@ -23,7 +23,6 @@
   (let [pairs (map vector
                 (:rovers hq)
                 (rover-configs hq))]
-    (println pairs)
     (for [[rover rover-config] pairs]
       (create-controller (:rover-id rover) (:rover-channel rover) rover-config (:in-channel hq)))))
 

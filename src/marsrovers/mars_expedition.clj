@@ -7,7 +7,7 @@
             [marsrovers.expedition-config-reader :as ecr]))
 
 (def displayer-channel (glue/chan))
-(def plateau-channel (glue/chan))
+(def plateau-channel (glue/chan 100))
 (def nasa-hq-channel (glue/chan))
 (def expedition-config (ecr/expedition-config))
 (def dim-screen [600 600])

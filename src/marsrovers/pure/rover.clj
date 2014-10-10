@@ -8,8 +8,8 @@
             [marsrovers.pure.api.rover-controller-api :as c]
             ))
 
-(def movement-speed 20)
-(def turning-speed 30)
+(def movement-speed 2)
+(def turning-speed 2)
 
 (defn change-position [position action]
   {:pre [(u/valid-action? action) (some? position)]}
@@ -49,15 +49,13 @@
                       mediator-channel
                       (hq/register-rover-msg (:id rover) (:in-channel rover)))
                     (u/msg
-                      (:in-channel rover)
-                      msg-tick
-                      1)]})
+                      (:in-channel rover) msg-tick 1)]})
     :rover-registered (do
                         (rover-log! rover "Mars rover is registered")
                         {:state (assoc rover :state :registered)})
     ;default
     (do
-      (rover-log! rover "Unknown message! " in-msg)
+      ;(rover-log! rover "Unknown message! " in-msg)
       {:state rover})))
 
 (defmethod receive :dead [rover in-msg plateau-channel mediator-channel]
@@ -94,13 +92,12 @@
                                  plateau-channel (position-msg rover))]})
 
     :collision (do
-                 (rover-log! rover "Mars rover has broken down")
-                 (comment "TODO poison pill")
+                 ;(rover-log! rover "Mars rover has broken down")
                  {:state rover
                   :msgs [(self-poison-msg rover)]})
 
     :got-lost (do
-                (rover-log! rover "Mars rover got lost")
+                ;(rover-log! rover "Mars rover got lost")
                 {:state rover
                  :msgs [(u/msg
                           (:controller-channel rover) (position-msg rover))
@@ -120,7 +117,7 @@
                    {:state (assoc rover :state :dead)})
 
     (do
-      (rover-log! rover "Unknown message ins state " (:state rover) ": " in-msg)
+      ;(rover-log! rover "Unknown message ins state " (:state rover) ": " in-msg)
       {:state rover})))
 
 (defn rover-position [x y facing]

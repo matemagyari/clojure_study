@@ -17,6 +17,9 @@
                  [ring "1.3.0"]
                  [clojurewerkz/titanium "1.0.0-beta1"]
                  [org.clojure/core.typed "0.2.58"]
+                 [incanter "1.5.2"]
+                 [cc.mallet/mallet "2.0.7"]
+                 [me.raynes/fs "1.4.4"]
                  ]
   :main clojure-study.libraries.transducers-play
   ;:main clojure_study.main
