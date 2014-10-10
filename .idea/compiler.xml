@@ -28,12 +28,14 @@
         <module name="blackjack-wallet" />
         <module name="connection-proxy" />
         <module name="examples" />
-        <module name="FirstClojure" />
         <module name="gamification-messaging-client" />
         <module name="gamification-poker-messaging-client" />
         <module name="gamification-service" />
         <module name="gamification-system" />
+        <module name="gamification-system-parent" />
         <module name="gamification-test" />
+        <module name="hand-record-core" />
+        <module name="hand-record-integration-tests" />
         <module name="messaging-core" />
         <module name="notification-loader-service" />
         <module name="poker-academy" />
@@ -51,6 +53,7 @@
         <module name="poker-fulfilment-messaging-client" />
         <module name="poker-fulfilment-system" />
         <module name="poker-game-messaging-client" />
+        <module name="poker-game-system" />
         <module name="poker-giving-api" />
         <module name="poker-messaging-dictionary" />
         <module name="poker-notification-system" />
@@ -61,6 +64,7 @@
         <module name="poker-player-reputation-system" />
         <module name="poker-player-reputation-system (1)" />
         <module name="poker-player-session-messaging-api" />
+        <module name="poker-promotion-system" />
         <module name="poker-reporting-system" />
         <module name="poker-stats-messaging-client" />
         <module name="poker-stats-system" />
@@ -68,6 +72,7 @@
         <module name="pokerProject" />
         <module name="project-api" />
         <module name="project-client" />
+        <module name="simple-storage-system" />
         <module name="streaming-poker-integrity-messaging-client" />
         <module name="streaming-poker-integrity-service" />
         <module name="timeout" />
@@ -100,6 +105,10 @@
       <module name="gamification-system" target="1.6" />
       <module name="gamification-system-parent" target="1.6" />
       <module name="gamification-test" target="1.6" />
+      <module name="hand-record-core" target="1.6" />
+      <module name="hand-record-dlq-assistant" target="1.6" />
+      <module name="hand-record-integration-tests" target="1.6" />
+      <module name="hand-record-system" target="1.6" />
       <module name="messaging-core" target="1.6" />
       <module name="notification-loader-service" target="1.6" />
       <module name="poker-academy" target="1.6" />
@@ -117,6 +126,7 @@
       <module name="poker-fulfilment-messaging-client" target="1.6" />
       <module name="poker-fulfilment-system" target="1.6" />
       <module name="poker-game-messaging-client" target="1.6" />
+      <module name="poker-game-system" target="1.6" />
       <module name="poker-giving-api" target="1.6" />
       <module name="poker-messaging-dictionary" target="1.6" />
       <module name="poker-notification-system" target="1.6" />
@@ -125,6 +135,7 @@
       <module name="poker-player-reputation-messaging-client" target="1.6" />
       <module name="poker-player-reputation-system" target="1.6" />
       <module name="poker-player-session-messaging-api" target="1.6" />
+      <module name="poker-promotion-system" target="1.6" />
       <module name="poker-reporting-system" target="1.6" />
       <module name="poker-stats-messaging-client" target="1.6" />
       <module name="poker-stats-system" target="1.6" />
@@ -132,6 +143,7 @@
       <module name="pokerProject" target="1.6" />
       <module name="project-api" target="1.6" />
       <module name="project-client" target="1.6" />
+      <module name="simple-storage-system" target="1.6" />
       <module name="streaming-poker-integrity-messaging-client" target="1.6" />
       <module name="streaming-poker-integrity-service" target="1.6" />
       <module name="timeout" target="1.6" />

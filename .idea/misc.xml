@@ -19,7 +19,6 @@
         <option value="$PROJECT_DIR$/../examples/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
@@ -32,6 +31,10 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/simple-storage-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

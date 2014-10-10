@@ -16,17 +16,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/clojure/algo.monads/0.1.5/algo.monads-0.1.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="jar://$MAVEN_REPOSITORY$/org/clojure/algo.monads/0.1.5/algo.monads-0.1.5.jar!/" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="Maven: org.clojure:clojure:1.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:clojure-contrib:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:core.logic:0.8.5" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:core.match:0.2.1" level="project" />
@@ -217,6 +206,8 @@
     <orderEntry type="library" name="Maven: org.clojure:math.combinatorics:0.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.clojure:tools.nrepl:0.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: clojure-complete:clojure-complete:0.2.3" level="project" />
+    <orderEntry type="library" name="clojure" level="project" />
+    <orderEntry type="library" name="org.clojure:clojure:1.7.0-alpha1" level="project" />
   </component>
 </module>
 

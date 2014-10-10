@@ -2,8 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-academy-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot" vcs="Git" />
@@ -14,13 +14,16 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/simple-storage-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/timeout" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager" vcs="Git" />
