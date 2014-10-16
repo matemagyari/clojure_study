@@ -1,5 +1,6 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Rover controller component's API description"}
   marsrovers.pure.api.rover-controller-api
   (:require [marsrovers.pure.util :as u]))
 

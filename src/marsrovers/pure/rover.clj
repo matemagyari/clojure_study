@@ -1,5 +1,6 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Pure functions describing the behaviour of the Rover component"}
   marsrovers.pure.rover
   (:require [marsrovers.pure.rover-move :as move]
             [marsrovers.pure.util :as u]
@@ -7,9 +8,6 @@
             [marsrovers.pure.api.rover-api :as r]
             [marsrovers.pure.api.rover-controller-api :as c]
             ))
-
-(def movement-speed 2)
-(def turning-speed 2)
 
 (defn change-position [position action]
   {:pre [(u/valid-action? action) (some? position)]}
@@ -23,7 +21,6 @@
 ;;rover-state can be: CREATED, REGISTERED, DEPLOYED, READY, MOVING
 
 (def ^:private msg-end-of-movement {:type :end-of-movement})
-(def msg-tick {:type :tick})
 
 (defn- rover-log! [rover & text]
   (u/log! "Rover " (:id rover) ": " text))
@@ -40,26 +37,27 @@
 (defmulti receive (fn [rover in-msg plateau-channel mediator-channel] (:state rover)))
 
 (defmethod receive :registration [rover in-msg plateau-channel mediator-channel]
-  (u/log! "Rover " (:id rover) ": Message arrived in :registration state " in-msg)
+  ;(u/log! "Rover " (:id rover) ": Message arrived in :registration state " in-msg)
   (condp = (:type in-msg)
     :tick (when (not= :registered (:state rover))
+            (assert (= (:id rover) (:id in-msg)))
             ;(rover-log! rover "Publishing registration")
             {:state rover
              :msgs [(u/msg
                       mediator-channel
-                      (hq/register-rover-msg (:id rover) (:in-channel rover)))
+                      (apply hq/register-rover-msg ((juxt :id :config :in-channel) rover)))
                     (u/msg
-                      (:in-channel rover) msg-tick 1)]})
+                      (:in-channel rover) in-msg 10)]})
     :rover-registered (do
                         (rover-log! rover "Mars rover is registered")
                         {:state (assoc rover :state :registered)})
     ;default
     (do
-      ;(rover-log! rover "Unknown message! " in-msg)
+      (rover-log! rover "Unknown message! " in-msg)
       {:state rover})))
 
 (defmethod receive :dead [rover in-msg plateau-channel mediator-channel]
-  ;(rover-log! rover "I'm quite dead yet I have received this message " in-msg)
+  (rover-log! rover "I'm quite dead yet I have received this message " in-msg)
   {:state rover})
 
 
@@ -75,8 +73,8 @@
                               plateau-channel (position-msg rover))]})
 
     :rover-action (let [delay (if (u/in? (:action in-msg) :left :right)
-                                turning-speed
-                                movement-speed)]
+                                (get-in rover [:config :speed :turning-speed])
+                                (get-in rover [:config :speed :movement-speed]))]
                     {:state (assoc rover
                               :last-action (:action in-msg)
                               :state :moving)
@@ -123,9 +121,11 @@
 (defn rover-position [x y facing]
   {:x x :y y :facing facing})
 
-(defn rover [id channel]
+(defn rover [id config channel]
+  {:pre [(some? (get-in config [:speed :turning-speed]))]}
   {:id id
    :position nil
+   :config config
    :last-action nil
    :state :registration
    :in-channel channel})

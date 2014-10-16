@@ -1,5 +1,6 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Pure functions describing the behaviour of the Rover Controller component"}
   marsrovers.pure.rover-controller
   (:require [marsrovers.pure.api.rover-api :as r]
             [marsrovers.pure.api.rover-controller-api :as c]
@@ -44,7 +45,7 @@
   (u/log! "Controller " (get-in controller [:rover :rover-id]) ": " text))
 
 (defn receive [controller in-msg]
-  ;;(controller-log! controller " Message arrived: " (:rover-position in-msg))
+  ;(controller-log! controller " Message arrived: " (:rover-position in-msg))
   (condp = (:type in-msg)
     :start-rover (result
                    controller

@@ -1,5 +1,6 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Rover components' API description"}
   marsrovers.pure.api.rover-api)
 
 (defn position-msg [rover-id rover-position rover-channel]
@@ -9,6 +10,8 @@
 (defn deploy-rover-msg [rover-position controller-channel]
   {:pre [(some? rover-position) (some? controller-channel)]}
   {:rover-position rover-position :controller-channel controller-channel :type :deploy-rover})
+
+(defn tick-msg [rover-id] {:type :tick :id rover-id})
 
 
 

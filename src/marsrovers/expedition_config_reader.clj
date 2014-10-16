@@ -1,15 +1,21 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Reading up the expedition config. Currently it's hard coded, but could come from file for example."}
   marsrovers.expedition-config-reader
   (:require [marsrovers.pure.rover :as r]))
 
-(def ^:private plateau-config {:x 200 :y 200})
+;; -----------------  private functions ------------------------
+
+(def ^:private plateau-config {:x 300 :y 300})
 
 (defn- rover-config [position actions]
   {:pre [(some? position) (some? actions)]}
-  {:position position :actions actions})
+  {:position position
+   :actions actions
+   :speed {:movement-speed 0
+           :turning-speed 0}})
 
-(defn actions [n]
+(defn- actions [n]
   (->> #(rand-nth [:left :move :right])
     repeatedly
     (take n)
@@ -32,6 +38,10 @@
     (take n)
     vec))
 
-(defn expedition-config []
+;; -----------------  public functions ------------------------
+
+(defn expedition-config
+  "Return the config for the expedition."
+  []
   {:plateau-config plateau-config
-   :rover-configs (rand-rover-configs 57 plateau-config)})
+   :rover-configs (rand-rover-configs 100 plateau-config)})

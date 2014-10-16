@@ -1,12 +1,8 @@
-(ns
-  ^{:author mate.magyari}
-  marsrovers.display
-  (comment
-    (:require [javax.swing :refer [JFrame JPanel]]
-              [java.awt :refer [Color Graphics]]
-              [java.awt.image :refer [BufferedImage]])
-    )
-  )
+(ns ^{:author mate.magyari
+      :doc "Swing UI. "}
+  marsrovers.display)
+
+;; -----------------  private functions ------------------------
 
 (import '(javax.swing JFrame JPanel)
   '(java.awt Color Graphics Dimension)
@@ -43,7 +39,12 @@
     (doto (new JFrame) (.add panel) .pack .show (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE))
     panel))
 
-(defn repaint-fn [dim-board dim-screen]
+;; -----------------  public functions ------------------------
+
+(defn repaint-fn
+  "Returns a function that will be called with one argument containing the positions of the rovers
+   and will refresh the Swing panel"
+  [dim-board dim-screen]
   (let [board-atom (atom [])
         panel (create-panel board-atom dim-board dim-screen)]
     (fn [board] (do

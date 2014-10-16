@@ -1,9 +1,11 @@
-(ns
-  ^{:author mate.magyari}
+(ns ^{:author mate.magyari
+      :doc "Pure functions describing the behaviour of the Plateau component"}
   marsrovers.pure.plateau
   (:require [marsrovers.pure.api.rover-api :as ra]
             [marsrovers.pure.api.plateau-api :as pa]
             [marsrovers.pure.util :as u]))
+
+;; -----------------  private functions ------------------------
 
 (defn- is-rover-lost? [rover-position plateau-config]
   (let [out-range? (fn [n r]
@@ -32,6 +34,8 @@
 
 (defn- plateau-view-msg [plateau]
   (u/msg (:displayer-channel plateau) (plateau-view plateau)))
+
+;; -----------------  public functions ------------------------
 
 (defn receive [plateau in-msg]
   (condp = (:type in-msg)

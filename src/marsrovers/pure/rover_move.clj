@@ -1,5 +1,6 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Pure functions describing the rover movements"}
   marsrovers.pure.rover-move
   (:require [marsrovers.pure.util :as u]))
 
@@ -11,12 +12,18 @@
 (defn turn-left [facing]
   {:pre [(is-valid-facing? facing)]}
   (condp = facing
-    :n :w :w :s :s :e :e :n))
+    :n :w
+    :w :s
+    :s :e
+    :e :n))
 
 (defn turn-right [facing]
   {:pre [(is-valid-facing? facing)]}
   (condp = facing
-    :n :e :e :s :s :w :w :n))
+    :n :e
+    :e :s
+    :s :w
+    :w :n))
 
 
 (defn move-x [facing]
