@@ -62,10 +62,9 @@
                   (poison-pill-msg controller)))))
 
 (defn controller [rover-id rover-channel rover-config in-channel hq-channel]
-  {:pre [(some? rover-id) (some? rover-channel) (some? rover-config) (some? in-channel) (some? hq-channel)]}
+  {:pre [(every? some? [rover-id rover-channel rover-config in-channel hq-channel])]}
   {:rover {:rover-id rover-id :rover-channel rover-channel}
    :actions (:actions rover-config)
    :rover-config rover-config
    :in-channel in-channel
    :hq-channel hq-channel})
-

@@ -8,7 +8,7 @@
   {:rover-configs configs :type :start-expedition})
 
 (defn register-rover-msg [rover-id rover-config rover-channel]
-  {:pre [(some? rover-id) (some? rover-channel)]}
+  {:pre [(every? some? [rover-id rover-channel])]}
   {:rover-id rover-id :rover-channel rover-channel :rover-config rover-config :type :register-rover})
 
 (defn rover-registered-msg [] {:type :rover-registered})

@@ -12,7 +12,7 @@
   {:type :rover-action :action action})
 
 (defn disaster-msg [rover-id rover-channel]
-  {:pre [(some? rover-id) (some? rover-channel)]}
+  {:pre [(every? some? [rover-id rover-channel])]}
   {:type :disaster :rover-id rover-id :rover-channel rover-channel})
 
 (defn posion-pill-msg [] {:type :poison-pill})

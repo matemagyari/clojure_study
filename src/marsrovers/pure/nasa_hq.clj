@@ -44,11 +44,6 @@
         :let [ch (:in-channel @c)]]
     (u/msg ch (ca/start-rover-msg))))
 
-(defn- start-rovers-effect [hq]
-  (for [c (:controllers hq)
-        :let [ch (:in-channel @c)]]
-    (u/msg ch (ca/start-rover-msg))))
-
 ;; -----------------  public functions ------------------------
 
 (defn receive [hq in-msg start-controller-fn!]
@@ -59,20 +54,20 @@
                 (u/log! "Disaster happened")
                 {:state (assoc hq :disaster true)})
 
-    :zzzzzzzzzzzzzz (let [controller (register-rover2 hq in-msg)
+    :register-rover (let [controller (register-rover2 hq in-msg)
                           msgs [(u/msg (:rover-channel in-msg) (hq/rover-registered-msg))
-                                (u/msg (:in-channel controller) (ca/start-rover-msg))]]
+                                (u/msg (:in-channel @controller) (ca/start-rover-msg))]]
                       {:effects [#(start-controller-fn! controller)]
                        :msgs msgs
                        :state hq})
 
-    :register-rover (let [hq (register-rover hq in-msg)
-                          msgs (conj (start-rover-msgs hq)
-                                 (u/msg (:rover-channel in-msg) (hq/rover-registered-msg)))]
-                      {:effects [#(doseq [co (:controllers hq)]
-                                    (start-controller-fn! co))]
-                       :msgs msgs
-                       :state hq})
+    :register-rover2 (let [hq (register-rover hq in-msg)
+                           msgs (conj (start-rover-msgs hq)
+                                  (u/msg (:rover-channel in-msg) (hq/rover-registered-msg)))]
+                       {:effects [#(doseq [co (:controllers hq)]
+                                     (start-controller-fn! co))]
+                        :msgs msgs
+                        :state hq})
     (do
       (u/log! "Unknown msg in Nasa HQ " in-msg)
       {:state hq})))

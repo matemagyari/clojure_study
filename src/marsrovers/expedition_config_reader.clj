@@ -22,11 +22,11 @@
     vec))
 
 (defn- lot-of-actions []
-  (actions 99999))
+  (actions 9999))
 
 (defn- rand-config [plateau-config]
-  (let [x (rand-nth (range (:x plateau-config)))
-        y (rand-nth (range (:y plateau-config)))
+  (let [x (rand-int (:x plateau-config))
+        y (rand-int (:y plateau-config))
         facing (rand-nth [:n :w :s :e])]
     (rover-config
       (r/rover-position x y facing)

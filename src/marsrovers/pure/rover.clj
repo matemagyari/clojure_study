@@ -49,7 +49,7 @@
                     (u/msg
                       (:in-channel rover) in-msg 10)]})
     :rover-registered (do
-                        (rover-log! rover "Mars rover is registered")
+                        ;(rover-log! rover "Mars rover is registered")
                         {:state (assoc rover :state :registered)})
     ;default
     (do
@@ -57,7 +57,7 @@
       {:state rover})))
 
 (defmethod receive :dead [rover in-msg plateau-channel mediator-channel]
-  (rover-log! rover "I'm quite dead yet I have received this message " in-msg)
+  ;(rover-log! rover "I'm quite dead yet I have received this message " in-msg)
   {:state rover})
 
 
