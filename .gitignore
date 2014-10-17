@@ -6,6 +6,7 @@ target/
 classes/
 .settings/
 .idea/*
+.idea/workspace.xml
 *.iml
 .git/*
 **/.DS_Store
