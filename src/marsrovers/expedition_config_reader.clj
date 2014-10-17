@@ -6,8 +6,6 @@
 
 ;; -----------------  private functions ------------------------
 
-(def ^:private plateau-config {:x 300 :y 300})
-
 (defn- rover-config [position actions]
   {:pre [(some? position) (some? actions)]}
   {:position position
@@ -23,7 +21,7 @@
       acc
       (cons (rand-nth [:left :move :right]) (lazy-seq (lot-of-actions (dec n)))))))
 
-(defn- rand-config [plateau-config]
+(defn- rand-rover-config [plateau-config]
   (let [x (rand-int (:x plateau-config))
         y (rand-int (:y plateau-config))
         facing (rand-nth [:n :w :s :e])]
@@ -32,7 +30,7 @@
       (lot-of-actions 99999))))
 
 (defn- rand-rover-configs [n plateau-config]
-  (->> #(rand-config plateau-config)
+  (->> #(rand-rover-config plateau-config)
     repeatedly
     (take n)
     vec))
@@ -42,5 +40,6 @@
 (defn expedition-config
   "Return the config for the expedition."
   []
-  {:plateau-config plateau-config
-   :rover-configs (rand-rover-configs 100 plateau-config)})
+  (let [plateau-config {:x 300 :y 300}]
+    {:plateau-config plateau-config
+     :rover-configs (rand-rover-configs 100 plateau-config)}))
