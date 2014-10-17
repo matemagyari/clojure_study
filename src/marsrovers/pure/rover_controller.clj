@@ -26,13 +26,10 @@
     controller
     (c/rover-action-msg (-> controller :actions peek))))
 
-(defn- pop-action-2 [controller]
-  (let [action (->> controller :actions (take 1) first)
-        controller (update-in controller [:actions] (drop 1))]
-    [action controller]))
-
 (defn- pop-action [controller]
-  (update-in controller [:actions] pop))
+  (let [action (->> controller :actions (take 1) first)
+        controller (update-in controller [:actions] #(drop 1 %))]
+    [action controller]))
 
 (defn- has-actions? [controller]
   (-> (:actions controller) empty? not))
@@ -50,9 +47,10 @@
   (u/log! "Controller " (get-in controller [:rover :rover-id]) ": " text))
 
 (defn- action-result [controller]
-  (result
-    (pop-action controller)
-    (rover-action-msg controller)))
+  (let [[action controller] (pop-action controller)
+        msg-body (c/rover-action-msg action)
+        msg (rover-msg controller msg-body)]
+    (result controller msg)))
 
 (defn receive [controller in-msg]
   ;(controller-log! controller " Message arrived: " (:rover-position in-msg))

@@ -15,20 +15,13 @@
    :speed {:movement-speed 0
            :turning-speed 0}})
 
-(defn- actions [n]
-  (->> #(rand-nth [:left :move :right])
-    repeatedly
-    (take n)
-    vec))
-
-(defn- lot-of-actions []
-  (actions 9999))
-
-(defn lot-of-actions-2 [n]
+(defn- lot-of-actions
+  "Creates a finite lazy sequence of rover actions"
+  [n]
   (let [acc []]
     (if (zero? n)
       acc
-      (cons (rand-nth [:left :move :right]) (lazy-seq (lot-of-actions-2 (dec n)))))))
+      (cons (rand-nth [:left :move :right]) (lazy-seq (lot-of-actions (dec n)))))))
 
 (defn- rand-config [plateau-config]
   (let [x (rand-int (:x plateau-config))
@@ -36,7 +29,7 @@
         facing (rand-nth [:n :w :s :e])]
     (rover-config
       (r/rover-position x y facing)
-      (lot-of-actions))))
+      (lot-of-actions 99999))))
 
 (defn- rand-rover-configs [n plateau-config]
   (->> #(rand-config plateau-config)

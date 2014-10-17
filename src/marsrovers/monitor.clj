@@ -15,15 +15,18 @@
   []
   (let [dead-counter (atom 0)
         action-counter (atom 0)
-        registered-counter (atom 0)]
+        registered-counter (atom 0)
+        print-status! #(println (str "Action number " @action-counter
+                                  " Registered rover number " @registered-counter
+                                  " Dead rover number " @dead-counter))]
     (fn [k r old-val new-val]
       (when (not= (:position old-val) (:position new-val))
         (swap! action-counter inc)
         (when (= 0 (mod @action-counter 10000))
-          (println (str "Action number " @action-counter))))
+          (print-status!)))
       (when (state-changed-to? old-val new-val :registered)
         (swap! registered-counter inc)
-        (println (str "Registered rover number " @registered-counter)))
+        (print-status!))
       (when (state-changed-to? old-val new-val :dead)
         (swap! dead-counter inc)
-        (println (str "Dead rover number " @dead-counter))))))
+        (print-status!)))))
