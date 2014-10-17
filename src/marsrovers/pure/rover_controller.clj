@@ -26,6 +26,11 @@
     controller
     (c/rover-action-msg (-> controller :actions peek))))
 
+(defn- pop-action-2 [controller]
+  (let [action (->> controller :actions (take 1) first)
+        controller (update-in controller [:actions] (drop 1))]
+    [action controller]))
+
 (defn- pop-action [controller]
   (update-in controller [:actions] pop))
 
@@ -44,19 +49,20 @@
 (defn- controller-log! [controller & text]
   (u/log! "Controller " (get-in controller [:rover :rover-id]) ": " text))
 
+(defn- action-result [controller]
+  (result
+    (pop-action controller)
+    (rover-action-msg controller)))
+
 (defn receive [controller in-msg]
   ;(controller-log! controller " Message arrived: " (:rover-position in-msg))
   (condp = (:type in-msg)
     :start-rover (result
                    controller
                    (deploy-rover-msg controller))
-    :rover-deployed (result
-                      (pop-action controller)
-                      (rover-action-msg controller))
+    :rover-deployed (action-result controller)
     :position (if (has-actions? controller)
-                (result
-                  (pop-action controller)
-                  (rover-action-msg controller))
+                (action-result controller)
                 (result
                   controller
                   (poison-pill-msg controller)))))

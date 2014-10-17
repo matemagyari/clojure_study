@@ -24,6 +24,12 @@
 (defn- lot-of-actions []
   (actions 9999))
 
+(defn lot-of-actions-2 [n]
+  (let [acc []]
+    (if (zero? n)
+      acc
+      (cons (rand-nth [:left :move :right]) (lazy-seq (lot-of-actions-2 (dec n)))))))
+
 (defn- rand-config [plateau-config]
   (let [x (rand-int (:x plateau-config))
         y (rand-int (:y plateau-config))
