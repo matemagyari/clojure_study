@@ -1,6 +1,6 @@
 (ns
-  ^{:author mate.magyari}
-  clojure-study.ants)
+  ^{:author rich.hickey}
+  clojure-study.other.ants)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ant sim ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;   Copyright (c) Rich Hickey. All rights reserved.
@@ -189,28 +189,26 @@
           (-> loc drop-food (turn 4))
           (and (:home @ahead) (not (:ant @ahead)))
           (move loc)
-          :else
-          (let [ranks (merge-with +
-                        (rank-by (comp #(if (:home %) 1 0) deref) places)
-                        (rank-by (comp :pher deref) places))]
-            (([move #(turn % -1) #(turn % 1)]
-               (wrand [(if (:ant @ahead) 0 (ranks ahead))
-                       (ranks ahead-left) (ranks ahead-right)]))
-              loc)))
+          :else (let [ranks (merge-with +
+                              (rank-by (comp #(if (:home %) 1 0) deref) places)
+                              (rank-by (comp :pher deref) places))]
+                  (([move #(turn % -1) #(turn % 1)]
+                     (wrand [(if (:ant @ahead) 0 (ranks ahead))
+                             (ranks ahead-left) (ranks ahead-right)]))
+                    loc)))
         ;foraging
         (cond
           (and (pos? (:food @p)) (not (:home @p)))
           (-> loc take-food (turn 4))
           (and (pos? (:food @ahead)) (not (:home @ahead)) (not (:ant @ahead)))
           (move loc)
-          :else
-          (let [ranks (merge-with +
-                        (rank-by (comp :food deref) places)
-                        (rank-by (comp :pher deref) places))]
-            (([move #(turn % -1) #(turn % 1)]
-               (wrand [(if (:ant @ahead) 0 (ranks ahead))
-                       (ranks ahead-left) (ranks ahead-right)]))
-              loc)))))))
+          :else (let [ranks (merge-with +
+                              (rank-by (comp :food deref) places)
+                              (rank-by (comp :pher deref) places))]
+                  (([move #(turn % -1) #(turn % 1)]
+                     (wrand [(if (:ant @ahead) 0 (ranks ahead))
+                             (ranks ahead-left) (ranks ahead-right)]))
+                    loc)))))))
 
 (defn evaporate
   "causes all the pheromones to evaporate a bit"
@@ -318,5 +316,5 @@
   (send-off animator animation)
   (dorun (map #(send-off % behave) ants))
   (send-off evaporator evaporation)
-
   )
+

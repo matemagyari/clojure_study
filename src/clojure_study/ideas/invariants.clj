@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  clojure-study.other.invariants
+  clojure-study.ideas.invariants
   (:require [clojure-study.assertion :as a]))
 
 (defn suites []

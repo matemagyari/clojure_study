@@ -7,7 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-parent.iml" filepath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-utils/blackjack-utils.iml" filepath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-utils/blackjack-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-wallet/blackjack-wallet.iml" filepath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-wallet/blackjack-wallet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/coding-exercise.iml" filepath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/coding-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/connection-proxy.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/connection-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient/connection-proxy-dataclient.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient/connection-proxy-dataclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/../darse/darse.iml" filepath="$PROJECT_DIR$/../darse/darse.iml" />
       <module fileurl="file://$PROJECT_DIR$/../examples/examples.iml" filepath="$PROJECT_DIR$/../examples/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/gamification-messaging-client/gamification-messaging-client.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/gamification-messaging-client/gamification-messaging-client.iml" />

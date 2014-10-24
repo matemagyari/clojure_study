@@ -1,4 +1,4 @@
-(ns clojure-study.monad
+(ns clojure-study.libraries.monad
   (:use [clojure-study.assertion]
         [clojure.algo.monads]
         [clojure.core])

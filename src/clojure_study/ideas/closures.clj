@@ -1,4 +1,4 @@
-(ns ^{:author mate.magyari} clojure_study.other.closures
+(ns ^{:author mate.magyari} clojure-study.ideas.closures
   (:require [clojure.test :as test]))
 
 (defn create-id-generator

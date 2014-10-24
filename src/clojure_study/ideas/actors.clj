@@ -1,7 +1,7 @@
 (ns
   ^{:author mate.magyari}
-  clojure-study.other.actors
-  (:require [clojure-study.other.core :refer :all]))
+  clojure-study.ideas.actors
+  (:require [clojure-study.ideas.core :refer :all]))
 
 (def global-throw-counter (atom 0))
 

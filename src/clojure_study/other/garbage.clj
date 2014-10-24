@@ -1,4 +1,4 @@
-(ns clojure-study.garbage
+(ns clojure-study.other.garbage
   (:require [clojure.core.match :as m])
   )
 
@@ -28,6 +28,17 @@
   (println (combinations "514")))
 
 (def x 5)
+
+(defn list2map [a-seq]
+  (let [len (count a-seq)
+        a-cycle (cycle a-seq)
+        shifted (drop 1 a-cycle)
+        the-keys (->> a-cycle (take-nth 2) (take len))
+        the-vals (->> shifted (take-nth 2) (take len))]
+    (zipmap the-keys the-vals)))
+
+(list2map [1 2 3 4 5 6])
+
 
 
 

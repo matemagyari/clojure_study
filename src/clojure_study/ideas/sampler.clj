@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  clojure_study.other.sampler)
+  clojure-study.ideas.sampler)
 
 (defn sampler [f freq]
   (let [counter (atom 0)]

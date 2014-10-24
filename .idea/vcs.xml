@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" vcs="Git" />
@@ -27,6 +28,7 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/timeout" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/qa-automation/poker" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../principle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../reference-ddd-blackjack" vcs="Git" />

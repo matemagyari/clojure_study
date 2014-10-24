@@ -214,3 +214,19 @@
 ;======== pipeline
 (let [main-ch (chan 5)
       ])
+
+(def c (chan))
+(def go-chan
+  (a/go-loop []
+    (println "Loops starts")
+    (when-let [in-msg (a/<! c)]
+      (println (str "Incoming: " in-msg))
+      (recur))))
+
+(def go-chan
+  (a/go-loop []
+    (let [in-msg (a/<! c)]
+      (if in-msg
+        (println (str "Incoming: " in-msg))
+        (println "Channel is closed")))
+    (recur)))

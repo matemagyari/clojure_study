@@ -26,7 +26,9 @@
         <module name="blackjack-messaging-client" />
         <module name="blackjack-utils" />
         <module name="blackjack-wallet" />
+        <module name="coding-exercise" />
         <module name="connection-proxy" />
+        <module name="connection-proxy-dataclient" />
         <module name="examples" />
         <module name="gamification-messaging-client" />
         <module name="gamification-poker-messaging-client" />
@@ -97,7 +99,9 @@
       <module name="blackjack-parent" target="1.6" />
       <module name="blackjack-utils" target="1.6" />
       <module name="blackjack-wallet" target="1.5" />
+      <module name="coding-exercise" target="1.7" />
       <module name="connection-proxy" target="1.6" />
+      <module name="connection-proxy-dataclient" target="1.6" />
       <module name="examples" target="1.6" />
       <module name="gamification-messaging-client" target="1.6" />
       <module name="gamification-poker-messaging-client" target="1.6" />

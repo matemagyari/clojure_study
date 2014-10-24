@@ -14,6 +14,7 @@
                  [org.clojure/tools.trace "0.7.8"]
                  [org.clojure/data.csv "0.1.2"]
                  [org.clojure/algo.monads "0.1.5"]
+                 [clj-http "1.0.0"]
                  [ring "1.3.0"]
                  [clojurewerkz/titanium "1.0.0-beta1"]
                  [org.clojure/core.typed "0.2.58"]

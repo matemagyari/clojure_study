@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  clojure_study.other.circuit-breaker)
+  clojure-study.ideas.circuit-breaker)
 
 (defn logger [f]
   (fn [& args]
