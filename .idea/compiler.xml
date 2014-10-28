@@ -34,7 +34,6 @@
         <module name="gamification-poker-messaging-client" />
         <module name="gamification-service" />
         <module name="gamification-system" />
-        <module name="gamification-system-parent" />
         <module name="gamification-test" />
         <module name="hand-record-core" />
         <module name="hand-record-integration-tests" />

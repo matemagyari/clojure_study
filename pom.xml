@@ -16,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com/matemagyari/clojure_study.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/matemagyari/clojure_study.git</developerConnection>
-    <tag>0ea3535c42f16e03d7a632b7be86bd616dce7431
+    <tag>71141b3550a535ee570a9a332f3dd84b13561122
 </tag>
     <url>https://github.com/matemagyari/clojure_study</url>
   </scm>
@@ -102,6 +102,11 @@
       <groupId>org.clojure</groupId>
       <artifactId>algo.monads</artifactId>
       <version>0.1.5</version>
+    </dependency>
+    <dependency>
+      <groupId>clj-http</groupId>
+      <artifactId>clj-http</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>ring</groupId>

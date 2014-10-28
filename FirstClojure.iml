@@ -5,7 +5,7 @@
       <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -16,6 +16,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="clojure" level="project" />
+    <orderEntry type="library" name="org.clojure:clojure:1.7.0-alpha1" level="project" />
+    <orderEntry type="library" name="Maven: org.clojure:clojure:1.7.0-alpha1" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:clojure-contrib:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:core.logic:0.8.5" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:core.match:0.2.1" level="project" />
@@ -30,12 +33,37 @@
     <orderEntry type="library" name="Maven: org.clojure:data.csv:0.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:algo.monads:0.1.5" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:tools.macro:0.1.0" level="project" />
+    <orderEntry type="library" name="Maven: clj-http:clj-http:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.3" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.3.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: com.cognitect:transit-clj:0.8.247" level="project" />
+    <orderEntry type="library" name="Maven: com.cognitect:transit-java:0.8.257" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-json-org:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20090211" level="project" />
+    <orderEntry type="library" name="Maven: org.msgpack:msgpack:0.6.10" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.directory.studio:org.apache.commons.codec:1.8" level="project" />
+    <orderEntry type="library" name="Maven: slingshot:slingshot:0.10.3" level="project" />
+    <orderEntry type="library" name="Maven: cheshire:cheshire:5.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: tigris:tigris:0.1.1" level="project" />
+    <orderEntry type="library" name="Maven: crouton:crouton:0.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.clojure:tools.reader:0.8.5" level="project" />
+    <orderEntry type="library" name="Maven: potemkin:potemkin:0.3.8" level="project" />
+    <orderEntry type="library" name="Maven: clj-tuple:clj-tuple:0.1.5" level="project" />
+    <orderEntry type="library" name="Maven: riddley:riddley:0.1.7" level="project" />
     <orderEntry type="library" name="Maven: ring:ring:1.3.0" level="project" />
     <orderEntry type="library" name="Maven: ring:ring-core:1.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.clojure:tools.reader:0.8.4" level="project" />
     <orderEntry type="library" name="Maven: ring:ring-codec:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.6" level="project" />
-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.3" level="project" />
     <orderEntry type="library" name="Maven: clj-time:clj-time:0.6.0" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.2" level="project" />
@@ -64,11 +92,6 @@
     <orderEntry type="library" name="Maven: com.tinkerpop.blueprints:blueprints-core:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jettison:jettison:1.3.3" level="project" />
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-json-org:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.json:json:20090211" level="project" />
     <orderEntry type="library" name="Maven: colt:colt:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: concurrent:concurrent:1.3.4" level="project" />
     <orderEntry type="library" name="Maven: com.tinkerpop.rexster:rexster-core:2.3.0" level="project" />
@@ -85,7 +108,6 @@
     <orderEntry type="library" name="Maven: commons-configuration:commons-configuration:1.6" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: commons-digester:commons-digester:1.8" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.7.0" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils-core:1.8.0" level="project" />
@@ -93,9 +115,6 @@
     <orderEntry type="library" name="Maven: com.tinkerpop.rexster:rexster-server:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.tinkerpop.rexster:rexster-protocol:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.tinkerpop:pipes:2.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.msgpack:msgpack:0.6.5" level="project" />
-    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.javassist:javassist:3.15.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-framework:2.2.16" level="project" />
     <orderEntry type="library" name="Maven: com.tinkerpop.gremlin:gremlin-java:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.tinkerpop.gremlin:gremlin-groovy:2.3.0" level="project" />
@@ -107,7 +126,7 @@
     <orderEntry type="library" name="Maven: asm:asm-util:3.2" level="project" />
     <orderEntry type="library" name="Maven: asm:asm-analysis:3.2" level="project" />
     <orderEntry type="library" name="Maven: org.fusesource.jansi:jansi:1.5" level="project" />
-    <orderEntry type="library" name="Maven: jline:jline:1.0" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:2.11" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-server:1.8" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.17" level="project" />
     <orderEntry type="library" name="Maven: com.sun.jersey:jersey-grizzly2:1.17" level="project" />
@@ -161,8 +180,6 @@
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.7.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cassandra:cassandra-thrift:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.stephenc:jamm:0.2.5" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.5" level="project" />
@@ -195,7 +212,6 @@
     <orderEntry type="library" name="Maven: net.java.dev.jets3t:jets3t:0.7.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.kosmosfs:kfs:0.3" level="project" />
     <orderEntry type="library" name="Maven: hsqldb:hsqldb:1.8.0.10" level="project" />
-    <orderEntry type="library" name="Maven: potemkin:potemkin:0.2.0" level="project" />
     <orderEntry type="library" name="Maven: clojurewerkz:ogre:2.3.0.1" level="project" />
     <orderEntry type="library" name="Maven: clojurewerkz:archimedes:1.0.0-alpha4" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:core.typed:0.2.58" level="project" />
@@ -204,10 +220,79 @@
     <orderEntry type="library" name="Maven: org.clojure:core.contracts:0.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:core.unify:0.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.clojure:math.combinatorics:0.0.2" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-core:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.parallelcolt:parallelcolt:0.10.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.jplasma:jplasma:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.jplasma:core-lapack:0.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.f2j:arpack_combined_all:0.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.jtransforms:jtransforms:2.4.0" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.csparsej:csparsej:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.parallelcolt:optimization:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.netlib-java:netlib-java:0.9.3" level="project" />
+    <orderEntry type="library" name="Maven: com.github.rwl:JKLU:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.rwl:BTFJ:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.rwl:AMDJ:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.rwl:COLAMDJ:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: clatrix:clatrix:0.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jblas:jblas:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: net.mikera:core.matrix:0.7.2" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-io:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.opencsv:opencsv:2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.danlarkin:clojure-json:1.1" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-charts:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: incanter:jfreechart:1.0.13-no-gnujaxp" level="project" />
+    <orderEntry type="library" name="Maven: incanter:jcommon:1.0.16" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-mongodb:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: congomongo:congomongo:0.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.clojure:core.incubator:0.1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.clojure:data.json:0.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.9.3" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-pdf:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: com.lowagie:itext:2.1.7" level="project" />
+    <orderEntry type="library" name="Maven: bouncycastle:bcmail-jdk14:138" level="project" />
+    <orderEntry type="library" name="Maven: bouncycastle:bcprov-jdk14:138" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-svg:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-dom:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-css:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-ext:1.7" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.04" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-util:1.7" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis-ext:1.3.04" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-xml:1.7" level="project" />
+    <orderEntry type="library" name="Maven: xalan:xalan:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-svggen:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlgraphics:batik-awt-util:1.7" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-latex:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.scilab.forge:jlatexmath:0.9.6" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-excel:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml:3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi:3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.poi:poi-ooxml-schemas:3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-sql:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: clojureql:clojureql:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.clojure:java.jdbc:0.2.3" level="project" />
+    <orderEntry type="library" name="Maven: incanter:incanter-zoo:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: swingrepl:swingrepl:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: cc.mallet:mallet:2.0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
+    <orderEntry type="library" name="Maven: jgrapht:jgrapht:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.jwordnet:jwnl:1.4_rc3" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.trove4j:trove4j:2.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.matrix-toolkits-java:mtj:0.9.14" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom:1.1" level="project" />
+    <orderEntry type="library" name="Maven: me.raynes:fs:1.4.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.tukaani:xz:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.clojure:tools.nrepl:0.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: clojure-complete:clojure-complete:0.2.3" level="project" />
-    <orderEntry type="library" name="clojure" level="project" />
-    <orderEntry type="library" name="org.clojure:clojure:1.7.0-alpha1" level="project" />
   </component>
 </module>
 

@@ -518,6 +518,10 @@
                  [:e :x :e]
                  [:x :e :x]])
 
+;;85 power-set
+(defn power-set [a-set]
+  ())
+
 ;;116. prime sandwitch
 (defn balanced-prime? [n]
   (let [prime?? (fn [n primes] (every? #(pos? (rem n %)) primes))
