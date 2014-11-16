@@ -55,7 +55,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/buy_in_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/buy_in_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/challenge_achievement_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/challenge_achievement_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/main/resources/payment.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/main/resources/payment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/playerreputation_blueprint.yaml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/playerreputation_blueprint.yaml" />
@@ -71,7 +70,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/main/resources/tournament.properties" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/main/resources/tournament.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/test/resources/tournament.properties" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/test/resources/tournament.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="" />
     <ignored path="FirstClojure.iws" />

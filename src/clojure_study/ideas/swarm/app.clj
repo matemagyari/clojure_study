@@ -38,7 +38,7 @@
 (def entity-template
   {:position {:x 2 :y 0}
    :speed 3
-   :stray (/ Math/PI 32)
+   :stray (/ Math/PI 32) ; defines the angle-range the entity can deviate from the gravitational vector
    :g-map (get-in global-constants [:gravity-constants :sheep])
    :type :sheep})
 
@@ -57,7 +57,9 @@
       :g-map (get-in global-constants [:gravity-constants e-type]))))
 
 
-(defn wall [x y]
+(defn wall
+  "Creates a Wall entity on the given location"
+  [x y]
   (assoc entity-template
     :position {:x x :y y}
     :type :wall :speed 0
@@ -87,7 +89,6 @@
     (if (zero? i)
       (println "END")
       (let [entitites-next (swarm/next-positions entities global-constants)]
-        (println "hi " i " " (apply va/weight-point (map :position entitites-next)))
-        ;(Thread/sleep 10)
+        ;(println "hi " i " " (apply va/weight-point (map :position entitites-next)))
         (repaint! (entities->view entitites-next))
         (recur (dec i) entitites-next)))))
