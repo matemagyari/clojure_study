@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  clojure_study.ideas.swarm.app
+  clojure-study.ideas.swarm.app
   (:require [clojure.test :as test]
             [clojure-study.ideas.swarm.swarm :as swarm]
             [clojure-study.ideas.swarm.vector-algebra :as va]
