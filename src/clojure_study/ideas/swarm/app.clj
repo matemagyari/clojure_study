@@ -24,12 +24,12 @@
     (vals groups)))
 
 (def global-constants
-  {:gravity-constants {:sheep {:sheep 60
-                               :wolf -60
-                               :wall -200}
-                       :wolf {:sheep 30
+  {:gravity-constants {:sheep {:sheep 3
+                               :wolf -6
+                               :wall -20}
+                       :wolf {:sheep 3
                               :wolf 1
-                              :wall -200}
+                              :wall -20}
                        :wall {:sheep 0
                               :wolf 0
                               :wall 0}}
