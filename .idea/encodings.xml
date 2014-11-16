@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/resources/blackjack.edn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/MessageDispatcher.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-academy-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot" charset="UTF-8" />

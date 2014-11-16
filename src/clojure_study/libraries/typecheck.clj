@@ -10,7 +10,15 @@
   (if (not= a b) (throw (RuntimeException.))))
 
 (check "12" (conc 1 2))
-(check "12" (conc "1" "2"))
+;(check "12" (conc "1" "2"))
 
-(typed/check-ns 'clojure-study.typecheck)
+(defn f0 [] 1)
+
+(typed/ann f1 [Number Number -> String])
+(defn f1 [a b]
+  (conc a b))
+
+;(def x (f1 1 "2"))
+
+(typed/check-ns 'clojure-study.libraries.typecheck)
 
