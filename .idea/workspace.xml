@@ -8,6 +8,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/infrastructure/adapters/secondary/persistence/stores/AbstractPromotionStoreTestTemplate.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/infrastructure/adapters/secondary/persistence/stores/AbstractPromotionStoreTestTemplate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" afterPath="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/AppLevelAcceptanceTests_IT.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/AppLevelAcceptanceTests_IT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/scan/AppLevelAcceptanceTests_IT.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/scan/AppLevelAcceptanceTests_IT.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/BetFactory.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/BetFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/test/java/com/vlalov/gamesys/poker/BetFactoryTest.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/test/java/com/vlalov/gamesys/poker/BetFactoryTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/input/BetsReader.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/input/BetsReader.java" />
@@ -55,6 +56,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/buy_in_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/buy_in_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/challenge_achievement_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/challenge_achievement_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/file-delivery-config.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/file-delivery-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/main/resources/payment.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/main/resources/payment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/playerreputation_blueprint.yaml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/playerreputation_blueprint.yaml" />
@@ -70,6 +72,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/main/resources/tournament.properties" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/main/resources/tournament.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/test/resources/tournament.properties" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/test/resources/tournament.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="" />
     <ignored path="FirstClojure.iws" />
@@ -98,81 +101,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/pom.xml">
+      <file leaf-file-name="GlobalCounterDefinitionBootstraper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/config/bootstrap/globalcounterdefinitions/GlobalCounterDefinitionBootstraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3796" max-vertical-offset="6405">
-              <caret line="287" column="32" selection-start-line="287" selection-start-column="32" selection-end-line="287" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+              <caret line="31" column="121" selection-start-line="31" selection-start-column="121" selection-end-line="31" selection-end-column="121" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlobalCounterQueryListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/listener/GlobalCounterQueryListener.java">
+      <file leaf-file-name="PlayerId.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/core/model/PlayerId.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="camel-template.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml">
+      <file leaf-file-name="PlayerId.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/src/main/java/gamesys/poker/buddies/domain/core/PlayerId.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5705" max-vertical-offset="33450">
-              <caret line="407" column="75" selection-start-line="407" selection-start-column="75" selection-end-line="407" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.10118044" vertical-offset="0" max-vertical-offset="795">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PromotionAdminApplicationService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/app/admin/PromotionAdminApplicationService.java">
+      <file leaf-file-name="GlobalCounterDefinitionReadOnlyRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinitionReadOnlyRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1350">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardRoomManagerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/domain/CardRoomManagerTest.java">
+      <file leaf-file-name="JsonBasedGlobalCounterDefinitionReadOnlyRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/repository/JsonBasedGlobalCounterDefinitionReadOnlyRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3901515" vertical-offset="379" max-vertical-offset="1365">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.5" vertical-offset="45" max-vertical-offset="930">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardRoomManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/CardRoomManager.java">
+      <file leaf-file-name="gamification_system.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/lib/gamesys/recipes/gamification_system.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1125">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestFixture.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/TestFixture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1182" max-vertical-offset="2400">
-              <caret line="145" column="146" selection-start-line="145" selection-start-column="146" selection-end-line="145" selection-end-column="146" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatsRouteBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/integration/StatsRouteBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="1065">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state vertical-scroll-proportion="-14.269231" vertical-offset="79" max-vertical-offset="4125">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -186,21 +169,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-stats-messaging-client/src/main/java/gamesys/poker/stats/messaging/app/client/GlobalCounterValueRequestMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/MessageDispatcher.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/messaging/MessageDispatcherTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/player/PlayerId.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/listener/HousingAppListener.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/messaging/listener/HousingAppListenerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/features/glovalcountervalue_query.feature" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/step/dataobject/GlobalCounterValueResponseDO.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/util/FakeMessagingClient.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-stats-messaging-client/src/main/java/gamesys/poker/stats/messaging/app/client/GlobalCounterValueResponseMessage.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/store/inmemory/InMemoryGlobalCounterReferenceMapperStore.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/persistence/store/inmemory/InMemoryGlobalCounterReferenceMapperStoreTest.java" />
@@ -222,13 +195,11 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/scan/stats_calculation_IT.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/metrics/PlayerMetricsUpdateHandlerApplicationService.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/client/GlobalCounterQueryApplicationService.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryService.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterReferenceMapperRepository.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/repository/GlobalCounterReferenceMapperRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/store/mongo/MongoGlobalCounterReferenceRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/messaging/listener/GlobalCounterQueryListenerTest.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/app/client/GlobalCounterQueryApplicationServiceTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryServiceTest.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/config/bootstrap/globalcounterdefinitions/GlobalCounterDefinitionBootstraper.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/app/config/bootstrap/globalcounterdefinitions/GlobalCounterDefinitionBootstraperTest.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/persistence/repository/GlobalCounterReferenceMapperRepositoryImplTest.java" />
@@ -236,12 +207,24 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/model/player/PlayerIdTest.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/listener/GlobalCounterQueryListener.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/PromotionActivationValidator.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/CardRoomManager.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/app/admin/PromotionAdminApplicationService.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/TestFixture.java" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/domain/CardRoomManagerTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/CardRoomManager.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features/promotion_validation.feature" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/scan/AppLevelAcceptanceTests_IT.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/AppLevelAcceptanceTests_IT.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinition.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinitionReadOnlyRepository.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/repository/JsonBasedGlobalCounterDefinitionReadOnlyRepository.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/persistence/repository/JsonBasedGlobalCounterDefinitionReadOnlyRepositoryITest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinitionTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryService.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryServiceTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/bootstrap/GlobalCounterDefinitionBootstrapStarter.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/file-delivery-config.xml" />
       </list>
     </option>
   </component>
@@ -490,7 +473,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-promotion-system" />
+              <option name="myItemId" value="poker-reporting-system" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,7 +483,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-promotion-system" />
+              <option name="myItemId" value="poker-reporting-system" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -514,163 +497,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-promotion-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-promotion-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promotion" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-promotion-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promotion" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-promotion-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="promotion" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PromotionActivationValidator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
+              <option name="myItemId" value="poker-reporting-system" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -692,7 +519,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
+              <option name="myItemId" value="poker-reporting-system" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -704,19 +531,11 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reputation" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -726,7 +545,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
+              <option name="myItemId" value="poker-reporting-system" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -738,23 +557,11 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reputation" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="file-delivery" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,7 +571,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-player-reputation-system" />
+              <option name="myItemId" value="poker-reporting-system" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -776,7 +583,97 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file-delivery" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contracts" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-reporting-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capistrano" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capistrano" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capistrano" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -784,24 +681,48 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
+              <option name="myItemId" value="recipes" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reputation" />
+              <option name="myItemId" value="capistrano" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="metrics" />
+              <option name="myItemId" value="capistrano" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PlayerMetricsUpdateHandlerApplicationService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deploy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -845,10 +766,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -869,6 +786,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -956,7 +877,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="messaging" />
+              <option name="myItemId" value="persistence" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1002,149 +923,15 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="integration" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamification-system" />
+              <option name="myItemId" value="persistence" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker-stats-system" />
+              <option name="myItemId" value="repository" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stats" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamification-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-stats-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stats" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gamesys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamification-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker-stats-system" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gamesys" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stats" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="player" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlayerId" />
+              <option name="myItemId" value="JsonBasedGlobalCounterDefinitionReadOnlyRepository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1185,6 +972,18 @@
               <option name="myItemId" value="stats" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persistence" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1201,6 +1000,26 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stats" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1249,7 +1068,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/model" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/model/globalcounters" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
   </component>
@@ -1263,11 +1082,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="gamesys.poker.stats.domain.model.globalcounters" />
       <recent name="gamesys.poker.stats.domain.model.player" />
       <recent name="gamesys.poker.stats.infrastructure.integration" />
       <recent name="gamesys.poker.stats.infrastructure.messaging.listener" />
       <recent name="gamesys.poker.stats.infrastructure.messaging" />
-      <recent name="gamesys.poker.stats.app.client" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="gamesys.poker.stats.infrastructure.messaging" />
@@ -1277,11 +1096,11 @@
       <recent name="gamesys.poker.stats.domain.model.globalcounters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/features" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/features" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/resources/META-INF" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/deprecated/pyramid_16_prior_model" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="gamesys.poker.lobby.infrastructure.persistence.mongo" />
@@ -1312,18 +1131,18 @@
       <recent name="gamesys.poker.promotion.infrastructure.adapters.secondary.persistence.stores" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardRoomManagerTest">
-    <configuration default="false" name="GlobalCounterDefinitionBootstraperTest.bootstrap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-stats-system" />
+  <component name="RunManager" selected="JUnit.GlobalCounterValueQueryServiceTest">
+    <configuration default="false" name="AppLevelAcceptanceTests_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-promotion-system" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.stats.app.config.bootstrap.globalcounterdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.stats.app.config.bootstrap.globalcounterdefinitions.GlobalCounterDefinitionBootstraperTest" />
-      <option name="METHOD_NAME" value="bootstrap" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.promotion.integration.test.scan" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.promotion.integration.test.scan.AppLevelAcceptanceTests_IT" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -1335,12 +1154,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PlayerIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="GlobalCounterDefinitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker-stats-system" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.stats.domain.model.player" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.stats.domain.model.player.PlayerIdTest" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.stats.domain.model.globalcounters" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.stats.domain.model.globalcounters.GlobalCounterDefinitionTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1357,34 +1176,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CardRoomManagerTest.activateAlreadyActivatedPromotion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-promotion-system" />
+    <configuration default="false" name="JsonBasedGlobalCounterDefinitionReadOnlyRepositoryITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-stats-system" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.promotion.domain" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.promotion.domain.CardRoomManagerTest" />
-      <option name="METHOD_NAME" value="activateAlreadyActivatedPromotion" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CardRoomManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-promotion-system" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.promotion.domain" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.promotion.domain.CardRoomManagerTest" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.stats.infrastructure.persistence.repository" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.stats.infrastructure.persistence.repository.JsonBasedGlobalCounterDefinitionReadOnlyRepositoryITest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1401,13 +1198,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="CardRoomManagerTest.activateDeactivatedPromotion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-promotion-system" />
+    <configuration default="false" name="GlobalCounterValueQueryServiceTest.getStat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-stats-system" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.promotion.domain" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.promotion.domain.CardRoomManagerTest" />
-      <option name="METHOD_NAME" value="activateDeactivatedPromotion" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.stats.domain.service" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.stats.domain.service.GlobalCounterValueQueryServiceTest" />
+      <option name="METHOD_NAME" value="getStat" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -1419,12 +1216,30 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GlobalCounterValueQueryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poker-stats-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.stats.domain.service" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.stats.domain.service.GlobalCounterValueQueryServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -1806,22 +1621,22 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Remote.CP" />
-      <item index="1" class="java.lang.String" itemvalue="Remote.PPPS" />
-      <item index="2" class="java.lang.String" itemvalue="Remote.PPS" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GlobalCounterDefinitionBootstraperTest.bootstrap" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerIdTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CardRoomManagerTest.activateAlreadyActivatedPromotion" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.CardRoomManagerTest" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.CardRoomManagerTest.activateDeactivatedPromotion" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AppLevelAcceptanceTests_IT" />
+      <item index="1" class="java.lang.String" itemvalue="Remote.CP" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.PPPS" />
+      <item index="3" class="java.lang.String" itemvalue="Remote.PPS" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GlobalCounterDefinitionTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.JsonBasedGlobalCounterDefinitionReadOnlyRepositoryITest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.GlobalCounterValueQueryServiceTest.getStat" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.GlobalCounterValueQueryServiceTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CardRoomManagerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CardRoomManagerTest.activateDeactivatedPromotion" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CardRoomManagerTest.activateAlreadyActivatedPromotion" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PlayerIdTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GlobalCounterDefinitionBootstraperTest.bootstrap" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GlobalCounterValueQueryServiceTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GlobalCounterValueQueryServiceTest.getStat" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JsonBasedGlobalCounterDefinitionReadOnlyRepositoryITest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GlobalCounterDefinitionTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AppLevelAcceptanceTests_IT" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1962,7 +1777,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1970,7 +1785,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32275862" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18651685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20992367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3730337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1985,13 +1800,41 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29262087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25842696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27410468" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25842696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32275862" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18651685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3730337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3128998" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3752809" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.254298" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -2745,9 +2588,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/CardRoomManager.java</url>
-          <line>28</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/java/gamesys/pokerreporting/model/report/ReportsGenerator.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="529" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/repository/JsonBasedGlobalCounterDefinitionReadOnlyRepository.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="530" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/model/Dealer.java</url>
@@ -2766,7 +2621,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="529" />
+      <option name="time" value="531" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -2916,335 +2771,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/predefinedstatsdefinitions/ActionPercentagesCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1724138" vertical-offset="0" max-vertical-offset="609">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/service/StatsCalculatorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="1095">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/features/stats_calculation_multiple_players.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/features/stats_calculation_authentication.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/features/stats_calculation_for_different_ventures.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/client/PlayerStatsApplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#948#949#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/predefinedstatsdefinitions/RingChartStatsDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="810">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/bootstrap/GlobalCounterDefinitionBootstrapStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="930">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterReferenceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19704433" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12315271" vertical-offset="0" max-vertical-offset="630">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4235" max-vertical-offset="7875">
-          <caret line="315" column="85" selection-start-line="315" selection-start-column="85" selection-end-line="315" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5640" max-vertical-offset="9135">
-          <caret line="393" column="88" selection-start-line="393" selection-start-column="88" selection-end-line="393" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../examples/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5925925" vertical-offset="55" max-vertical-offset="5985">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-stats-messaging-client/src/main/java/gamesys/poker/stats/messaging/app/client/GlobalCounterValueRequestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2955665" vertical-offset="0" max-vertical-offset="609">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterReferences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="15" column="142" selection-start-line="15" selection-start-column="112" selection-end-line="15" selection-end-column="142" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="5700">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/messaging/CamelInternalMessageGatewayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/features/globalcountervalue_query.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/util/FakeMessagingClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="97" max-vertical-offset="945">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/gamification-system/src/main/java/gamesys/gamification/engine/GamificationMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44334975" vertical-offset="0" max-vertical-offset="1470">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/util/FakeMessagingClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/resources/applicationContext-stats-system-cucumber.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="22" column="160" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="160" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/step/TheSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1249" max-vertical-offset="2235">
-          <caret line="129" column="131" selection-start-line="129" selection-start-column="131" selection-end-line="129" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/integration/java/gamesys/poker/stats/integration/test/scan/stats_calculation_IT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/resources/playerreputation_blueprint.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36945814" vertical-offset="0" max-vertical-offset="609">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/messaging/listener/GlobalCounterQueryListenerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="675">
-          <caret line="53" column="75" selection-start-line="53" selection-start-column="75" selection-end-line="53" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/app/client/GlobalCounterQueryApplicationServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49261084" vertical-offset="0" max-vertical-offset="609">
-          <caret line="31" column="101" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/client/GlobalCounterQueryApplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterReferenceMapperRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12315271" vertical-offset="0" max-vertical-offset="609">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/app/metrics/PlayerMetricsUpdateHandlerApplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23762377" vertical-offset="0" max-vertical-offset="525">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/config/bootstrap/globalcounterdefinitions/GlobalCounterDefinitionBootstraper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="705">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/repository/GlobalCounterReferenceMapperRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33195022" vertical-offset="260" max-vertical-offset="990">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/store/mongo/MongoGlobalCounterReferenceRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="825">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/persistence/repository/GlobalCounterReferenceMapperRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1770">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/app/config/bootstrap/globalcounterdefinitions/GlobalCounterDefinitionBootstraperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1005">
-          <caret line="72" column="91" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/player/PlayerId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/model/player/PlayerIdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#184#185#0" expanded="false" />
-            <element signature="e#220#221#0" expanded="false" />
-            <element signature="e#184#185#0" expanded="false" />
-            <element signature="e#220#221#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3796" max-vertical-offset="6405">
-          <caret line="287" column="32" selection-start-line="287" selection-start-column="32" selection-end-line="287" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/integration/StatsRouteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="1065">
@@ -3273,14 +2799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2897474" vertical-offset="0" max-vertical-offset="673">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5705" max-vertical-offset="33450">
-          <caret line="407" column="75" selection-start-line="407" selection-start-column="75" selection-end-line="407" selection-end-column="75" />
           <folding />
         </state>
       </provider>
@@ -3317,18 +2835,354 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/CardRoomManager.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/domain/CardRoomManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="169" max-vertical-offset="1125">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/test/java/gamesys/poker/promotion/domain/CardRoomManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/domain/CardRoomManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3901515" vertical-offset="379" max-vertical-offset="1365">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/scan/MessagingAcceptanceTests_IT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/steps/base/PromotionsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.730769" vertical-offset="268" max-vertical-offset="1035">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#1590#1591#0" expanded="false" />
+            <element signature="e#1643#1644#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/steps/testagent/TestAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="630">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/steps/testagent/AppLevelTestAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="1365">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features/delete_promotion.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features/create_promotion.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features/activate_promotions_on_new_table.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features/activate_promotion.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="645">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/scan/AppLevelAcceptanceTests_IT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-stats-messaging-client/src/main/java/gamesys/poker/stats/messaging/app/client/GlobalCounterValueRequestMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19704433" vertical-offset="0" max-vertical-offset="609">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.115385" vertical-offset="5476" max-vertical-offset="33660">
+          <caret line="393" column="90" selection-start-line="393" selection-start-column="20" selection-end-line="393" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/AppLevelAcceptanceTests_IT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/java/gamesys/poker/reputation/integration/test/scan/MessagingAcceptanceTests_IT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/resources/features/promotion_validation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="645">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/infrastructure/persistence/repository/JsonBasedGlobalCounterDefinitionReadOnlyRepositoryITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="20" column="0" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-poker/src/test/java/gamesys/progresstracker/app/integration/HistoryDecayingAverageEnd2EndITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1620">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="900">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36945814" vertical-offset="0" max-vertical-offset="609">
+          <caret line="23" column="96" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/client/GlobalCounterQueryApplicationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/test/java/gamesys/poker/stats/domain/service/GlobalCounterValueQueryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.576923" vertical-offset="227" max-vertical-offset="810">
+          <caret line="49" column="94" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/contracts/dwcashpoker-file-delivery-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.269231" vertical-offset="1555" max-vertical-offset="4965">
+          <caret line="118" column="45" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/resources/db/globalcounterdefinitions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/java/gamesys/pokerreporting/model/report/ReportsGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="35" column="75" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/bootstrap/GlobalCounterDefinitionBootstrapStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="930">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/reporting.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6078665" vertical-offset="0" max-vertical-offset="839">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/file-delivery-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="839">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/java/gamesys/pokerreporting/model/contract/dwcashpoker/assembler/HandParticipantAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/resources/stats.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="390">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/pp.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5010">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/lib/gamesys/recipes/gamification_system.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.269231" vertical-offset="79" max-vertical-offset="4125">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/persistence/repository/JsonBasedGlobalCounterDefinitionReadOnlyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="45" max-vertical-offset="930">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/domain/model/globalcounters/GlobalCounterDefinitionReadOnlyRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/app/config/bootstrap/globalcounterdefinitions/GlobalCounterDefinitionBootstraper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <caret line="31" column="121" selection-start-line="31" selection-start-column="121" selection-end-line="31" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/core/model/PlayerId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/repository/PlayerRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41791046" vertical-offset="635" max-vertical-offset="1305">
+          <caret line="87" column="19" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/journey/model/core/PlayerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13432837" vertical-offset="0" max-vertical-offset="670">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/journey/service/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3552239" vertical-offset="167" max-vertical-offset="1680">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-program-system/src/main/java/gamesys/tournament/program/infrastructure/messaging/assembler/AlarmIdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6044776" vertical-offset="0" max-vertical-offset="1215">
+          <caret line="38" column="5" selection-start-line="35" selection-start-column="76" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/src/main/java/gamesys/poker/buddies/domain/core/PlayerId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10118044" vertical-offset="0" max-vertical-offset="795">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>

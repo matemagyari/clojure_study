@@ -26,17 +26,15 @@
     (+ (square x) (square y))))
 
 (defn polar->cartesian
-  "Transforming a polar vector representation to a certesian one"
+  "Transforming a polar vector representation to a cartesian one"
   [{angle :angle length :length}]
   {:x (* length (Math/cos angle))
    :y (* length (Math/sin angle))})
 
 (defn cartesian->polar
-  "Transforming a certesian vector representation to a polar one"
+  "Transforming a cartesian vector representation to a polar one"
   [v]
-  {:angle (if (zero? (:x v))
-            (/ Math/PI 2)
-            (Math/atan2 (:y v) (:x v)))
+  {:angle (Math/atan2 (:y v) (:x v))
    :length (vec-length v)})
 
 (defn rotate-cartesian "Rotating a vector"
