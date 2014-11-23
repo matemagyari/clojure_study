@@ -79,6 +79,7 @@
         <module name="timeout" />
         <module name="tournament-director-system" />
         <module name="tournament-messaging-client" />
+        <module name="tournament-model" />
         <module name="tournament-program-system" />
         <module name="tournament-system" />
         <module name="tournament-ticketing-messaging-client" />
@@ -152,6 +153,7 @@
       <module name="timeout" target="1.6" />
       <module name="tournament-director-system" target="1.6" />
       <module name="tournament-messaging-client" target="1.6" />
+      <module name="tournament-model" target="1.6" />
       <module name="tournament-program-system" target="1.6" />
       <module name="tournament-system" target="1.6" />
       <module name="tournament-ticketing-messaging-client" target="1.6" />

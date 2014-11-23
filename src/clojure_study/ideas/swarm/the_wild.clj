@@ -1,15 +1,16 @@
 (ns
-  ^{:author mate.magyari}
+  ^{:author mate.magyari
+    :doc "Entities"}
   clojure_study.ideas.swarm.the-wild
   (:require [clojure.test :as test]))
 
 (defn enitites-of-type
   "Create entities of given type on random locations"
-  [n traits entity-template global-constants dim-board]
+  [n traits entity-template global-constants dim-board rand-factor]
   (let [g-map (get-in global-constants [:gravity-constants (:type traits)])]
     (for [i (range n)
-          :let [map-1 {:position {:x (rand-int (first dim-board))
-                                  :y (rand-int (second dim-board))}
+          :let [map-1 {:position {:x (int (* (rand-factor) (first dim-board)))
+                                  :y (int (* (rand-factor) (second dim-board)))}
                        :g-map g-map}]]
       (merge entity-template map-1 traits))))
 

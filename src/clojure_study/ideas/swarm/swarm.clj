@@ -33,39 +33,51 @@
         forces (pmap to-force entities)]
     (apply va/v+ forces)))
 
-
-(defn rand-angle
+(defn deviation
   "Random double in [-range/2 +range/2]"
-  [range]
+  [range x]
   (cond (zero? range) 0
     :else (-
-            (* range
-              (rand-int 100) 1/100)
+            (* range (rand-int 100) 1/100)
             (/ 2 range))))
+
+(defn deviation2
+  "Random double in [-max-deviaton +max-deviaton]"
+  [max-deviaton rand-num]
+  ;(println "max-deviaton" max-deviaton "rand-num" rand-num)
+  (cond (zero? max-deviaton) 0
+    :else (-
+            (* max-deviaton rand-num)
+            (/ max-deviaton 2))))
 
 (defn next-position
   "Calculation of the next position based on the entities around and a random element"
-  [global-constants entity entities]
+  [global-constants entity entities rand-num]
   (let [speed (:speed entity)
         position (:position entity)]
     (cond (pos? speed) ;; don't bother with entities with zero speed
       (let [total-g-vector (sum-gravity-vector entity entities global-constants)
-            adjusted-dir-vector (va/rotate-cartesian total-g-vector (rand-angle (:stray entity)))
+            adjusted-dir-vector (va/rotate-cartesian total-g-vector (deviation (:stray entity) rand-num))
             result-vector (va/v* speed (va/normalize adjusted-dir-vector))]
+        ;(println "DEV" total-g-vector " " adjusted-dir-vector)
         (va/v+ (:position entity) result-vector))
       :else position)))
 
 (defn next-positions
   "Calculate the next positions of the entitites"
-  [entitites global-constants]
-  (let [indexed-entities (map-indexed vector entitites)]
+  [entitites global-constants rand-factor]
+  (let [indexed-entities (map-indexed vector entitites)
+        rand-nums (vec
+                    (take (count indexed-entities)
+                      (repeatedly rand-factor)))]
     (for [ie indexed-entities
           :let [entity (second ie)
                 others-transd (comp
                                 (remove #(= ie %))
                                 (map second))
                 others (sequence others-transd indexed-entities)
-                next-pos (next-position global-constants entity others)]]
+                rand-num (nth rand-nums (first ie))
+                next-pos (next-position global-constants entity others rand-num)]]
       (assoc entity :position next-pos))))
 
 
@@ -74,7 +86,7 @@
 
 (defn is-close-enough [vec-1 vec-2]
   (test/is (> 0.001
-             (va/vec-length
+             (va/magnitude
                (merge-with - vec-1 vec-2)))))
 
 (test/deftest some-tests
@@ -112,6 +124,13 @@
     (is-close-enough {:x -0.5 :y 0.0} (sum-gravity-vector center [wolf-1] global-constants))
     (is-close-enough {:x 0.25 :y 0.0} (sum-gravity-vector center [sheep-1] global-constants))))
 
+
+(test/deftest deviation-test
+  (is= 0.0 (deviation 10.0 0.5))
+  (is= 10.0 (deviation 10.0 1))
+  (is= -10.0 (deviation 10.0 0.0))
+  )
+
 (test/deftest next-positions-test
   (let [sheep-1 {:position {:x 0 :y 0}
                  :speed 10
@@ -125,4 +144,4 @@
                  :type :sheep}]
     ))
 
-(test/run-tests 'clojure-study.ideas.swarm.swarm)
+;(test/run-tests 'clojure-study.ideas.swarm.swarm)

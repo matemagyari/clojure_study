@@ -21,21 +21,21 @@
   [v1 v2]
   (merge-with - v1 v2))
 
-(defn vec-length [{x :x y :y}] "Length of a vector"
+(defn magnitude [{x :x y :y}] "Length of a vector"
   (Math/sqrt
     (+ (square x) (square y))))
 
 (defn polar->cartesian
   "Transforming a polar vector representation to a cartesian one"
-  [{angle :angle length :length}]
-  {:x (* length (Math/cos angle))
-   :y (* length (Math/sin angle))})
+  [{angle :angle magnitude :magnitude}]
+  {:x (* magnitude (Math/cos angle))
+   :y (* magnitude (Math/sin angle))})
 
 (defn cartesian->polar
   "Transforming a cartesian vector representation to a polar one"
   [v]
   {:angle (Math/atan2 (:y v) (:x v))
-   :length (vec-length v)})
+   :magnitude (magnitude v)})
 
 (defn rotate-cartesian "Rotating a vector"
   [v angle]
@@ -46,7 +46,7 @@
 
 (defn distance "Distance between 2 points"
   [point-from point-to]
-  (vec-length
+  (magnitude
     (merge-with - point-to point-from)))
 
 (defn null-vector? "Checks whether the vector is a null vector"
@@ -56,7 +56,7 @@
 
 (defn normalize "Normalize the vector"
   [a-vector]
-  (let [len (vec-length a-vector)]
+  (let [len (magnitude a-vector)]
     (if (= 0.0 len)
       a-vector ; null vector simply returned
       (let [div-len #(/ % len)]
@@ -84,11 +84,11 @@
 
 (defn is-close-enough [vec-1 vec-2]
   (test/is (> 0.001
-             (vec-length
+             (magnitude
                (merge-with - vec-1 vec-2)))))
 
 (test/deftest some-tests
-  (is= 5.0 (vec-length {:x 4 :y 3}))
+  (is= 5.0 (magnitude {:x 4 :y 3}))
   (is= 5.0 (distance {:x 1 :y 3} {:x 4 :y 7}))
   (is= {:x 1.0 :y 0.0} (normalize {:x 4 :y 0}))
   (is= {:x 0.0 :y 1.0} (normalize {:x 0 :y 6}))
@@ -99,8 +99,8 @@
 
 
 (test/deftest cartesian->polar-test
-  (is= {:angle 0.0, :length 1.0} (cartesian->polar {:x 1 :y 0}))
-  (is= {:angle Math/PI, :length 1.0} (cartesian->polar {:x -1 :y 0}))
+  (is= {:angle 0.0, :magnitude 1.0} (cartesian->polar {:x 1 :y 0}))
+  (is= {:angle Math/PI, :magnitude 1.0} (cartesian->polar {:x -1 :y 0}))
   (is-close-enough {:x 3 :y 7} (-> {:x 3 :y 7} cartesian->polar polar->cartesian)))
 
 (test/deftest rotate-test
