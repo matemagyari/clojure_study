@@ -34,21 +34,11 @@
     (apply va/v+ forces)))
 
 (defn deviation
-  "Random double in [-range/2 +range/2]"
-  [range x]
-  (cond (zero? range) 0
-    :else (-
-            (* range (rand-int 100) 1/100)
-            (/ 2 range))))
-
-(defn deviation2
   "Random double in [-max-deviaton +max-deviaton]"
-  [max-deviaton rand-num]
-  ;(println "max-deviaton" max-deviaton "rand-num" rand-num)
-  (cond (zero? max-deviaton) 0
-    :else (-
-            (* max-deviaton rand-num)
-            (/ max-deviaton 2))))
+  [stray-tendency rand-num]
+  (let [random-max (:random-max stray-tendency)
+        random (- (* 2 random-max rand-num) random-max)]
+    (+ (:constant stray-tendency) random)))
 
 (defn next-position
   "Calculation of the next position based on the entities around and a random element"
@@ -57,7 +47,7 @@
         position (:position entity)]
     (cond (pos? speed) ;; don't bother with entities with zero speed
       (let [total-g-vector (sum-gravity-vector entity entities global-constants)
-            adjusted-dir-vector (va/rotate-cartesian total-g-vector (deviation (:stray entity) rand-num))
+            adjusted-dir-vector (va/rotate-cartesian total-g-vector (deviation (:stray-tendency entity) rand-num))
             result-vector (va/v* speed (va/normalize adjusted-dir-vector))]
         ;(println "DEV" total-g-vector " " adjusted-dir-vector)
         (va/v+ (:position entity) result-vector))
@@ -107,18 +97,15 @@
 (test/deftest sum-gravity-vector-test
   (let [center {:position {:x 0 :y 0}
                 :speed 10
-                :stray (/ Math/PI 6)
                 :g-map (get-in global-constants [:gravity-constants :sheep])
                 :type :sheep}
         wolf-1 {:position {:x 2 :y 0}
                 :speed 10
-                :stray (/ Math/PI 6)
                 :g-map (get-in global-constants [:gravity-constants :wolf])
                 :type :wolf}
         sheep-1 {:position {:x 2 :y 0}
                  :type :sheep
                  :speed 10
-                 :stray (/ Math/PI 6)
                  :g-map (get-in global-constants [:gravity-constants :sheep])}]
     (is-close-enough {:x -0.25 :y 0.0} (sum-gravity-vector center [wolf-1 sheep-1] global-constants))
     (is-close-enough {:x -0.5 :y 0.0} (sum-gravity-vector center [wolf-1] global-constants))
@@ -126,22 +113,20 @@
 
 
 (test/deftest deviation-test
-  (is= 0.0 (deviation 10.0 0.5))
-  (is= 10.0 (deviation 10.0 1))
-  (is= -10.0 (deviation 10.0 0.0))
+  (is= 3.0 (deviation {:random-max 10.0 :constant 3} 0.5))
+  (is= 13.0 (deviation {:random-max 10.0 :constant 3} 1))
+  (is= -7.0 (deviation {:random-max 10.0 :constant 3} 0.0))
   )
 
 (test/deftest next-positions-test
   (let [sheep-1 {:position {:x 0 :y 0}
                  :speed 10
-                 :stray (/ Math/PI 6)
                  :g-map (get-in global-constants [:gravity-constants :sheep])
                  :type :sheep}
         sheep-2 {:position {:x 0 :y 0}
                  :speed 10
-                 :stray (/ Math/PI 6)
                  :g-map (get-in global-constants [:gravity-constants :sheep])
                  :type :sheep}]
     ))
 
-;(test/run-tests 'clojure-study.ideas.swarm.swarm)
+(test/run-tests 'clojure-study.ideas.swarm.swarm)

@@ -853,11 +853,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/buy_in_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/buy_in_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/challenge_achievement_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/challenge_achievement_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/file-delivery-config.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/src/main/resources/file-delivery/file-delivery-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/main/resources/payment.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/main/resources/payment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/poker-directory-system.iml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/poker-directory-system.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" />
@@ -875,7 +872,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/register_sng_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/register_sng_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/register_tournament_notification.html" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/resources/html/register_tournament_notification.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="" />
     <ignored path="FirstClojure.iws" />
@@ -1476,7 +1472,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Jurisdiction" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1718,7 +1714,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ShowDownTimeCalculation" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1768,7 +1764,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RakeStructure" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>

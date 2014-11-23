@@ -9,7 +9,7 @@
 
 (def global-constants
   {:gravity-constants {:sheep {:sheep 1
-                               :wolf -3
+                               :wolf -10
                                :wall -20}
                        :wolf {:sheep 3
                               :wolf 1
@@ -22,7 +22,8 @@
 (def entity-template
   {:position nil
    :speed 3
-   :stray (/ Math/PI 32) ; defines the angle the entity can deviate from the gravitational vector
+   :stray-tendency {:random-max (/ Math/PI 2) ; defines the angle the entity can deviate from the gravitational vector
+                    :constant (/ Math/PI 8)}
    :g-map nil
    :type nil})
 
@@ -37,7 +38,7 @@
         n2))))
 
 (def rand-factor (rand-factor-creator))
-;(def rand-factor rand)
+(def rand-factor rand)
 
 (defn run-show!
   "Runs the simulation"
@@ -58,4 +59,4 @@
           (repaint! (v/entities->view entitites-next))
           (recur (dec i) entitites-next))))))
 
-(run-show! 100 10 [200 200] [400 400])
+(run-show! 50 5 [200 200] [400 400])
