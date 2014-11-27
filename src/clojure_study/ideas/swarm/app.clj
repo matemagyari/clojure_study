@@ -59,4 +59,4 @@
           (repaint! (v/entities->view entitites-next))
           (recur (dec i) entitites-next))))))
 
-(run-show! 50 5 [200 200] [400 400])
+(run-show! 50 10 [200 200] [400 400])

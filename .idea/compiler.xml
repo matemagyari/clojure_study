@@ -48,6 +48,7 @@
         <module name="poker-cashier-system" />
         <module name="poker-commons" />
         <module name="poker-commons-messaging-client" />
+        <module name="poker-critical-core" />
         <module name="poker-directory-messaging-client" />
         <module name="poker-directory-system" />
         <module name="poker-fast-fold-messaging-client" />
@@ -67,6 +68,7 @@
         <module name="poker-player-session-messaging-api" />
         <module name="poker-promotion-system" />
         <module name="poker-reporting-system" />
+        <module name="poker-standard-expectations" />
         <module name="poker-stats-messaging-client" />
         <module name="poker-stats-system" />
         <module name="poker-utils" />
@@ -77,6 +79,8 @@
         <module name="streaming-poker-integrity-messaging-client" />
         <module name="streaming-poker-integrity-service" />
         <module name="timeout" />
+        <module name="tournament-critical-core" />
+        <module name="tournament-critical-core (1)" />
         <module name="tournament-director-system" />
         <module name="tournament-messaging-client" />
         <module name="tournament-model" />
@@ -124,6 +128,7 @@
       <module name="poker-cashier-system" target="1.6" />
       <module name="poker-commons" target="1.6" />
       <module name="poker-commons-messaging-client" target="1.6" />
+      <module name="poker-critical-core" target="1.6" />
       <module name="poker-directory-messaging-client" target="1.6" />
       <module name="poker-directory-system" target="1.6" />
       <module name="poker-fast-fold-messaging-client" target="1.6" />
@@ -141,6 +146,7 @@
       <module name="poker-player-session-messaging-api" target="1.6" />
       <module name="poker-promotion-system" target="1.6" />
       <module name="poker-reporting-system" target="1.6" />
+      <module name="poker-standard-expectations" target="1.6" />
       <module name="poker-stats-messaging-client" target="1.6" />
       <module name="poker-stats-system" target="1.6" />
       <module name="poker-utils" target="1.6" />
@@ -151,6 +157,8 @@
       <module name="streaming-poker-integrity-messaging-client" target="1.6" />
       <module name="streaming-poker-integrity-service" target="1.6" />
       <module name="timeout" target="1.6" />
+      <module name="tournament-critical-core" target="1.6" />
+      <module name="tournament-critical-core (1)" target="1.6" />
       <module name="tournament-director-system" target="1.6" />
       <module name="tournament-messaging-client" target="1.6" />
       <module name="tournament-model" target="1.6" />

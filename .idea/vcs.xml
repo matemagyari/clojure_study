@@ -12,6 +12,7 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system" vcs="Git" />
@@ -22,10 +23,12 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-standard-expectations" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/simple-storage-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/timeout" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/tournament-critical" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys" vcs="Git" />

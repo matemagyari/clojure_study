@@ -37,6 +37,9 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-standard-expectations/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tournament-critical/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
