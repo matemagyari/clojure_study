@@ -3,19 +3,22 @@
   clojure-study.ideas.swarm.app
   (:require [clojure.test :as test]
             [clojure-study.ideas.swarm.swarm :as swarm]
-            [clojure_study.ideas.swarm.the-wild :as w]
+            [clojure-study.ideas.swarm.the-wild :as w]
             [clojure-study.ideas.swarm.display :as display]
             [clojure-study.ideas.swarm.view-adapter :as v]))
 
 (def global-constants
   {:gravity-constants {:sheep {:sheep 1
                                :wolf -10
+                               :dead-sheep 0
                                :wall -20}
                        :wolf {:sheep 3
-                              :wolf 1
+                              :wolf -1
+                              :dead-sheep 0
                               :wall -20}
                        :wall {:sheep 0
                               :wolf 0
+                              :dead-sheep 0
                               :wall 0}}
    :min-proximity 1.0})
 
@@ -43,20 +46,22 @@
 (defn run-show!
   "Runs the simulation"
   [sheeps-num wolves-num dim-board dim-screen]
-  (let [wolf-traits {:type :wolf}
+  (let [wolf-traits {:type :wolf :kill-range 1}
         sheep-traits {:type :sheep}
         sheeps (w/enitites-of-type sheeps-num sheep-traits entity-template global-constants dim-board rand-factor)
         wolves (w/enitites-of-type wolves-num wolf-traits entity-template global-constants dim-board rand-factor)
         walls (w/make-walls dim-board)
         repaint! (display/repaint-fn dim-board dim-screen)]
     (println "START")
-    (loop [i 500
+    (loop [i 5000
            entities (concat sheeps wolves walls)]
       (if (zero? i)
         (println "END")
-        (let [entitites-next (swarm/next-positions entities global-constants rand-factor)]
+        (let [entitites-next (swarm/next-positions entities global-constants rand-factor)
+              ;entitites-next (w/cull-sheeps entitites-next)
+              ]
           ;(println "hi " i " " (apply va/weight-point (map :position entitites-next)))
           (repaint! (v/entities->view entitites-next))
           (recur (dec i) entitites-next))))))
 
-(run-show! 50 10 [200 200] [400 400])
+(run-show! 100 10 [200 200] [400 400])

@@ -1,41 +1,109 @@
 (ns clojure-study.libraries.monad
-  (:use [clojure-study.assertion]
-        [clojure.algo.monads]
-        [clojure.core])
-  (:require [clojure.repl])
-  )
+  (:require [clojure.repl :as r]
+            [clojure-study.assertion :as a]
+            [clojure.algo.monads :as m]))
 
-(defmonad my-identity-m
+(m/defmonad my-identity-m
   [m-result identity
    m-bind (fn m-result-id [mv f]
             (f mv))])
+
+;http://stackoverflow.com/questions/9881471/map-and-reduce-monad-for-clojure-what-about-a-juxt-monad
+; m-result: wraps a value into a monad
+; m-bind: 1. unwraps mv (monadic value) to get v, 2. applies f (normal function) to v to create a new monadic value
+
+(defn dot-result [v] (apply str
+                       (repeat v \.)))
+(defn dot-bind [mv f]
+  (f (count mv)))
+
+(m/defmonad dot-monad
+  [m-result dot-result
+   m-bind dot-bind])
+
+(a/assert-equals "..."
+  (m/domonad dot-monad
+    [a "."
+     b ".."]
+    (+ a b)))
+
+;;================ M-LIFT =================================
+
+(def subtract-dots
+  (m/with-monad dot-monad
+    (m/m-lift 2 -)))
+
+(a/assert-equals ".." (subtract-dots "....." "..."))
+
+;;without lift
+(defn dup-dots [a]
+  (m/domonad dot-monad
+    [x a] ; transforms a number to monad
+    (* 2 a)))
+
+(a/assert-equals ".." (dup-dots "."))
+
+;;Monadic Laws
+;;Identity - (m-bind (m-result x) f) is equal to (f x)
+(defn satisfies-law-of-identity? [m-bind m-result v f]
+  (= (m-bind (m-result v) f) (f v)))
+;;Reverse Identity - (m-bind mv m-result) is equal to mv where mv is a monadic value.
+(defn satisfies-law-of-reverse-identity? [m-bind m-result mv]
+  (= (m-bind mv m-result) mv))
+;;Associativity - (m-bind (m-bind mv f) g) is equal to (m-bind mv (fn [x] (m-bind (f x) g))) 
+;; where f and g are monadic functions and mv is a monadic value.
+(defn satisfies-law-of-associativity? [m-bind mv f g]
+  (= (m-bind (m-bind mv f) g)
+    (m-bind mv (fn [x] (m-bind (f x) g)))))
+
+(assert (satisfies-law-of-identity? dot-bind dot-result 4 inc))
+(assert (satisfies-law-of-identity? dot-bind dot-result 4 dec))
+(assert (satisfies-law-of-reverse-identity? dot-bind dot-result ".."))
+;(assert (satisfies-law-of-associativity? dot-bind ".." dup-dots dup-dots))
+
+;;================= NO-NIL-MONAD
+(m/defmonad no-nil-monad
+  [m-result (fn [v] v)
+   m-bind (fn [mv f]
+            (if (nil? mv) nil (f mv)))])
+
+(defn fragile+ [a b]
+  (+ a b))
+
+;;any function can be made nil-safe!
+(def safe+ (m/with-monad no-nil-monad
+             (m/m-lift 2 fragile+)))
+
+(a/assert-equals 4 (safe+ 3 1))
+(a/assert-equals nil (safe+ nil 1))
+
 
 ;;================= MAYBE MONAD ========================
 
 ;;Maybe monad
 (defn try-maybe-m [x y]
-  (domonad maybe-m
+  (m/domonad m/maybe-m
     [a x
      b y]
     (+ a b)))
 
 
-(assert-equals 5 (try-maybe-m 2 3))
-(assert-equals nil (try-maybe-m 2 nil))
+(a/assert-equals 5 (try-maybe-m 2 3))
+(a/assert-equals nil (try-maybe-m 2 nil))
 
 (defn try-maybe-m2 [x y]
-  (domonad maybe-m
+  (m/domonad m/maybe-m
     [a x
      :let [z (inc a)]
      b y]
     (+ a b z)))
 
-(assert-equals 8 (try-maybe-m2 2 3))
+(a/assert-equals 8 (try-maybe-m2 2 3))
 
-(assert-equals nil (with-monad maybe-m
-                     (domonad [a 2
-                               b nil]
-                       (* a b))))
+(a/assert-equals nil (m/with-monad m/maybe-m
+                       (m/domonad [a 2
+                                   b nil]
+                         (* a b))))
 
 
 ;;================= STATE MONAD ========================
@@ -54,7 +122,7 @@
 
 ;here comes the monad
 (defn do-things [x]
-  (domonad state-m
+  (m/domonad m/state-m
     [a (inc-s x)
      b (double-s a)
      c (dec-s b)]
@@ -62,32 +130,32 @@
 
 (def queued-up (do-things 3))
 
-(assert-equals (queued-up []) [7 [:inc :double :dec]])
-(assert-equals (queued-up nil) [7 [:dec :double :inc]]) ;because conj works differently in list than in vector
-(assert-equals (queued-up '()) [7 [:dec :double :inc]]) ;same
-(assert-equals (queued-up #{}) [7 #{:dec :double :inc}])
+(a/assert-equals (queued-up []) [7 [:inc :double :dec]])
+(a/assert-equals (queued-up nil) [7 [:dec :double :inc]]) ;because conj works differently in list than in vector
+(a/assert-equals (queued-up '()) [7 [:dec :double :inc]]) ;same
+(a/assert-equals (queued-up #{}) [7 #{:dec :double :inc}])
 
-(clojure.repl/source state-m)
+(r/source state-m)
 
 ;;================= WRITER MONAD ========================
 (defn try-write []
-  (domonad (writer-m "?")
-    [a (m-result 1)
-     _ (write "aa")
-     b (m-result 5)
-     _ (write "bb")]
+  (m/domonad (m/writer-m "?")
+    [a (m/m-result 1)
+     _ (m/write "aa")
+     b (m/m-result 5)
+     _ (m/write "bb")]
     (+ a b)))
 
-(assert-equals [6 "??aa??bb?"] (try-write))
+(a/assert-equals [6 "??aa??bb?"] (try-write))
 
 ;;================= SEQUENCE MONAD ========================
 (defn try-sequence-m [seq-a seq-b]
-  (domonad sequence-m
+  (m/domonad m/sequence-m
     [x seq-a
      y seq-b]
     (* x y)))
 
-(assert-equals [2 3 4 6 6 9] (take 6 (try-sequence-m [1 2 3] [2 3])))
+(a/assert-equals [2 3 4 6 6 9] (take 6 (try-sequence-m [1 2 3] [2 3])))
 
 
 

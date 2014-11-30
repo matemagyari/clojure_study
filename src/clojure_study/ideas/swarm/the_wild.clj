@@ -1,8 +1,9 @@
 (ns
   ^{:author mate.magyari
     :doc "Entities"}
-  clojure_study.ideas.swarm.the-wild
-  (:require [clojure.test :as test]))
+  clojure-study.ideas.swarm.the-wild
+  (:require [clojure-study.ideas.swarm.vector-algebra :as va]
+            [clojure.test :as test]))
 
 (defn enitites-of-type
   "Create entities of given type on random locations"
@@ -22,6 +23,25 @@
    :type :wall
    :speed 0
    :stray 0})
+
+(defn cull-sheeps [entities]
+  (let [type-of? (fn [e t] (= t (:type e)))
+        wolves (filter #(type-of? % :wolf) entities)
+        close-enough-to-kill? (fn [wolf sheep]
+                                (<=
+                                  (va/distance (:position sheep) (:position wolf))
+                                  (:kill-range wolf)))
+        close-to-wolf? (fn [sheep]
+                         (some #(close-enough-to-kill? % sheep) wolves))
+        alter-e (fn [e]
+                  (if (and
+                        (type-of? e :sheep)
+                        (close-to-wolf? e))
+                    (assoc e :type :dead-sheep
+                              :speed 0)
+                    e))
+        sheeps (filter type-of? :sheep)]
+    (pmap alter-e entities)))
 
 (defn make-walls [dim-board]
   (let [y-max (second dim-board)

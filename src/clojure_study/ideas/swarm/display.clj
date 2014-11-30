@@ -17,6 +17,7 @@
         color (condp = type
                 :wall Color/GREEN
                 :sheep Color/WHITE
+                :dead-sheep Color/BLUE
                 :wolf Color/RED)]
       (doto g
         (.setColor color)

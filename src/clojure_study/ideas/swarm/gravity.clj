@@ -33,9 +33,11 @@
 
 (def ^:private global-constants
   {:gravity-constants {:sheep {:sheep 1
+                               :dead-sheep 0
                                :wolf -2
                                :wall -1}
                        :wolf {:sheep 2
+                              :dead-sheep 0
                               :wolf 1
                               :wall -1}}
    :min-proximity 1.0})
