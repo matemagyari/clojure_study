@@ -15,7 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/test/java/com/vlalov/gamesys/input/BetsReaderTest.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/test/java/com/vlalov/gamesys/input/BetsReaderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/EvenBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/EvenBet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstClojure.iml" afterPath="$PROJECT_DIR$/FirstClojure.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/java/gamesys/notification/loader/app/resources/GiveCommandMessageBuilder.java" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/java/gamesys/notification/loader/app/resources/GiveCommandMessageBuilder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/NumberBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/NumberBet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/OddBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/OddBet.java" />
@@ -35,20 +34,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/UnauthorizedPlayerException.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/UnauthorizedPlayerException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/cognosSchema.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../principle/pom.xml" afterPath="$PROJECT_DIR$/../principle/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" afterPath="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/src/main/resources/tournament_tickets/voucher.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -106,8 +98,8 @@
       <file leaf-file-name="BigDecimalScaler.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/BigDecimalScaler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38793105" vertical-offset="0" max-vertical-offset="348">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="348">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1419,7 +1411,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="823" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="823" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2419,8 +2411,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/BigDecimalScaler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38793105" vertical-offset="0" max-vertical-offset="348">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="348">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
