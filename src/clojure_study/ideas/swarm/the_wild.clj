@@ -24,7 +24,9 @@
    :speed 0
    :stray 0})
 
-(defn cull-sheeps [entities]
+(defn cull-sheeps
+  "Kill the sheeps that are in the killing range of a wolf"
+  [entities]
   (let [type-of? (fn [e t] (= t (:type e)))
         wolves (filter #(type-of? % :wolf) entities)
         close-enough-to-kill? (fn [wolf sheep]
@@ -43,7 +45,9 @@
         sheeps (filter type-of? :sheep)]
     (pmap alter-e entities)))
 
-(defn make-walls [dim-board]
+(defn make-walls
+  "Create walls around the field"
+  [dim-board]
   (let [y-max (second dim-board)
         x-max (first dim-board)
         margin (int (/ x-max 100))

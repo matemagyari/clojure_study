@@ -8,7 +8,6 @@
   "Gravity vector from point A to B. Direction depends on the points, the length
    is the square root of the distance between them and the gravitation constant"
   [point-from point-to grav-constant min-distance]
-  {:pre [(some? grav-constant)]}
   (let [dist (Math/max
                min-distance
                (va/distance point-from point-to))]

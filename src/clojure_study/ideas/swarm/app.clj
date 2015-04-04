@@ -5,7 +5,8 @@
             [clojure-study.ideas.swarm.swarm :as swarm]
             [clojure-study.ideas.swarm.the-wild :as w]
             [clojure-study.ideas.swarm.display :as display]
-            [clojure-study.ideas.swarm.view-adapter :as v]))
+            [clojure-study.ideas.swarm.view-adapter :as v]
+            [clojure.core.typed :as typed]))
 
 (def global-constants
   {:gravity-constants {:sheep {:sheep 1
@@ -25,7 +26,7 @@
 (def entity-template
   {:position nil
    :speed 3
-   :stray-tendency {:random-max (/ Math/PI 2) ; defines the angle the entity can deviate from the gravitational vector
+   :stray-tendency {:random-max (/ Math/PI 100) ; defines the angle the entity can deviate from the gravitational vector
                     :constant (/ Math/PI 8)}
    :g-map nil
    :type nil})
@@ -58,10 +59,12 @@
       (if (zero? i)
         (println "END")
         (let [entitites-next (swarm/next-positions entities global-constants rand-factor)
-              ;entitites-next (w/cull-sheeps entitites-next)
+              entitites-next (w/cull-sheeps entitites-next)
               ]
           ;(println "hi " i " " (apply va/weight-point (map :position entitites-next)))
           (repaint! (v/entities->view entitites-next))
           (recur (dec i) entitites-next))))))
 
-(run-show! 100 10 [200 200] [400 400])
+;(run-show! 100 10 [200 200] [400 400])
+
+(typed/check-ns 'clojure-study.ideas.swarm.vector-algebra)

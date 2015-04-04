@@ -37,17 +37,26 @@
   (m/match [[1 2]]
     [[1 2 & r]] r
     [_] :b))
+;;============ nil matching =======================
+(a/assert-equals :nil (m/match nil
+                        3 :num
+                        nil :nil))
+
 ;;============ OR matching =======================
 (a/assert-equals :b (m/match [3 4 5]
-                      [3 (:or 6 7) 5] :a [3 (:or 3 4) 5] :b))
+                      [3 (:or 6 7) 5] :a
+                      [3 (:or 3 4) 5] :b))
 
 ;;============ GUARDS matching =======================
 (a/assert-equals :a (m/match [1 2 3]
-                      [_ (a :guard even?) _] :a [_ (a :guard odd?) _] :b))
+                      [_ (a :guard even?) _] :a
+                      [_ (a :guard odd?) _] :b))
 
 ;multiple guards
 (a/assert-equals :c (m/match [1 2 3]
-                      [_ (a :guard [even? neg?]) _] :a [_ (a :guard odd?) _] :b :else :c))
+                      [_ (a :guard [even? neg?]) _] :a
+                      [_ (a :guard odd?) _] :b
+                      :else :c))
 
 (let [match-fn #(m/match %
                   {:address {:street _

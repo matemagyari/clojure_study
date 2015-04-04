@@ -16,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com/matemagyari/clojure_study.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/matemagyari/clojure_study.git</developerConnection>
-    <tag>71141b3550a535ee570a9a332f3dd84b13561122
+    <tag>b6da9a085371a12102c5578626f9a5fb2ef3b60b
 </tag>
     <url>https://github.com/matemagyari/clojure_study</url>
   </scm>
@@ -70,6 +70,11 @@
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>
+      <artifactId>test.check</artifactId>
+      <version>0.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
       <artifactId>clojure-contrib</artifactId>
       <version>1.2.0</version>
     </dependency>
@@ -92,6 +97,11 @@
       <groupId>org.clojure</groupId>
       <artifactId>tools.trace</artifactId>
       <version>0.7.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>tools.namespace</artifactId>
+      <version>0.2.8</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>

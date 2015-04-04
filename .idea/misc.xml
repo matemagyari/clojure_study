@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1417905492563" />
+    <option name="name" value="default" />
+    <option name="optimizeImports" value="false" />
+    <option name="pathToConfigFileJava" value="$USER_HOME$/Downloads/default_format.xml" />
+    <option name="selectedJavaProfile" value="AF" />
+  </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
@@ -40,11 +49,18 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-standard-expectations/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tournament-critical/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-ui-app/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
       </set>
     </option>

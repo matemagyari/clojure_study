@@ -293,6 +293,7 @@
     <orderEntry type="library" name="Maven: org.tukaani:xz:1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.clojure:tools.nrepl:0.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: clojure-complete:clojure-complete:0.2.3" level="project" />
+    <orderEntry type="library" name="org.clojure:test.check:0.6.1" level="project" />
   </component>
 </module>
 

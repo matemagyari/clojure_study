@@ -24,6 +24,8 @@
   (assert-equals 2 q)
   (assert-equals nil z))
 
+;;let
+
 (defn atest [a {b :x c :y}]
   (+ a b c))
 

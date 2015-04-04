@@ -4,30 +4,21 @@
             [clojure.core.logic.arithmetic :refer [<= >=]]
             [clojure.core.logic.pldb :refer [db with-db db-rel db-fact]]
             [clojure-study.assertion :as a]
-            [sherlock.relations :as r]))
+            [sherlock.relations :as r]
+            [clojure.test :as test]
+            [clojure.core.typed :as typed]))
 
 ;;========================================
-(def rooms [:foyer :dining-room :kitchen :living-room])
-(def persons [:Abe :Bob :Cecil])
 
-(defn create-house [facts]
-  (-> facts
-    (r/define-rooms :foyer :dining-room)
-    (r/define-rooms :foyer :kitchen)
-    (r/define-rooms :dining-room :living-room)
-    (r/define-rooms :kitchen :living-room)))
-
-(defn init-characters-positions [characters rooms facts]
+(defn init-characters-positions
+  "Returns a world where the characters are placed in rooms a t0"
+  [characters rooms facts]
   (if (empty? characters) facts
     (let [character (first characters)
-          room (rand-nth rooms)
+          room (first rooms)
           uf (r/place-person-in-room facts [character room 0])]
-      (recur (rest characters) rooms uf))))
+      (recur (rest characters) (rest rooms) uf))))
 
-
-
-(defn init-story [persons rooms]
-  (->> (r/new-world) create-house (init-characters-positions persons rooms)))
 
 (defn path-of
   "Get the path of a character"
@@ -51,7 +42,9 @@
     (a/assert-equals time time2)
     (r/place-person-in-room facts [person next-room time])))
 
-(defn move-story [facts characters time]
+(defn move-story
+  "Moves the world to the next time point"
+  [facts characters time]
   (loop [characters-to-move characters
          updated-facts facts]
     (if (empty? characters-to-move) updated-facts
@@ -60,7 +53,9 @@
         (recur (rest characters-to-move) uf)))))
 
 ;;======== queries =========
-(defn where-is [facts person time]
+(defn where-is
+  "Returns the room th person occupies at the given time"
+  [facts person time]
   (let [[room] (with-db facts
                  (run 1 [r]
                    (r/rel-present person r time)))]
@@ -86,7 +81,9 @@
         :let [other-chars (who-was-there facts (first room-time) (second room-time))]]
     (cons other-chars room-time)))
 
-(defn memories-of [stories character]
+;(typed/ann memories-of [clojure.lang.PersistentArrayMap -> clojure.lang.PersistentArrayMap])
+(defn memories-of
+  [stories character]
   "Tracking the character based on other characters' stories"
   (let [with-character? (fn [[characters-in-the-room room time]] ;room-time is a tuple of (characters room time)
                           (some #(= % character) characters-in-the-room))
@@ -94,15 +91,17 @@
                                  :let [relevant-parts (filter with-character? story)]
                                  :when (not (empty? relevant-parts))]
                              relevant-parts)]
+    ;(sort-by #(nth % 2) individual-stories)))
     individual-stories))
 
 (defn possible-path-of [stories character]
   "Based on the stories of others the possible path of the character"
   1)
 
-(defn move-story-to [person rooms time]
-  "init a story and move it to round t"
-  (loop [facts (init-story persons rooms)
+(defn move-story-to
+  "move a world it to round t"
+  [world persons time]
+  (loop [facts world
          t 1]
     (if (> t time) facts
       (recur (move-story facts persons t) (inc t)))))
@@ -145,14 +144,41 @@
       ;(<= time-2 10)
       )))
 
-(def w (move-story-to persons rooms 6))
 
-(println :Bob (path-of w :Bob))
-(println :Abe (path-of w :Abe))
-(println :Cecil (path-of w :Cecil))
+;(def theos (theories :Cecil facts))
 
-(def facts (let [abes-story (get-characters-memory w :Abe)
-                 bobs-story (get-characters-memory w :Bob)
+;(who-was-there-between w :dining-room 0 5)
+
+;================ tests ===================
+(defn is= [x y]
+  (test/is (= x y)))
+
+(defn is-not [x]
+  (test/is (false? x)))
+
+(defn create-house [world]
+  (-> world
+    (r/define-rooms :foyer :dining-room)
+    (r/define-rooms :foyer :kitchen)
+    (r/define-rooms :dining-room :living-room)
+    (r/define-rooms :kitchen :living-room)))
+
+(def rooms [:foyer :dining-room :kitchen :living-room])
+(def persons [:Abe :Bob :Cecil])
+
+(def a-world
+  (let [room-list (repeatedly #(rand-nth rooms))]
+    (as-> (r/new-world) $
+      (create-house $)
+      (init-characters-positions persons room-list $)
+      (move-story-to $ persons 6))))
+
+(println :Bob (path-of a-world :Bob))
+(println :Abe (path-of a-world :Abe))
+(println :Cecil (path-of a-world :Cecil))
+
+(def facts (let [abes-story (get-characters-memory a-world :Abe)
+                 bobs-story (get-characters-memory a-world :Bob)
                  mems-of-Cecil (memories-of [abes-story bobs-story] :Cecil)
                  positions (positions-based-on-stories mems-of-Cecil)
                  facts (facts-based-on-positions :Cecil positions)]
@@ -161,9 +187,10 @@
              (println "facts" facts)
              (->> facts create-house (init-characters-positions persons rooms))))
 
-;(def theos (theories :Cecil facts))
+(println "Facts:\n" facts)
 
-;(who-was-there-between w :dining-room 0 5)
+(println (class a-world))
+(typed/check-ns 'sherlock.sherlock)
 
 
 

@@ -1,6 +1,6 @@
 (ns
   ^{:author mate.magyari}
-  clojure-study.euler)
+  clojure-study.euler.euler87)
 
 (defn dividers [x nums]
   (filter #(zero? (rem x %)) nums))

@@ -3,6 +3,23 @@
 (def c1 [1 2])
 (def c2 ["a" "b"])
 
+
+(defmacro visp [v]
+  (cons (first v) (rest v)))
+
+(assert (= 3 (visp (+ 1 2))))
+(assert (= 3 (visp [+ 1 2])))
+
+(defmacro squares [v]
+  (list 'map '#(* % %) v))
+
+(assert (= [4 9] (squares [2 3])))
+
+(defmacro squares2 [v]
+  `(map #(* % %) ~v))
+
+(assert (= [4 9] (squares2 [2 3])))
+
 ;(defmacro comb [ fun & colls ]
 ; `(let [colls# ~colls
 ;         symbs# (->> (gensym) repeat (take (count colls#)))

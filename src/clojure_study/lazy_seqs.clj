@@ -1,9 +1,12 @@
 (ns clojure-study.lazy-seqs
   (:require [clojure-study.assertion :as a]))
 
+(defn int-stream
+  ([] (int-stream 1))
+  ([x] (cons x (lazy-seq (int-stream (inc x))))))
+
 (comment
   (def char-set [1 2 3])
-
 
   (defn perms [a-seq]
     {:pre [(sequential? a-seq)]}

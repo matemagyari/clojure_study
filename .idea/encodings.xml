@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/../ScalaStudy/pom.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/blackjack.edn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/MessageDispatcher.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-academy-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy" charset="UTF-8" />
@@ -38,16 +43,20 @@
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/tracker-messaging-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/tracker-poker-messaging-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-program-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-program-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-ui-app/poker-ui" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/simple-storage-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/tournament-critical" charset="UTF-8" />
