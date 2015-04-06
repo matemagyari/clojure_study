@@ -3,16 +3,9 @@
   (:require [clojure.test :as test]
             [clojure.string :as str]))
 
-(defn add-transaction
-  "Adds a transaction to the existing transactions map (key: currency, value: amount)"
-  [transactions {amount :amount currency :currency}]
-  (let [current-value (get transactions currency 0)
-        new-value (+ amount current-value)]
-    (assoc transactions currency new-value)))
-
 (defn +money
   "Adds 2 'Money'-s"
-  [money-1 {amount :amount currency :currency}]
+  [money-1 {:keys [amount currency]}]
   {:pre [(= currency (:currency money-1))]}
   (update-in money-1 [:amount] + amount))
 
@@ -24,33 +17,57 @@
     :else (let [rate (get exchange-rates [currency target-currency])]
             {:amount (* rate amount) :currency target-currency})))
 
-(defn collapse
-  "Collapse all transactions into one by converting all to the target-currency based on the exchange-rates"
+(defn aggregate-transactions-of-partner
+  "Aggregates the (potenatially lazy) list of transactions for a partner denominating in the target currency"
+  [transactions partner target-currency exchange-rates]
+  (as-> transactions $
+    (filter #(= (:partner %) partner) $)
+    (map #(convert-money % target-currency exchange-rates) $)
+    (reduce +money {:amount 0 :currency target-currency} $)))
+
+
+(defn add-transaction
+  "Adds a transaction to the existing transactions map (key: partner, value: money)"
+  [transactions {:keys [amount currency partner] :as transaction} target-currency exchange-rates]
+  (let [current-value (get transactions partner {:amount 0 :currency target-currency})
+        tran-value (convert-money transaction target-currency exchange-rates)
+        new-value (+money current-value tran-value)]
+    (assoc transactions partner new-value)))
+
+(defn aggregate-transactions-by-partner
+  "Aggregates the (potenatially lazy) list of transactions by partners denominating in the target currency"
   [transactions target-currency exchange-rates]
-  (let [tuple->map (fn [[currency amount]]
-                     {:currency currency :amount amount})]
-    (as-> (sequence transactions) $
-      (map #(convert-money (tuple->map %) target-currency exchange-rates) $)
-      (reduce +money $))))
+  (reduce #(add-transaction %1 %2 target-currency exchange-rates) {} transactions))
 
 
 ;; ========================= DOMAIN TESTS ==============================
 (defn is= [a b]
   (test/is (= a b)))
 
-(test/deftest add-transaction-tests
-  (is= {:gdp 3} (add-transaction {} {:currency :gdp :amount 3}))
-  (is= {:gdp 8} (add-transaction {:gdp 5} {:currency :gdp :amount 3}))
-  (is= {:gdp 8 :eur 3} (add-transaction {:gdp 5 :eur 3} {:currency :gdp :amount 3})))
-
 (test/deftest +money-tests
-  (is= {:currency :gdp :amount 11} (+money {:currency :gdp :amount 3} {:currency :gdp :amount 8})))
+  (is= {:currency :GBP :amount 11} (+money {:currency :GBP :amount 3} {:currency :GBP :amount 8})))
 
 (test/deftest convert-money-tests
-  (is= {:currency :usd :amount 6} (convert-money {:currency :gdp :amount 3} :usd {[:gdp :usd] 2}))
-  (is= {:currency :usd :amount 6} (convert-money {:currency :usd :amount 6} :usd {})))
+  (is= {:currency :chf :amount 6} (convert-money {:currency :GBP :amount 3} :chf {[:GBP :chf] 2}))
+  (is= {:currency :chf :amount 6} (convert-money {:currency :chf :amount 6} :chf {})))
 
-(test/deftest collapse-tests
-  (is= {:currency :usd :amount 16} (collapse {:gdp 3 :usd 10} :usd {[:gdp :usd] 2})))
+(test/deftest aggregate-transactions-of-partner-tests
+  (let [exchange-rates {[:usd :GBP] 0.5}
+        partner :x
+        target-currency :GBP
+        transactions [{:currency :GBP :amount 11 :partner :x}
+                      {:currency :usd :amount 10 :partner :x}
+                      {:currency :usd :amount 10 :partner :y}]]
+    (is= {:currency :GBP :amount 16.0} (aggregate-transactions-of-partner transactions partner target-currency exchange-rates))))
+
+
+(test/deftest aggregate-transactions-by-partner-tests
+  (let [exchange-rates {[:usd :GBP] 0.5}
+        target-currency :GBP
+        transactions [{:currency :GBP :amount 11 :partner :x}
+                      {:currency :usd :amount 10 :partner :x}
+                      {:currency :usd :amount 10 :partner :y}]]
+    (is= {:x {:currency :GBP :amount 16.0}
+          :y {:currency :GBP :amount 5.0}} (aggregate-transactions-by-partner transactions target-currency exchange-rates))))
 
 (test/run-tests)

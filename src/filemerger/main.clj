@@ -4,18 +4,13 @@
             [filemerger.app :as app]))
 
 ;; ================ POOR MAN's DI CONTAINER ================================
-(defn get-processor
-  "Creates the processor function"
-  []
-  (app/create-transactions-processor i/read-transactions i/read-exchange-rates #(println (str "The result is " %))))
 
 ;; ================ MAIN ================================
 
 (defn -main
   "The main function"
   [args]
-  (let [process (get-processor)]
-    (process args)))
+  (i/process-input args))
 
 
 ;; ========================= TESTS ==============================
@@ -25,16 +20,11 @@
 
 (def input {:exchange-rates-file "/Users/mate.magyari/IdeaProjects/ScalaStudy/exchangerates.csv"
             :transactions-file "/Users/mate.magyari/IdeaProjects/ScalaStudy/transactions.csv"
-            :target-currency :gdp})
+            :target-currency :GBP
+            :partner "Etwas"})
 
-(test/deftest processor-tests
-  (let [result (atom nil)
-        process (app/create-transactions-processor
-                  i/read-transactions
-                  i/read-exchange-rates
-                  #(reset! result %))]
-    (process input)
-    (is= {:amount -438.28039917608690465930415601938752M, :currency :gdp} @result)))
+(test/deftest main-tests
+  (-main input))
 
 (test/run-tests)
 
