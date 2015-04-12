@@ -7,23 +7,23 @@
 
 ;;=========================
 ;; membero - simple
-(a/assert-equals [1 2 3]
+(a/assert= [1 2 3]
   (run* [q]
     (membero q [1 2 3])))
 
-(a/assert-equals [3 4]
+(a/assert= [3 4]
   (run* [q]
     (membero q [1 2 3 4])
     (membero q [3 4 5 6])))
 
 ;;!=
-(a/assert-equals [1 3]
+(a/assert= [1 3]
   (run* [q]
     (membero q [1 2 3])
     (!= q 2)))
 
 ;;conde
-(a/assert-equals (set [1 2 3 4])
+(a/assert= (set [1 2 3 4])
   (set (run* [q]
          (conde
            [(membero q [1 2])]
@@ -37,7 +37,7 @@
                  (membero smurf2 smurfs)
                  (distincto [smurf1 smurf2])
                  (== q [smurf1 smurf2])))]
-  (a/assert-equals result
+  (a/assert= result
     [[:papa :brainy] [:brainy :papa] [:papa :lazy] [:lazy :papa] [:brainy :lazy] [:lazy :brainy]]))
 
 

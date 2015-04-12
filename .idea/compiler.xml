@@ -106,7 +106,7 @@
       <module name="blackjack-utils" target="1.6" />
       <module name="blackjack-wallet" target="1.5" />
       <module name="coding-exercise" target="1.7" />
-      <module name="connection-proxy" target="1.6" />
+      <module name="connection-proxy" target="1.7" />
       <module name="connection-proxy-dataclient" target="1.6" />
       <module name="examples" target="1.6" />
       <module name="gamification-messaging-client" target="1.7" />
@@ -119,8 +119,8 @@
       <module name="hand-record-integration-tests" target="1.6" />
       <module name="hand-record-system" target="1.6" />
       <module name="messaging-core" target="1.6" />
-      <module name="notification-loader (1)" target="1.6" />
-      <module name="notification-loader-service (1)" target="1.6" />
+      <module name="notification-loader (1)" target="1.7" />
+      <module name="notification-loader-service (1)" target="1.7" />
       <module name="poker-academy" target="1.7" />
       <module name="poker-academy-messaging-client" target="1.7" />
       <module name="poker-bot" target="1.6" />
@@ -155,8 +155,8 @@
       <module name="poker-stats-system" target="1.7" />
       <module name="poker-utils" target="1.6" />
       <module name="pokerProject" target="1.6" />
-      <module name="project-api (1)" target="1.6" />
-      <module name="project-client (1)" target="1.6" />
+      <module name="project-api (1)" target="1.7" />
+      <module name="project-client (1)" target="1.7" />
       <module name="simple-storage-system" target="1.6" />
       <module name="streaming-poker-integrity-messaging-client" target="1.7" />
       <module name="streaming-poker-integrity-service" target="1.7" />

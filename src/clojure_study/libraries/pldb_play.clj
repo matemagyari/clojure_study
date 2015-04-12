@@ -26,11 +26,11 @@
 (defn child [x y]
   (parent y x))
 
-(a/assert-equals #{[:Cecil :Emil] [:Ben :Dan] [:Abe :Cecil]}
+(a/assert= #{[:Cecil :Emil] [:Ben :Dan] [:Abe :Cecil]}
   (set (with-db family
          (run* [x y] (grandfather x y)))))
 
-(a/assert-equals [:Dan]
+(a/assert= [:Dan]
   (with-db family
     (run 1 [q] (child q :Cecil))))
 
@@ -45,4 +45,4 @@
                    (parent dad :Lucy)
                    (parent dad q)
                    (!= q :Lucy))))]
-  (a/assert-equals result [:Mary]))
+  (a/assert= result [:Mary]))

@@ -34,7 +34,7 @@
   (Thread/sleep 10)
   (close! fast-chan)
   (close! slow-chan)
-  (ae/assert-equals 7 @result))
+  (ae/assert= 7 @result))
 
 ;======================
 (let [store (atom nil)
@@ -43,10 +43,10 @@
         (if-let [msg (<! c)]
           (reset! store msg))))
   (>!! c "hi")
-  (ae/assert-equals "hi" @store)
+  (ae/assert= "hi" @store)
   (>!! c "ho")
   (<!! (timeout 10))
-  (ae/assert-equals "ho" @store)
+  (ae/assert= "ho" @store)
   (close! c))
 
 ;================== GO-LOOP ====
@@ -57,7 +57,7 @@
       (reset! store msg))
     (recur))
   (>!! c "hi")
-  (ae/assert-equals "hi" @store)
+  (ae/assert= "hi" @store)
   (<!! (timeout 10))
   (close! c))
 
@@ -70,7 +70,7 @@
   (go (doseq [x (range 4)]
         (>! c x)))
   (<!! (timeout 10))
-  (ae/assert-equals [0 1 2 3] @store))
+  (ae/assert= [0 1 2 3] @store))
 
 ;============== FILTER< ======
 (comment
@@ -89,8 +89,8 @@
     (>!! num-chan 4)
     (>!! num-chan 6)
     (<!! (timeout 100))
-    (ae/assert-equals 4 @xstore)
-    (ae/assert-equals 6 @store)
+    (ae/assert= 4 @xstore)
+    (ae/assert= 6 @store)
     (close! num-chan))
   )
 
@@ -121,8 +121,8 @@
   (>!! in {:name :Mia :type :cat})
   (>!! in {:name :Vau :type :dog})
   (<!! (timeout 10))
-  (ae/assert-equals :Mia (:name @store-cat))
-  (ae/assert-equals :Vau (:name @store-dog))
+  (ae/assert= :Mia (:name @store-cat))
+  (ae/assert= :Vau (:name @store-dog))
   (unsub-all publication)
   (close! in))
 
@@ -151,15 +151,15 @@
   (<!! (timeout 10))
   (unsub-all publication)
   (close! num-chan)
-  (ae/assert-equals [0 2 4 6 8] @store-even)
-  (ae/assert-equals [1 3 5 7 9] @store-odd)
-  (ae/assert-equals [1 3 5 7 9] @store-odd-2))
+  (ae/assert= [0 2 4 6 8] @store-even)
+  (ae/assert= [1 3 5 7 9] @store-odd)
+  (ae/assert= [1 3 5 7 9] @store-odd-2))
 
 ;==================== THREAD =====
 (let [ct (thread (+ 21 21))
       cg (go (+ 21 21))]
-  (ae/assert-equals 42 (<!! ct))
-  (ae/assert-equals 42 (<!! cg)))
+  (ae/assert= 42 (<!! ct))
+  (ae/assert= 42 (<!! cg)))
 ;==================== ALT! =====
 (let [fast-chan (chan)
       slow-chan (chan)]
@@ -167,8 +167,8 @@
     (>! slow-chan 0))
   (go (>! fast-chan 1))
   (let [[v c] (alts!! [fast-chan slow-chan])]
-    (ae/assert-equals 1 v)
-    (ae/assert-equals fast-chan c)))
+    (ae/assert= 1 v)
+    (ae/assert= fast-chan c)))
 ;==================== Lot of channels with ALT! =====
 (let [n 1000
       channels (repeatedly n chan)
@@ -176,41 +176,41 @@
   (doseq [c channels] (go (>! c "hi")))
   (dotimes [i n]
     (let [[v c] (alts!! channels)]
-      (ae/assert-equals "hi" v)))
+      (ae/assert= "hi" v)))
   (println "Read" n "messages in" (- (System/currentTimeMillis) begin) "ms"))
 ;==================== to-chan =====
 (let [c (a/to-chan [1 2 3])
       res [(<!! c) (<!! c) (<!! c)]]
-  (ae/assert-equals [1 2 3] res))
+  (ae/assert= [1 2 3] res))
 ;==================== map =====
 (let [c1 (a/to-chan [1 2 3])
       c2 (a/to-chan [4 5 6])
       mc (a/map + [c1 c2])
       res [(<!! mc) (<!! mc) (<!! mc)]]
-  (ae/assert-equals [5 7 9] res))
+  (ae/assert= [5 7 9] res))
 ;==================== into =====
 (let [ch (a/to-chan [1 2])
       ch2 (a/into [4 5] ch)]
-  (ae/assert-equals [[4 5 1 2] nil] [(<!! ch2) (<!! ch2)]))
+  (ae/assert= [[4 5 1 2] nil] [(<!! ch2) (<!! ch2)]))
 ;==================== onto =====
 (comment
   (let [ch (a/to-chan [1 2])]
     (a/onto-chan ch [3 4])
-    (ae/assert-equals [[4 5 1 2] nil] [(<!! ch) (<!! ch) (<!! ch) (<!! ch) (<!! ch)]))
+    (ae/assert= [[4 5 1 2] nil] [(<!! ch) (<!! ch) (<!! ch) (<!! ch) (<!! ch)]))
   )
 (let [ch (chan 10)]
   (a/onto-chan ch [3 4])
-  (ae/assert-equals [3 4] [(<!! ch) (<!! ch)]))
+  (ae/assert= [3 4] [(<!! ch) (<!! ch)]))
 ;==================== transducers, simple =====
 (let [trducer (map inc)
       c1 (chan 5 trducer)]
   (>!! c1 3)
-  (ae/assert-equals 4 (<!! c1)))
+  (ae/assert= 4 (<!! c1)))
 ;==================== transducers, composed =====
 (let [trducer (comp (filter even?) (map inc))
       ch (chan 5 trducer)]
   (a/onto-chan ch [1 2 3 4])
-  (ae/assert-equals [3 5 nil] [(<!! ch) (<!! ch) (<!! ch)]))
+  (ae/assert= [3 5 nil] [(<!! ch) (<!! ch) (<!! ch)]))
 ;======== pipeline
 (let [main-ch (chan 5)
       ])
