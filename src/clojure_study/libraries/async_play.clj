@@ -2,25 +2,30 @@
   (:require [clojure.core.async :refer [go go-loop chan close! <! <!! >! >!!
                                         timeout filter< put! take! pub sub unsub unsub-all
                                         thread alts! alts!!]
-             :as a]
-            [clojure-study.assertion :as ae]
-            [clojure.test :as test]))
+             :as a]))
 
-(defn -main []
-  (println "ok"))
 
-(let [c (chan 10)]
+(defn assert= [actual expected]
+  (when-not (= actual expected)
+    (throw
+      (AssertionError.
+        (str "Expected " expected " but was " actual)))))
+
+;; ======================= EXPLORING CORE.ASYNC THROUGH CODE EXAMPLES =========================
+
+;;==== buffering channnel ========
+(let [c (chan 1)]
   (>!! c "hello")
-  (assert (= "hello" (<!! c)))
+  (assert= "hello" (<!! c))
   (close! c))
 
-;================== GO ====
+;================== Go block for non-buffering channel ====
 (let [c (chan)]
   (go (>! c "hello"))
-  (assert (= "hello" (<!! (go (<! c)))))
+  (assert= "hello" (<!! (go (<! c))))
   (close! c))
 
-;========== waiting for channels and combine their output ======
+;========== waiting for channels and combine their output in a Go block ======
 (let [fast-chan (chan)
       slow-chan (chan)
       result (atom nil)]
@@ -34,22 +39,23 @@
   (Thread/sleep 10)
   (close! fast-chan)
   (close! slow-chan)
-  (ae/assert= 7 @result))
+  (assert= 7 @result))
 
-;======================
+;============ go block with infinite loop ============
+
 (let [store (atom nil)
       c (chan)]
   (go (while true
         (if-let [msg (<! c)]
           (reset! store msg))))
   (>!! c "hi")
-  (ae/assert= "hi" @store)
+  (assert= "hi" @store)
   (>!! c "ho")
   (<!! (timeout 10))
-  (ae/assert= "ho" @store)
+  (assert= "ho" @store)
   (close! c))
 
-;================== GO-LOOP ====
+;============ GO-LOOP block ============
 (let [store (atom nil)
       c (chan)]
   (go-loop []
@@ -57,7 +63,7 @@
       (reset! store msg))
     (recur))
   (>!! c "hi")
-  (ae/assert= "hi" @store)
+  (assert= "hi" @store)
   (<!! (timeout 10))
   (close! c))
 
@@ -70,7 +76,7 @@
   (go (doseq [x (range 4)]
         (>! c x)))
   (<!! (timeout 10))
-  (ae/assert= [0 1 2 3] @store))
+  (assert= [0 1 2 3] @store))
 
 ;============== FILTER< ======
 (comment
@@ -89,8 +95,8 @@
     (>!! num-chan 4)
     (>!! num-chan 6)
     (<!! (timeout 100))
-    (ae/assert= 4 @xstore)
-    (ae/assert= 6 @store)
+    (assert= 4 @xstore)
+    (assert= 6 @store)
     (close! num-chan))
   )
 
@@ -121,12 +127,12 @@
   (>!! in {:name :Mia :type :cat})
   (>!! in {:name :Vau :type :dog})
   (<!! (timeout 10))
-  (ae/assert= :Mia (:name @store-cat))
-  (ae/assert= :Vau (:name @store-dog))
+  (assert= :Mia (:name @store-cat))
+  (assert= :Vau (:name @store-dog))
   (unsub-all publication)
   (close! in))
 
-;==================== PUBLISH AND SUBSCRIBE 2=====
+;==================== PUBLISH AND SUBSCRIBE 2 - with more subscribers to the same type =====
 (let [num-chan (chan)
       chan-even (chan)
       chan-odd-1 (chan)
@@ -151,24 +157,24 @@
   (<!! (timeout 10))
   (unsub-all publication)
   (close! num-chan)
-  (ae/assert= [0 2 4 6 8] @store-even)
-  (ae/assert= [1 3 5 7 9] @store-odd)
-  (ae/assert= [1 3 5 7 9] @store-odd-2))
+  (assert= [0 2 4 6 8] @store-even)
+  (assert= [1 3 5 7 9] @store-odd)
+  (assert= [1 3 5 7 9] @store-odd-2))
 
 ;==================== THREAD =====
 (let [ct (thread (+ 21 21))
       cg (go (+ 21 21))]
-  (ae/assert= 42 (<!! ct))
-  (ae/assert= 42 (<!! cg)))
-;==================== ALT! =====
+  (assert= 42 (<!! ct))
+  (assert= 42 (<!! cg)))
+;==================== ALT! - get the first result =====
 (let [fast-chan (chan)
       slow-chan (chan)]
   (go (Thread/sleep 10)
     (>! slow-chan 0))
   (go (>! fast-chan 1))
   (let [[v c] (alts!! [fast-chan slow-chan])]
-    (ae/assert= 1 v)
-    (ae/assert= fast-chan c)))
+    (assert= 1 v)
+    (assert= fast-chan c)))
 ;==================== Lot of channels with ALT! =====
 (let [n 1000
       channels (repeatedly n chan)
@@ -176,44 +182,48 @@
   (doseq [c channels] (go (>! c "hi")))
   (dotimes [i n]
     (let [[v c] (alts!! channels)]
-      (ae/assert= "hi" v)))
+      (assert= "hi" v)))
   (println "Read" n "messages in" (- (System/currentTimeMillis) begin) "ms"))
-;==================== to-chan =====
-(let [c (a/to-chan [1 2 3])
-      res [(<!! c) (<!! c) (<!! c)]]
-  (ae/assert= [1 2 3] res))
+;==================== sequences to-chan =====
+(let [c (a/to-chan [1 2 3])]
+  (assert= [1 2 3] (repeatedly 3 #(<!! c))))
 ;==================== map =====
 (let [c1 (a/to-chan [1 2 3])
       c2 (a/to-chan [4 5 6])
-      mc (a/map + [c1 c2])
-      res [(<!! mc) (<!! mc) (<!! mc)]]
-  (ae/assert= [5 7 9] res))
+      mc (a/map + [c1 c2])]
+  (assert= [5 7 9] (repeatedly 3 #(<!! mc))))
 ;==================== into =====
 (let [ch (a/to-chan [1 2])
       ch2 (a/into [4 5] ch)]
-  (ae/assert= [[4 5 1 2] nil] [(<!! ch2) (<!! ch2)]))
+  (assert= [[4 5 1 2] nil] (repeatedly 2 #(<!! ch2))))
 ;==================== onto =====
-(comment
-  (let [ch (a/to-chan [1 2])]
-    (a/onto-chan ch [3 4])
-    (ae/assert= [[4 5 1 2] nil] [(<!! ch) (<!! ch) (<!! ch) (<!! ch) (<!! ch)]))
-  )
 (let [ch (chan 10)]
+  (>!! ch 1)
   (a/onto-chan ch [3 4])
-  (ae/assert= [3 4] [(<!! ch) (<!! ch)]))
+  (assert= [1 3 4] (repeatedly 3 #(<!! ch))))
 ;==================== transducers, simple =====
-(let [trducer (map inc)
-      c1 (chan 5 trducer)]
+(let [tr (map inc)
+      c1 (chan 5 tr)]
   (>!! c1 3)
-  (ae/assert= 4 (<!! c1)))
+  (assert= 4 (<!! c1)))
 ;==================== transducers, composed =====
-(let [trducer (comp (filter even?) (map inc))
-      ch (chan 5 trducer)]
+(let [tr (comp (filter even?) (map inc))
+      ch (chan 5 tr)]
   (a/onto-chan ch [1 2 3 4])
-  (ae/assert= [3 5 nil] [(<!! ch) (<!! ch) (<!! ch)]))
-;======== pipeline
-(let [main-ch (chan 5)
-      ])
+  (assert= [3 5 nil] (repeatedly 3 #(<!! ch))))
+;======== pipe =========================
+(let [output-chan (chan 5)
+      input-chan (chan 5)]
+  (a/pipe output-chan input-chan)
+  (>!! output-chan :msg)
+  (assert= :msg (<!! input-chan)))
+;======== pipeline =========================
+(let [xf (comp (filter even?) (map inc))
+      to (chan 5)
+      from (chan 5)]
+  (a/pipeline 5 to xf from)
+  (a/onto-chan from [1 2 3 4])
+  (assert= [3 5 nil] (repeatedly 3 #(<!! to))))
 
 (def c (chan))
 (def go-chan

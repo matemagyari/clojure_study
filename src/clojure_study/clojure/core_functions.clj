@@ -3,6 +3,8 @@
   clojure-study.clojure.core-functions
   (:require [clojure-study.clojure.assertion :as a]))
 
+;; Examples for the most important built-in functions
+
 ;;====== conj ======
 (a/assert=
   [1 2 3 4]
@@ -28,10 +30,10 @@
 
 ;;comp
 (a/assert= 19 (let [a-fn (comp
-                               inc
-                               #(* 2 %)
-                               dec)]
-                    (a-fn 10)))
+                           inc
+                           #(* 2 %)
+                           dec)]
+                (a-fn 10)))
 
 ;;into
 (a/assert=
@@ -39,7 +41,7 @@
   (into {} [[:a 1] [:b 2]]))
 
 (a/assert=
-  #{[:a 1] [:b 2]}
+    #{[:a 1] [:b 2]}
   (into #{} [[:a 1] [:b 2]]))
 
 (a/assert=
@@ -49,13 +51,13 @@
 ;;fnil
 (let [divide (fn [a b] (/ a b))
       safe-divide (fnil divide 10 2)]
-  (a/assert= 7 (safe-divide 21 3)
+  (a/assert= 7 (safe-divide 21 3))
   (a/assert= 21/2 (safe-divide 21 nil))
   (a/assert= 10/5 (safe-divide nil 5))
-  (a/assert= 10/2 (safe-divide nil nil))))
+  (a/assert= 10/2 (safe-divide nil nil)))
 
 ;;juxt
-(a/assert= [1 3 true false] ((juxt inc dec even? odd?) 2))
+(a/assert= [3 1 true false] ((juxt inc dec even? odd?) 2))
 
 ;;peek and pop
 (a/assert= 3 (peek [1 2 3]))
@@ -66,14 +68,43 @@
 
 
 (let [check-coll (fn [coll]
-                       (let [coll-1 (conj coll 999)
-                             coll-2 (pop coll-1)]
-                         (a/assert= 999 (peek coll-1))
-                         (a/assert= coll coll-2)))]
+                   (let [coll-1 (conj coll 999)
+                         coll-2 (pop coll-1)]
+                     (a/assert= 999 (peek coll-1))
+                     (a/assert= coll coll-2)))]
   (do
     (check-coll [1 2 3])
     (check-coll '(1 2 3))))
 
+
+;;repeatedly
+(defn one [] 1)
+(a/assert= [1 1] (take 2
+                   (repeatedly 2 one)))
+
+;;iterate
+(a/assert= [1 2 3] (take 3 (iterate inc 1)))
+
+;;complement
+(a/assert= ((complement zero?) 1) true)
+
+;;trampoline
+(declare my-odd?)
+(defn my-even? [n]
+  (if (zero? n)
+    true
+    #(my-odd? (dec n))))
+
+(defn my-odd? [n]
+  (if (= 1 n)
+    true
+    #(my-even? (dec n))))
+
+;(a/assert= true (trampoline my-even? 10))
+;(a/assert= false (trampoline my-even? 11))
+
+;;frequency
+(a/assert= {:a 2 :b 3 :c 1} (frequencies [:a :b :c :a :b :b]))
 
 ;;unzip
 ;(zipmap)

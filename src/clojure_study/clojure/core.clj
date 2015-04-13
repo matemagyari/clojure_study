@@ -2,7 +2,11 @@
   (:require clojure.contrib.core)
   (:use clojure-study.clojure.assertion))
 
+;; Examples for the basics of Clojure
+
 ;;------------------------------------------------------------------------------- BASICS -------------------------------------------
+
+;function declaration
 (defn do-sth []
   (println "hello")
   (println "bello"))
@@ -46,29 +50,6 @@
 
 ;;------------------------------------------------------------------------------- FUNCTIONS -------------------------------------------
 
-;;repeatedly
-(def x (repeatedly #(rand-int 10)))
-(println (take 3 x))
-
-;;iterate
-(assert= [1 2 3] (take 3 (iterate inc 1)))
-
-;;conj
-(assert= (conj [1 2] 3) [1 2 3])
-
-;;compose
-(defn compose-fn [nums]
-  (map (comp #(+ 1 %)
-         #(* 2 %))
-    (filter even? nums))
-  )
-(assert= (compose-fn [1 2 3 4]) [5 9])
-
-(def comp-fn (comp #(+ 1 %) #(* 2 %)))
-(assert= (comp-fn 3) 7)
-
-;;complement
-(assert= ((complement zero?) 1) true)
 
 ;;partial
 (defn calculate-net [tax gross-amount] (* (- 100 tax) 0.01 gross-amount))
@@ -114,25 +95,6 @@
   (assert= ((comp-n dup add) 5 8) 26)
   )
 
-;;trampoline
-(defn my-even? [n]
-  (if (zero? n)
-    true
-    #(my-odd? (dec n))))
-
-(defn my-odd? [n]
-  (if (= 1 n)
-    true
-    #(my-even? (dec n))))
-
-(assert= true (trampoline my-even? 1000000))
-(assert= false (trampoline my-even? 1000001))
-
-;;frequency
-(assert= {:a 2 :b 3 :c 1} (frequencies [:a :b :c :a :b :b]))
-(time
-  (frequencies (range 1000)))
-
 ;;------------------------------------------------------------------------------- RECUR -------------------------------------------
 
 (defn my-nth [sequ n]
@@ -145,9 +107,9 @@
 ;;------------------------------------------------------------------------------- SPECIAL FORMS -------------------------------------------
 ;;letfn
 (assert= 18 (letfn [(twice [x] (* 2 x))
-                          (plus-1 [x] (inc x))]
-                    (twice
-                      (plus-1 8))))
+                    (plus-1 [x] (inc x))]
+              (twice
+                (plus-1 8))))
 
 ;;------------------------------------------------------------------------------- USEFUL MACROS -------------------------------------------
 
@@ -261,9 +223,12 @@
    :post [(> 10 %)]}
   (f x))
 
-(try (constrained-fn #(+ 5 %) 1) (catch AssertionError err (println "Not even")))
-(try (constrained-fn #(+ 5 %) -1) (catch AssertionError err (println "Not positive")))
-(try (constrained-fn #(* 2 %) 6) (catch AssertionError err (println "Greater than 10")))
+(try (constrained-fn #(+ 5 %) 1)
+  (catch AssertionError err (println "Not even")))
+(try (constrained-fn #(+ 5 %) -1)
+  (catch AssertionError err (println "Not positive")))
+(try (constrained-fn #(* 2 %) 6)
+  (catch AssertionError err (println "Greater than 10")))
 
 
 ;;------------------------------------------------------------------------------- FOR COMPREHENSIONS  -------------------------------------------
@@ -283,4 +248,14 @@
         :let [y (inc x)
               z (inc y)]]
     z))
+
+
+;multiple whens and lets possible
+(println (for [x (range 5)
+               :when (even? x)
+               y (range 5)
+               :when (odd? y)
+               :let [z (* 2 y)]
+               :when [(> 5 z)]]
+           [x z]))
 
