@@ -4,6 +4,7 @@
   (:require [clojure-study.clojure.assertion :as a]))
 
 ;;------------------------------------------------------------------------------- ATOMS -------------------------------------------
+;; swap! and reset!
 (let [counter (atom 0)]
   (do
     (swap! counter #(+ 2 %))

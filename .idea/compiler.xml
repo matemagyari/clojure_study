@@ -26,6 +26,8 @@
         <module name="blackjack-messaging-client" />
         <module name="blackjack-utils" />
         <module name="blackjack-wallet" />
+        <module name="camel-cometd" />
+        <module name="camel-cometd (1) (org.apache.camel)" />
         <module name="coding-exercise" />
         <module name="connection-proxy" />
         <module name="connection-proxy-dataclient" />
@@ -105,6 +107,8 @@
       <module name="blackjack-parent" target="1.6" />
       <module name="blackjack-utils" target="1.6" />
       <module name="blackjack-wallet" target="1.5" />
+      <module name="camel-cometd" target="1.6" />
+      <module name="camel-cometd (1) (org.apache.camel)" target="1.7" />
       <module name="coding-exercise" target="1.7" />
       <module name="connection-proxy" target="1.7" />
       <module name="connection-proxy-dataclient" target="1.6" />
@@ -148,7 +152,7 @@
       <module name="poker-player-reputation-system" target="1.7" />
       <module name="poker-player-session-messaging-api" target="1.7" />
       <module name="poker-promotion-system" target="1.7" />
-      <module name="poker-reporting-system" target="1.6" />
+      <module name="poker-reporting-system" target="1.7" />
       <module name="poker-rollback-util" target="1.6" />
       <module name="poker-standard-expectations" target="1.6" />
       <module name="poker-stats-messaging-client" target="1.7" />

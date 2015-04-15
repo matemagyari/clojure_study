@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system" vcs="Git" />
