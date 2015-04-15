@@ -1,7 +1,6 @@
 (ns mini-projects.bigdata-aggregator.domain
   (:import [java.math BigDecimal])
-  (:require [clojure.test :as test]
-            [clojure.string :as str]))
+  (:require [clojure.test :as test]))
 
 (defrecord Transaction [amount currency partner])
 (defrecord Money [amount currency])
@@ -43,7 +42,7 @@
   (reduce #(add-transaction %1 %2 target-currency exchange-rates) {} transactions))
 
 
-;; ========================= DOMAIN TESTS ==============================
+;; ========================= TESTS ==============================
 (defn is= [a b]
   (test/is (= a b)))
 

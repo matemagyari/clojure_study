@@ -38,7 +38,7 @@
     {:from from-currency :to to-currency :rate rate}))
 
 
-(defn read-up-file
+(defn reduce-file-line-by-line
   "Reads up the lines from the file, reducing them with reducing-fn"
   [file-name reducing-fn]
   (with-open [rdr (io/reader file-name)]
@@ -52,11 +52,11 @@
                       (assoc rates [from to] rate)))
         line-seq->rates (fn [a-seq]
                           (reduce reduce-fn {} a-seq))]
-    (read-up-file file-name line-seq->rates)))
+    (reduce-file-line-by-line file-name line-seq->rates)))
 
 
 
-;; ========================= INFRASTRUCTURE TESTS ==============================
+;; ========================= TESTS ==============================
 (defn is= [a b]
   (test/is (= a b)))
 
