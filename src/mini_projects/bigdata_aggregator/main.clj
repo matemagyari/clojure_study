@@ -2,17 +2,14 @@
   (:import [java.io File])
   (:require [clojure.test :as test]
             [clojure.java.io :as io]
-            [mini-projects.bigdata-aggregator.infrastructure :as i]
             [mini-projects.bigdata-aggregator.app :as app]))
-
-;; ================ POOR MAN's DI CONTAINER ================================
 
 ;; ================ MAIN ================================
 
 (defn -main
   "The main function"
   [args]
-  (i/process-input args))
+  (app/process-input args))
 
 
 ;; ========================= TESTS ==============================
@@ -21,7 +18,7 @@
   (test/is (= a b)))
 
 (test/deftest main-tests
-  (let [num-of-transactions (* 1000 1000)
+  (let [num-of-transactions (* 10 10)
         transaction-file-name "transactions.csv"
         exchange-rates-file-name "exchangerates.csv"
         currencies ["GBP" "USD" "HUF" "CHF"]
@@ -30,10 +27,12 @@
                :transactions-file transaction-file-name
                :target-currency (-> currencies first keyword)
                :partner (first partners)}
-        delete-file (fn [f] (-> f File. .delete))]
+        delete-file (fn [f] (-> f File. .delete))
+        delete-files (fn []
+                       (delete-file transaction-file-name)
+                       (delete-file exchange-rates-file-name))]
     (do
-      (delete-file transaction-file-name)
-      (delete-file exchange-rates-file-name)
+      (delete-files)
       (println "Creating files")
       (with-open [w (io/writer transaction-file-name)]
         (dotimes [i num-of-transactions]
@@ -48,8 +47,18 @@
           (.write w (str from "," to "," rate "\n"))))
       (def start (System/currentTimeMillis))
       (-main input)
-      (println "Time: " (- (System/currentTimeMillis) start)))))
+      (println "Time: " (- (System/currentTimeMillis) start))
+      (delete-files))))
 
-(test/run-tests)
+(test/run-tests
+  'mini-projects.bigdata-aggregator.app
+  'mini-projects.bigdata-aggregator.domain
+  'mini-projects.bigdata-aggregator.infrastructure
+  'mini-projects.bigdata-aggregator.main)
+
+(def input {:exchange-rates-file "exchangerates.csv"
+            :transactions-file "transactions.csv"
+            :target-currency :GBP
+            :partner "HSBC"})
 
 ;(-main input)

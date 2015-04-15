@@ -4,8 +4,7 @@
   (:require [clojure.test :as test]
             [clojure.string :as str]
             [clojure.java.io :as io]
-            [mini-projects.bigdata-aggregator.domain :as d]
-            [mini-projects.bigdata-aggregator.app :as app]))
+            [mini-projects.bigdata-aggregator.domain :as d]))
 
 
 (defn ->number
@@ -56,18 +55,6 @@
     (read-up-file file-name line-seq->rates)))
 
 
-(defn process-input
-  "Processes the input and puts the results to the output"
-  [{:keys [transactions-file exchange-rates-file target-currency partner] :as input}]
-  (let [exchange-rates (read-exchange-rates exchange-rates-file)
-        line-seq->transaction-seq #(map line->transaction %)
-        aggregate-transactions-by-partner #(d/aggregate-transactions-by-partner (line-seq->transaction-seq %) target-currency exchange-rates)
-        aggregate-transactions-of-partner #(d/aggregate-transactions-of-partner (line-seq->transaction-seq %) partner target-currency exchange-rates)
-        result-by-partner (read-up-file transactions-file aggregate-transactions-by-partner)
-        result-of-partner (read-up-file transactions-file aggregate-transactions-of-partner)]
-    (println result-by-partner)
-    (println result-of-partner)))
-
 
 ;; ========================= INFRASTRUCTURE TESTS ==============================
 (defn is= [a b]
@@ -85,4 +72,4 @@
 (test/deftest line->transaction-tests
   (is= (d/->Transaction (->number "2.3") :GBP "HSBC") (line->transaction " HSBC , GBP , 2.3 ")))
 
-(test/run-tests)
+;(test/run-tests)

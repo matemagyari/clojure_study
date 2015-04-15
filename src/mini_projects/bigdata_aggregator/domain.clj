@@ -73,4 +73,4 @@
     (is= {:x (->Money 16.0 :GBP)
           :y (->Money 5.0 :GBP)} (aggregate-transactions-by-partner transactions target-currency exchange-rates))))
 
-(test/run-tests)
+;(test/run-tests)
