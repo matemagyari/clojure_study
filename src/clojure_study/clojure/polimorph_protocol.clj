@@ -58,20 +58,20 @@
   (years-passed [this years])
   (me [this]))
 
-(defrecord Changing-person [name age]
+(defrecord ChangingPerson [name age]
   Person-change
-  (year-passed [this] (Changing-person. name (inc age)))
+  (year-passed [this] (ChangingPerson. name (inc age)))
   (year-passed2 [this] (assoc this 
                               :age (inc age)))
-  (years-passed [this years] (Changing-person. name (+ years age)))
+  (years-passed [this years] (ChangingPerson. name (+ years age)))
   (me [this] this))
 
-(def Jack (Changing-person. "Jack" 22))
-(assert= (Changing-person. "Jack" 23)
+(def Jack (ChangingPerson. "Jack" 22))
+(assert= (ChangingPerson. "Jack" 23)
                (year-passed Jack))
-(assert= (Changing-person. "Jack" 23)
+(assert= (ChangingPerson. "Jack" 23)
                (year-passed2 Jack))
-(assert= (Changing-person. "Jack" 32)
+(assert= (ChangingPerson. "Jack" 32)
                (years-passed Jack 10))
 (assert= Jack
                (me Jack))

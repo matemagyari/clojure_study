@@ -7,16 +7,14 @@
 
 (defn process-input
   "Processes the input and puts the results to the output"
-  [{:keys [transactions-file exchange-rates-file target-currency partner] :as input}]
+  [{:keys [transactions-file exchange-rates-file target-currency partner]}]
   (let [exchange-rates (i/read-exchange-rates exchange-rates-file)
         line-seq->transaction-seq #(map i/line->transaction %)
         aggregate-transactions-by-partner #(d/aggregate-transactions-by-partner (line-seq->transaction-seq %) target-currency exchange-rates)
-        aggregate-transactions-of-partner #(d/aggregate-transactions-of-partner (line-seq->transaction-seq %) partner target-currency exchange-rates)
-        result-by-partner (i/reduce-file-line-by-line transactions-file aggregate-transactions-by-partner)
-        result-of-partner (i/reduce-file-line-by-line transactions-file aggregate-transactions-of-partner)]
+        aggregate-transactions-of-partner #(d/aggregate-transactions-of-partner (line-seq->transaction-seq %) partner target-currency exchange-rates)]
 
-    {:result-by-partner result-by-partner
-     :result-of-partner result-of-partner}))
+    {:result-by-partner (i/reduce-file-line-by-line transactions-file aggregate-transactions-by-partner)
+     :result-of-partner (i/reduce-file-line-by-line transactions-file aggregate-transactions-of-partner)}))
 
 ;; ========================= TESTS ==============================
 
@@ -33,12 +31,12 @@
                :transactions-file transaction-file-name
                :target-currency (-> currencies first keyword)
                :partner (first partners)}
-        delete-file (fn [f] (-> f File. .delete))
-        delete-files (fn []
-                       (delete-file transaction-file-name)
-                       (delete-file exchange-rates-file-name))]
+        delete-file! (fn [f] (-> f File. .delete))
+        delete-files! (fn []
+                       (delete-file! transaction-file-name)
+                       (delete-file! exchange-rates-file-name))]
     (do
-      (delete-files)
+      (delete-files!)
       (println "Creating files")
       (with-open [w (io/writer transaction-file-name)]
         (dotimes [i num-of-transactions]
@@ -54,7 +52,7 @@
       (def start (System/currentTimeMillis))
       (println (process-input input))
       (println "Time: " (- (System/currentTimeMillis) start))
-      (delete-files))))
+      (delete-files!))))
 
 (test/run-tests
   'mini-projects.bigdata-aggregator.app

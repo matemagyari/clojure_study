@@ -106,5 +106,8 @@
 ;;frequency
 (a/assert= {:a 2 :b 3 :c 1} (frequencies [:a :b :c :a :b :b]))
 
+;;replace
+(a/assert= [:one :two 3] (replace {1 :one 2 :two} [1 2 3]))
+
 ;;unzip
 ;(zipmap)
