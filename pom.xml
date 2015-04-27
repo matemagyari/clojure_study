@@ -16,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com/matemagyari/clojure_study.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/matemagyari/clojure_study.git</developerConnection>
-    <tag>b6da9a085371a12102c5578626f9a5fb2ef3b60b
+    <tag>7038572f330730b9f0cc20655c827086df7d2602
 </tag>
     <url>https://github.com/matemagyari/clojure_study</url>
   </scm>
@@ -131,7 +131,7 @@
     <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>core.typed</artifactId>
-      <version>0.2.58</version>
+      <version>0.2.77</version>
     </dependency>
     <dependency>
       <groupId>incanter</groupId>
@@ -147,6 +147,11 @@
       <groupId>me.raynes</groupId>
       <artifactId>fs</artifactId>
       <version>1.4.4</version>
+    </dependency>
+    <dependency>
+      <groupId>twitter-api</groupId>
+      <artifactId>twitter-api</artifactId>
+      <version>0.7.8</version>
     </dependency>
     <dependency>
       <groupId>org.clojure</groupId>

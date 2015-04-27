@@ -21,20 +21,25 @@
 (defn is= [a b]
   (test/is (= a b)))
 
+
 (test/deftest process-input-tests
-  (let [num-of-transactions (* 10 10)
+  (let [num-of-transactions (* 1000 1000)
+        num-of-partners 100
+        num-of-currencies 100
         transaction-file-name "transactions.csv"
         exchange-rates-file-name "exchangerates.csv"
-        currencies ["GBP" "USD" "HUF" "CHF"]
-        partners ["Etwas" "Gamesys" "HSBC"]
+        currencies (let [letters (map char (range 65 91))] ;[A-Z]
+                     (take num-of-currencies (for [c1 letters c2 letters c3 letters]
+                                               (str c1 c2 c3))))
+        partners (for [x (range num-of-partners)] (str "P" x))
         input {:exchange-rates-file exchange-rates-file-name
                :transactions-file transaction-file-name
                :target-currency (-> currencies first keyword)
                :partner (first partners)}
         delete-file! (fn [f] (-> f File. .delete))
         delete-files! (fn []
-                       (delete-file! transaction-file-name)
-                       (delete-file! exchange-rates-file-name))]
+                        (delete-file! transaction-file-name)
+                        (delete-file! exchange-rates-file-name))]
     (do
       (delete-files!)
       (println "Creating files")

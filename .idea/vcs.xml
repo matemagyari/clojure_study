@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-academy-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot" vcs="Git" />

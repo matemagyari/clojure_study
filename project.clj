@@ -23,8 +23,9 @@
                  [incanter "1.5.2"]
                  [cc.mallet/mallet "2.0.7"]
                  [me.raynes/fs "1.4.4"]
+                 [twitter-api "0.7.8"]
                  ]
-  :main clojure-study.libraries.transducers-play
+  :main mini-projects.twitter-reader.twitter-client
   ;:main clojure_study.main
   ;:main logic_play.core
   )

@@ -1,6 +1,5 @@
 (ns mini-projects.bigdata-aggregator.infrastructure
-  (:import [java.math BigDecimal]
-           [java.io BufferedReader FileReader])
+  (:import [java.math BigDecimal])
   (:require [clojure.test :as test]
             [clojure.string :as str]
             [clojure.java.io :as io]
