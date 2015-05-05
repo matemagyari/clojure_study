@@ -59,10 +59,10 @@
       (println "Time: " (- (System/currentTimeMillis) start))
       (delete-files!))))
 
-(test/run-tests
-  'mini-projects.bigdata-aggregator.app
-  'mini-projects.bigdata-aggregator.domain
-  'mini-projects.bigdata-aggregator.infrastructure)
+;(test/run-tests
+;  'mini-projects.bigdata-aggregator.app
+;  'mini-projects.bigdata-aggregator.domain
+;  'mini-projects.bigdata-aggregator.infrastructure)
 
 
 

@@ -16,7 +16,10 @@
   [{:keys [amount currency] :as money} target-currency exchange-rates]
   (cond
     (= target-currency currency) money
-    :else (let [rate (get exchange-rates [currency target-currency])]
+    :else (let [rate (get exchange-rates [currency target-currency])
+                _ (when (nil? rate) (println
+                                      (str "No rate for " [currency target-currency])
+                                      (println "Exchange rates: " exchange-rates)))]
             (->Money (* rate amount) target-currency))))
 
 (defn aggregate-transactions-of-partner
