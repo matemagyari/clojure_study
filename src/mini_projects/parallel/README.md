@@ -7,8 +7,7 @@ The intact parts are carried further by the conveyor belts to a workstation that
 The cars are then moved to a workstation that randomly puts them on conveyor belts towards painter workstations. Finally all the conveyors from the painter
 stations ebb into one, the out-queue of the factory.
 
-The Challenge is (minor) part a modelling task, (major) part a parallel processing exercise. All the workstations work independently and leveraging the parallel nature
-of the factory-process higher throughput is achievable than with of a sequential solution. The aim is to maximize the number of cars produced in a fixed amount of time.
+The Challenge is (minor) part a modelling task, (major) part a parallel processing exercise. All the workstations work independently and leveraging the parallel nature of the factory-process higher throughput is achievable than with a sequential solution. The aim is to maximize the number of cars produced in a fixed amount of time.
 
 Figure comes here.
 
@@ -30,16 +29,16 @@ W-M: merges the 3 conveyor belts into one
 For the simulation you should implement the following as concurrent, independent processes
 
 * the Factory, obviously
-* a Consumer that will consume the cars rolling out of the Factory and keeps counting them to measure the velocity of the Factory
-* 3 Providers to supply engines, wheels and coachworks, respectively
+* a Consumer that will consume the cars rolling out of the Factory and keeps counting them to measure the throughput of the Factory
+* 3 Providers to supply continuous streams of engines, wheels and coachworks, respectively
 
 
 Hints
-* the domain model of the factory (Engine, Wheel, Coachwork, Car, Workstations) should be as simple as possible as they only provide the pretext of the challenge.
-  Faulty parts could be simply marked with a flag and painting could be simply setting a field. The emphasis should be on the parallelization.
+
+* the domain model of the factory (Engine, Wheel, Coachwork, Car, Workstations) should be as simple as possible as they only provide the pretext for the challenge. Faulty parts could be simply marked with a flag and painting could be simply setting a field. The emphasis should be on the parallelization.
 * To simulate CPU-intensive work at the workstations simply run a fixed-length for-loop to increment a number.
 
-Possible technologies
+Possible technologies to use
 
  * Go's and Clojure's channels are ideal candidates for implementation
  * streams or actors of Scala/Java's Akka
