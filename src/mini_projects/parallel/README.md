@@ -38,5 +38,10 @@ Hints
 * the domain model of the factory (Engine, Wheel, Coachwork, Car, Workstations) should be as simple as possible as they only provide the pretext of the challenge.
   Faulty parts could be simply marked with a flag and painting could be simply setting a field. The emphasis should be on the parallelization.
 * To simulate CPU-intensive work at the workstations simply run a fixed-length for-loop to increment a number.
-* Go's and Clojure's channels are ideal candidates for implementation, but
-  the task could also be tackled with the streams or actors of Scala/Java's Akka, or the Fork-Join framework of Java 7.
+
+Possible technologies
+
+ * Go's and Clojure's channels are ideal candidates for implementation
+ * streams or actors of Scala/Java's Akka
+ * Fork-Join framework of Java 7
+ * Reactive Programming frameworks: Scala.React, JavaRx, JsRx
