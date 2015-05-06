@@ -34,7 +34,7 @@
 ;;get :no field
 (assert=
   12
-  (get-in person [:address :no] 9))
+  (get-in person [:address :no]))
 
 ;;set :no field
 (assert=
