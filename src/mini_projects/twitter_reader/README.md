@@ -11,10 +11,7 @@ Comments
    a) sign up for Twitter
    b) create a Twitter application on https://apps.twitter.com
    to get OAuth credentials. Both are simple processes, taking approximately 1 minute each.
-* Tweets arrive in json format, usually each in one chunk. Sometimes though a tweet is fragmented over multiple chunks, each containing only a part of the
-valid json document. You can create a buffer to deal with the situation, but in the first version I'd advise you to simply ignore these "bad" chunks.
+* Tweets arrive in json format, usually each in one chunk. Sometimes though a tweet is fragmented over multiple chunks, each containing only a part of the valid json document. You can create a buffer to deal with the situation, but in the first version I'd advise you to simply ignore these "bad" chunks.
 
 Hints
-* Your application will - regardless whether your code structure mirrors it - have 3 logical components. One taps the Twitter stream, the other
-maintains the statistics and the last caters for the display. You might want to add a 4th component as well to provide controls to the user to
-start and stop the stream-processing or for specifying customs search expressions.
+* Your application will - regardless whether your code structure mirrors it - have 3 logical components. One taps the Twitter stream, the other maintains the statistics and the last caters for the display. You might want to add a 4th component as well to provide controls to the user to start and stop the stream-processing or for specifying customs search expressions.
