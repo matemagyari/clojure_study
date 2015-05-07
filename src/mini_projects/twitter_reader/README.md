@@ -15,3 +15,5 @@ Comments
 
 Hints
 * Your application will - regardless whether your code structure mirrors it - have 3 logical components. One taps the Twitter stream, the other maintains the statistics and the last caters for the display. You might want to add a 4th component as well to provide controls to the user to start and stop the stream-processing or for specifying customs search expressions.
+
+Test
