@@ -12,7 +12,7 @@ Update the statistics as you update tweets.
 Elements of the UI:
 - Text field to be able to provide filter keyword
 - Sampled Twitter data 
-- Word statisctics. It is a simple list of words and a number of accurances extracted from the tweets
+- Word statisctics. It is a simple list of words and a number of occurances extracted from the tweets
 The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
 ### Delivery ###
