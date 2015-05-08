@@ -1,6 +1,6 @@
 Parallel computation with pipes and filters
 
-The task is to simulate a car factory that has multiple, independent workstations connected to each other by conveyor belts.
+The task is to simulate a car factory that has multiple, independent workstations connected to each other by conveyor belts. The stages of the process:
 * The Factory has 3 in-queues, one for engines, one for coachworks and one for wheels arriving into the Factory continuously.
 * Workstations to filter out the faulty parts operate on each in-queue. 
 * The intact parts are carried further on conveyor belts to a workstation that assembles a car from each 'coachwork + engine + 4 wheels' combination. 
@@ -13,7 +13,7 @@ Figure comes here.
 
 Workstations
 
-WS-FE: filters out faulty engines
+WS-FE: filters out faulty engines. Only "healthy" ones are let trough.
 WS-FC: filters out faulty coachworks
 WS-FW: filters out faulty wheels
 
@@ -35,7 +35,7 @@ For the simulation you should implement the following as concurrent, independent
 
 Hints
 
-* the domain model of the factory (Engine, Wheel, Coachwork, Car, Workstations) should be as simple as possible as they only provide the pretext for the challenge. Faulty parts could be simply marked with a flag and painting could be simply setting a field. The emphasis should be on the parallelization.
+* the domain model of the factory (Engine, Wheel, Coachwork, Car, Workstations) should be as simple as possible as they only provide the pretext for the challenge. Faulty parts could be simply marked with a flag and painting could be simply setting a field. The emphasis should be on the parallelization. The chosen approach (see next section) will probably heavily influence the model.
 * To simulate CPU-intensive work at the workstations simply run a fixed-length for-loop to increment a number.
 
 Possible approaches/technologies to use
@@ -44,3 +44,7 @@ Possible approaches/technologies to use
  * Actor model: e.g. Akka (Scala/Java)
  * Streams and FRP: Java 8 streams. Scala streams, JavaRx, JsRx, ClojureRx, ...
  * Fork-Join framework of Java 7
+  
+Caveats
+
+* The Factory should be prepared for high load. What if parts coming faster than it can process them (4 wheels for one car)? 
