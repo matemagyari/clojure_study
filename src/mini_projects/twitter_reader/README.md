@@ -7,9 +7,13 @@ The task is to create a web application that, using Twitter's API, taps the real
 The app should display both the stream of tweets and the up-to-date relative frequencies of occurrences of the aforementioned words.
 
 ### The UI ###
-There should be a simple text field where the user can define what tweets he is interested in. The default should be **Gamesys** which is sampled as the page is opened. There could be multiple keywords. As soon as the user provides a new one the newly defined samples from Twitter should be displayed on the UI alongside with the word statistics. 
+There should be a simple text field where the user can define what tweets he is interested in. The default should be **Gamesys** which is sampled as the page is opened. There could be multiple keywords. When the user provides a new keyword the newly defined samples from Twitter should be displayed on the UI alongside with the word statistics. 
 Update the statistics as you update tweets.
-The UX is up to you. Can be user friendly or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
+Elements of the UI:
+- Text field to be able to provide filter keyword
+- Sampled Twitter data 
+- Word statisctics. It is a simple list of words and a number of accurances extracted from the tweets
+The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
 ### Delivery ###
 As it should be a running web application I would recommend to pick a cloud provider where you could potentially deploy your application for DEMO purpose. The organisers definitelly don't want to run 100 different type of web applications locally. ;) It can be AWS, Heroku or any other cloud provider what you prefer.
