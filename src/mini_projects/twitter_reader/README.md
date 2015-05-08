@@ -18,9 +18,9 @@ As it should be a running web application I would recommend to pick a cloud prov
 - Twitter provides Streaming APIs in many different languages. For general information about the Streaming API check https://dev.twitter.com/streaming/overview.
   For libraries check https://dev.twitter.com/overview/api/twitter-libraries.
 - Twitter's Streaming API requires OAuth authentication. You need to
-   -- sign up for Twitter
-   -- create a Twitter application on https://apps.twitter.com
-   to get OAuth credentials. Both are simple processes, taking approximately 1 minute each.
+  - sign up for Twitter
+  - create a Twitter application on https://apps.twitter.com
+to get OAuth credentials. Both are simple processes, taking approximately 1 minute each.
 - Tweets arrive in json format, usually each in one chunk. Sometimes though a tweet is fragmented over multiple chunks, each containing only a part of the valid json document. You can create a buffer to deal with the situation, but in the first version I'd advise you to simply ignore these "bad" chunks.
 
 ### Potential rating ideas ###
