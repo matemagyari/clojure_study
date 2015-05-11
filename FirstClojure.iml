@@ -300,6 +300,8 @@
     <orderEntry type="library" name="Maven: io.netty:netty:3.4.4.Final" level="project" />
     <orderEntry type="library" name="Maven: clj-oauth:clj-oauth:1.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk16:1.46" level="project" />
+    <orderEntry type="library" name="Maven: io.reactivex:rxclojure:1.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.reactivex:rxjava:1.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.clojure:tools.nrepl:0.2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: clojure-complete:clojure-complete:0.2.3" level="project" />
   </component>

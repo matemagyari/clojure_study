@@ -348,6 +348,7 @@
         <module name="guice-maven-plugin" />
         <module name="hand-record-core" />
         <module name="hand-record-integration-tests" />
+        <module name="hand-record-messaging-client" />
         <module name="jira-report-plugin" />
         <module name="jira-versions-report-plugin" />
         <module name="messaging-core" />
@@ -440,6 +441,7 @@
       <module name="gamification-test" target="1.7" />
       <module name="hand-record-core" target="1.7" />
       <module name="hand-record-integration-tests" target="1.7" />
+      <module name="hand-record-messaging-client" target="1.7" />
       <module name="hand-record-system" target="1.7" />
       <module name="jira-report-plugin" target="1.6" />
       <module name="jira-versions-report-plugin" target="1.7" />
