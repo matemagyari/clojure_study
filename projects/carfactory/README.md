@@ -40,11 +40,11 @@ W-M: merges the 3 conveyor belts into one
 
 ### Possible approaches/technologies to use ###
 
-This problem can be tackled using very different approaches. Some examples are mentioned below. If you are familiar with either of those, it's not difficult to implement. If you find it too easy or quick, we'd advise you to do it with other approaches as well and compare them.
+This problem can be tackled using very different approaches providing an opportunity to compare various styles. Some examples are mentioned below. If you are familiar with either of those, it's not difficult to implement. If you find it too easy or quick, we'd advise you to do it with other approaches as well and compare them.
 
  * CSP: e.g. Go, Clojure, Java CSP, ...
  * Actor model: e.g. Akka (Scala/Java)
- * Dataflow programming/FRP: e.g. Scala/Java 8 streams, RxJava/RxScala/RxClojure/RxJS/...
+ * Dataflow Programming/Reactive Programming: e.g. Scala/Java 8 streams, RxJava/RxScala/RxClojure/RxJS/...
  * Fork-Join framework of Java 7
   
 ### Caveats ###
