@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2cc899-15ba-4157-9f45-33f4ef7da55a" name="Default" comment="clojure async for events">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/intro.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/blackjack.edn" afterPath="$PROJECT_DIR$/projects/blackjack/resources/blackjack.edn" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/main/java/gamesys/jiraplugin/MyPluginComponent.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/main/java/gamesys/jira/plugin/versionreport/MyPluginComponent.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/main/java/gamesys/jiraplugin/MyPluginComponentImpl.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/main/java/gamesys/jira/plugin/versionreport/MyPluginComponentImpl.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/test/java/it/gamesys/jiraplugin/MyComponentWiredTest.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/test/java/it/gamesys/jira/plugin/versionreport/MyComponentWiredTest.java" />
@@ -21,7 +19,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/test/java/com/vlalov/gamesys/input/BetsReaderTest.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/test/java/com/vlalov/gamesys/input/BetsReaderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/EvenBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/EvenBet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstClojure.iml" afterPath="$PROJECT_DIR$/FirstClojure.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/NumberBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/NumberBet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/OddBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/OddBet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/PlayerBet.java" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/src/main/java/com/vlalov/gamesys/poker/PlayerBet.java" />
@@ -40,20 +37,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/main/resources/atlassian-plugin.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/main/resources/atlassian-plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/test/resources/atlassian-plugin.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/src/test/resources/atlassian-plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="" />
     <ignored path="FirstClojure.iws" />
@@ -1297,7 +1288,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="202" width="1920" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
