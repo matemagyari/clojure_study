@@ -4,7 +4,18 @@ Our current challenge is about how we could potentially build an application whi
 
 ### The task ###
 The task is to create a **web application** that, using **Twitter's API**, taps the **real-time stream of tweets** and filters for those which contains a user provided words. **Multiple users** could have different search criteria at the same time.
-The app should display both **the stream of tweets** and the **statistics of hashTags** extracted from the tweets in a moving window fashion.
+The app should display both **the stream of tweets** and the **statistics of hashTags** extracted from the tweets containing the provided filter words in a moving window fashion.
+
+Search for "poker tournament" should show every tweet which has either **poker** or **tournament** in the content text:
+```
+bla bla bla poker blab bla #Casino #Poker
+bla blu blabal tournament blabala #Poker
+```
+Those 2 tweet should be displayed and they should be used to extract hasTag infos.
+```
+#Poker, 2
+#Casino, 1
+```
 
 ### The UI ###
 There should be a simple **text field** where the user can define what tweets he is interested in. The default should be **Poker** which is sampled as the page is opened. There could be **multiple keywords**. When the user provides a new keyword the newly defined samples from Twitter should be displayed on the UI alongside with the hashTag statistics. 
