@@ -12,11 +12,12 @@ Update the statistics as you update tweets.
 Elements of the UI:
 - **text field** to be able to provide filter keywords
 - filtered **english** tweets
-- **hashTag statisctics**. It is a simple list of hashTags and a number of occurances extracted from the tweets.
+- **hashTag statistics**. It is a simple list of hashTags and a number of occurances extracted from the tweets.
 
 The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
 #### hashTag stats ####
+Display hashTags within a moving time frame. It means that the UI should show the most popular tags in the last 1 minute. It can be configurable. Update in every minute or when you have a new tweet to display.
 ```
 #Poker, 5
 #Casino, 3
@@ -36,7 +37,7 @@ As it should be a **running web application** I would recommend to pick a cloud 
 - Make sure that your credentials are not awailable for unauthorized person
 
 ### Optional task ###
-If the user uses multiple filter keyword provide a statistics which shows how many tweet occured for each and every filter keyword in the predefined windowed interval (let say in the last 1 minute). If the user filteres like "poker touranement":
+If the user uses multiple filter keyword provide a statistics which shows how many tweet occured for each and every filter keyword in the predefined windowed interval (let say in the last 1 minute). If the user filteres like "poker tournament":
 ```
 poker, 5
 tournament, 2
