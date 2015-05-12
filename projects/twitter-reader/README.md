@@ -15,6 +15,13 @@ Elements of the UI:
 - **hashTag statisctics**. It is a simple list of hashTags and a number of occurances extracted from the tweets
 The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
+#### hashTag stats ####
+```
+#Poker, 5
+#Casino, 3
+#NYC, 2
+```
+
 ### Delivery ###
 As it should be a **running web application** I would recommend to pick a cloud provider where you could potentially **deploy your application** for DEMO purpose. The organisers definitelly don't want to run 100 different type of web applications locally. ;) It can be AWS, Heroku or any other cloud provider what you prefer.
 
@@ -26,6 +33,13 @@ As it should be a **running web application** I would recommend to pick a cloud 
   - create a Twitter application on https://apps.twitter.com
   to get OAuth credentials. Both are simple processes, taking approximately 1 minute each.
 - Make sure that your credentials are not awailable for unauthorized person
+
+### Optional task ###
+If the user uses multiple filter keyword provide a statistics which shows how many tweet occured for each and every filter keyword in the predefined windowed interval (let say in 1 minute). If the user filteres like "poker touranement":
+```
+poker, 5
+tournament, 2
+```
 
 ### Potential rating ideas ###
 - Best UX
