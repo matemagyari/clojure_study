@@ -10,9 +10,9 @@ The app should display both **the stream of tweets** and the **statistics of has
 There should be a simple **text field** where the user can define what tweets he is interested in. The default should be **Poker** which is sampled as the page is opened. There could be **multiple keywords**. When the user provides a new keyword the newly defined samples from Twitter should be displayed on the UI alongside with the hashTag statistics. 
 Update the statistics as you update tweets.
 Elements of the UI:
-- Text field to be able to provide filter keyword
-- Sampled Twitter data 
-- hashTag statisctics. It is a simple list of hashTags and a number of occurances extracted from the tweets
+- **text field** to be able to provide filter keywords
+- filtered **english** tweets
+- **hashTag statisctics**. It is a simple list of hashTags and a number of occurances extracted from the tweets
 The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
 ### Delivery ###
