@@ -35,11 +35,12 @@ As it should be a **running web application** I would recommend to pick a cloud 
 - Make sure that your credentials are not awailable for unauthorized person
 
 ### Optional task ###
-If the user uses multiple filter keyword provide a statistics which shows how many tweet occured for each and every filter keyword in the predefined windowed interval (let say in 1 minute). If the user filteres like "poker touranement":
+If the user uses multiple filter keyword provide a statistics which shows how many tweet occured for each and every filter keyword in the predefined windowed interval (let say in the last 1 minute). If the user filteres like "poker touranement":
 ```
 poker, 5
 tournament, 2
 ```
+Don't forget it is a moving window as well!!
 
 ### Potential rating ideas ###
 - Best UX
