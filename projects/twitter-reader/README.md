@@ -4,15 +4,15 @@ Our current challenge is about how we could potentially build an application whi
 
 ### The task ###
 The task is to create a web application that, using Twitter's API, taps the real-time stream of tweets and filters for those which contains a user provided words. Multiple users could have different search criteria at the same time.
-The app should display both the stream of tweets and the up-to-date relative frequencies of occurrences of the aforementioned words.
+The app should display both the stream of tweets and the statistics of hashTags extracted from the tweets in a moving window fashion.
 
 ### The UI ###
-There should be a simple text field where the user can define what tweets he is interested in. The default should be **Gamesys** which is sampled as the page is opened. There could be multiple keywords. When the user provides a new keyword the newly defined samples from Twitter should be displayed on the UI alongside with the word statistics. 
+There should be a simple text field where the user can define what tweets he is interested in. The default should be **Poker** which is sampled as the page is opened. There could be multiple keywords. When the user provides a new keyword the newly defined samples from Twitter should be displayed on the UI alongside with the hashTag statistics. 
 Update the statistics as you update tweets.
 Elements of the UI:
 - Text field to be able to provide filter keyword
 - Sampled Twitter data 
-- Word statisctics. It is a simple list of words and a number of occurances extracted from the tweets
+- hashTag statisctics. It is a simple list of hashTags and a number of occurances extracted from the tweets
 The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
 ### Delivery ###
