@@ -3,7 +3,7 @@ Twitter can be loved and hated, but one thing is obvious. It is an endless sours
 Our current challenge is about how we could potentially build an application which uses Twitter to extract those invaluable business infos.
 
 ### The task ###
-The task is to create a **web application** that, using **Twitter's API**, taps the **real-time stream of tweets** and filters for those which contains user provided words. **Multiple users** could have different search criteria at the same time.
+The task is to create a **web application** that, using **Twitter's API**, taps the **real-time stream of tweets** and filters for those which contains user provided words. **Each user has its own set of search criteria**.
 The app should display both **the stream of tweets** and the **statistics of hashTags** extracted from the tweets containing the provided filter words in a moving window fashion.
 
 Search for "poker tournament" should show every tweet which has either **poker** or **tournament** in the content text:
