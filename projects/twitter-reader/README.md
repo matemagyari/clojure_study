@@ -1,5 +1,5 @@
 ## Tap Twitter Stream ##
-Twitter can be loved and hated, but one thing is obvious. It is an endless sourse of technical and business information.
+Twitter can be loved and hated, but one thing is obvious. It is an endless source of technical and business information.
 Our current challenge is about how we could potentially build an application which uses Twitter to extract those invaluable business infos.
 
 ### The task ###
@@ -23,7 +23,7 @@ Update the statistics as you update tweets.
 Elements of the UI:
 - **text field** to be able to provide filter keywords
 - filtered **english** tweets
-- **hashTag statistics**. It is a simple list of hashTags and a number of occurances extracted from the tweets.
+- **hashTag statistics**. It is a simple list of hashTags and a number of occurrences extracted from the tweets.
 
 The layout of the UX is up to you. Can be user friendly, funny, functional or just a dump page. Can use push or pull technologies. Use what ever you feel comfortable with and suitable for the purpose. Use your imagination!
 
