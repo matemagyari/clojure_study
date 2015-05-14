@@ -3,6 +3,7 @@
 (comment
   "Car Factory basic functions")
 
+;;we can tune the CPU-intesitivity of the workers
 (def ^:private work-load-unit (* 10 100))
 
 (defn- exercise-cpu!
@@ -12,16 +13,20 @@
     (dotimes [i work-load-unit]
       (swap! x inc))))
 
-(defn flawless? [item]
+(defn flawless?
+  "Returns true if the item is not faulty"
+  [item]
   (exercise-cpu!)
   (nil? (:faulty item)))
 
-(defn paint [car color]
+(defn paint
+  "Paints the car to the given color"
+  [car color]
   (exercise-cpu!)
   (assoc car :color color))
 
 (defn assemble-car
-  "Assemble a car from its parts"
+  "Assembles a car from its parts"
   [engine coachwork wheels]
   (exercise-cpu!)
   {:engine engine

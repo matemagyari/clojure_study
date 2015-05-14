@@ -336,7 +336,6 @@
         <module name="camel-yammer" />
         <module name="camel-zipfile" />
         <module name="camel-zookeeper" />
-        <module name="coding-exercise" />
         <module name="connection-proxy" />
         <module name="connection-proxy-dataclient" />
         <module name="examples" />

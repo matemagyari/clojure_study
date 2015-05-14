@@ -11,5 +11,6 @@
         ;"projects/blackjack"
         "projects/swarm"
         ;"clojure_study"
-        ;"incubator"]
+        ;"incubator"
+        ]
   :dependencies [[org.clojure/clojure "1.7.0-alpha1"]])

@@ -9,17 +9,17 @@
 (defn- conveyor-belt
   "Creates a conveyor-belt"
   [& pars]
-  (let [xf (:with-workstation (apply hash-map pars)) ; process every item going through the pipe with 'xf' processor
+  (let [xf (:with-worker (apply hash-map pars)) ; process every item going through the pipe with 'xf' processor
         handle-ex (fn [ex] (println "Exception: " ex))] ;print any exceptions happening on the pipe
     (async/chan 100 xf handle-ex)))
 
-(defn- create-painter-workstation
-  "Creates a workstation to paint with the given color"
+(defn- create-painter-worker
+  "Creates a worker to paint with the given color"
   [color]
   (map #(core/paint % color)))
 
-(defn- start-cars-assembler-workstation!
-  "Starts up a workstation that will pull parts from its in-pipes and puts assembled cars on its out-pipe"
+(defn- start-cars-assembler-worker!
+  "Starts up a worker that will pull parts from its in-pipes and puts assembled cars on its out-pipe"
   [{:keys [wheels-in engines-in coachworks-in cars-out]}]
   (async/go-loop []
     (let [coachwork (async/<! coachworks-in) ; pick up an coachwork from the coachwork queue
@@ -41,20 +41,20 @@
     (recur)))
 
 (defn create-factory
-  "Creates a car factory. Pipes the the workstations together.
+  "Creates a car factory. Pipes the the workers together.
   Returns a map containing the input channels and the output channel of the factory."
   []
-  (let [source-wheels (conveyor-belt :with-workstation (filter core/flawless?))
-        source-engines (conveyor-belt :with-workstation (filter core/flawless?))
-        source-coachworks (conveyor-belt :with-workstation (filter core/flawless?))
+  (let [source-wheels (conveyor-belt :with-worker (filter core/flawless?))
+        source-engines (conveyor-belt :with-worker (filter core/flawless?))
+        source-coachworks (conveyor-belt :with-worker (filter core/flawless?))
         pipe-assembled-cars (conveyor-belt)
-        pipe-to-green-painter (conveyor-belt :with-workstation (create-painter-workstation :green))
-        pipe-to-blue-painter (conveyor-belt :with-workstation (create-painter-workstation :blue))
-        pipe-to-red-painter (conveyor-belt :with-workstation (create-painter-workstation :red))]
-    (start-cars-assembler-workstation! {:wheels-in source-wheels
-                                        :engines-in source-engines
-                                        :coachworks-in source-coachworks
-                                        :cars-out pipe-assembled-cars})
+        pipe-to-green-painter (conveyor-belt :with-worker (create-painter-worker :green))
+        pipe-to-blue-painter (conveyor-belt :with-worker (create-painter-worker :blue))
+        pipe-to-red-painter (conveyor-belt :with-worker (create-painter-worker :red))]
+    (start-cars-assembler-worker! {:wheels-in source-wheels
+                                   :engines-in source-engines
+                                   :coachworks-in source-coachworks
+                                   :cars-out pipe-assembled-cars})
     (start-random-splitter! {:in-pipe pipe-assembled-cars
                              :out-pipes [pipe-to-green-painter
                                          pipe-to-blue-painter

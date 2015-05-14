@@ -36,7 +36,6 @@
       (rx/map #(core/paint % :blue) b-xs)
       (rx/map #(core/paint % :red) r-xs))))
 
-; frequency of faulty items arriving in the factory
 (defn- create-endless-xs [interval elem-fn]
   (let [mapf (fn [_] (core/mark-item (elem-fn)))]
     (as-> (Observable/interval interval TimeUnit/MICROSECONDS) $
