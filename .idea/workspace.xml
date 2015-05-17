@@ -11,22 +11,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/scan/AcceptanceTests_IT.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/scan/AcceptanceTests_IT.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" afterPath="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstClojure.iml" afterPath="$PROJECT_DIR$/FirstClojure.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" afterPath="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ScalaStudy/scala-study.iml" afterPath="$PROJECT_DIR$/../ScalaStudy/scala-study.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="" />
@@ -55,98 +48,7 @@
     <favorites_list name="FirstClojure" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="HandFinishedEventInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/client/HandFinishedEventInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandFinishedEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/src/main/java/gamesys/poker/engine/model/events/HandFinishedEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandFinishedEventInfoAssembler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/HandFinishedEventInfoAssembler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandActionEventInfoAssembler.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/HandActionEventInfoAssembler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="625">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code_structure_observations1.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/principle_reports/code_structure_observations1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12885">
-              <caret line="325" column="4" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandActionEventsAssembler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/HandActionEventsAssembler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="885">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionResultInfoAssembler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/ActionResultInfoAssembler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerErrorEventInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/client/PlayerErrorEventInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerErrorEventInfoAssembler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/PlayerErrorEventInfoAssembler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -159,8 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system-mongo.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system-persistence-config.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system-profile.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/applicationContext-member-system.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/test/resources/applicationContext-member-system-test.xml" />
@@ -210,6 +110,8 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/client/PlayerErrorEventInfo.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/test/java/gamesys/progresstracker/model/member/RecentVolumeCountUTest.java" />
       </list>
     </option>
   </component>
@@ -261,8 +163,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="817" />
+    <option name="width" value="1920" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -401,6 +303,208 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gamesys" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="progresstracker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="progresstracker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="progresstracker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="member" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="progresstracker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="member" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecentVolumeCount" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -721,102 +825,7 @@
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/deprecated/pyramid_16_prior_model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.players_rewarded_IT">
-    <configuration default="false" name="All in poker-cashier-system" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-cashier-system" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="directory" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <dir value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/integration/java/gamesys/poker/cashier/integration/test/scan" />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="player_rebuys_in_ringgame_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-cashier-system" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.cashier.integration.test.scan" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.cashier.integration.test.scan.player_rebuys_in_ringgame_IT" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="reward_player_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-cashier-system" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.cashier.integration.test.scan" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.cashier.integration.test.scan.reward_player_IT" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PlayerRebuyForRinggameFailedEventMessageAssemblerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-cashier-system" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.cashier.infrastructure.messaging.assembler.domaintomessage" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.cashier.infrastructure.messaging.assembler.domaintomessage.PlayerRebuyForRinggameFailedEventMessageAssemblerTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.RecentVolumeCountUTest">
     <configuration default="false" name="players_rewarded_IT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poker-cashier-system" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -841,6 +850,104 @@
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecentVolumeCountUTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tracker-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.progresstracker.model.member" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.progresstracker.model.member.RecentVolumeCountUTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecentVolumeCountUTest.callUpdateWithTimestampInPastSimulatingMessageReplays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tracker-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.progresstracker.model.member" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.progresstracker.model.member.RecentVolumeCountUTest" />
+      <option name="METHOD_NAME" value="callUpdateWithTimestampInPastSimulatingMessageReplays" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecentVolumeCountUTest.callUpdateWithTimestampLessThanADayInPastToSimulateMessageReplaysWillSimplyIncreaseHandNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tracker-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.progresstracker.model.member" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.progresstracker.model.member.RecentVolumeCountUTest" />
+      <option name="METHOD_NAME" value="callUpdateWithTimestampLessThanADayInPastToSimulateMessageReplaysWillSimplyIncreaseHandNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RecentVolumeCountUTest.callUpdateWithTimestampMoreThanADayInPastToSimulateMessageReplaysWillBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tracker-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.progresstracker.model.member" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.progresstracker.model.member.RecentVolumeCountUTest" />
+      <option name="METHOD_NAME" value="callUpdateWithTimestampMoreThanADayInPastToSimulateMessageReplaysWillBreak" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -1248,19 +1355,19 @@
       <item index="1" class="java.lang.String" itemvalue="Remote.CP" />
       <item index="2" class="java.lang.String" itemvalue="Remote.PPPS" />
       <item index="3" class="java.lang.String" itemvalue="Remote.PPS" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in poker-cashier-system" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.player_rebuys_in_ringgame_IT" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.reward_player_IT" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.PlayerRebuyForRinggameFailedEventMessageAssemblerTest" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.players_rewarded_IT" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.players_rewarded_IT" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest.callUpdateWithTimestampInPastSimulatingMessageReplays" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest.callUpdateWithTimestampLessThanADayInPastToSimulateMessageReplaysWillSimplyIncreaseHandNumber" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest.callUpdateWithTimestampMoreThanADayInPastToSimulateMessageReplaysWillBreak" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.players_rewarded_IT" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.player_rebuys_in_ringgame_IT" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PlayerRebuyForRinggameFailedEventMessageAssemblerTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.reward_player_IT" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in poker-cashier-system" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest.callUpdateWithTimestampMoreThanADayInPastToSimulateMessageReplaysWillBreak" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest.callUpdateWithTimestampLessThanADayInPastToSimulateMessageReplaysWillSimplyIncreaseHandNumber" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RecentVolumeCountUTest.callUpdateWithTimestampInPastSimulatingMessageReplays" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.players_rewarded_IT" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1401,7 +1508,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="817" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="PMD" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1413,13 +1520,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52217454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3073066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39677048" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22867803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4526316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3763158" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3217993" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43919885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43829295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5478662" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3128998" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1875,6 +1982,18 @@
           <properties />
           <option name="timeStamp" value="765" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="769" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="770" />
+        </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/main/java/gamesys/poker/cashier/app/client/CashierService.java</url>
           <line>17</line>
@@ -1892,7 +2011,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="768" />
+      <option name="time" value="771" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -2042,46 +2161,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/principle_reports/code_structure_observations2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.692307" vertical-offset="0" max-vertical-offset="6600">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/CommunityCardsInfoAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/AccessPrivateTableException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/src/main/java/gamesys/poker/engine/model/HoleCards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/client/HoleCardsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/TableServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="521" max-vertical-offset="3300">
@@ -2428,24 +2507,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/principle_reports/code_structure_observations1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4774" max-vertical-offset="12885">
+        <state vertical-scroll-proportion="10.114108" vertical-offset="0" max-vertical-offset="12885">
           <caret line="325" column="4" selection-start-line="325" selection-start-column="4" selection-end-line="325" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/HandActionEventsAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="885">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/HandActionEventInfoAssembler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="625">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.1/joda-time-2.1-sources.jar!/org/joda/time/DateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22828282" vertical-offset="20467" max-vertical-offset="32325">
+          <caret line="1441" column="0" selection-start-line="1441" selection-start-column="0" selection-end-line="1441" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/GlobalCountersProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325688" vertical-offset="20" max-vertical-offset="1155">
+          <caret line="29" column="93" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54545456" vertical-offset="165" max-vertical-offset="1155">
+          <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/test/java/gamesys/progresstracker/model/member/RecentVolumeCountUTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6991525" vertical-offset="180" max-vertical-offset="1890">
+          <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/DecayingValueCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42424244" vertical-offset="0" max-vertical-offset="495">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/HandActionEventsAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4121212" vertical-offset="156" max-vertical-offset="885">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding />
         </state>
       </provider>

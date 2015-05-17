@@ -1,10 +1,10 @@
 (ns twitter-reader.tweet-processor
+  "Processes text and maintaines the tweet buffer"
   (:require [clojure.set :as set]
             [clojure.string :as str]))
 
 (defn- remove-punctuation [text]
-  "Removes all non-alphanumeric characters, aside from single quotation
-   mark ('), from text."
+  "Removes all non-alphanumeric characters, aside from single quotation mark ('), from text."
   (str/replace text #"(?i)[^\w']+" " "))
 
 (defn- text->words
@@ -16,18 +16,31 @@
     (map str/lower-case $)
     (set $)))
 
+(defn- fresh?
+  "True if the tweet's timestamp is less than a minute before now"
+  [tweet now]
+  (> 60000 (- now (:timestamp tweet))))
+
+(defn- seqs->frequencies
+  "Returns occurences of elements in a sequence of sequences"
+  [seqs]
+  (frequencies (mapcat vec seqs)))
+
+(defn- reduce-text
+  "Reduce text to the interesting words"
+  [text search-words]
+  (set/intersection (text->words text) search-words))
+
 ;; ========== PUBLIC ===========================
 
 (defn process-tweet
-  "Updates the statistics with the new tweet"
-  [{:keys [tweet-text stats search-words] :as input}]
-  (let [found-words (set/intersection (text->words tweet-text) search-words) ; reduce tweet to the interesting words
-        found-words-map (reduce #(assoc %1 %2 1) {} found-words)
-        word-occurrences (merge-with + found-words-map (:word-occurrences stats))
-        tweet-count (:tweet-count stats)]
-    (assoc stats
-      :word-occurrences word-occurrences
-      :tweet-count (inc tweet-count))))
-
+  "Add the new tweet's text to the buffer, remove old elements and calculate word frequencies"
+  [{:keys [text tweets search-words now]}]
+  (let [tweet {:words (reduce-text text search-words) :timestamp now}
+        tweets (conj
+                 (filter #(fresh? % now) tweets) tweet)
+        word-frequencies (seqs->frequencies (map :words tweets))]
+    {:tweets tweets
+     :word-frequencies word-frequencies}))
 
 

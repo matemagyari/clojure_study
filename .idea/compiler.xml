@@ -456,7 +456,7 @@
       <module name="poker-cashier-system" target="1.7" />
       <module name="poker-commons" target="1.7" />
       <module name="poker-commons-messaging-client" target="1.7" />
-      <module name="poker-critical-core" target="1.6" />
+      <module name="poker-critical-core" target="1.7" />
       <module name="poker-directory-messaging-client" target="1.7" />
       <module name="poker-directory-system" target="1.7" />
       <module name="poker-fast-fold-messaging-client" target="1.7" />
