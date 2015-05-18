@@ -27,7 +27,7 @@
   (frequencies (mapcat vec seqs)))
 
 (defn- reduce-text
-  "Reduce heroku master text to the interesting words"
+  "Reduce text to the interesting words"
   [text search-words]
   (set/intersection (text->words text) search-words))
 
