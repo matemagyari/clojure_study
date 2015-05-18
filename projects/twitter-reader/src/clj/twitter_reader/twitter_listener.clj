@@ -1,6 +1,6 @@
 (ns twitter-reader.twitter-listener
   "Wraps around Twitter4J Java library demonstrating the seamless Clojure-Java interoperability.
-  Exposes a TwitterListener interface and 2 factory methods, one for the app's soleTwitterStreamFactory
+  Exposes a TwitterListener interface and 2 factory methods, one for the app's sole TwitterStreamFactory
   and one for TwitterListener"
   (:require [clojure.edn :as edn]
             [clojure.data.json :as json]
@@ -28,7 +28,7 @@
                               (callback tweet)))))
 
 (defn- create-twitter-stream
-  "Create an instance of TwitterStream"
+  "Creates an instance of TwitterStream"
   [ts-factory callback]
   (let [t-stream (.getInstance ts-factory)
         listener (create-status-listener callback)]
@@ -56,7 +56,7 @@
       (stop-listener! [this] (.clearListeners t-stream)))))
 
 (defn create-twitter-stream-factory
-  "Create an instance of TwitterStreamFactory"
+  "Creates an instance of TwitterStreamFactory"
   []
   (let [creds (-> "/Users/mate.magyari/twitter.conf" slurp edn/read-string)
         config-builder (doto (new ConfigurationBuilder)
