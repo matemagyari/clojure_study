@@ -9,18 +9,9 @@
             [clojure.core.typed :as typed]))
 
 (def global-constants
-  {:gravity-constants {:sheep {:sheep 1
-                               :wolf -10
-                               :dead-sheep 0
-                               :wall -20}
-                       :wolf {:sheep 3
-                              :wolf -1
-                              :dead-sheep 0
-                              :wall -20}
-                       :wall {:sheep 0
-                              :wolf 0
-                              :dead-sheep 0
-                              :wall 0}}
+  {:gravity-constants {:sheep {:sheep 1 :wolf -10 :dead-sheep 0 :wall -20}
+                       :wolf {:sheep 3 :wolf -1 :dead-sheep 0 :wall -20}
+                       :wall {:sheep 0 :wolf 0 :dead-sheep 0 :wall 0}}
    :min-proximity 1.0})
 
 (def entity-template
@@ -65,9 +56,9 @@
           (recur (dec i) entitites-next))))))
 
 ;;(typed/check-ns 'swarm.vector-algebra)
-(comment
+(comment)
   (run-show! {:sheeps-num 100
-              :wolves-num 10
+              :wolves-num 0
               :dim-board [200 200]
               :dim-screen [400 400]})
-  )
+

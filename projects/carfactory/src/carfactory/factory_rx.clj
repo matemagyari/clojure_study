@@ -1,11 +1,9 @@
 (ns carfactory.factory-rx
+  "Car Factory implemented using RX"
   (:import [rx Observable]
            [java.util.concurrent TimeUnit])
   (:require [carfactory.core :as core]
             [rx.lang.clojure.core :as rx]))
-
-(comment
-  "Car Factory implemented using RX")
 
 (defn- serialnum-mod? [car n]
   (= n

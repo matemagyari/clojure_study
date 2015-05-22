@@ -1,9 +1,7 @@
 (ns carfactory.factory-async
+  "Car Factory implemented using go blocks and channels from core.async"
   (:require [clojure.core.async :as async]
             [carfactory.core :as core]))
-
-(comment
-  "Car Factory implemented using go blocks and channels from core.async")
 
 ; pipe capacity is 100. If full, will block the sender.
 (defn- conveyor-belt

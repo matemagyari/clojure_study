@@ -1,6 +1,6 @@
 (ns clojure.core
   (:require clojure.contrib.core)
-  (:use clojure-study.clojure.assertion))
+  (:use clojure.assertion))
 
 ;; Examples for the basics of Clojure
 
@@ -23,6 +23,11 @@
 (assert= (fake 5 8) 13)
 (assert= (fake 2 3 4 5 6) 125)
 
+;;------------------------------------------------------------------------------- CONTROL STRUCTURES -------------------------------------------
+(assert= :y (let [x 1]
+             (case x
+               1 :x
+               2 :y)))
 ;;------------------------------------------------------------------------------- NIL is nothing -------------------------------------------
 (assert= nil (first nil))
 (assert= [] (rest nil))

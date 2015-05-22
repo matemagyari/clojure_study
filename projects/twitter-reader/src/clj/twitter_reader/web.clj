@@ -15,7 +15,7 @@
      :tweet tweet}))
 
 (defn- handle-tweet!
-  "Updates the model when new tweet arrives for the given connection"
+  "Updates the model when new tweet arrives for the given connection and sends update to the UI"
   [tweet ws-channel]
   ;; only when connection isn't closed
   (when-let [conn (cr/get-conn ws-channel)]

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-wallet/blackjack-wallet.iml" filepath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-wallet/blackjack-wallet.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/camel-cometd.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/camel-cometd.iml" />
       <module fileurl="file://$PROJECT_DIR$/../others/forked/camel/components/camel-cometd/camel-cometd (1) (org.apache.camel).iml" filepath="$PROJECT_DIR$/../others/forked/camel/components/camel-cometd/camel-cometd (1) (org.apache.camel).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/catalog-messaging-api.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/catalog-messaging-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/connection-proxy.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/connection-proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient/connection-proxy-dataclient.iml" filepath="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient/connection-proxy-dataclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/../darse/darse.iml" filepath="$PROJECT_DIR$/../darse/darse.iml" />

@@ -336,6 +336,7 @@
         <module name="camel-yammer" />
         <module name="camel-zipfile" />
         <module name="camel-zookeeper" />
+        <module name="catalog-messaging-api" />
         <module name="connection-proxy" />
         <module name="connection-proxy-dataclient" />
         <module name="examples" />
@@ -428,6 +429,7 @@
       <module name="camel-netty-http" target="1.7" />
       <module name="camel-spring-integration" target="1.7" />
       <module name="camel-vertx" target="1.7" />
+      <module name="catalog-messaging-api" target="1.7" />
       <module name="coding-exercise" target="1.7" />
       <module name="connection-proxy" target="1.7" />
       <module name="connection-proxy-dataclient" target="1.6" />

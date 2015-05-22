@@ -30,7 +30,6 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/timeout/pom.xml" />
@@ -55,6 +54,8 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/pom.xml" />
         <option value="$PROJECT_DIR$/../others/forked/camel/components/camel-cometd/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/catalog-messaging-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

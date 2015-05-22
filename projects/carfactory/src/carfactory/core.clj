@@ -1,6 +1,4 @@
-(ns carfactory.core)
-
-(comment
+(ns carfactory.core
   "Car Factory basic functions")
 
 ;;we can tune the CPU-intesitivity of the workers
