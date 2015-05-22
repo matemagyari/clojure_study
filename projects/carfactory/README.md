@@ -40,7 +40,7 @@ W-M: merges the 3 conveyor belts into one
 
 ### Possible approaches/technologies to use ###
 
-This problem can be tackled using very different approaches providing an opportunity to compare various styles. Some examples are mentioned below. If you are familiar with either of those, it's not difficult to implement. If you find it too easy or quick, we'd advise you to do it with other approaches as well and compare them.
+This problem can be tackled using very different approaches providing an opportunity to compare various styles. Some examples are mentioned below. If you are familiar with either of those, it's not difficult to implement. If you find it too easy or quick, we'd advise you to do it with multiple approaches and compare them. Completely different models could emerge. In a CSP or queue-based solution the conveyor belts will appear as much as building blocks of the model as the workers. In case of FRP (streams) the workers might simply be stream operations and the conveyor belts are the model's first-class citizens. In an Actor framework the emphasis is on the workers, which send messages to each other, eliminating the notion of conveyors completely.
 
  * CSP: e.g. Go, Clojure, Java CSP, ...
  * Actor model: e.g. Akka (Scala/Java)
