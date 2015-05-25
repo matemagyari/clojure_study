@@ -56,9 +56,9 @@
           (recur (dec i) entitites-next))))))
 
 ;;(typed/check-ns 'swarm.vector-algebra)
-(comment)
+(comment
   (run-show! {:sheeps-num 100
               :wolves-num 0
               :dim-board [200 200]
-              :dim-screen [400 400]})
+              :dim-screen [400 400]}))
 
