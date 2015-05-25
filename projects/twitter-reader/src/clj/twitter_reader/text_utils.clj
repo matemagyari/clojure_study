@@ -3,8 +3,9 @@
   (:require [clojure.set :as set]
             [clojure.string :as str]))
 
-(defn remove-punctuation [text]
+(defn remove-punctuation
   "Removes all non-alphanumeric characters, aside from single quotation mark ('), from text."
+  [text]
   (str/replace text #"(?i)[^\w']+" " "))
 
 (defn text->words

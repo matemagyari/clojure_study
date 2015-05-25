@@ -1,6 +1,6 @@
 (ns twitter-reader.web
   "Entry point of the application. Exposes a websocket endpoint."
-  (:require [twitter-reader.tweet-processor :as tp]
+  (:require [twitter-reader.tweet-buffer :as tp]
             [twitter-reader.twitter-listener :as tl]
             [twitter-reader.conn-repository :as cr]
             [org.httpkit.server :as kit]
@@ -19,8 +19,8 @@
   [tweet ws-channel]
   ;; only when connection isn't closed
   (when-let [conn (cr/get-conn ws-channel)]
-    (let [update (tp/process-tweet {:text (:text tweet)
-                                    :tweets (:tweets conn)
+    (let [update (tp/update-buffer {:text (:text tweet)
+                                    :buffer (:tweets conn)
                                     :search-words (:search-words conn)
                                     :now (System/currentTimeMillis)})]
       (cr/update-tweets! ws-channel (:tweets update))

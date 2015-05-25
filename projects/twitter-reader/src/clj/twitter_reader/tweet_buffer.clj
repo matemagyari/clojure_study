@@ -1,4 +1,4 @@
-(ns twitter-reader.tweet-processor
+(ns twitter-reader.tweet-buffer
   "Processes text and maintaines the tweet buffer"
   (:require [clojure.set :as set]
             [clojure.string :as str]
@@ -11,14 +11,14 @@
 
 ;; ========== PUBLIC ===========================
 
-(defn process-tweet
+(defn update-buffer
   "Add the new tweet's text to the buffer, remove old elements and calculate word frequencies"
-  [{:keys [text tweets search-words now]}]
+  [{:keys [text buffer search-words now]}]
   (let [tweet {:words (tu/reduce-text text search-words) :timestamp now}
-        tweets (conj
-                 (filter #(fresh? % now) tweets) tweet)
-        word-frequencies (tu/seqs->frequencies (map :words tweets))]
-    {:tweets tweets
+        buffer (conj
+                 (filter #(fresh? % now) buffer) tweet)
+        word-frequencies (tu/seqs->frequencies (map :words buffer))]
+    {:tweets buffer
      :word-frequencies word-frequencies}))
 
 
