@@ -7,7 +7,7 @@
             [clojure.string :as str]
             [clojure.data.json :as json]))
 
-(defn- ui-message
+(defn- ->ui-message
   "Creates a UI message from the latest tweet and the updated statistics"
   [stats tweet]
   (json/write-str
@@ -19,12 +19,13 @@
   [tweet ws-channel]
   ;; only when connection isn't closed
   (when-let [conn (cr/get-conn ws-channel)]
-    (let [update (tp/update-buffer {:text (:text tweet)
+    (let [buffer (tp/update-buffer {:text (:text tweet)
                                     :buffer (:tweets conn)
                                     :search-words (:search-words conn)
-                                    :now (System/currentTimeMillis)})]
-      (cr/update-tweets! ws-channel (:tweets update))
-      (kit/send! ws-channel (ui-message (:word-frequencies update) tweet)))))
+                                    :now (System/currentTimeMillis)})
+          msg (->ui-message (:word-frequencies buffer) tweet)]
+      (cr/update-tweets! ws-channel (:tweets buffer))
+      (kit/send! ws-channel msg))))
 
 (defn- ws-handler
   "Websocket request handler"
@@ -35,7 +36,8 @@
                                                                 (handle-tweet! tweet channel)))
           on-close-f (fn [status]
                        (println "channel closed: " status)
-                       (cr/remove-conn! channel))
+                       (cr/remove-conn! channel)
+                       (tl/stop-listener! tweet-listener))
           on-receive-f (fn [data]
                          (println "received: " channel data)
                          (let [words (set (str/split data #","))]
@@ -44,7 +46,9 @@
       (kit/on-close channel on-close-f)
       (kit/on-receive channel on-receive-f))))
 
-(defn -main [& args]
+(defn -main
+  "The main function"
+  [& args]
   (let [twitter-stream-factory (tl/create-twitter-stream-factory)
         handler (fn [req] (ws-handler twitter-stream-factory req))]
     (kit/run-server handler {:port 8080})
