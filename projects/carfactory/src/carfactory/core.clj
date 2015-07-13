@@ -2,7 +2,7 @@
   "Car Factory basic functions")
 
 ;;we can tune the CPU-intesitivity of the workers
-(def ^:private work-load-unit (* 10 100))
+(def ^:private work-load-unit (* 1 0))
 
 (defn- exercise-cpu!
   "Simply to simulate real work on the CPU"

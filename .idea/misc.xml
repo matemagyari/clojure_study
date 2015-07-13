@@ -52,10 +52,11 @@
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-parent/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/pom.xml" />
-        <option value="$PROJECT_DIR$/../others/forked/camel/components/camel-cometd/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/catalog-messaging-api/pom.xml" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/framework-cometd-driver/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker-automation-utils/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

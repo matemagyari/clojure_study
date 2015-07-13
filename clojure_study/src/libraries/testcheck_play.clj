@@ -3,8 +3,7 @@
   clojure-study.libraries.testcheck-play
   (:require [clojure.test.check :as tc]
             [clojure.test.check.generators :as gen]
-            [clojure.test.check.properties :as prop]
-            [clojure-study.assertion :as a]))
+            [clojure.test.check.properties :as prop]))
 
 ;(def sort-idempotent-prop
 ;  (prop/))

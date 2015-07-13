@@ -8,18 +8,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a2cc899-15ba-4157-9f45-33f4ef7da55a" name="Default" comment="clojure async for events">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ScalaStudy/src/main/java/garbage/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ScalaStudy/src/main/scala/org/home/Solution.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ScalaStudy/src/main/scala/org/home/garbage/Solution.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ScalaStudy/src/main/resources/log4j.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/reports.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" afterPath="$PROJECT_DIR$/../examples/src/main/java/examples/processes/AnyMessageSender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/config/AppLevelCucumberConfig.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/integration/java/gamesys/poker/promotion/integration/test/config/AppLevelCucumberConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/java/org/home/blackjack/core/config/BlackjackCoreAppLevelConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/model/experiment/MessageCatalogItemInfo2.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/model/experiment/MessageCatalogItemInfo2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLock.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/test/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLockITest.java" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/test/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLockITest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" afterPath="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/resources/blackjack.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/cloud.rb" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/cloud.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/../reference-ddd-blackjack/blackjack-core-system/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/poker-findbugs-exclude.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/poker-findbugs-exclude.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/project-service/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ScalaStudy/pom.xml" afterPath="$PROJECT_DIR$/../ScalaStudy/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ScalaStudy/scala-study.iml" afterPath="$PROJECT_DIR$/../ScalaStudy/scala-study.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/resources/features/side_bets/side_bet_payout.feature" afterPath="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/resources/features/side_bets/side_bet_payout.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="d80dc681-0567-46da-be28-5be0973b41b5" name="Others" comment="" />
@@ -49,101 +62,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PlayerStore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/core/PlayerStore.java">
+      <file leaf-file-name="ApacheHttpClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/ApacheHttpClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="420">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="930">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoPlayerStore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/MongoPlayerStore.java">
+      <file leaf-file-name="JettyHttpClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/JettyHttpClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1356" max-vertical-offset="2265">
-              <caret line="136" column="6" selection-start-line="136" selection-start-column="6" selection-end-line="136" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageItemInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-giving-api/src/main/java/gamesys/poker/giving/api/model/item/MessageItemInfo.java">
+      <file leaf-file-name="cloud.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/cloud.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="1350">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state vertical-scroll-proportion="-20.923077" vertical-offset="626" max-vertical-offset="5580">
+              <caret line="78" column="122" selection-start-line="78" selection-start-column="122" selection-end-line="78" selection-end-column="122" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageOtherReasonTypeInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-giving-api/src/main/java/gamesys/poker/giving/api/model/MessageOtherReasonTypeInfo.java">
+      <file leaf-file-name="live.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/live.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+            <state vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="4710">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageReasonTypeInfo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-giving-api/src/main/java/gamesys/poker/giving/api/model/MessageReasonTypeInfo.java">
+      <file leaf-file-name="TournamentTicketingTemplateService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/TournamentTicketingTemplateService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="375">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="525">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pp.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/pp.rb">
+      <file leaf-file-name="TournamentTicketingTemplateServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/impl/TournamentTicketingTemplateServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3461537" vertical-offset="2569" max-vertical-offset="4770">
-              <caret line="184" column="47" selection-start-line="184" selection-start-column="47" selection-end-line="184" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="2130">
+              <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HousingAppListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListener.java">
+      <file leaf-file-name="TournamentTicketingServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/impl/TournamentTicketingServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.269231" vertical-offset="1882" max-vertical-offset="4125">
-              <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3178" max-vertical-offset="4215">
+              <caret line="225" column="85" selection-start-line="225" selection-start-column="85" selection-end-line="225" selection-end-column="85" />
+              <folding>
+                <element signature="e#7294#7320#0" expanded="false" />
+                <element signature="e#7848#8132#0" expanded="false" />
+                <element signature="e#8117#8118#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionReuseStrategy.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar!/org/apache/http/ConnectionReuseStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerProfileSystemService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/app/client/journey/PlayerProfileSystemService.java">
+      <file leaf-file-name="DefaultConnectionReuseStrategy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar!/org/apache/http/impl/DefaultConnectionReuseStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="579" max-vertical-offset="1395">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerProfileSystemRouteBuilder.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/integration/PlayerProfileSystemRouteBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.504" vertical-offset="0" max-vertical-offset="2070">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PPRSRouteBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/infrastructure/integration/camel/PPRSRouteBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -157,62 +164,62 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/test/resources/features/player_rebuys_in_ringgame.feature" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/main/java/gamesys/poker/cashier/infrastructure/messaging/assembler/domaintomessage/CashierEventsToMessagesAssembler.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/main/java/gamesys/poker/cashier/infrastructure/messaging/assembler/domaintomessage/PlayerRebuyForRinggameFailedEventMessageAssembler.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/test/java/gamesys/poker/cashier/infrastructure/messaging/assembler/domaintomessage/PlayerRebuyForRinggameFailedEventMessageAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/bonus/model/core/RecurrentBonusType.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/util/InvalidArgumentException.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/util/UnrecoverableException.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/integration/java/gamesys/poker/member/integration/test/scan/AcceptanceTests_IT.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/live.rb" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/pp.rb" />
         <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/testgpcloud.rb" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/findbugs.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/src/main/java/gamesys/poker/promotion/config/PromotionMongoConfig.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/live.rb" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/client/PlayerErrorEventInfo.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/test/java/gamesys/progresstracker/model/member/RecentVolumeCountUTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/impl/ActionResultInfoAssembler.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/client/ActionResultInfo.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/messaging/assemblers/HandFinishedEventMessageAssembler.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/assemblers/HandResultEventMessageAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/listener/CreateTableWithPlayersListenerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/assemblers/FastFoldUpdateEventMessageAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/listener/PlayerMoveServiceTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/assemblers/PlayerUpdatedEventMessageAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/assemblers/HandUpdatedEventMessageAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/listener/ReserveSeatListenerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/assemblers/DoPlayerActionMessagingTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/integration/java/gamesys/poker/integration/test/step/PlayerActionStepdefs.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/assemblers/HandFinishedEventMessageAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/ActionEventDispatcherMessagingTest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLock.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/test/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLockITest.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/catalog/api/CreateCatalogItemCommandMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/CreateCatalogItemCommandMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/app/client/QueryCatalogResponseMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/app/client/CreateCatalogItemCommandMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/app/client/QueryCatalogRequestMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/app/client/UpdateCatalogItemCommandMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/app/client/UpdateCatalogItemConfirmationEventMessage.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/poker/catalog/api/model/MessageCatalogItemInfo.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/ppc3.rb" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/info/handsummarizer/HandSummarizerResponseMessageAssembler.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/persistence/ManualDecompressor.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/serialization/ManualSerializationTester.java" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/integration/PlayerProfileSystemRouteBuilder.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/framework-cometd-driver/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker-automation-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/cometd/ManualCometdClientRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/framework-cometd-driver/src/main/java/com/qa/framework/drivers/cometd/CometdDriver.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/test/java/com/qa/pokerProject/testng/gameplay/PlayTournamentTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/infrastructure/cometd/TheLongPollingTransport.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/infrastructure/cometd/GZipLongPollingTransportIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/infrastructure/cometd/ServiceChannelTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/infrastructure/cometd/PubSubChannelTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/infrastructure/cometd/GZipLongPollingTransportTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/gamesys/poker/tableDriver/TableDriver.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/ActivateTables.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/gamesys/poker/ConnectionProxyClient/services/table/Table.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util/src/main/java/gamesys/xcit/client/PokerTTMClient.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/app/impl/AbstractBotCreationService.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/Main.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/infrastructure/cometd/CometClient.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/ManualMainTestRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/model/ThreadPoolTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/test/java/gamesys/poker/bot/ManualCometdTestRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/infrastructure/cometd/GZipLongPollingTransport.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/infrastructure/cometd/CometTransportClientFactory.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/resources/features/side_bets/side_bet_payout.feature" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/http/SSLContextGeneralFactoryTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/src/test/java/gamesys/rest/proxy/ManualCometdClientRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util/src/test/java/gamesys/xcit/ManualCometdClientRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/src/test/java/gamesys/rest/proxy/xcit/ManualCometdClientRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-engine-smoke-tests/src/test/java/gamesys/engine/xcit/ManualCometdClientRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/tournament-smoke-tests/src/test/java/gamesys/tournament/xcit/ManualCometdClientRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/dep-tree" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-engine-smoke-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/tournament-smoke-tests/pom.xml" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/ConnectionProxyRouteBuilderRoutesTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/model/VentureAuthenticator.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/ChimeraVentureAuthenticator.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/ChimeraVentureAuthenticatorTest.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/http/ManualSSLTestRunner.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/ApacheHttpClient.java" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/cloud.rb" />
+        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/impl/TournamentTicketingTemplateServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -229,12 +236,30 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="820" />
+    <option name="width" value="1440" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -366,7 +391,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,9 +398,418 @@
               <option name="myItemId" value="Gamesys" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.cometd.java:cometd-java-server:3.0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cometd-java-server-3.0.4.jar" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cometd" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.cometd.java:cometd-java-server:3.0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cometd-java-server-3.0.4.jar" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cometd" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transport" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.cometd.java:cometd-java-server:3.0.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cometd-java-server-3.0.4.jar" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capistrano" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capistrano" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supporting" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-etc" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="capistrano" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supporting" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionproxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionproxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionproxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="http" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionproxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="http" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheHttpClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gamesys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker-connection-proxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesys" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="poker" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionproxy" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -387,19 +820,19 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3025701" />
     <property name="dynamic.classpath" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesClojure" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gamesys/qa-automation/poker-automation-utils/pom.xml" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="181" />
@@ -436,25 +869,25 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="gamesys.poker.connectionproxy.infrastructure.integration.http" />
       <recent name="gamesys.poker.cashier.infrastructure.messaging.assembler.domaintomessage" />
       <recent name="org.apache.camel.component.cometd" />
       <recent name="gamesys.progresstracker.model.counter.action" />
       <recent name="gamesys.poker.reputation.domain.metrics.playermetrics" />
-      <recent name="gamesys.poker.member.infrastructure.acl.tomessage.eventmessage" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="gamesys.poker.catalog.api.app.client" />
-      <recent name="gamesys.poker.cashier.infrastructure.messaging.assembler.domaintomessage" />
-      <recent name="org.apache.camel.component.cometd" />
-      <recent name="gamesys.poker.academy.utils" />
-      <recent name="gamesys.poker.member.util" />
+      <recent name="gamesys.poker.connectionproxy.infrastructure.integration.camel" />
+      <recent name="gamesys.tournament.xcit" />
+      <recent name="gamesys.engine.xcit" />
+      <recent name="gamesys.rest.proxy.xcit" />
+      <recent name="gamesys.xcit" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/resources" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/bare-jetty/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system/src/test/resources/features/payment" />
+      <recent name="$PROJECT_DIR$/../examples/src/test/resources" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api/src/main/java/gamesys/catalog/api" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/supporting/static" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="gamesys.progresstracker.model.member" />
@@ -471,55 +904,27 @@
       <recent name="gamesys.poker.reputation.integration.test.dos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../examples" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/resources/META-INF/appcontexts-mongo" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/src/longrunning/java/gamesys/poker/engine/model" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/src/test/resources/gamesys/poker/engine/model/result/hand" />
       <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/deprecated" />
-      <recent name="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/integration/resources/deprecated/pyramid_16_prior_model" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gamesys.poker.connectionproxy.infrastructure.integration.http" />
+      <recent name="gamesys.poker.connectionproxy.infrastructure.integration" />
+      <recent name="gamesys.poker.connectionproxy" />
       <recent name="gamesys.poker.reputation.app.reputationscore" />
       <recent name="gamesys.poker.reputation.app.metrics" />
-      <recent name="gamesys.poker.reputation.domain.metrics.playermetrics" />
-      <recent name="gamesys.progresstracker.model.counter.action" />
-      <recent name="gamesys.poker.engine.model.cards" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ManualSerializationTester">
-    <configuration default="false" name="ActionEventDispatcherMessagingTest.testHandFinished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-game-system" />
+  <component name="RunManager" selected="Application.ManualSSLTestRunner">
+    <configuration default="false" name="ConnectionProxyRouteBuilderRoutesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="connection-proxy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.engine.infrastructure.messaging" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.engine.infrastructure.messaging.ActionEventDispatcherMessagingTest" />
-      <option name="METHOD_NAME" value="testHandFinished" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MongoLockITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-commons" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.commons.infrastructure.persistence.mongo" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.commons.infrastructure.persistence.mongo.MongoLockITest" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.camel" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.camel.ConnectionProxyRouteBuilderRoutesTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -536,13 +941,57 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MongoLockITest.testTryLockAlreadyHeld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poker-commons" />
+    <configuration default="false" name="ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="connection-proxy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="gamesys.poker.commons.infrastructure.persistence.mongo" />
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.commons.infrastructure.persistence.mongo.MongoLockITest" />
-      <option name="METHOD_NAME" value="testTryLockAlreadyHeld" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.camel" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.camel.ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest.wildcard1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="connection-proxy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.camel" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.camel.ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest" />
+      <option name="METHOD_NAME" value="wildcard1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MAVEN_REPOSITORY$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChimeraVentureAuthenticatorTest.aaa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="connection-proxy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="gamesys.poker.connectionproxy.infrastructure.authentication.venture" />
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.connectionproxy.infrastructure.authentication.venture.ChimeraVentureAuthenticatorTest" />
+      <option name="METHOD_NAME" value="aaa" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -562,8 +1011,8 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <configuration default="false" name="ManualDecompressor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.engine.infrastructure.persistence.ManualDecompressor" />
+    <configuration default="false" name="ManualSSLTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.connectionproxy.infrastructure.integration.http.ManualSSLTestRunner" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -572,37 +1021,9 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="poker-game-system" />
+      <module name="connection-proxy" />
       <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ManualSerializationTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gamesys.poker.engine.infrastructure.serialization.ManualSerializationTester" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="poker-game-system" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -945,6 +1366,26 @@
       <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
+    <configuration default="false" name="PFS" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="gamesys.poker.fbintegration.main.Main" />
+      <option name="VM_PARAMETERS" value="-Dfulfilment.persistence.type=mongo" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="poker-fulfilment-system" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
     <configuration default="false" name="GotProgressEventMessageAssemblerUTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="gamification-service" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1006,24 +1447,25 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GotProgressEventMessageAssemblerUTest" />
-      <item index="1" class="java.lang.String" itemvalue="Remote.CP" />
-      <item index="2" class="java.lang.String" itemvalue="Remote.PPPS" />
-      <item index="3" class="java.lang.String" itemvalue="Remote.PPS" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ActionEventDispatcherMessagingTest.testHandFinished" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.MongoLockITest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.MongoLockITest.testTryLockAlreadyHeld" />
-      <item index="7" class="java.lang.String" itemvalue="Application.ManualDecompressor" />
-      <item index="8" class="java.lang.String" itemvalue="Application.ManualSerializationTester" />
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="Application.PFS" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GotProgressEventMessageAssemblerUTest" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.CP" />
+      <item index="3" class="java.lang.String" itemvalue="Remote.PPPS" />
+      <item index="4" class="java.lang.String" itemvalue="Remote.PPS" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ConnectionProxyRouteBuilderRoutesTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest.wildcard1" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.ChimeraVentureAuthenticatorTest.aaa" />
+      <item index="9" class="java.lang.String" itemvalue="Application.ManualSSLTestRunner" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ManualSerializationTester" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ManualDecompressor" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MongoLockITest.testTryLockAlreadyHeld" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MongoLockITest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ActionEventDispatcherMessagingTest.testHandFinished" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ManualSSLTestRunner" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChimeraVentureAuthenticatorTest.aaa" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest.wildcard1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConnectionProxyRouteBuilderRoutesTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1163,39 +1605,59 @@
     <option name="localTasksCounter" value="18" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="820" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1920" y="22" width="1440" height="878" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="PMD" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52217454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22867803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39561707" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3763158" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3217993" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25259516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5467128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3217993" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3763158" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53157896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26528257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38523644" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3128998" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30565166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52217454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29613733" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19722815" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19029851" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="616" y="201" width="207" height="457" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5686275" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PMD" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cabal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1369,7 +1831,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system/src/main/java/gamesys/poker/notification/infrastructure/integration/facebook/FacebookGatewayImpl.java</url>
-          <line>34</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="599" />
         </line-breakpoint>
@@ -1477,13 +1939,13 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/src/main/java/gamesys/poker/lobby/app/impl/PokerLobbyServiceImpl.java</url>
-          <line>629</line>
+          <line>634</line>
           <properties />
           <option name="timeStamp" value="675" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/src/integration/java/gamesys/poker/lobby/infrastructure/persistence/mongo/AbstractMongoTournamentStoreTestTemplate.java</url>
-          <line>2</line>
+          <line>9</line>
           <properties />
           <option name="timeStamp" value="676" />
         </line-breakpoint>
@@ -1495,7 +1957,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/src/main/java/gamesys/poker/lobby/app/impl/PokerLobbyServiceImpl.java</url>
-          <line>148</line>
+          <line>171</line>
           <properties />
           <option name="timeStamp" value="684" />
         </line-breakpoint>
@@ -1561,7 +2023,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/src/test/java/org/apache/camel/component/cometd/ClientServerTestHelper.java</url>
-          <line>97</line>
+          <line>82</line>
           <properties />
           <option name="timeStamp" value="725" />
         </line-breakpoint>
@@ -1573,13 +2035,13 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/src/test/java/org/apache/camel/component/cometd/BayeuxClientGZIPTest.java</url>
-          <line>61</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="734" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/src/test/java/org/apache/camel/component/cometd/BayeuxClientGZIPTest.java</url>
-          <line>57</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="735" />
         </line-breakpoint>
@@ -1628,69 +2090,69 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/test/java/gamesys/poker/cashier/infrastructure/messaging/listener/CashierListenerTest.java</url>
-          <line>413</line>
+          <line>410</line>
           <properties />
           <option name="timeStamp" value="758" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/main/java/gamesys/poker/cashier/infrastructure/messaging/assembler/infotomessage/MessageItemInfoAssembler.java</url>
-          <line>77</line>
+          <url>file://$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/gamesys/poker/tableDriver/TableDriver.java</url>
+          <line>88</line>
           <properties />
-          <option name="timeStamp" value="765" />
+          <option name="timeStamp" value="1095" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/gamesys/poker/tableDriver/TableDriver.java</url>
+          <line>173</line>
           <properties />
-          <option name="timeStamp" value="769" />
+          <option name="timeStamp" value="1097" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/tracker-core/src/main/java/gamesys/progresstracker/model/member/RecentVolumeCount.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/RunActivateTables.java</url>
+          <line>16</line>
           <properties />
-          <option name="timeStamp" value="770" />
+          <option name="timeStamp" value="1098" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/messaging/assemblers/SideBetWinEventMessageAssembler.java</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/../gamesys/qa-automation/poker/src/main/java/com/qa/pokerProject/ActivateTables.java</url>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="771" />
+          <option name="timeStamp" value="1099" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/ActionEventDispatcherMessagingTest.java</url>
-          <line>560</line>
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/app/impl/AbstractBotCreationService.java</url>
+          <line>97</line>
           <properties />
-          <option name="timeStamp" value="772" />
+          <option name="timeStamp" value="1101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/messaging/ActionEventDispatcherMessagingTest.java</url>
-          <line>564</line>
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/app/impl/AbstractBotCreationService.java</url>
+          <line>94</line>
           <properties />
-          <option name="timeStamp" value="773" />
+          <option name="timeStamp" value="1102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/messaging/ActionEventDispatcher.java</url>
-          <line>95</line>
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/infrastructure/cometd/CometClient.java</url>
+          <line>71</line>
           <properties />
-          <option name="timeStamp" value="774" />
+          <option name="timeStamp" value="1103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/test/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLockITest.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/Main.java</url>
+          <line>90</line>
           <properties />
-          <option name="timeStamp" value="776" />
+          <option name="timeStamp" value="1105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/src/main/java/gamesys/poker/commons/infrastructure/persistence/mongo/MongoLock.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/src/main/java/gamesys/poker/bot/infrastructure/cometd/CometClient.java</url>
+          <line>70</line>
           <properties />
-          <option name="timeStamp" value="777" />
+          <option name="timeStamp" value="1106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/serialization/ManualSerializationTester.java</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/ChimeraVentureAuthenticatorTest.java</url>
+          <line>61</line>
           <properties />
-          <option name="timeStamp" value="779" />
+          <option name="timeStamp" value="1110" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/src/main/java/gamesys/poker/cashier/app/client/CashierService.java</url>
@@ -1709,7 +2171,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="780" />
+      <option name="time" value="1111" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -1859,420 +2321,418 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/testgpcloud.rb">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/http/SSLContextGeneralFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="2610" max-vertical-offset="5160">
-          <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/assets-cloud/artifacts/poker-etc-1.30.0-SNAPSHOT/capistrano/config/deploy/live.rb">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278957" vertical-offset="2391" max-vertical-offset="5115">
-          <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="821" max-vertical-offset="4575">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/main/java/gamesys/tournament/infrastructure/messaging/listener/TournamentClientListener.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/src/test/java/gamesys/rest/proxy/xcit/scan/PokerRestProxyHealthCheck_IT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="1110" max-vertical-offset="3060">
-          <caret line="138" column="26" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util/src/main/java/gamesys/xcit/XCITService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.884615" vertical-offset="4920" max-vertical-offset="6510">
-          <caret line="359" column="38" selection-start-line="359" selection-start-column="38" selection-end-line="359" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/DynamicRouteGeneratorProcessor.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/cometd/ManualCometdClientRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/DestinationToChannelProcessor.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/src/test/java/gamesys/rest/proxy/xcit/steps/PokerRestProxyXCITSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="840">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/model/ChannelNameSource.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util/src/test/java/gamesys/xcit/ManualCometdClientRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2280">
-          <caret line="31" column="92" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/cometd/TopicToChannelMappingIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1969" max-vertical-offset="2595">
-          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.423077" vertical-offset="11790" max-vertical-offset="29970">
-          <caret line="811" column="26" selection-start-line="811" selection-start-column="26" selection-end-line="811" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/hand-record-messaging-client/src/main/java/gamesys/poker/handrecord/messaging/app/client/HandSummarizerResponseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2070">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/infrastructure/persistence/mongo/HandRecordQueryMappingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4320">
-          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/ppc3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.076923" vertical-offset="2453" max-vertical-offset="5175">
-          <caret line="181" column="49" selection-start-line="181" selection-start-column="49" selection-end-line="181" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/gamesys/messaging/messaging-core/1.4.2/messaging-core-1.4.2.jar!/gamesys/messaging/app/client/JsonMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41535777" vertical-offset="437" max-vertical-offset="1035">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core/src/main/java/gamesys/messaging/app/client/JsonMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.73077" vertical-offset="0" max-vertical-offset="1785">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/infrastructure/messaging/assembler/tomessage/MessageAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15050167" vertical-offset="0" max-vertical-offset="598">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/live.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.692307" vertical-offset="0" max-vertical-offset="4635">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/info/handsummarizer/HandSummarizerCountResponseMessageAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/info/handsummarizer/HandSummarizerResponseMessageAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.076923" vertical-offset="180" max-vertical-offset="1725">
-          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/infrastructure/messaging/listener/HandSummarizerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="885">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/hand-record-core/src/main/java/gamesys/handrecord/infrastructure/messaging/dispatcher/ResponseEventDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59799" vertical-offset="48" max-vertical-offset="645">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/serialization/PersistenceTableInfoAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20100503" vertical-offset="180" max-vertical-offset="3090">
-          <caret line="62" column="46" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/persistence/mongo/CompressedTableDbObjectInterpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/persistence/mongo/CompressedTableDbObjectInterpreterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="795">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/persistence/PersistenceObjectCompressorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/gamesys/poker/poker-encryption/0.22.0-SNAPSHOT/poker-encryption-0.22.0-20150515.110324-2.jar!/gamesys/poker/encryption/Encryptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.256654" vertical-offset="0" max-vertical-offset="526">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/messaging/assemblers/TableStakesMessageAssembler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81669694" vertical-offset="0" max-vertical-offset="690">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/serialization/PersistenceSerializer.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/poker-rest-proxy-smoke-tests.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15856236" vertical-offset="0" max-vertical-offset="2835">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/persistence/PersistenceObjectCompressor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="1050">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/serialization/PersistenceSerializerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3975">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5565">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/persistence/MembaseLockTest.java">
+    <entry file="file://$MAVEN_REPOSITORY$/gamesys/poker/poker-parent/0.25.0/poker-parent-0.25.0.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7352941" vertical-offset="0" max-vertical-offset="8595">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/persistence/mongo/TableDbObjectInterpreter.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/academy-smoke-tests/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2460">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/persistence/mongo/DefaultTableDbObjectInterpreter.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="825">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-director-system/src/main/java/gamesys/tournament/infrastructure/persistence/hazelcast/HazelcastInstanceFactory.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35869566" vertical-offset="75" max-vertical-offset="1395">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="63" />
+        <state vertical-scroll-proportion="-2.8846154" vertical-offset="165" max-vertical-offset="4305">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="55" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/infrastructure/persistence/mongo/MongoTableStore.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-engine-smoke-tests/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1273" max-vertical-offset="5340">
-          <caret line="120" column="56" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="3060">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1923075" vertical-offset="240" max-vertical-offset="3060">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="64" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/tournament-smoke-tests/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="3060">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests/src/test/java/gamesys/rest/proxy/xcit/ManualCometdClientRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#4627#4628#0" expanded="false" />
-            <element signature="e#4685#4686#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/test/java/gamesys/poker/engine/infrastructure/serialization/ManualSerializationTester.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/ConnectionProxyRouteBuilderRoutesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="525">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/src/main/java/gamesys/poker/engine/app/data/PersistenceTableInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.076923" vertical-offset="1380" max-vertical-offset="2085">
-          <caret line="179" column="70" selection-start-line="179" selection-start-column="70" selection-end-line="179" selection-end-column="70" />
+        <state vertical-scroll-proportion="-7.5" vertical-offset="2040" max-vertical-offset="4725">
+          <caret line="196" column="52" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies/src/main/java/gamesys/poker/buddies/app/LogInLogOutHandler.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/camel/ConnectionProxyRouteBuilderRoutesWildcardSubscriptionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state vertical-scroll-proportion="-19.076923" vertical-offset="1019" max-vertical-offset="1605">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/resources/META-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/LegacyVentureAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/SimpleHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient-osgi/4.3.3/httpclient-osgi-4.3.3.jar!/org/apache/http/message/BasicHttpResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15332198" vertical-offset="0" max-vertical-offset="780">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar!/org/apache/http/HttpResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="600">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/security/Authenticatable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/MemberDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="2820">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/app/client/login/LoginAppService.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/VentureAuthenticatable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="630">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1155">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/model/VentureAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2085">
+          <caret line="33" column="93" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/http/ManualHttpClientTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/camel/camel-template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.384615" vertical-offset="7286" max-vertical-offset="30570">
+          <caret line="502" column="96" selection-start-line="502" selection-start-column="96" selection-end-line="502" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/model/ChannelNameSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="2145">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-sources.jar!/org/apache/http/client/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="568" max-vertical-offset="3525">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar!/org/slf4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34386852" vertical-offset="1108" max-vertical-offset="2025">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/ChimeraVentureAuthenticatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1800">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar!/org/slf4j/impl/Log4jLoggerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48306596" vertical-offset="644" max-vertical-offset="1230">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2-sources.jar!/org/slf4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20477815" vertical-offset="7740" max-vertical-offset="10965">
+          <caret line="547" column="26" selection-start-line="547" selection-start-column="26" selection-end-line="547" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/authentication/venture/ChimeraVentureAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1305">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/SSLContextGeneralFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1755">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/test/java/gamesys/poker/connectionproxy/infrastructure/integration/http/ManualSSLTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1680">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar!/org/apache/http/impl/DefaultConnectionReuseStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11378002" vertical-offset="0" max-vertical-offset="791">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar!/org/apache/http/ConnectionReuseStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="195">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar!/org/apache/http/impl/DefaultConnectionReuseStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-sources.jar!/org/apache/http/impl/client/HttpClientBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="523" max-vertical-offset="16530">
+          <caret line="165" column="36" selection-start-line="165" selection-start-column="36" selection-end-line="165" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/IOUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76587796" vertical-offset="0" max-vertical-offset="1890">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/ApacheHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="930">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/src/main/java/gamesys/poker/connectionproxy/infrastructure/integration/http/JettyHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/cloud.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.923077" vertical-offset="626" max-vertical-offset="5580">
+          <caret line="78" column="122" selection-start-line="78" selection-start-column="122" selection-end-line="78" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/live.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="4710">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/TournamentTicketingTemplateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="525">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/impl/TournamentTicketingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3178" max-vertical-offset="4215">
+          <caret line="225" column="85" selection-start-line="225" selection-start-column="85" selection-end-line="225" selection-end-column="85" />
           <folding>
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#7294#7320#0" expanded="false" />
+            <element signature="e#7848#8132#0" expanded="false" />
+            <element signature="e#8117#8118#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/journey/model/core/PlayerRepository.java">
+    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/tournament-ticketing-system/src/main/java/gamesys/tournament/ticketing/app/impl/TournamentTicketingTemplateServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="390">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1044" max-vertical-offset="2130">
+          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/repository/PlayerRepositoryImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar!/org/apache/http/ConnectionReuseStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1230">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/core/PlayerStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="420">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/persistence/store/mongo/MongoPlayerStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1356" max-vertical-offset="2265">
-          <caret line="136" column="6" selection-start-line="136" selection-start-column="6" selection-end-line="136" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-giving-api/src/main/java/gamesys/poker/giving/api/model/item/MessageItemInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="1350">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-giving-api/src/main/java/gamesys/poker/giving/api/model/MessageOtherReasonTypeInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/poker-giving-api/src/main/java/gamesys/poker/giving/api/model/MessageReasonTypeInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="375">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc/capistrano/config/deploy/pp.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3461537" vertical-offset="2569" max-vertical-offset="4770">
-          <caret line="184" column="47" selection-start-line="184" selection-start-column="47" selection-end-line="184" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/messaging/listener/HousingAppListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.269231" vertical-offset="1882" max-vertical-offset="4125">
-          <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/domain/journey/service/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="748" max-vertical-offset="1650">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/src/main/java/gamesys/poker/reputation/infrastructure/integration/camel/PPRSRouteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/app/client/journey/PlayerProfileSystemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="579" max-vertical-offset="1395">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-profile-system/src/main/java/gamesys/poker/member/infrastructure/integration/PlayerProfileSystemRouteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.504" vertical-offset="0" max-vertical-offset="2070">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2329,7 +2789,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>poker-player-profile-messaging-client (1)</last-edited>
+          <last-edited>pokerProject</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

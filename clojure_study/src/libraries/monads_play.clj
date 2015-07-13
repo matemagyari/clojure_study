@@ -1,6 +1,6 @@
 (ns libraries.monads-play
   (:require [clojure.repl :as r]
-            [clojure-study.assertion :as a]
+            [clojure.assertion :as a]
             [clojure.algo.monads :as m]))
 
 (m/defmonad my-identity-m
@@ -12,9 +12,15 @@
 ; m-result: wraps a value into a monad
 ; m-bind: 1. unwraps mv (monadic value) to get v, 2. applies f (normal function) to v to create a new monadic value
 
-(defn dot-result [v] (apply str
-                       (repeat v \.)))
-(defn dot-bind [mv f]
+(defn dot-result
+  "Transforms a number to a sequence of dots - a value to a monadic value"
+  [v]
+  (apply str
+    (repeat v \.)))
+
+(defn dot-bind
+  "mv - monadic value, a sequence of dots. f - a function. applies f to the length of mv"
+  [mv f]
   (f (count mv)))
 
 (m/defmonad dot-monad
@@ -101,9 +107,9 @@
 (a/assert= 8 (try-maybe-m2 2 3))
 
 (a/assert= nil (m/with-monad m/maybe-m
-                       (m/domonad [a 2
-                                   b nil]
-                         (* a b))))
+                 (m/domonad [a 2
+                             b nil]
+                   (* a b))))
 
 
 ;;================= STATE MONAD ========================

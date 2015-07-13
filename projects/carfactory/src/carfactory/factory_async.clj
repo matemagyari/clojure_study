@@ -3,13 +3,13 @@
   (:require [clojure.core.async :as async]
             [carfactory.core :as core]))
 
-; pipe capacity is 100. If full, will block the sender.
+; pipe capacity is 10. If full, will block the sender.
 (defn- conveyor-belt
   "Creates a conveyor-belt"
   [& pars]
   (let [xf (:with-worker (apply hash-map pars)) ; process every item going through the pipe with 'xf' processor
         handle-ex (fn [ex] (println "Exception: " ex))] ;print any exceptions happening on the pipe
-    (async/chan 100 xf handle-ex)))
+    (async/chan 10 xf handle-ex)))
 
 (defn- create-painter-worker
   "Creates a worker to paint with the given color"
@@ -88,12 +88,12 @@
   (supply-parts! {:to source-engines :produce-item-fn core/produce-engine})
   (supply-parts! {:to source-coachworks :produce-item-fn core/produce-coachwork}))
 
+
 ;; Run a factory for some time and print out the number of cars coming out of it.
-(println "Starting factory...")
-(defn run [time]
+(defn -main [& args]
+  (println "Starting factory...")
   (run-factory! (create-factory))
-  (async/<!! (async/timeout time)))
-;(run 10000)
-(println "Number of cars produced: " @car-count)
+  (async/<!! (async/timeout 10000))
+  (println "Number of cars produced: " @car-count))
 
 

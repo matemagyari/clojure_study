@@ -11,4 +11,4 @@
                  [org.clojure/clojure-contrib "1.2.0"]
                  [org.clojure/core.async "0.1.319.0-6b1aca-alpha"]
                  [io.reactivex/rxclojure "1.0.0"]]
-  )
+  :main carfactory.factory-async)

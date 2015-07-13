@@ -38,7 +38,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="academy-smoke-tests" />
         <module name="apt" />
+        <module name="bare-jetty" />
         <module name="blackjack" />
         <module name="blackjack-messaging-client" />
         <module name="blackjack-utils" />
@@ -87,7 +89,6 @@
         <module name="camel-chunk" />
         <module name="camel-cmis" />
         <module name="camel-cometd" />
-        <module name="camel-cometd (1) (org.apache.camel)" />
         <module name="camel-commands-core" />
         <module name="camel-commands-jolokia" />
         <module name="camel-context" />
@@ -340,6 +341,7 @@
         <module name="connection-proxy" />
         <module name="connection-proxy-dataclient" />
         <module name="examples" />
+        <module name="framework-cometd-driver" />
         <module name="gamification-messaging-client" />
         <module name="gamification-poker-messaging-client" />
         <module name="gamification-service" />
@@ -349,13 +351,14 @@
         <module name="hand-record-core" />
         <module name="hand-record-integration-tests" />
         <module name="hand-record-messaging-client" />
-        <module name="jira-report-plugin" />
         <module name="jira-versions-report-plugin" />
         <module name="messaging-core" />
         <module name="notification-loader-service (1)" />
         <module name="org.apache.camel.tests.mock-javamail_1.7" />
+        <module name="player-profile-smoke-tests" />
         <module name="poker-academy" />
         <module name="poker-academy-messaging-client" />
+        <module name="poker-automation-utils" />
         <module name="poker-bot" />
         <module name="poker-buddies-messaging-client" />
         <module name="poker-buddies-system" />
@@ -366,6 +369,7 @@
         <module name="poker-critical-core" />
         <module name="poker-directory-messaging-client" />
         <module name="poker-directory-system" />
+        <module name="poker-engine-smoke-tests" />
         <module name="poker-fast-fold-messaging-client" />
         <module name="poker-fulfilment-messaging-client" />
         <module name="poker-fulfilment-system" />
@@ -383,14 +387,15 @@
         <module name="poker-player-session-messaging-api" />
         <module name="poker-promotion-system" />
         <module name="poker-reporting-system" />
+        <module name="poker-rest-proxy-smoke-tests" />
         <module name="poker-rollback-util" />
+        <module name="poker-smoke-tests-util" />
         <module name="poker-standard-expectations" />
         <module name="poker-stats-messaging-client" />
         <module name="poker-stats-system" />
         <module name="poker-utils" />
         <module name="pokerProject" />
-        <module name="project-api (1)" />
-        <module name="project-client (1)" />
+        <module name="pokerProject (1)" />
         <module name="simple-storage-system" />
         <module name="spi-annotations" />
         <module name="streaming-poker-integrity-messaging-client" />
@@ -403,6 +408,7 @@
         <module name="tournament-model" />
         <module name="tournament-program-interface" />
         <module name="tournament-program-system" />
+        <module name="tournament-smoke-tests" />
         <module name="tournament-system" />
         <module name="tournament-ticketing-messaging-client" />
         <module name="tournament-ticketing-system" />
@@ -416,6 +422,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
+      <module name="academy-smoke-tests" target="1.6" />
+      <module name="bare-jetty" target="1.7" />
       <module name="blackjack" target="1.6" />
       <module name="blackjack-messaging-client" target="1.6" />
       <module name="blackjack-parent" target="1.6" />
@@ -449,9 +457,11 @@
       <module name="messaging-core" target="1.6" />
       <module name="notification-loader (1)" target="1.7" />
       <module name="notification-loader-service (1)" target="1.7" />
+      <module name="player-profile-smoke-tests" target="1.6" />
       <module name="poker-academy" target="1.7" />
       <module name="poker-academy-messaging-client" target="1.7" />
-      <module name="poker-bot" target="1.6" />
+      <module name="poker-automation-utils" target="1.7" />
+      <module name="poker-bot" target="1.7" />
       <module name="poker-buddies-messaging-client" target="1.7" />
       <module name="poker-buddies-system" target="1.7" />
       <module name="poker-cashier-messaging-client" target="1.7" />
@@ -461,9 +471,10 @@
       <module name="poker-critical-core" target="1.7" />
       <module name="poker-directory-messaging-client" target="1.7" />
       <module name="poker-directory-system" target="1.7" />
+      <module name="poker-engine-smoke-tests" target="1.6" />
       <module name="poker-fast-fold-messaging-client" target="1.7" />
       <module name="poker-fulfilment-messaging-client" target="1.7" />
-      <module name="poker-fulfilment-system" target="1.6" />
+      <module name="poker-fulfilment-system" target="1.7" />
       <module name="poker-game-messaging-client" target="1.7" />
       <module name="poker-game-system" target="1.7" />
       <module name="poker-giving-api" target="1.7" />
@@ -477,7 +488,9 @@
       <module name="poker-player-session-messaging-api" target="1.7" />
       <module name="poker-promotion-system" target="1.7" />
       <module name="poker-reporting-system" target="1.7" />
+      <module name="poker-rest-proxy-smoke-tests" target="1.6" />
       <module name="poker-rollback-util" target="1.6" />
+      <module name="poker-smoke-tests-util" target="1.6" />
       <module name="poker-standard-expectations" target="1.6" />
       <module name="poker-stats-messaging-client" target="1.7" />
       <module name="poker-stats-system" target="1.7" />
@@ -495,6 +508,7 @@
       <module name="tournament-model" target="1.7" />
       <module name="tournament-program-interface" target="1.7" />
       <module name="tournament-program-system" target="1.7" />
+      <module name="tournament-smoke-tests" target="1.6" />
       <module name="tournament-system" target="1.7" />
       <module name="tournament-ticketing-messaging-client" target="1.7" />
       <module name="tournament-ticketing-system" target="1.7" />

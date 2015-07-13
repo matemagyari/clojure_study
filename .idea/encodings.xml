@@ -2,8 +2,10 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/../ScalaStudy/pom.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/bare-jetty" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system/poker-stats-system/src/main/java/gamesys/poker/stats/infrastructure/messaging/MessageDispatcher.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-academy-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-buddies" charset="UTF-8" />
@@ -18,6 +20,13 @@
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/academy-smoke-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/player-profile-smoke-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-engine-smoke-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-rest-proxy-smoke-tests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/poker-smoke-tests-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/tournament-smoke-tests" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/catalog-messaging-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/gamification-messaging-client" charset="UTF-8" />
@@ -66,7 +75,9 @@
     <file url="file://$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/interview/coding-exercise-gamesys" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/qa-automation/framework-cometd-driver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/qa-automation/poker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamesys/qa-automation/poker-automation-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../others/camel/components/camel-cometd" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../others/forked/camel" charset="UTF-8" />

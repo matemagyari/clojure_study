@@ -6,7 +6,6 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/gamification-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/jira-report-plugin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-academy-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot" vcs="Git" />
@@ -20,6 +19,7 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-etc" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-fulfilment-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-notification-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/poker-parent" vcs="Git" />
@@ -37,7 +37,9 @@
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/tournament-critical" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/qa-automation/framework-cometd-driver" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../gamesys/qa-automation/poker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../gamesys/qa-automation/poker-automation-utils" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../principle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../reference-ddd-blackjack" vcs="Git" />
   </component>
