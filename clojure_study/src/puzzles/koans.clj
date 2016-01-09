@@ -1,14 +1,20 @@
 (ns puzzles.koans
+  (:import [clojure.lang ISeq])
   (:require clojure.contrib.core)
   (:use clojure-study.assertion))
 
 ;;------------------------------------------------------------------------------- KOANS -------------------------------------------
+(defn assert= [actual expected]
+  (when-not (= actual expected)
+    (throw
+      (AssertionError.
+        (str "Expected " expected " but was " actual)))))
 
-(defn my-count
+(defn my-count1
   ([sequ] (my-count sequ 0))
   ([sequ len] (if (empty? sequ) len (recur (rest sequ) (inc len)))))
 
-(assert= 3 (my-count [1 5 3]))
+(assert= 3 (my-count1 [1 5 3]))
 
 ;;redefined using loop recur
 (defn my-count [sequ]
@@ -281,6 +287,33 @@
 (assert= (hex->dec "ABCD") 43981)
 (assert= (hex->dec "AF45D") 717917)
 
+;;another solution
+;;decimal->hex
+(defn convert2
+  [number]
+  (let [dec->hex (fn [dec]
+                   (condp = dec
+                     10 "A"
+                     11 "B"
+                     12 "C"
+                     13 "D"
+                     14 "E"
+                     15 "F"
+                     dec))]
+    (loop [acc [], num number]
+      (if (zero? num)
+        (if (empty? acc) "0" (apply str acc))
+        (let [remainder (rem num 16)]
+          (recur
+            (cons (dec->hex remainder) acc)
+            (/ (- num remainder) 16)))))))
+
+(assert= "9" (convert2 9))
+(assert= "A" (convert2 10))
+(assert= "F" (convert2 15))
+(assert= "10" (convert2 16))
+(assert= "20F" (convert2 527))
+
 ;anagram finder
 (defn anagrams [the-words]
   (->> the-words
@@ -293,15 +326,6 @@
 ;flipping out
 (defn flip [f]
   (fn [x1 x2] (f x2 x1)))
-
-;rotate sequence
-(defn rotate [shift a-seq]
-  (let [len (count a-seq)
-        shift (mod shift len)
-        [seq1 seq2] (split-at shift a-seq)]
-    (take len (concat seq2 seq1))))
-
-(assert= (rotate 2 [1 2 3 4]) [3 4 1 2])
 
 ;reverse interleave
 (defn rev-i [a-seq n]
@@ -393,6 +417,50 @@
 (assert= (common-min [1 2 3 4 5 6 7] [0.5 3/2 4 19]) 4)
 (assert= (common-min [1 2 3]) 1)
 
+;;32. duplicate a sequence
+(defn dup [xs]
+  (let [rfn (fn [acc x] (conj acc x x))]
+    (reduce rfn [] xs)))
+
+(assert= [1 1 2 2 3 3] (dup [1 2 3]))
+(assert= [[1 2] [1 2] [3 4] [3 4]] (dup [[1 2] [3 4]]))
+
+;;41 drop every n-th item
+(defn drop-nth [xs n]
+  (loop [from xs to [] index 1]
+    (cond
+      (empty? from) to
+      :else (let [next-to (cond
+                            (zero? (mod index n)) to
+                            :else (conj to (first from)))]
+              (recur (rest from) next-to (inc index))))))
+
+(assert= [1 2 4 5 7 8] (drop-nth (range 1 10) 3))
+(assert= [1 2 4 5 7 8] (drop-nth [1 2 3 4 5 6 7 8] 3))
+
+;;44. rotate sequence
+(defn rotate [shift a-seq]
+  (let [len (count a-seq)
+        shift (mod shift len)
+        [seq1 seq2] (split-at shift a-seq)]
+    (take len (concat seq2 seq1))))
+
+(assert= (rotate 2 [1 2 3 4]) [3 4 1 2])
+
+;;47. simply '4'
+
+;;65. iterate
+(defn iterate-x [f x]
+  (cons x (lazy-seq (iterate-x f (f x)))))
+
+(assert= [1 2 3] (take 3 (iterate-x inc 1)))
+
+(defn iterate-y [f x]
+  (letfn [(it [g y]
+            (cons y (lazy-seq (it g (g y)))))]
+    (it f x)))
+
+
 ;;60. reductions
 (defn my-red
   ([op a-seq]
@@ -405,7 +473,7 @@
         (cons start (lazy-seq (my-red op new-e (rest a-seq))))))))
 
 (assert= [4 5 7 10] (take 4
-                            (my-red + 4 [1 2 3])))
+                      (my-red + 4 [1 2 3])))
 (assert= (take 5 (my-red + (range))) [0 1 3 6 10])
 
 ;;65. black box testing
@@ -454,6 +522,23 @@
 (assert= (my-merge-with - {1 10, 2 20} {1 3, 2 10, 3 15})
   {1 7, 2 10, 3 15})
 
+;;73. tic-tac-toe analyzer
+(defn ttt [board]
+  (let [find-it (fn [trio]
+                  (if (and (apply = trio) (not-any? #(= :e %) trio))
+                    (first trio)))
+        get-col (fn [c]
+                  (map #(nth % c) board))
+        get-cell (fn [[row col]]
+                   (nth (nth board row) col))
+        result (keep find-it
+                 (concat
+                   (map get-col [0 1 2])
+                   (map #(nth board %) [0 1 2])
+                   [(map get-cell [[0 0] [1 1] [2 2]])]
+                   [(map get-cell [[0 2] [1 1] [0 2]])]))]
+    (first result)))
+
 ;;74. find perfect squares
 (use '[clojure.string :only (join split)])
 
@@ -468,6 +553,15 @@
 (assert= (p-squares "1,2,3,4,5,6,7,8,9,10") "4,9")
 (assert= (p-squares "4,5,6,7,8,9") "4,9")
 
+;76 trampoline
+(defn tramp [f & args]
+  (loop [res f
+         args args]
+    (let [r (apply res args)]
+      (if (fn? r)
+        (recur r [])
+        r))))
+
 ;;80. perfect numbers
 (defn perfect? [n]
   (let [divisors (filter #(= 0 (rem n %)) (range 1 n))]
@@ -476,6 +570,39 @@
 (assert= true (perfect? 6))
 (assert= false (perfect? 7))
 (assert= true (perfect? 496))
+
+;;94 Game of Life
+(defn gof
+  "board is a vector of strings"
+  [board]
+  (let [rows (count board)
+        cols (count (first board))
+        [living-cell dead-cell] [\# \space]
+        alive? (fn [[row col]]
+                 (= living-cell (nth (nth board row) col)))
+        live-neighbours (fn [[row col]]
+                          (for [r [(dec row) row (inc row)]
+                                c [(dec col) col (inc col)]
+                                :when (and (< -1 r) (< r rows)
+                                        (< -1 c) (< c cols)
+                                        (not= [row col] [r c])
+                                        (alive? [r c]))]
+                            [r c]))
+        next-state (fn [[x y]]
+                     (let [ln (-> [x y] live-neighbours count)
+                           live (if (alive? [x y])
+                                  (and (< 1 ln) (< ln 4))
+                                  (= 3 ln))]
+                       (if live living-cell dead-cell)))
+        ->row (fn [r] (apply str
+                        (for [c (range cols)] (next-state [r c]))))]
+    (mapv ->row (range rows))))
+
+;;98. Equivalence classes
+(defn eq [f domain]
+  (set
+    (map set
+      (vals (group-by f domain)))))
 
 ;;tic-tac-toe
 (defn tic-tac-toe2 [player board]
@@ -511,8 +638,8 @@
 
 (comment
   (assert= #{[2 2] [0 1] [0 2]} (tic-tac-toe :x [[:o :e :e]
-                                                       [:o :x :o]
-                                                       [:x :x :e]]))
+                                                 [:o :x :o]
+                                                 [:x :x :e]]))
   )
 (tic-tac-toe :x [[:x :x :e]
                  [:e :x :e]
@@ -522,10 +649,29 @@
 (defn power-set [a-set]
   ())
 
+;;102. CamelCase
+
+(defn camel-case [s]
+  (let [upper-case (fn [c] (-> c int (- 32) char))
+        dash? (fn [c] (= c \-))]
+    (loop [res [], src s, prev nil]
+      (if (empty? src)
+        (apply str res)
+        (let [[head & tail] src
+              head (if (dash? prev)
+                     (upper-case head)
+                     head)
+              res (if (dash? head)
+                    res
+                    (conj res head))]
+          (recur res tail head))))))
+
+(assert= (camel-case "aa-bb-cc") "aaBbCc")
+
 ;;116. prime sandwitch
 (defn balanced-prime? [n]
   (let [prime?? (fn [n primes] (every? #(pos? (rem n %)) primes))
-         divisors (fn [x] (filter #(= 0 (rem x %)) (range 1 (inc x))))
+        divisors (fn [x] (filter #(= 0 (rem x %)) (range 1 (inc x))))
         prime? #(= 2 (count (divisors %)))]
     (if-not (prime? n) false
       (let [find-first (fn [start stop-fn? step-fn]
@@ -542,3 +688,57 @@
 (assert= true (balanced-prime? 563))
 (assert= 1103 (nth (filter balanced-prime? (range)) 15))
 
+;;158 decurry
+(defn decurry [f]
+  (fn [& arg-list]
+    (loop [args arg-list, result f]
+      (if (empty? args)
+        result
+        (recur
+          (rest args)
+          (result (first args)))))))
+
+(defn decurry [f]
+  (fn [& args]
+    (reduce #(%1 %2) f args)))
+
+(let [f (fn [x]
+          (fn [y] (+ x y)))]
+  (assert= ((decurry f) 3 4) 7))
+
+(let [f (fn [x]
+          (fn [y]
+            (fn [z]
+              (+ x y z))))]
+  (assert= ((decurry f) 3 4 5) 12))
+
+;(defn decurry [f]
+;  f)
+
+
+
+(let [f (fn [] 5)]
+  (assert= ((decurry f)) (f)))
+
+(let [f (fn [x] x)]
+  (assert= ((decurry f) 3) (f 3)))
+
+
+(let [f (fn [x]
+          (fn [y] (+ x y)))]
+  (assert= ((decurry f) 3 4) 7))
+
+(seq)
+
+(defn myproxy []
+  (reify clojure.lang.ISeq
+    (first [this] 1)
+    (next [this] [])
+    (more [this] [])
+    (cons [this x] [])
+    ))
+;(toString [this] "hello")
+
+(defn myproxy []
+  (reify [clojure.lang.ISeq] []
+    (toString [this] "hello")))

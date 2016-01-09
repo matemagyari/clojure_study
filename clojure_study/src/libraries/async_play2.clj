@@ -3,7 +3,7 @@
                                         timeout filter< put! take! pub sub unsub unsub-all
                                         thread alts! alts!!]
              :as a]
-            [clojure-study.assertion :as ae]
+            [clj-http.client :as client]
             [clojure.test :as test]))
 
 
@@ -17,6 +17,16 @@
         (println (str "Incoming: " in-msg))
         (recur))
       (println "Channel closed"))))
+
+(defn aaa []
+  (let [get-data (fn [url]
+                   (client/get url {:as :json}))
+        c1 (a/go (get-data (str "http://api.worldbank.org/en/indicator?format=json&per_page=" 1)))
+        c2 (a/go (get-data (str "http://api.worldbank.org/en/indicator?format=json&per_page=" 1)))]
+    (a/go
+      (println "Let's do it")
+      (let [[v c] (a/alts! [c1 c2])]
+        (println "Result" v c)))))
 
 (defn -main []
   (do

@@ -1,97 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="EclipseCodeFormatter">
-    <option name="defaultSettings" value="true" />
-    <option name="formatter" value="ECLIPSE" />
-    <option name="id" value="1417905492563" />
-    <option name="name" value="default" />
-    <option name="optimizeImports" value="false" />
-    <option name="pathToConfigFileJava" value="$USER_HOME$/Downloads/default_format.xml" />
-    <option name="selectedJavaProfile" value="AF" />
-  </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
+  <component name="LeiningenProjectsManager">
+    <option name="projectFiles">
       <list>
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-player-profile-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-buddies/pom.xml" />
-        <option value="$PROJECT_DIR$/../reference-ddd-blackjack/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-etc/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-notification-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-fulfilment-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/gamification-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/Gamesplatform/poker-academy-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/gitosis/poker-campaign-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/../Gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
-        <option value="$PROJECT_DIR$/../examples/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-commons/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-utils/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-cashier-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-connection-proxy/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-player-reputation-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/timeout/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-reporting-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-directory-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/messaging-core/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-bot/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-tournament/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tracker-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/simple-storage-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/hand-record-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-game-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-promotion-system/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/connection-proxy-dataclient/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-standard-expectations/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/tournament-critical/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-critical-core/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-campaign-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-ui-app/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-rollback-util/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/camel-cometd-2.1.0/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/catalog-messaging-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-messaging-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gamesplatform/poker-integration-smoke-tests/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/qa-automation/framework-cometd-driver/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/qa-automation/poker-automation-utils/pom.xml" />
+        <option value="file://$PROJECT_DIR$/projects/swarm/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/blackjack/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/carfactory/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/twitter-reader/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/bigdata-aggregator/project.clj" />
+        <option value="file://$PROJECT_DIR$/incubator/project.clj" />
+        <option value="file://$PROJECT_DIR$/project.clj" />
+        <option value="file://$PROJECT_DIR$/clojure_study/project.clj" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-api/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-client/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/gitosis/poker-campaign-manager/project-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/../gamesys/gamesplatform" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="SvnBranchConfigurationManager">
-    <option name="myConfigurationMap">
-      <map>
-        <entry key="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-game-messaging-client">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="trunkUrl" value="" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../gamesys/svn/poker/api/poker-player-profile-messaging-client">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="trunkUrl" value="" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="mySupportsUserInfoFilter" value="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
-

@@ -5,14 +5,23 @@
             [clojure.data.json :as json]
             [worldbank.display :as display]))
 
-(defn get-indicators [num] (client/get (str "http://api.worldbank.org/en/indicator"
-                                         "?format=json"
-                                         "&per_page=" num)
-                             {:as :json}))
+(defn get-indicators [num]
+  (client/get
+    (str "http://api.worldbank.org/en/indicator?format=json&per_page=" num)
+    {:as :json}))
 
 (defn gdp-indicators [indicators]
   (let [i-list (-> indicators :body second)]
     (filter (fn [i] (.contains (:name i) "GDP")) i-list)))
+
+(defn get-indicators []
+  (->> (get-indicators 1500)
+    :body
+    second
+    (sort-by :name)
+    ;(filter #(.contains (:name %) "GDP"))
+    (map #((juxt :name :id) %))
+    (map println)))
 
 (comment
   (def inds (get-indicators 15000))
@@ -23,9 +32,11 @@
   )
 
 (defn get-raw-data [indicator country [start-date end-date]]
-  (client/get (str "http://api.worldbank.org/countries/" country "/indicators/" indicator "?date=" start-date ":" end-date
-                "&format=json"
-                "&per_page=1000")
+  (client/get
+    (str "http://api.worldbank.org/countries/" country "/indicators/" indicator
+         "?date=" start-date ":" end-date
+         "&format=json"
+         "&per_page=1000")
     {:as :json}))
 
 
@@ -39,25 +50,26 @@
 
 
 
-(def x (time-value-series
-         (get-raw-data "NY.GDP.MKTP.CD" "ro;hun" ["2010" "2014"])))
+(def histogram (time-value-series
+         (get-raw-data "NY.GDP.MKTP.CD" "usa" ["1800" "2015"])))
 
-(display/print-histogram x)
+(display/print-histogram histogram)
+
 (comment
 
   (json/pprint (client/get (str "http://api.worldbank.org/countries"
-                             "?format=json"
-                             "&per_page=1000")
-                 {:as :json}) )
+                                "?format=json"
+                                "&per_page=1000")
+                           {:as :json}))
 
   (def resp
     (client/get (str "http://api.worldbank.org/countries/all/indicators/SP.POP.TOTL?date=2000:2001&format=json"
-                  "?format=json"
-                  "&per_page=" num)
-      {:as :json
-       ;:client-params {"format" "json"}
-       ;:accept :json
-       }))
+                     "?format=json"
+                     "&per_page=" num)
+                {:as :json
+                 ;:client-params {"format" "json"}
+                 ;:accept :json
+                 }))
 
   (json/pprint resp)
   (println "\nIndicators\n")

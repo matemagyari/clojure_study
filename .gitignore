@@ -4,12 +4,6 @@
 target
 classes
 .settings
-.idea
-.idea/compiler.xml
-.idea/encodings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
-*.iml
+.idea/*
+**/*.iml
 **/.DS_Store

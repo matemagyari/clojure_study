@@ -41,3 +41,8 @@
   (+ a b c))
 
 (assert= (atest 3 {:x 4 :y 5}) 12)
+
+;;case
+(case [1 2 3]
+  [x & y]
+  "default")
