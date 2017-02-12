@@ -1,5 +1,4 @@
-(ns ^{:author mate.magyari
-      :doc "Swing UI. "}
+(ns ^{:doc "Swing UI. "}
   swarm.display)
 
 ;; -----------------  private functions ------------------------

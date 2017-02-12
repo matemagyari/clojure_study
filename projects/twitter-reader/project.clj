@@ -7,7 +7,7 @@
   :test-paths   ["test/clj"]
   :plugins [[lein-modules "0.3.11"]]
   :dependencies [[org.clojure/clojurescript "0.0-3255"]
-                 [org.clojure/clojure "1.7.0-alpha1"]
+                 [org.clojure/clojure "1.8.0"]
                  [org.clojure/core.async "0.1.319.0-6b1aca-alpha"]
                  [twitter-api "0.7.8"]
                  [org.twitter4j/twitter4j-stream "4.0.3"]

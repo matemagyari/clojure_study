@@ -1,5 +1,4 @@
 (ns
-  ^{:author mate.magyari}
   swarm.view-adapter
   (:require [clojure.test :as test]))
 

@@ -1,5 +1,5 @@
-(ns clojure.macros
-  (:use clojure-study.clojure.assertion))
+(ns clojurelang.macros
+  (:use clojurelang.assertion))
 
 
 (defn perms [& colls]

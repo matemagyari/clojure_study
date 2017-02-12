@@ -1,5 +1,4 @@
 (ns
-  ^{:author mate.magyari}
   swarm.gravity
   (:require [clojure.test :as test]
             [swarm.vector-algebra :as va]))

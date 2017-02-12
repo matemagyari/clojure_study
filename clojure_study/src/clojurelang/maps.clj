@@ -1,5 +1,5 @@
-(ns clojure.maps
-  (:use clojure-study.clojure.assertion))
+(ns clojurelang.maps
+  (:use clojurelang.assertion))
 
 ;;------------------------------------------------------------------------------- MAPS -------------------------------------------
 (def john {:name "John" :age 17})

@@ -1,7 +1,7 @@
 (ns
   ^{:author mate.magyari}
   clojure-study.clojure.concurrency-primitives
-  (:require [clojure-study.clojure.assertion :as a]))
+  (:require [clojurelang.assertion :as a]))
 
 ;;------------------------------------------------------------------------------- ATOMS -------------------------------------------
 ;; swap! and reset!

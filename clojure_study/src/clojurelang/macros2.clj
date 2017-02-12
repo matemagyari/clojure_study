@@ -1,4 +1,4 @@
-(ns clojure.macros2)
+(ns clojurelang.macros2)
 
 (def c1 [1 2])
 (def c2 ["a" "b"])

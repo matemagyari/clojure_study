@@ -1,4 +1,4 @@
-(ns clojure.assertion)
+(ns clojurelang.assertion)
 
 (defn assert= [actual expected]
   (when-not (= actual expected)

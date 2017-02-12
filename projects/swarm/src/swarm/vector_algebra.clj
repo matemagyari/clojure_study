@@ -1,6 +1,5 @@
 (ns
-  ^{:author mate.magyari
-    :doc "Simple vector algebra"}
+  ^{:doc "Simple vector algebra"}
   swarm.vector-algebra
   (:require [clojure.test :as test]
             [clojure.core.typed :as typed]))

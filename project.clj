@@ -13,4 +13,4 @@
         ;"clojure_study"
         ;"incubator"
         ]
-  :dependencies [[org.clojure/clojure "1.7.0-alpha1"]])
+  :dependencies [[org.clojure/clojure "1.8.0"]])

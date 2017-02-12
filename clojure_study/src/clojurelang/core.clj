@@ -1,6 +1,6 @@
-(ns clojure.core
+(ns clojurelang.core
   (:require clojure.contrib.core)
-  (:use clojure.assertion))
+  (:use clojurelang.assertion))
 
 ;; Examples for the basics of Clojure
 

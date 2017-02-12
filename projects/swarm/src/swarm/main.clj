@@ -1,6 +1,4 @@
-(ns
-  ^{:author mate.magyari}
-  swarm.main
+(ns swarm.main
   (:require [clojure.test :as test]
             [swarm.swarm :as swarm]
             [swarm.the-wild :as w]

@@ -1,6 +1,6 @@
 (ns libraries.monads-play
   (:require [clojure.repl :as r]
-            [clojure.assertion :as a]
+            [clojurelang.assertion :as a]
             [clojure.algo.monads :as m]))
 
 (m/defmonad my-identity-m

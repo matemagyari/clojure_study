@@ -1,6 +1,5 @@
 (ns
-  ^{:author mate.magyari
-    :doc "Entities"}
+  ^{:doc "Entities"}
   swarm.the-wild
   (:require [swarm.vector-algebra :as va]
             [clojure.test :as test]))

@@ -1,5 +1,5 @@
-(ns clojure.polimorph-protocol
-  (:use clojure-study.clojure.assertion))
+(ns clojurelang.polimorph-protocol
+  (:use clojurelang.assertion))
 
 
 ;;extend existing types with protocol

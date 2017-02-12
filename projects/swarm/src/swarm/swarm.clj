@@ -1,6 +1,5 @@
 (ns
-  ^{:author mate.magyari
-    :doc "Swarm dynamic, based on gravitational forces between entitites"}
+  ^{:doc "Swarm dynamic, based on gravitational forces between entitites"}
   swarm.swarm
   (:require [clojure.test :as test]
             [swarm.vector-algebra :as va]

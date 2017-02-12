@@ -1,5 +1,5 @@
-(ns clojure.lazy-seqs
-  (:require [clojure-study.clojure.assertion :as a]))
+(ns clojurelang.lazy-seqs
+  (:require [clojurelang.assertion :as a]))
 
 (defn int-stream
   ([] (int-stream 1))

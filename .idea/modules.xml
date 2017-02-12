@@ -3,13 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/incubator/Incubator.iml" filepath="$PROJECT_DIR$/incubator/Incubator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/projects/bigdata-aggregator/bigdata_aggregator.iml" filepath="$PROJECT_DIR$/projects/bigdata-aggregator/bigdata_aggregator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/bigdata-aggregator/bigdata-aggregator.iml" filepath="$PROJECT_DIR$/projects/bigdata-aggregator/bigdata-aggregator.iml" />
       <module fileurl="file://$PROJECT_DIR$/projects/blackjack/blackjack.iml" filepath="$PROJECT_DIR$/projects/blackjack/blackjack.iml" />
-      <module fileurl="file://$PROJECT_DIR$/projects/carfactory/car_factory.iml" filepath="$PROJECT_DIR$/projects/carfactory/car_factory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/clojure_study/clojure_study.iml" filepath="$PROJECT_DIR$/clojure_study/clojure_study.iml" />
-      <module fileurl="file://$PROJECT_DIR$/clojure_study_parent.iml" filepath="$PROJECT_DIR$/clojure_study_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/carfactory/car-factory.iml" filepath="$PROJECT_DIR$/projects/carfactory/car-factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clojure_study/clojure-study.iml" filepath="$PROJECT_DIR$/clojure_study/clojure-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clojure-study-parent.iml" filepath="$PROJECT_DIR$/clojure-study-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/economy/economy.iml" filepath="$PROJECT_DIR$/projects/economy/economy.iml" />
       <module fileurl="file://$PROJECT_DIR$/projects/swarm/swarm.iml" filepath="$PROJECT_DIR$/projects/swarm/swarm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/projects/twitter-reader/twitter_reader.iml" filepath="$PROJECT_DIR$/projects/twitter-reader/twitter_reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projects/twitter-reader/twitter-reader.iml" filepath="$PROJECT_DIR$/projects/twitter-reader/twitter-reader.iml" />
     </modules>
   </component>
 </project>

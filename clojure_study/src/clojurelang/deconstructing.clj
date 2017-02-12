@@ -1,6 +1,6 @@
-(ns clojure.deconstructing
+(ns clojurelang.deconstructing
   (:require clojure.contrib.core)
-  (:use clojure-study.clojure.assertion))
+  (:use clojurelang.assertion))
 
 ;;----------------------------------------- DECONSTRUCTING VECTORS -------------------------------------------
 ;;vector

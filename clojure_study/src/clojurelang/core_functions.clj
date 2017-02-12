@@ -1,7 +1,7 @@
 (ns
   ^{:author mate.magyari}
   clojure-study.clojure.core-functions
-  (:require [clojure-study.clojure.assertion :as a]))
+  (:require [clojurelang.assertion :as a]))
 
 ;; Examples for the most important built-in functions
 

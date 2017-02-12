@@ -6,14 +6,15 @@
   <component name="LeiningenProjectsManager">
     <option name="projectFiles">
       <list>
-        <option value="file://$PROJECT_DIR$/projects/swarm/project.clj" />
+        <option value="file://$PROJECT_DIR$/incubator/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/bigdata-aggregator/project.clj" />
         <option value="file://$PROJECT_DIR$/projects/blackjack/project.clj" />
         <option value="file://$PROJECT_DIR$/projects/carfactory/project.clj" />
-        <option value="file://$PROJECT_DIR$/projects/twitter-reader/project.clj" />
-        <option value="file://$PROJECT_DIR$/projects/bigdata-aggregator/project.clj" />
-        <option value="file://$PROJECT_DIR$/incubator/project.clj" />
-        <option value="file://$PROJECT_DIR$/project.clj" />
         <option value="file://$PROJECT_DIR$/clojure_study/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/twitter-reader/project.clj" />
+        <option value="file://$PROJECT_DIR$/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/economy/project.clj" />
+        <option value="file://$PROJECT_DIR$/projects/swarm/project.clj" />
       </list>
     </option>
   </component>

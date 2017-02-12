@@ -1,5 +1,5 @@
-(ns clojure.polimorph-defmulti
-  (:require [clojure-study.clojure.assertion :as ae]))
+(ns clojurelang.polimorph-defmulti
+  (:require [clojurelang.assertion :as ae]))
 
 
 ;; defmulti and defmethod signatures
