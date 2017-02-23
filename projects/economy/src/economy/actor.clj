@@ -83,9 +83,7 @@
                           money->happiness money-val-multiplier)
                  :f-inv (partial
                           happiness->money money-val-multiplier)})]
-    (if (not (s/valid? ::money worth))
-      (println "AAA" worth happiness-gained (::money actor) input))
-    worth))
+    (math/trunc worth)))
 
 (defn max-acceptable-price
   "The max price the actor should pay for an extra unit of the given commodity"

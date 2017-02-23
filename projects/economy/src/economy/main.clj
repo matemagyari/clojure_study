@@ -1,6 +1,7 @@
 (ns economy.main
   (:require [economy.actor :as actor]
             [economy.trading :as trading]
+            [economy.math :as math]
             [clojure.spec :as s]
             [clojure.spec.test :as stest]))
 
@@ -34,17 +35,14 @@
                     all-money (fn [actors]
                                 (as-> actors $
                                       (map ::actor/money $)
-                                      (reduce + $)))
-                    money-before (all-money input-actors)
-                    money-after (all-money output-actors)]
-                (if (not (= money-before money-after))
-                  (println money-before money-after))
+                                      (reduce + $)))]
                 (and
                   (if (zero? (::time-to-trade input))
                     (= input output)
                     true)
                   (<= (-> input ::transactions count) (-> output ::transactions count))
-                  ;(= (all-money input-actors) (all-money output-actors))
+                  (> 0.001
+                     (Math/abs (- (all-money input-actors) (all-money output-actors))))
                   (= (all-goods input-actors) (all-goods output-actors))
                   (= (set (map ::actor/id input-actors))
                      (set (map ::actor/id output-actors)))
@@ -103,14 +101,14 @@
 
 ;(main)
 
-(defn adder
-  "Returns random int in range start <= rand < end"
-  [a b]
-  (+ a (apply + b)))
+; (stest/summarize-results
 
-(s/fdef adder
-        :args (s/cat :a int? :b (s/coll-of (s/and int? #(< % 100) pos?) :kind vector? :count 2))
-        :ret int?)
-
+(defn run-tests []
+  (let [money-gen-fn (let [possible-values (set
+                                             (take 50 (iterate (fn [x] (math/trunc (+ x 0.2)))
+                                                               0.0)))]
+                       (fn [] (s/gen possible-values)))]
+    (stest/check `trade {:gen                          {::actor/money money-gen-fn}
+                         :clojure.spec.test.check/opts {:num-tests 1000}})))
 
 

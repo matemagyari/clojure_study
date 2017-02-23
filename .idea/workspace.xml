@@ -2,49 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ba9719e-3020-49a9-a58d-88bc85a8f1a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clojure_study/src/other/utils.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/economy/src/economy/inheritance.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/economy/test/economy/manual_tests.clj" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/assertion.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/assertion.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/concurrency_primitives.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/concurrency_primitives.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/core.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/core.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/core_functions.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/core_functions.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/deconstructing.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/deconstructing.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/lazy_seqs.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/lazy_seqs.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/macros.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/macros.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/macros2.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/macros2.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/maps.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/maps.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/polimorph_defmulti.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/polimorph_defmulti.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/polimorph_protocol.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/polimorph_protocol.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/protocol_examples.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/protocol_examples.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/clojure_study/src/clojure/transducers.clj" afterPath="$PROJECT_DIR$/clojure_study/src/clojurelang/transducers.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server2.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_study/project.clj" afterPath="$PROJECT_DIR$/clojure_study/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clojure_study/src/libraries/monads_play.clj" afterPath="$PROJECT_DIR$/clojure_study/src/libraries/monads_play.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/incubator/project.clj" afterPath="$PROJECT_DIR$/incubator/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/bigdata-aggregator/project.clj" afterPath="$PROJECT_DIR$/projects/bigdata-aggregator/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/blackjack/project.clj" afterPath="$PROJECT_DIR$/projects/blackjack/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/carfactory/project.clj" afterPath="$PROJECT_DIR$/projects/carfactory/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/project.clj" afterPath="$PROJECT_DIR$/projects/economy/project.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/.nrepl-port" afterPath="$PROJECT_DIR$/projects/economy/.nrepl-port" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/src/economy/actor.clj" afterPath="$PROJECT_DIR$/projects/economy/src/economy/actor.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/src/economy/main.clj" afterPath="$PROJECT_DIR$/projects/economy/src/economy/main.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/src/economy/math.clj" afterPath="$PROJECT_DIR$/projects/economy/src/economy/math.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/src/economy/trading.clj" afterPath="$PROJECT_DIR$/projects/economy/src/economy/trading.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/economy/test/economy/trading_tests.clj" afterPath="$PROJECT_DIR$/projects/economy/test/economy/trading_tests.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/project.clj" afterPath="$PROJECT_DIR$/projects/swarm/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/display.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/display.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/gravity.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/gravity.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/main.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/main.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/swarm.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/swarm.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/the_wild.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/the_wild.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/vector_algebra.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/vector_algebra.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/swarm/src/swarm/view_adapter.clj" afterPath="$PROJECT_DIR$/projects/swarm/src/swarm/view_adapter.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/twitter-reader/project.clj" afterPath="$PROJECT_DIR$/projects/twitter-reader/project.clj" />
     </list>
     <ignored path="clojure_study.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,38 +30,18 @@
       <file leaf-file-name="actor.clj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/actor.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="17" />
+            <state relative-caret-position="1335">
+              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clojure_study/src/other/utils.clj">
+      <file leaf-file-name="math.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/math.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="2" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inheritance.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/inheritance.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polimorph_defmulti.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clojure_study/src/clojurelang/polimorph_defmulti.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -107,8 +50,70 @@
       <file leaf-file-name="main.clj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/main.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="735">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <marker date="1487746341000" expanded="true" signature="0:209" ph="(ns economy.main ...)" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spec.clj" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/clojure/spec.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4110">
+              <caret line="274" column="6" selection-start-line="274" selection-start-column="6" selection-end-line="274" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="echo_tcp_server.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="echo_tcp_server2.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server2.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerSocket.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/net/ServerSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7155">
+              <caret line="506" column="13" selection-start-line="506" selection-start-column="13" selection-end-line="506" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clojure_study/project.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="garbage.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clojure_study/src/other/garbage.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -146,7 +151,6 @@
         <option value="$PROJECT_DIR$/projects/economy/project.clj" />
         <option value="$PROJECT_DIR$/projects/economy/test/economy/manual_tests.clj" />
         <option value="$PROJECT_DIR$/projects/economy/src/economy/trading.clj" />
-        <option value="$PROJECT_DIR$/projects/economy/src/economy/actor.clj" />
         <option value="$PROJECT_DIR$/projects/swarm/src/swarm/main.clj" />
         <option value="$PROJECT_DIR$/projects/swarm/src/swarm/gravity.clj" />
         <option value="$PROJECT_DIR$/projects/swarm/src/swarm/display.clj" />
@@ -155,10 +159,15 @@
         <option value="$PROJECT_DIR$/projects/swarm/src/swarm/vector_algebra.clj" />
         <option value="$PROJECT_DIR$/projects/swarm/src/swarm/view_adapter.clj" />
         <option value="$PROJECT_DIR$/projects/economy/src/economy/math.clj" />
-        <option value="$PROJECT_DIR$/projects/economy/src/economy/main.clj" />
         <option value="$PROJECT_DIR$/clojure_study/project.clj" />
         <option value="$PROJECT_DIR$/clojure_study/src/other/utils.clj" />
         <option value="$PROJECT_DIR$/projects/economy/src/economy/inheritance.clj" />
+        <option value="$PROJECT_DIR$/clojure_study/src/other/temp_script.clj" />
+        <option value="$PROJECT_DIR$/clojure_study/src/other/tcp_client.clj" />
+        <option value="$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server.clj" />
+        <option value="$PROJECT_DIR$/projects/economy/src/economy/actor.clj" />
+        <option value="$PROJECT_DIR$/projects/economy/src/economy/main.clj" />
+        <option value="$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server2.clj" />
       </list>
     </option>
   </component>
@@ -172,7 +181,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="729" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -233,7 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -506,7 +515,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -514,7 +523,7 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="cursive.last.file.extension./Users/david/IdeaProjects/clojure_study/clojure_study/src" value="clj" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go/src/github.com/matemagyari/learning_go" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -525,8 +534,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/projects/economy/src/economy" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clojure_study/src/other" />
+    </key>
   </component>
-  <component name="ReplState" timestamp="1486902019259">{:repl-history {:ide [], :local [&quot;(stest/check `economy.trading/find-best-seller\n             )&quot; &quot;@counter&quot; &quot;@economy.trading/counter&quot; &quot;(s/exercise-fn `economy.trading/find-best-seller)&quot; &quot;(s/def ::mon (s/double-in :NaN? false :infinite? false))&quot; &quot;(s/exercise ::mon)&quot; &quot;(= 0.0 0.0)&quot; &quot;(= 0.0 -0.0)&quot; &quot;(cons nil [12 2])&quot; &quot;(cons 1 [12 2])&quot; &quot;(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   from\n                   (let [[head &amp; tail] from\n                         new-to (if (pred? head)\n                                  (cons (f head) to)\n                                  to)]\n                     (recur tail new-to))))]\n    (helper xs [])))&quot; &quot;(let [[head &amp; tail] [1 2 3]]\n  head)&quot; &quot;(let [[head &amp; tail] [1 2 3]]\n  tail)&quot; &quot;(range 10)&quot; &quot;(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (println from)\n                 (if (empty? from)\n                   from\n                   (let [[head &amp; tail] from\n                         new-to (if (pred? head)\n                                  (cons (f head) to)\n                                  to)]\n                     (recur tail new-to))))]\n    (helper xs [])))&quot; &quot;\n(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   from\n                   (let [[head &amp; tail] from\n                         _ (println \&quot;Head\&quot; head)\n                         new-to (if (pred? head)\n                                  (cons (f head) to)\n                                  to)]\n                     (recur tail new-to))))]\n    (helper xs [])))&quot; &quot;(collect (range 10) even? inc)&quot; &quot;(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   from\n                   (let [[head &amp; tail] from\n                         _ (println \&quot;Head\&quot; head)\n                         _ (println \&quot;tail\&quot; tail)\n                         new-to (if (pred? head)\n                                  (cons (f head) to)\n                                  to)]\n                     (recur tail new-to))))]\n    (helper xs [])))\n\n(collect (range 10) even? inc)&quot; &quot;\n(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   from\n                   (let [[head &amp; tail] from\n                         _ (println \&quot;Head\&quot; head)\n                         _ (println \&quot;tail\&quot; tail)\n                         new-to (if (pred? head)\n                                  (cons (f head) to)\n                                  to)\n                         _ (println \&quot;new-to\&quot; new-to)]\n                     (recur tail new-to))))]\n    (helper xs [])))\n\n(collect (range 10) even? inc)&quot; &quot;(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   to\n                   (let [[head &amp; tail] from\n                         _ (println \&quot;Head\&quot; head)\n                         _ (println \&quot;tail\&quot; tail)\n                         new-to (if (pred? head)\n                                  (cons (f head) to)\n                                  to)\n                         _ (println \&quot;new-to\&quot; new-to)]\n                     (recur tail new-to))))]\n    (helper xs [])))\n\n(collect (range 10) even? inc)&quot; &quot;\n(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   to\n                   (let [[head &amp; tail] from\n                         _ (println \&quot;Head\&quot; head)\n                         _ (println \&quot;tail\&quot; tail)\n                         new-to (if (pred? head)\n                                  (conj to (f head))\n                                  to)\n                         _ (println \&quot;new-to\&quot; new-to)]\n                     (recur tail new-to))))]\n    (helper xs [])))\n\n(collect (range 10) even? inc)&quot; &quot;(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   to\n                   (let [[head &amp; tail] from\n                         new-to (if (pred? head)\n                                  (conj to (f head))\n                                  to)]\n                     (recur tail new-to))))]\n    (helper xs [])))\n\n(collect (range 10) even? inc)&quot; &quot;(defn collect [xs pred? f]\n  (let [helper (fn [from to]\n                 (if (empty? from)\n                   to\n                   (let [[head &amp; tail] from\n                         new-to (if (pred? head)\n                                  (conj to (f head))\n                                  to)]\n                     (recur tail new-to))))]\n    (helper xs [])))\n\n(defn collect-first [xs pred? f]\n  (if (empty? xs)\n    nil\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        (f head)\n        (recur tail pred? f)))))\n\n(collect (range 10) even? inc)\n(collect-first (range 10) #(zero? (mod % 3)) inc)&quot; &quot;(collect-first (range 1 10) #(zero? (mod % 3)) inc)&quot; &quot;(collect (range 9990) zero? inc)&quot; &quot;(collect (range 1 9990) zero? inc)&quot; &quot;(collect (range 1 999999999) zero? inc)&quot; &quot;1&quot; &quot;(collect (range 1 999999) zero? inc)&quot; &quot;(stest/check `economy.trading/better-seller)&quot; &quot;(stest/check `economy.trading/find-best-seller)&quot; &quot;(stest/check `economy.actor/worth-of-extra-unit :num-tests 11)&quot; &quot;(stest/check `economy.actor/worth-of-extra-unit)&quot; &quot;(def in {:actors [{::actor/id 0, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.348269851146737E308, ::actor/commodities {:food 0, :clothes 0, :gas 1}} {::actor/id 1, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.0, ::actor/commodities {:clothes 1, :gas 0, :food 1}}], :transactions [], :time-to-trade 3})&quot; &quot;in&quot; &quot;(def in {::actors [{::actor/id 0, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.348269851146737E308, ::actor/commodities {:food 0, :clothes 0, :gas 1}} {::actor/id 1, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.0, ::actor/commodities {:clothes 1, :gas 0, :food 1}}], ::transactions [], ::time-to-trade 3})&quot; &quot;(trade in)&quot; &quot;(def in2 {::commodity :clothes ::actor {::actor/id 0, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.348269851146737E308, ::actor/commodities {:food 0, :clothes 0, :gas 1}}})&quot; &quot;(def in2 {::commodity :clothes \n          ::actor {::actor/id 0, \n                   ::actor/money-value-multiplier 1.0, \n                   ::actor/product :gas, \n                   ::actor/money 1.348269851146737E308, \n                   ::actor/commodities {:food 0, :clothes 0, :gas 1}}})&quot; &quot;(def in2 {::actor/commodity :clothes\n          ::actor/actor {::actor/id 0, \n                   ::actor/money-value-multiplier 1.0, \n                   ::actor/product :gas, \n                   ::actor/money 1.348269851146737E308, \n                   ::actor/commodities {:food 0, :clothes 0, :gas 1}}})&quot; &quot;(economy.actor/worth-of-extra-unit in2)&quot; &quot;(stest/check `economy.main/trade)&quot; &quot;(defn find [xs pred?]\n  (if (empty? xs)\n    nil\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        head\n        (recur tail pred?)))))&quot; &quot;(defn find [pred? xs]\n  (if (empty? xs)\n    nil\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        head\n        (recur pred? tail)))))&quot; &quot;(find even? [1 3 4 5 6])&quot; &quot;(#{3} [1 2 3 4 5])&quot; &quot;([1 2 3 4 5] #{3})&quot; &quot;(some #{3} [1 2 3 4 5])&quot; &quot;(some even? [1 2 3 4 5])&quot; &quot;(some #{3} [1 3 2 4 5])&quot; &quot;(defn exists? [pred? xs]\n  (if (empty? xs)\n    false?\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        head\n        (recur pred? tail)))))\n&quot; &quot;(defn exists? [pred? xs]\n  (if (empty? xs)\n    false\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        true\n        (recur pred? tail)))))&quot; &quot;(exists? even? [1 3 4 5 6])&quot; &quot;(exists? even? [1 3])&quot; &quot;(exists? even? [])&quot; &quot;(exists? even? nil)&quot; &quot;(defn forall? [pred? xs]\n  (if (empty? xs)\n    true\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        (recur pred? tail)\n        false))))\n&quot; &quot;(forall? even? [2 4 6])&quot; &quot;(forall? even? [2 4 6 1])&quot; &quot;(defn mapf [f x]\n  (if x (f x)))&quot; &quot;(mapf inc 1)&quot; &quot;(mapf inc nil)&quot; &quot;(defn forf [f &amp; xs]\n  (if (forall? some? xs) (apply f xs)))&quot; &quot;(forf + 1 2 3)&quot; &quot;(forf + 1 2 nil)&quot; &quot;(fnil inc 1)&quot; &quot;(fnil 1 inc)&quot; &quot;((fnil inc 1) nil)&quot; &quot;(some even? [1 1])&quot; &quot;(some even? [1 2])&quot; &quot;(#{1 2} 3)&quot; &quot;(#{1 2} 2)&quot; &quot;(#{1 2} 1)&quot; &quot;(def employee-types #{:manager :developer :hr})\n(s/def ::employee-type employee-types)\n(s/def ::years nat-int?)\n(s/def ::employee (s/keys :req [::years ::employee-type]))\n\n\n(s/fdef salary\n        :args (s/cat :in ::employee)\n        :ret double?)&quot; &quot;dev1&quot; &quot;(salary dev1)&quot; &quot;(salary man1)&quot; &quot;(salary hr1)&quot; &quot;(stest/check `salary)&quot; &quot;(salary {::years 1 ::employee-type ::hr})&quot; &quot;(multiplier {::years 1 ::employee-type ::hr})&quot; &quot;(multiplier {::years 1 :employee-type ::hr})&quot; &quot;(multiplier {::years 1 :type ::hr})&quot; &quot;(multiplier {::years 1 ::type ::hr})&quot; &quot;(defmulti multiplier ::employee-type)\n(defmethod multiplier :manager [_] 3)\n(defmethod multiplier :developer [_] 2)\n(defmethod multiplier :hr [_] 1)&quot; &quot;(multiplier {::years 1 ::employee-type :hr})&quot; &quot;(defmulti resolve :color)&quot; &quot;()&quot; &quot;(defmulti resolve1 :color)&quot; &quot;(defmethod resolve1 :green \&quot;green\&quot;)&quot; &quot;(defmethod resolve1 :green [_] \&quot;green\&quot;)&quot; &quot;(resolve1 {:color :green})&quot; &quot;(resolve1 {:color :blue})&quot; &quot;(defmulti multiplier ::employee-type)&quot; &quot;(multiplier {::employee-type :manager})&quot; &quot;(defmulti multiplier :employee-type)&quot; &quot;(defmethod multiplier :manager [_] 3)&quot; &quot;(multiplier {:employee-type :manager})&quot; &quot;(defmulti my-resolve :color)\n(defmethod my-resolve :green [_] \&quot;gree\&quot;)\n(my-resolve {:color :green})&quot; &quot;(defmulti multiplier :color)\n(defmethod multiplier :green [_] \&quot;gree\&quot;)\n(multiplier {:color :green})&quot; &quot;\n(defmulti multiplier2 :color)\n(defmethod multiplier2 :green [_] \&quot;gree\&quot;)\n(multiplier2 {:color :green})&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1487778914798">{:repl-history {:ide [], :local [&quot;1&quot; &quot;(collect (range 1 999999) zero? inc)&quot; &quot;(stest/check `economy.trading/better-seller)&quot; &quot;(stest/check `economy.trading/find-best-seller)&quot; &quot;(stest/check `economy.actor/worth-of-extra-unit :num-tests 11)&quot; &quot;(stest/check `economy.actor/worth-of-extra-unit)&quot; &quot;(def in {:actors [{::actor/id 0, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.348269851146737E308, ::actor/commodities {:food 0, :clothes 0, :gas 1}} {::actor/id 1, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.0, ::actor/commodities {:clothes 1, :gas 0, :food 1}}], :transactions [], :time-to-trade 3})&quot; &quot;in&quot; &quot;(def in {::actors [{::actor/id 0, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.348269851146737E308, ::actor/commodities {:food 0, :clothes 0, :gas 1}} {::actor/id 1, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.0, ::actor/commodities {:clothes 1, :gas 0, :food 1}}], ::transactions [], ::time-to-trade 3})&quot; &quot;(trade in)&quot; &quot;(def in2 {::commodity :clothes ::actor {::actor/id 0, ::actor/money-value-multiplier 1.0, ::actor/product :gas, ::actor/money 1.348269851146737E308, ::actor/commodities {:food 0, :clothes 0, :gas 1}}})&quot; &quot;(def in2 {::commodity :clothes \n          ::actor {::actor/id 0, \n                   ::actor/money-value-multiplier 1.0, \n                   ::actor/product :gas, \n                   ::actor/money 1.348269851146737E308, \n                   ::actor/commodities {:food 0, :clothes 0, :gas 1}}})&quot; &quot;(def in2 {::actor/commodity :clothes\n          ::actor/actor {::actor/id 0, \n                   ::actor/money-value-multiplier 1.0, \n                   ::actor/product :gas, \n                   ::actor/money 1.348269851146737E308, \n                   ::actor/commodities {:food 0, :clothes 0, :gas 1}}})&quot; &quot;(economy.actor/worth-of-extra-unit in2)&quot; &quot;(stest/check `economy.main/trade)&quot; &quot;(defn find [xs pred?]\n  (if (empty? xs)\n    nil\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        head\n        (recur tail pred?)))))&quot; &quot;(defn find [pred? xs]\n  (if (empty? xs)\n    nil\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        head\n        (recur pred? tail)))))&quot; &quot;(find even? [1 3 4 5 6])&quot; &quot;(#{3} [1 2 3 4 5])&quot; &quot;([1 2 3 4 5] #{3})&quot; &quot;(some #{3} [1 2 3 4 5])&quot; &quot;(some even? [1 2 3 4 5])&quot; &quot;(some #{3} [1 3 2 4 5])&quot; &quot;(defn exists? [pred? xs]\n  (if (empty? xs)\n    false?\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        head\n        (recur pred? tail)))))\n&quot; &quot;(defn exists? [pred? xs]\n  (if (empty? xs)\n    false\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        true\n        (recur pred? tail)))))&quot; &quot;(exists? even? [1 3 4 5 6])&quot; &quot;(exists? even? [1 3])&quot; &quot;(exists? even? [])&quot; &quot;(exists? even? nil)&quot; &quot;(defn forall? [pred? xs]\n  (if (empty? xs)\n    true\n    (let [[head &amp; tail] xs]\n      (if (pred? head)\n        (recur pred? tail)\n        false))))\n&quot; &quot;(forall? even? [2 4 6])&quot; &quot;(forall? even? [2 4 6 1])&quot; &quot;(defn mapf [f x]\n  (if x (f x)))&quot; &quot;(mapf inc 1)&quot; &quot;(mapf inc nil)&quot; &quot;(defn forf [f &amp; xs]\n  (if (forall? some? xs) (apply f xs)))&quot; &quot;(forf + 1 2 3)&quot; &quot;(forf + 1 2 nil)&quot; &quot;(fnil inc 1)&quot; &quot;(fnil 1 inc)&quot; &quot;((fnil inc 1) nil)&quot; &quot;(some even? [1 1])&quot; &quot;(some even? [1 2])&quot; &quot;(#{1 2} 3)&quot; &quot;(#{1 2} 2)&quot; &quot;(#{1 2} 1)&quot; &quot;(def employee-types #{:manager :developer :hr})\n(s/def ::employee-type employee-types)\n(s/def ::years nat-int?)\n(s/def ::employee (s/keys :req [::years ::employee-type]))\n\n\n(s/fdef salary\n        :args (s/cat :in ::employee)\n        :ret double?)&quot; &quot;dev1&quot; &quot;(salary dev1)&quot; &quot;(salary hr1)&quot; &quot;(salary {::years 1 ::employee-type ::hr})&quot; &quot;(multiplier {::years 1 ::employee-type ::hr})&quot; &quot;(multiplier {::years 1 :employee-type ::hr})&quot; &quot;(multiplier {::years 1 :type ::hr})&quot; &quot;(multiplier {::years 1 ::type ::hr})&quot; &quot;(defmulti multiplier ::employee-type)\n(defmethod multiplier :manager [_] 3)\n(defmethod multiplier :developer [_] 2)\n(defmethod multiplier :hr [_] 1)&quot; &quot;(multiplier {::years 1 ::employee-type :hr})&quot; &quot;(defmulti resolve :color)&quot; &quot;()&quot; &quot;(defmulti resolve1 :color)&quot; &quot;(defmethod resolve1 :green \&quot;green\&quot;)&quot; &quot;(defmethod resolve1 :green [_] \&quot;green\&quot;)&quot; &quot;(resolve1 {:color :green})&quot; &quot;(resolve1 {:color :blue})&quot; &quot;(defmulti multiplier ::employee-type)&quot; &quot;(multiplier {::employee-type :manager})&quot; &quot;(defmulti multiplier :employee-type)&quot; &quot;(defmethod multiplier :manager [_] 3)&quot; &quot;(multiplier {:employee-type :manager})&quot; &quot;(defmulti my-resolve :color)\n(defmethod my-resolve :green [_] \&quot;gree\&quot;)\n(my-resolve {:color :green})&quot; &quot;(defmulti multiplier :color)\n(defmethod multiplier :green [_] \&quot;gree\&quot;)\n(multiplier {:color :green})&quot; &quot;\n(defmulti multiplier2 :color)\n(defmethod multiplier2 :green [_] \&quot;gree\&quot;)\n(multiplier2 {:color :green})&quot; &quot;(defmulti multiplier2 :color)\n(defmethod multiplier2 :green [_] \&quot;gree\&quot;)\n(multiplier2 {:color :green})&quot; &quot;(defmulti multiplier3 ::color)\n(defmethod multiplier3 :green [_] \&quot;green\&quot;)\n(multiplier3 {::color :green})&quot; &quot;(defmulti multiplier ::employee-type)\n(defmethod multiplier :manager [_] 3)\n(defmethod multiplier :developer [_] 2)\n(defmethod multiplier :hr [_] 1)\n(defmethod multiplier :default [_] 0)&quot; &quot;(def hr1 {::employee-type :hr\n          ::years 12})&quot; &quot;(multiplier hr1)&quot; &quot;(salary man1)&quot; &quot;(double 1)&quot; &quot;(* 2.5 4)&quot; &quot;(stest/check `salary)&quot; &quot;(stest/check `trade)&quot; &quot;(defn my-add [x]\n  (+ (:a x) (:b x)))&quot; &quot;(my-add {:a 1 :b 2})&quot; &quot;(my-add :a 1 :b 3)&quot; &quot;(defn run-tests []\n  (stest/summarize-results\n    (stest/check `trade)))&quot; &quot;(defn run-tests []\n  (stest/check `trade {;;:gen ::actor/money\n                       :clojure.spec.test.check/opts {:num-tests 100}}))&quot; &quot;(defn run-tests []\n  (stest/check `trade {:gen {::actor/money (s/gen (s/double-in :min 0.0 :max 10.0 :NaN? false :infinite? false))}\n                       :clojure.spec.test.check/opts {:num-tests 1000}}))\n&quot; &quot;(defn run-tests []\n  (stest/check `trade {:gen {::actor/money (fn []\n                                             (s/gen (s/double-in :min 0.0\n                                                                 :max 10.0\n                                                                 :NaN? false\n                                                                 :infinite? false))) }\n                       :clojure.spec.test.check/opts {:num-tests 1000}}))\n&quot; &quot;(s/def ::x (s/or 1 2))&quot; &quot;(take 2 (repeatedly 1 inc))&quot; &quot;(take 2 (repeatedly inc))&quot; &quot;(take 2 (iterate inc 1))&quot; &quot;(take 2 (iterate #(+ % 0.2) 0.0))&quot; &quot;(take 10 (iterate #(+ % 0.1) 0.0))&quot; &quot;(take 10 (iterate (fn [x] (math/trunc (+ x 0.1))) 0.0))&quot; &quot;(take 50 (iterate (fn [x] (math/trunc (+ x 0.2))) 0.0))&quot; &quot;(set (take 50 (iterate (fn [x] (math/trunc (+ x 0.2))) 0.0)))&quot; &quot;(&lt; 1 2 3)&quot; &quot;(&lt; 1 2 2)&quot; &quot;(run-tests)&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for economy">
     <configuration default="false" name="REPL for economy" type="ClojureREPL" factoryName="Local" temporary="true">
       <setting name="replType" value="1" />
@@ -1126,17 +1138,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4773083" sideWeight="0.5744337" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4747634" sideWeight="0.5744337" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32707354" sideWeight="0.36084142" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1144,7 +1155,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4773083" sideWeight="0.42556635" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1154,7 +1164,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4773083" sideWeight="0.42556635" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1186,63 +1198,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/incubator/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/math.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/economy/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/incubator/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.7.0-alpha1/clojure-1.7.0-alpha1.jar!/clojure/main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/economy/test/economy/math_tests.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure_study/src/clojurelang/assertion.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure_study/src/clojurelang/macros2.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clojure_study/src/clojurelang/deconstructing.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1346,7 +1301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,18 +1311,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/clojure/spec.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27645">
-          <caret line="1843" column="10" selection-start-line="1843" selection-start-column="10" selection-end-line="1843" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/trading.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,7 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,7 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,7 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,9 +1343,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding>
-            <marker date="1486658317000" expanded="true" signature="0:141" ph="(ns swarm.vector-algebra ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1410,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1418,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,7 +1371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1442,7 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1450,7 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1458,7 +1392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="3974" column="6" selection-start-line="3974" selection-start-column="6" selection-end-line="3974" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,7 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,15 +1406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-678">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/net.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,23 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-195">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="530" column="6" selection-start-line="530" selection-start-column="6" selection-end-line="530" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clojure_study/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1514,31 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/math.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/main.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/actor.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1552,16 +1433,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clojure_study/src/clojurelang/polimorph_defmulti.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="270">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/inheritance.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="270">
           <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/line_counter.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/clojure/java/io.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/net.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/actor.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/math.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/clojure/spec.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4110">
+          <caret line="274" column="6" selection-start-line="274" selection-start-column="6" selection-end-line="274" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/economy/src/economy/main.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1487746341000" expanded="true" signature="0:209" ph="(ns economy.main ...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/tcp_client.clj" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha14/clojure-1.9.0-alpha14.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="3538" column="6" selection-start-line="3538" selection-start-column="6" selection-end-line="3538" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-991">
+          <caret line="421" column="40" selection-start-line="421" selection-start-column="33" selection-end-line="421" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/echo_tcp_server2.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/net/ServerSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7155">
+          <caret line="506" column="13" selection-start-line="506" selection-start-column="13" selection-end-line="506" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clojure_study/src/other/garbage.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="39" />
           <folding />
         </state>
       </provider>
