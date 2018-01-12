@@ -1,6 +1,4 @@
-(ns
-  ^{:author mate.magyari}
-  worldbank.display)
+(ns worldbank.display)
 
 (defn- value->bar [value]
   (apply str (repeat value "*")))

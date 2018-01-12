@@ -1,25 +1,28 @@
-(ns
-  ^{:author mate.magyari}
-  worldbank.world-bank
+(ns worldbank.world-bank
   (:require [clj-http.client :as client]
             [clojure.data.json :as json]
             [worldbank.display :as display]))
 
-(defn get-indicators [num]
+(def url-prefix "http://api.worldbank.org")
+
+(defn read-url [url]
   (client/get
-    (str "http://api.worldbank.org/en/indicator?format=json&per_page=" num)
+    (str url-prefix url)
     {:as :json}))
 
-(defn gdp-indicators [indicators]
-  (let [i-list (-> indicators :body second)]
-    (filter (fn [i] (.contains (:name i) "GDP")) i-list)))
+(defn get-indicators [num]
+  (read-url (str "/en/indicator?format=json&per_page=" num)))
 
-(defn get-indicators []
-  (->> (get-indicators 1500)
+(defn gdp-indicators [indicators]
+  (let [gdp? (fn [i] (.contains (:name i) "GDP"))
+        i-list (-> indicators :body second)]
+    (filter gdp? i-list)))
+
+(defn get-indicators2 []
+  (->> (gdp-indicators 1500)
     :body
     second
     (sort-by :name)
-    ;(filter #(.contains (:name %) "GDP"))
     (map #((juxt :name :id) %))
     (map println)))
 
@@ -53,7 +56,7 @@
 (def histogram (time-value-series
          (get-raw-data "NY.GDP.MKTP.CD" "usa" ["1800" "2015"])))
 
-(display/print-histogram histogram)
+;(display/print-histogram histogram)
 
 (comment
 

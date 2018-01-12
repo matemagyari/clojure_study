@@ -170,7 +170,7 @@
 (let [fast-chan (chan)
       slow-chan (chan)]
   (go (Thread/sleep 10)
-    (>! slow-chan 0))
+      (>! slow-chan 0))
   (go (>! fast-chan 1))
   (let [[v c] (alts!! [fast-chan slow-chan])]
     (assert= 1 v)
@@ -239,4 +239,83 @@
       (if in-msg
         (println (str "Incoming: " in-msg))
         (println "Channel is closed")))
+    (recur)))
+
+;=====
+
+;general abstractions
+(defn create-sink-foreach [channel f]
+  (go-loop []
+    (if-let [msg (<! channel)]
+      (f msg))
+    (recur)))
+
+(defn assemble [source-ch xf sink!]
+  (let [temp-ch (chan 5 xf)]
+    (a/pipe source-ch temp-ch)
+    (sink! temp-ch)))
+
+(defn source-with-delays
+  "Create a channel that will emit the elements of xs with delays"
+  [xs delay]
+  (let [channel (chan)]
+    (go
+      (doseq [x xs]
+        (>! channel x)
+        (<! (timeout delay))))
+    channel))
+
+;val source: Source[Int, NotUsed] = Source(1 to 100)
+; Source from a sequence
+(defn source-from-sequence [xs]
+  (a/to-chan xs))
+
+;val sink = Sink.fold[Int, Int](0)(_ + _)
+(defn folding-sink [channel start-value f]
+  (let [result-ch (go-loop [v start-value]
+                    (if-let [m (<! channel)]
+                      (recur (f v m))
+                      v))]
+    (<!! result-ch)))
+
+;Sink.head
+(defn head-sink [channel]
+  (<!! channel))
+
+;specific examples
+(let [source (a/to-chan (range 10))
+      xf (comp (filter even?) (map inc) (take 3))
+      printer-sink! (fn [channel] (create-sink-foreach channel println))]
+  (assemble source xf printer-sink!))
+
+(let [source (let [channel (chan)]
+               (go
+                 (doseq [msg (range 100)]
+                   (>! channel msg)
+                   (<! (timeout 1000))))
+               channel)
+      xf (comp (filter even?) (map inc) (take 10))
+      printer-sink! (fn [channel] (create-sink-foreach channel println))]
+  (assemble source xf printer-sink!))
+
+; sink transformation
+; example - int sink to string sink
+(defn transform [source-channel f]
+  (let [dest-ch (chan 5)]
+    (go-loop []
+      (if-let [msg (<! source-channel)]
+        (>! dest-ch msg))
+      (recur))))
+
+(let [xform (comp (filter even?) (map inc))
+      word-1-chan (fn [num] (go (str "joe" num)))
+      word-2-chan (fn [word] (go (str "smith" word)))
+      source (a/to-chan (range 10))
+      printer-sink! (fn [channel] (create-sink-foreach channel println))]
+  (go-loop []
+    (if-let [m (<! source)]
+      (as-> m $
+            (<! (word-1-chan $))
+            (<! (word-2-chan $))
+            (println $)))
     (recur)))

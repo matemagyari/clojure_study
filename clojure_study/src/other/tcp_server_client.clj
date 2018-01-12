@@ -1,6 +1,6 @@
 #!/usr/bin/env lein-exec
 
-(ns other.echo-tcp-server2
+(ns other.tcp-server-client
   (:require [clojure.java.io :as io])
   (:import (java.net Socket
                      ServerSocket)))
@@ -43,7 +43,7 @@
             (reset! continue false))
 
           (reset! last-msg msg-in)
-          (when (and (some? msg-in) (continue? msg-in))
+          (when (continue? msg-in)
             (let [diff (- (System/currentTimeMillis)
                           (read-string msg-in))]
               (println (str "Diff is: " diff))
@@ -57,31 +57,35 @@
 
 
 (defn start-server!
-  "Starts up a TCP echo server which serves one client"
+  "Starts up a TCP server which serves connections one at a time"
   [port]
   (println "Server starts")
 
   (with-open [server-socket (ServerSocket. port)]
     (let [continue (atom true)]
       (while @continue
-        (handle-connection! server-socket continue))
-      (println "Server stops"))))
+        (handle-connection! server-socket continue))))
+  (println "Server stops"))
 
 
 (defn start-client!
   "Sends a given number TCP packets to the remote host.
   The payloads are the current time in millis"
-  [host port msgs-num]
+  [host port msgs-num stop-server]
 
   (println (str "Client starts to send " msgs-num " packages to [" host ":" port "]"))
 
   (with-open [socket (Socket. host port)
               writer (io/writer socket)]
+
     (dotimes [n msgs-num]
       (println (str "Sending " n ". message"))
       (send-msg! writer (System/currentTimeMillis))
       (Thread/sleep 100))
-    (send-msg! writer "stop")
+
+    (when stop-server
+      (send-msg! writer "stop"))
+
     (send-msg! writer "end"))
 
   (println "Client stopped"))
@@ -91,10 +95,7 @@
   (condp = arg
     "server" (let [port (read-string (nth args 2))]
                (start-server! port))
-    "client" (let [[host port msgs]
-                   host (nth args 2)
-                   port (read-string (nth args 3))
-                   msgs (read-string (nth args 4))]
-               (start-client! host port msgs))
+    "client" (let [[_ _ host port msgs stop-server] args]
+               (start-client! host (read-string port) (read-string msgs) (read-string stop-server)))
     (println (str "Unexpected value [" arg "]"))))
 
